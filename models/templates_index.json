@@ -1,0 +1,965 @@
+{
+  "total": 79,
+  "categories": {
+    "个人简历": 1,
+    "公司简介": 2,
+    "工作总结": 39,
+    "工作汇报": 12,
+    "工作计划": 5,
+    "年终总结": 8,
+    "开题报告": 2,
+    "职业规划": 1,
+    "自我介绍": 1,
+    "述职报告": 8
+  },
+  "templates": [
+    {
+      "template_id": "个人简历_岗位竞聘",
+      "category": "个人简历",
+      "name": "岗位竞聘",
+      "path": "个人简历/岗位竞聘.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "公司简介_公司介绍",
+      "category": "公司简介",
+      "name": "公司介绍",
+      "path": "公司简介/公司介绍.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 35,
+      "chapter_count": 12
+    },
+    {
+      "template_id": "公司简介_商务风_042",
+      "category": "公司简介",
+      "name": "商务风_042.pptx",
+      "path": "公司简介/商务风_042.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_worksummary_01",
+      "category": "工作总结",
+      "name": "WorkSummary_01",
+      "path": "工作总结/WorkSummary_01.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作总结_worksummary_02",
+      "category": "工作总结",
+      "name": "WorkSummary_02",
+      "path": "工作总结/WorkSummary_02.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_001",
+      "category": "工作总结",
+      "name": "商务风_001.pptx",
+      "path": "工作总结/商务风_001.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_003",
+      "category": "工作总结",
+      "name": "商务风_003.pptx",
+      "path": "工作总结/商务风_003.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "工作总结_商务风_005",
+      "category": "工作总结",
+      "name": "商务风_005.pptx",
+      "path": "工作总结/商务风_005.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 15
+    },
+    {
+      "template_id": "工作总结_商务风_006",
+      "category": "工作总结",
+      "name": "商务风_006.pptx",
+      "path": "工作总结/商务风_006.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "工作总结_商务风_009",
+      "category": "工作总结",
+      "name": "商务风_009.pptx",
+      "path": "工作总结/商务风_009.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 9
+    },
+    {
+      "template_id": "工作总结_商务风_010",
+      "category": "工作总结",
+      "name": "商务风_010.pptx",
+      "path": "工作总结/商务风_010.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_013",
+      "category": "工作总结",
+      "name": "商务风_013.pptx",
+      "path": "工作总结/商务风_013.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作总结_商务风_017",
+      "category": "工作总结",
+      "name": "商务风_017.pptx",
+      "path": "工作总结/商务风_017.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_018",
+      "category": "工作总结",
+      "name": "商务风_018.pptx",
+      "path": "工作总结/商务风_018.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_019",
+      "category": "工作总结",
+      "name": "商务风_019.pptx",
+      "path": "工作总结/商务风_019.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_022",
+      "category": "工作总结",
+      "name": "商务风_022.pptx",
+      "path": "工作总结/商务风_022.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_023",
+      "category": "工作总结",
+      "name": "商务风_023.pptx",
+      "path": "工作总结/商务风_023.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_025",
+      "category": "工作总结",
+      "name": "商务风_025.pptx",
+      "path": "工作总结/商务风_025.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "工作总结_商务风_026",
+      "category": "工作总结",
+      "name": "商务风_026.pptx",
+      "path": "工作总结/商务风_026.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 8
+    },
+    {
+      "template_id": "工作总结_商务风_027",
+      "category": "工作总结",
+      "name": "商务风_027.pptx",
+      "path": "工作总结/商务风_027.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_028",
+      "category": "工作总结",
+      "name": "商务风_028.pptx",
+      "path": "工作总结/商务风_028.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_030",
+      "category": "工作总结",
+      "name": "商务风_030.pptx",
+      "path": "工作总结/商务风_030.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_032",
+      "category": "工作总结",
+      "name": "商务风_032.pptx",
+      "path": "工作总结/商务风_032.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_033",
+      "category": "工作总结",
+      "name": "商务风_033.pptx",
+      "path": "工作总结/商务风_033.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_035",
+      "category": "工作总结",
+      "name": "商务风_035.pptx",
+      "path": "工作总结/商务风_035.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_036",
+      "category": "工作总结",
+      "name": "商务风_036.pptx",
+      "path": "工作总结/商务风_036.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_037",
+      "category": "工作总结",
+      "name": "商务风_037.pptx",
+      "path": "工作总结/商务风_037.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作总结_商务风_039",
+      "category": "工作总结",
+      "name": "商务风_039.pptx",
+      "path": "工作总结/商务风_039.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作总结_商务风_040",
+      "category": "工作总结",
+      "name": "商务风_040.pptx",
+      "path": "工作总结/商务风_040.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_041",
+      "category": "工作总结",
+      "name": "商务风_041.pptx",
+      "path": "工作总结/商务风_041.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_043",
+      "category": "工作总结",
+      "name": "商务风_043.pptx",
+      "path": "工作总结/商务风_043.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_044",
+      "category": "工作总结",
+      "name": "商务风_044.pptx",
+      "path": "工作总结/商务风_044.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_048",
+      "category": "工作总结",
+      "name": "商务风_048.pptx",
+      "path": "工作总结/商务风_048.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_049",
+      "category": "工作总结",
+      "name": "商务风_049.pptx",
+      "path": "工作总结/商务风_049.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_050",
+      "category": "工作总结",
+      "name": "商务风_050.pptx",
+      "path": "工作总结/商务风_050.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_051",
+      "category": "工作总结",
+      "name": "商务风_051.pptx",
+      "path": "工作总结/商务风_051.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_053",
+      "category": "工作总结",
+      "name": "商务风_053.pptx",
+      "path": "工作总结/商务风_053.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 18
+    },
+    {
+      "template_id": "工作总结_商务风_056",
+      "category": "工作总结",
+      "name": "商务风_056.pptx",
+      "path": "工作总结/商务风_056.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_商务风_059",
+      "category": "工作总结",
+      "name": "商务风_059.pptx",
+      "path": "工作总结/商务风_059.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作总结_商务风_064",
+      "category": "工作总结",
+      "name": "商务风_064.pptx",
+      "path": "工作总结/商务风_064.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "工作总结_商务风_066",
+      "category": "工作总结",
+      "name": "商务风_066.pptx",
+      "path": "工作总结/商务风_066.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作总结_工作总结",
+      "category": "工作总结",
+      "name": "工作总结",
+      "path": "工作总结/工作总结.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作汇报_商务风_002",
+      "category": "工作汇报",
+      "name": "商务风_002.pptx",
+      "path": "工作汇报/商务风_002.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 8
+    },
+    {
+      "template_id": "工作汇报_商务风_007",
+      "category": "工作汇报",
+      "name": "商务风_007.pptx",
+      "path": "工作汇报/商务风_007.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 47,
+      "chapter_count": 8
+    },
+    {
+      "template_id": "工作汇报_商务风_008",
+      "category": "工作汇报",
+      "name": "商务风_008.pptx",
+      "path": "工作汇报/商务风_008.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作汇报_商务风_012",
+      "category": "工作汇报",
+      "name": "商务风_012.pptx",
+      "path": "工作汇报/商务风_012.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 35,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作汇报_商务风_021",
+      "category": "工作汇报",
+      "name": "商务风_021.pptx",
+      "path": "工作汇报/商务风_021.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作汇报_商务风_024",
+      "category": "工作汇报",
+      "name": "商务风_024.pptx",
+      "path": "工作汇报/商务风_024.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "工作汇报_商务风_034",
+      "category": "工作汇报",
+      "name": "商务风_034.pptx",
+      "path": "工作汇报/商务风_034.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作汇报_商务风_045",
+      "category": "工作汇报",
+      "name": "商务风_045.pptx",
+      "path": "工作汇报/商务风_045.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作汇报_商务风_046",
+      "category": "工作汇报",
+      "name": "商务风_046.pptx",
+      "path": "工作汇报/商务风_046.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作汇报_商务风_055",
+      "category": "工作汇报",
+      "name": "商务风_055.pptx",
+      "path": "工作汇报/商务风_055.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作汇报_商务风_058",
+      "category": "工作汇报",
+      "name": "商务风_058.pptx",
+      "path": "工作汇报/商务风_058.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 36,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "工作汇报_工作汇报",
+      "category": "工作汇报",
+      "name": "工作汇报",
+      "path": "工作汇报/工作汇报.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作计划_商务风_016",
+      "category": "工作计划",
+      "name": "商务风_016.pptx",
+      "path": "工作计划/商务风_016.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "工作计划_商务风_054",
+      "category": "工作计划",
+      "name": "商务风_054.pptx",
+      "path": "工作计划/商务风_054.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "工作计划_商务风_065",
+      "category": "工作计划",
+      "name": "商务风_065.pptx",
+      "path": "工作计划/商务风_065.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作计划_商务风_067",
+      "category": "工作计划",
+      "name": "商务风_067.pptx",
+      "path": "工作计划/商务风_067.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "工作计划_工作计划",
+      "category": "工作计划",
+      "name": "工作计划",
+      "path": "工作计划/工作计划.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "年终总结_商务风_014",
+      "category": "年终总结",
+      "name": "商务风_014.pptx",
+      "path": "年终总结/商务风_014.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "年终总结_商务风_015",
+      "category": "年终总结",
+      "name": "商务风_015.pptx",
+      "path": "年终总结/商务风_015.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 34,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "年终总结_商务风_020",
+      "category": "年终总结",
+      "name": "商务风_020.pptx",
+      "path": "年终总结/商务风_020.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "年终总结_商务风_038",
+      "category": "年终总结",
+      "name": "商务风_038.pptx",
+      "path": "年终总结/商务风_038.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "年终总结_商务风_057",
+      "category": "年终总结",
+      "name": "商务风_057.pptx",
+      "path": "年终总结/商务风_057.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "年终总结_商务风_060",
+      "category": "年终总结",
+      "name": "商务风_060.pptx",
+      "path": "年终总结/商务风_060.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 9
+    },
+    {
+      "template_id": "年终总结_商务风_063",
+      "category": "年终总结",
+      "name": "商务风_063.pptx",
+      "path": "年终总结/商务风_063.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "年终总结_年终总结",
+      "category": "年终总结",
+      "name": "年终总结",
+      "path": "年终总结/年终总结.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "开题报告_商务风_029",
+      "category": "开题报告",
+      "name": "商务风_029.pptx",
+      "path": "开题报告/商务风_029.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 8
+    },
+    {
+      "template_id": "开题报告_开题报告",
+      "category": "开题报告",
+      "name": "开题报告",
+      "path": "开题报告/开题报告.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "职业规划_职业规划",
+      "category": "职业规划",
+      "name": "职业规划",
+      "path": "职业规划/职业规划.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "自我介绍_简约学术风研究生复试",
+      "category": "自我介绍",
+      "name": "简约学术风研究生复试",
+      "path": "自我介绍/简约学术风研究生复试.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 9
+    },
+    {
+      "template_id": "述职报告_商务风_004",
+      "category": "述职报告",
+      "name": "商务风_004.pptx",
+      "path": "述职报告/商务风_004.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 2
+    },
+    {
+      "template_id": "述职报告_商务风_011",
+      "category": "述职报告",
+      "name": "商务风_011.pptx",
+      "path": "述职报告/商务风_011.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "述职报告_商务风_031",
+      "category": "述职报告",
+      "name": "商务风_031.pptx",
+      "path": "述职报告/商务风_031.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "述职报告_商务风_047",
+      "category": "述职报告",
+      "name": "商务风_047.pptx",
+      "path": "述职报告/商务风_047.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "述职报告_商务风_052",
+      "category": "述职报告",
+      "name": "商务风_052.pptx",
+      "path": "述职报告/商务风_052.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "述职报告_商务风_061",
+      "category": "述职报告",
+      "name": "商务风_061.pptx",
+      "path": "述职报告/商务风_061.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 6
+    },
+    {
+      "template_id": "述职报告_商务风_062",
+      "category": "述职报告",
+      "name": "商务风_062.pptx",
+      "path": "述职报告/商务风_062.pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 7
+    },
+    {
+      "template_id": "述职报告_述职报告",
+      "category": "述职报告",
+      "name": "述职报告",
+      "path": "述职报告/述职报告.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 6
+    }
+  ]
+}

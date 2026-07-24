@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output PPTX (generated)
+output_*.pptx
+test_*.pptx
+regress_*.pptx
+scene_*.pptx
+final.pptx
+output_intro.pptx
+output_resume.pptx
+output_test.pptx
+output_ws02.pptx
+
+# Debug output dirs
+output_batch/
+output_edge/
+output_smoke/
+
+# PPTX binary templates (exclude all, include only sample)
+models/**/*.pptx
+models/**/*.png
+!models/工作总结/工作总结.pptx
+!models/工作总结/工作总结.meta.json
+!models/工作总结/工作总结.pptx.png
+!models/templates_index.json
+!models/preview_manifest.json
+
+# JSON business data (keep only sample)
+business_*.json
+outline_vnerp*.json
+test_data*.json
+!_missing_screenshots.json
+
+# Markdown notes
+多场景PPT模板自动生成opencode_Skill项目规划书.md
