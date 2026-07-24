@@ -1,0 +1,957 @@
+{
+  "template_id": "自我介绍_简约学术风研究生复试",
+  "category": "自我介绍",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 27,
+  "removable_pages": [
+    26
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 5,
+      "name": "基本情况"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 9,
+      "name": "教育背景"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 10,
+      "end_page": 13,
+      "name": "实习经历"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 14,
+      "end_page": 18,
+      "name": "科研经历"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 19,
+      "end_page": 21,
+      "name": "获奖情况"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 22,
+      "end_page": 23,
+      "name": "自我评价"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 24,
+      "end_page": 27,
+      "name": "读研展望"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "POSTGRADUATE",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "研究生复试",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：",
+        "shape_name": "圆角矩形 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "时间：20XX.XX",
+        "shape_name": "圆角矩形 16"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "基本情况",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "教育背景",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "实习经历",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "目录",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "科研经历",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "获奖情况",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "Awards",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "06",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "自我评价",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "读研展望",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "number_7",
+        "match_text": "07",
+        "shape_name": "TextBox 1"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "PART.01",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "基本情况",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "基本情况",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "姓名：简言PPT",
+        "shape_name": "TextBox 13"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "兴趣特长",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题文字添加",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "标题文字添加",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文字添加",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 11"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "PART.02",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "教育背景",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "主修课程",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题",
+        "shape_name": "TextBox 37"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "标题",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题",
+        "shape_name": "TextBox 39"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题",
+        "shape_name": "TextBox 40"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题",
+        "shape_name": "TextBox 41"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 47"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "段落标题",
+        "shape_name": "矩形 48"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 49"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "段落标题",
+        "shape_name": "矩形 50"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "段落标题",
+        "shape_name": "矩形 52"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 53"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "段落标题",
+        "shape_name": "矩形 54"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 55"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "段落标题",
+        "shape_name": "矩形 56"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "本科经历",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "矩形 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题内容",
+        "shape_name": "矩形 31"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "矩形 33"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题内容",
+        "shape_name": "矩形 34"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "矩形 36"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题内容",
+        "shape_name": "矩形 37"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "矩形 39"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题内容",
+        "shape_name": "矩形 40"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "矩形 42"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题内容",
+        "shape_name": "矩形 43"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "学生工作经历",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 77"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "矩形 78"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 81"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 84"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 87"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "文本框 93"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 95"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "矩形 96"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 98"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "矩形 99"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 101"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "矩形 102"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 104"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "矩形 105"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "PART.03",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "实习经历",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "实习经历",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2017.5—2017.9",
+        "shape_name": "文本框 96"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2019.12—2020.5",
+        "shape_name": "文本框 97"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "2019.12—2020.5",
+        "shape_name": "文本框 98"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "2017.5—2017.9",
+        "shape_name": "文本框 99"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "2017.5—2017.9",
+        "shape_name": "文本框 100"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "实习经历",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2017.5—2017.9",
+        "shape_name": "Inhaltsplatzhalter 4"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2019.12—2020.5",
+        "shape_name": "Inhaltsplatzhalter 4"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "2017.5—2017.9",
+        "shape_name": "Inhaltsplatzhalter 4"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "2019.12—2020.5",
+        "shape_name": "Inhaltsplatzhalter 4"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 77"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "国家卫生部政策法规司医改办",
+        "shape_name": "矩形 78"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 29"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "XX医院本科毕业实习",
+        "shape_name": "矩形 31"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 63"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "国家卫生部政策法规司医改办",
+        "shape_name": "矩形 64"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请替换文字内容复制你的内容到此请替换文字",
+        "shape_name": "矩形 66"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "XX医院本科毕业实习",
+        "shape_name": "矩形 67"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "实习经历",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2019.12—2020.5",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2017.5—2017.9",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "2019.12—2020.5",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "2017.5—2017.9",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "2017.5—2017.9",
+        "shape_name": "文本框 23"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "PART.04",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "科研经历",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "科研经历",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "时间",
+        "shape_name": "圆角矩形 53"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "项目",
+        "shape_name": "圆角矩形 55"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "主要工作",
+        "shape_name": "圆角矩形 56"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目名",
+        "shape_name": "矩形 1"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "主要成果",
+        "shape_name": "圆角矩形 3"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "科研经历",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "时间",
+        "shape_name": "圆角矩形 53"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "项目",
+        "shape_name": "圆角矩形 55"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "主要工作",
+        "shape_name": "圆角矩形 56"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目名",
+        "shape_name": "矩形 1"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "主要成果",
+        "shape_name": "圆角矩形 3"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "第一作者文章",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 64"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "《论文名称》，发表期刊，期数",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 82"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "《论文名称》，发表期刊，期数",
+        "shape_name": "文本框 84"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "其他文章",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "《论文名称》，发表期刊，期数",
+        "shape_name": "Rectangle: Rounded Corners 28"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 26"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "《论文名称》，发表期刊，期数",
+        "shape_name": "Rectangle: Rounded Corners 33"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "TextBox 31"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "PART.05",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "获奖情况",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "获奖荣誉",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 57"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题",
+        "shape_name": "圆角矩形 37"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 57"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题",
+        "shape_name": "圆角矩形 40"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 57"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题",
+        "shape_name": "圆角矩形 43"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "技能证书",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "荣获学校巅峰技术  一等奖",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "英语能力",
+        "shape_name": "TextBox 29"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "荣获学校巅峰技术  一等奖",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "荣获学校巅峰技术  一等奖",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "荣获学校巅峰技术  一等奖",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "荣获学校巅峰技术  一等奖",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "计算机能力",
+        "shape_name": "TextBox 29"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "PART.06",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "自我评价",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "自我评价",
+        "shape_name": "文本框 2"
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "PART.07",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "读研展望",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "具体规划",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "标题",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题",
+        "shape_name": "文本框 37"
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "具体规划",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "Rectangle 18"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "研一计划",
+        "shape_name": "Rectangle 19"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "Rectangle 23"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "研二计划",
+        "shape_name": "Rectangle 24"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "Rectangle 23"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "研三计划",
+        "shape_name": "Rectangle 24"
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "POSTGRADUATE",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "研究生复试",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：",
+        "shape_name": "圆角矩形 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "时间：20XX.XX",
+        "shape_name": "圆角矩形 16"
+      }
+    ]
+  }
+}

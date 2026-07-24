@@ -1,0 +1,1661 @@
+{
+  "template_id": "工作汇报_商务风_008",
+  "category": "工作汇报",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 26,
+  "removable_pages": [
+    25,
+    26
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 8,
+      "name": "项目背景简介"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 9,
+      "end_page": 13,
+      "name": "产品优势详解"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 14,
+      "end_page": 18,
+      "name": "市场反馈分析"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 19,
+      "end_page": 26,
+      "name": "投资合作共赢"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：唐峰",
+        "shape_name": "文本框 88",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title",
+        "match_text": "项目简介",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "产品优势",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "市场反馈",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "合作共赢",
+        "shape_name": "文本框 37",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "目录",
+        "shape_name": "矩形 38"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "项目背景简介",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PA   RT",
+        "shape_name": "原创设计师QQ598969553      _11",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 80",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 37"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 38"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 39"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 40"
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 6,
+          "total_chars": 174
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 6,
+          "total_chars": 174
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 6,
+          "total_chars": 174
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 6,
+          "total_chars": 174
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目背景简介",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 34"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 35"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 36"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 37"
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 9,
+          "total_chars": 288
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 9,
+          "total_chars": 288
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 9,
+          "total_chars": 288
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 9,
+          "total_chars": 288
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目背景简介",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 20"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 21"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 22"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 27"
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目背景简介",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "您的标题",
+        "shape_name": "矩形 41",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "您的标题",
+        "shape_name": "矩形 44",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "您的标题",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "您的标题",
+        "shape_name": "矩形 50",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目背景简介",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 28"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 29"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 30"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 31"
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目背景简介",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "产品优势详解",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PA   RT",
+        "shape_name": "原创设计师QQ598969553      _11",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 80",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 34"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 35",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 36",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 37",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "产品优势详解",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "输入标题  在此添加你的文本内容在此添加",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 9,
+          "total_chars": 279
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题  在此添加你的文本内容在此添加",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 9,
+          "total_chars": 279
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题  在此添加你的文本内容在此添加",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 9,
+          "total_chars": 279
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题  在此添加你的文本内容在此添加",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 9,
+          "total_chars": 279
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "产品优势详解",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 30"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 31"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 32"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 33"
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "产品优势详解",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 42"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 43"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 44"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 45"
+      },
+      {
+        "slot": "title",
+        "match_text": "Content title",
+        "shape_name": "矩形 46",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Content title",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "Content title",
+        "shape_name": "矩形 48",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "Content title",
+        "shape_name": "矩形 49",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "产品优势详解",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "市场反馈分析",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PA   RT",
+        "shape_name": "原创设计师QQ598969553      _11",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "TextBox 80",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 19"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 20",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 21",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 22",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "市场反馈分析",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 7,
+          "total_chars": 175
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 7,
+          "total_chars": 175
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 7,
+          "total_chars": 175
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 7,
+          "total_chars": 175
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 7,
+          "total_chars": 175
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 7,
+          "total_chars": 175
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "市场反馈分析",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 30"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 31"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 32"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 33"
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "市场反馈分析",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "percent",
+        "match_text": "01%",
+        "shape_name": "矩形 29",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "02%",
+        "shape_name": "矩形 30",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "03%",
+        "shape_name": "矩形 31",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "percent_4",
+        "match_text": "04%",
+        "shape_name": "矩形 32",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "市场反馈分析",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "投资合作共赢",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PA   RT",
+        "shape_name": "原创设计师QQ598969553      _11",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "TextBox 80",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "投资合作共赢",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "输入标题",
+        "shape_name": "矩形 62",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题",
+        "shape_name": "矩形 63",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题",
+        "shape_name": "矩形 64",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题",
+        "shape_name": "矩形 65",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "percent",
+        "match_text": "03%",
+        "shape_name": "矩形 66",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "01%",
+        "shape_name": "矩形 67",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "02%",
+        "shape_name": "矩形 68",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "percent_4",
+        "match_text": "04%",
+        "shape_name": "矩形 69",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 6,
+          "total_chars": 234
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 6,
+          "total_chars": 234
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 6,
+          "total_chars": 234
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 6,
+          "total_chars": 234
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "投资合作共赢",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "投资合作共赢",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 76"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 77",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 78",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 79",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题 在此添加你的文本内容在此添加你",
+        "shape_name": "原创设计师QQ598969553      _22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 9,
+          "total_chars": 351
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "投资合作共赢",
+        "shape_name": "原创设计师QQ598969553      _2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：唐峰",
+        "shape_name": "文本框 88",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

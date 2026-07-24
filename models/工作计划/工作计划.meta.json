@@ -1,0 +1,971 @@
+{
+  "template_id": "工作计划_工作计划",
+  "category": "工作计划",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 23,
+  "removable_pages": [
+    23
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 7,
+      "name": "企业标志"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 8,
+      "end_page": 12,
+      "name": "企业标志"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 13,
+      "end_page": 17,
+      "name": "企业标志"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 18,
+      "end_page": 23,
+      "name": "企业标志"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "新年工作计划",
+        "shape_name": "文本框 68"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "企业标志",
+        "shape_name": "文本框 86"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "述职报告-工作汇报-商务总结",
+        "shape_name": "文本框 88"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "汇报：第一PPT",
+        "shape_name": "矩形 92"
+      },
+      {
+        "slot": "period",
+        "match_text": "时间：202X.20",
+        "shape_name": "Text Box 20"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目 录",
+        "shape_name": "文本框 100"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框 101"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "-01-",
+        "shape_name": "文本框 114"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工作汇报",
+        "shape_name": "文本框 115"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "-02-",
+        "shape_name": "文本框 178"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "完成情况",
+        "shape_name": "文本框 179"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "-03-",
+        "shape_name": "文本框 184"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "经验总结",
+        "shape_name": "文本框 185"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "-04-",
+        "shape_name": "文本框 190"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "未来计划",
+        "shape_name": "文本框 191"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "述职报告-工作汇报-商务总结",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 68"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "企业标志",
+        "shape_name": "文本框 86"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PART 01",
+        "shape_name": "文本框 1"
+      }
+    ],
+    "4": [
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入文本内容，可调整文字的颜色或",
+        "shape_name": "TextBox 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 8"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入文本内容，可调整文字的颜色或",
+        "shape_name": "TextBox 6"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 8"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入文本内容，可调整文字的颜色或",
+        "shape_name": "TextBox 6"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 8"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "单击此处输入文本内容，可调整文字的颜色或",
+        "shape_name": "TextBox 6"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 8"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 38"
+      }
+    ],
+    "5": [
+      {
+        "slot": "desc",
+        "match_text": "单击此处添加合适文字加以解释说明，可调整",
+        "shape_name": "îṧḻiḋè"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "ís1iḑé"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "i$1îḋé"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处添加合适文字加以解释说明，可调整",
+        "shape_name": "ïŝļîďè"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "i$1îḋé"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处添加合适文字加以解释说明，可调整",
+        "shape_name": "ïṡlíďê"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "iṣļíďê"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "单击此处添加合适文字加以解释说明，可调整",
+        "shape_name": "ïśļîďè"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "îšļiḍê"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "单击此处添加合适文字加以解释说明，可调整",
+        "shape_name": "îṧľíḍê"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "íšḻidè"
+      },
+      {
+        "slot": "desc_6",
+        "match_text": "单击此处添加合适文字加以解释说明，可调整",
+        "shape_name": "iSliďê"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "iśḷîďe"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 47"
+      }
+    ],
+    "6": [
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处添加合适文字加以说明，可根据",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题 请您单击此处输入文本内容，",
+        "shape_name": "TextBox 24"
+      },
+      {
+        "slot": "percent",
+        "match_text": "80%",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加文本",
+        "shape_name": "Rectangle 34"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "75%",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加文本",
+        "shape_name": "Rectangle 34"
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "95%",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加文本",
+        "shape_name": "Rectangle 34"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 32"
+      }
+    ],
+    "7": [
+      {
+        "slot": "percent",
+        "match_text": "30%",
+        "shape_name": "Text Box 14"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "23%",
+        "shape_name": "Text Box 15"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 25"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "述职报告-工作汇报-商务总结",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作完成情况",
+        "shape_name": "文本框 68"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "企业标志",
+        "shape_name": "文本框 86"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PART 02",
+        "shape_name": "文本框 1"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处输入合适的文本内容",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处输入合适的文本内容",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请您单击此处输入合适的文本内容",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 31"
+      }
+    ],
+    "10": [
+      {
+        "slot": "percent",
+        "match_text": "67%",
+        "shape_name": "67%"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "48%",
+        "shape_name": "48%"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "文本框 47"
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "24%",
+        "shape_name": "24%"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "文本框 55"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 2"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 34"
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入文本内容，可根据自己地需要调",
+        "shape_name": "TextBox 34"
+      },
+      {
+        "slot": "percent",
+        "match_text": "75%",
+        "shape_name": "TextBox 34"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 47"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入文本内容，可根据自己地需要调",
+        "shape_name": "TextBox 34"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "68%",
+        "shape_name": "TextBox 34"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "述职报告-工作汇报-商务总结",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作经验总结",
+        "shape_name": "文本框 68"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "企业标志",
+        "shape_name": "文本框 86"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PART 03",
+        "shape_name": "文本框 1"
+      }
+    ],
+    "14": [
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处输入文本内容加以解释说明，可",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请您单击此处输入文本内容加以解释说明，可",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "percent",
+        "match_text": "85%",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "50%",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "50%",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "percent_4",
+        "match_text": "90%",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 32"
+      }
+    ],
+    "15": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "Rectangle 6"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "Rectangle 14"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "Rectangle 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题 单击此处输入文本内容，可根据自",
+        "shape_name": "文本框 61"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 单击此处输入文本内容，可根据自",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 单击此处输入文本内容，可根据自",
+        "shape_name": "文本框 63"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 2"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "TextBox 131"
+      },
+      {
+        "slot": "percent",
+        "match_text": "85%",
+        "shape_name": "Oval 136"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处输入文本内容加以解",
+        "shape_name": "TextBox 150"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "60%",
+        "shape_name": "Oval 148"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处输入文本内容加以解释说明，可",
+        "shape_name": "文本框"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 25"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 26"
+      }
+    ],
+    "17": [
+      {
+        "slot": "percent",
+        "match_text": "40%",
+        "shape_name": "Inhaltsplatzhalter 4"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "50%",
+        "shape_name": "Inhaltsplatzhalter 4"
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "50%",
+        "shape_name": "Inhaltsplatzhalter 4"
+      },
+      {
+        "slot": "percent_4",
+        "match_text": "50%",
+        "shape_name": "Inhaltsplatzhalter 4"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "矩形 61"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "矩形 63"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "文本框 64"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "矩形 65"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "文本框 66"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "矩形 67"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "文本框 68"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 69"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "述职报告-工作汇报-商务总结",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "未来工作计划",
+        "shape_name": "文本框 68"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "企业标志",
+        "shape_name": "文本框 86"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PART 04",
+        "shape_name": "文本框 1"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "TextBox 33"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "TextBox 34"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "TextBox 35"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "TextBox 36"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "TextBox 37"
+      },
+      {
+        "slot": "percent",
+        "match_text": "25%",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "50%",
+        "shape_name": "TextBox 26"
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "75%",
+        "shape_name": "TextBox 28"
+      },
+      {
+        "slot": "percent_4",
+        "match_text": "45%",
+        "shape_name": "TextBox 32"
+      },
+      {
+        "slot": "percent_5",
+        "match_text": "100%",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 2"
+      }
+    ],
+    "20": [
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入文本内容，可根据自己地需要调",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入文本内容，可根据自己地需要调",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入文本内容，可根据自己地需要调",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 43"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处添加合适文字加以说",
+        "shape_name": "Shape 13763"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处添加合适文字加以说",
+        "shape_name": "Shape 13763"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "数据分布一",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "65.3%",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "34.7%",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "数据分布二",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "percent",
+        "match_text": "60%",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "40%",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "Rectangle 11"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题 单击此处输入文本内容，可调整文",
+        "shape_name": "文本框 54"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "Rectangle 5"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题 单击此处输入文本内容，可调整文",
+        "shape_name": "文本框 57"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "Rectangle 8"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "添加标题 单击此处输入文本内容，可调整文",
+        "shape_name": "文本框 60"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "工作总结汇报",
+        "shape_name": "文本框 2"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "新年工作计划",
+        "shape_name": "文本框 68"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "企业标志",
+        "shape_name": "文本框 86"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "述职报告-工作汇报-商务总结",
+        "shape_name": "文本框 88"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "汇报：第一PPT",
+        "shape_name": "矩形 92"
+      },
+      {
+        "slot": "period",
+        "match_text": "时间：202X.20",
+        "shape_name": "Text Box 20"
+      }
+    ]
+  }
+}

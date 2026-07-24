@@ -1,0 +1,1916 @@
+{
+  "template_id": "开题报告_商务风_029",
+  "category": "开题报告",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 28,
+  "removable_pages": [
+    27,
+    28
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 7,
+      "name": "输入您的答辩题目"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 8,
+      "end_page": 12,
+      "name": "输入您的答辩题目"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 13,
+      "end_page": 16,
+      "name": "输入您的答辩题目"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 17,
+      "end_page": 17,
+      "name": "大小或颜色等属性"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 18,
+      "end_page": 21,
+      "name": "输入您的答辩题目"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 22,
+      "end_page": 28,
+      "name": "输入您的答辩题目"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "商道惟诚 知行致远",
+        "shape_name": "文本框2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "演讲人：小唐峰",
+        "shape_name": "文本框3",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "导师：XXX",
+        "shape_name": "文本框4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "唐峰学校  YOURLOGO",
+        "shape_name": "文本框6",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "唐峰学校  YOURLOGO",
+        "shape_name": "文本框7",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 11,
+          "total_chars": 33
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "图形13"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "选题说明",
+        "shape_name": "文本框8",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "图形14"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "图形15"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "研究动态",
+        "shape_name": "文本框9",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "研究内容",
+        "shape_name": "文本框10",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "图形16"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "图形17"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "进度安排",
+        "shape_name": "文本框11",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "参考文献",
+        "shape_name": "文本框12",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "目录",
+        "shape_name": "文本框13"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框14"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "唐峰学校  YOURLOGO",
+        "shape_name": "文本框15",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "选题说明",
+        "shape_name": "文本框16",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "文本框17",
+        "capacity": {
+          "max_chars_per_line": 52,
+          "max_lines": 1,
+          "total_chars": 52
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框18"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "第一章",
+        "shape_name": "文本框19",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "《输入您的答辩题目》",
+        "shape_name": "文本框20",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "工作情况",
+        "shape_name": "图形26",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "您的正文内容已经简明扼要",
+        "shape_name": "图形27",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "工作情况",
+        "shape_name": "图形30",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "您的正文内容已经简明扼要",
+        "shape_name": "图形31",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "percent",
+        "match_text": "40%",
+        "shape_name": "图形32",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "工作完成一",
+        "shape_name": "图形33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入你的正文，言简意赅",
+        "shape_name": "图形34",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 3,
+          "total_chars": 42
+        }
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "40%",
+        "shape_name": "图形35",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "工作完成二",
+        "shape_name": "图形36",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入你的正文，言简意赅",
+        "shape_name": "图形37",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 3,
+          "total_chars": 45
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "点击此处添加标题",
+        "shape_name": "图形38"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "图形39"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "点击此处添加标题",
+        "shape_name": "图形40"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "图形41"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "点击此处添加标题",
+        "shape_name": "图形42"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "图形43"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "图形44"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "输入你的标题",
+        "shape_name": "文本框21",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入你的标题",
+        "shape_name": "文本框23",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入你的标题",
+        "shape_name": "文本框25",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入你的标题",
+        "shape_name": "文本框27",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框29"
+      },
+      {
+        "slot": "title",
+        "match_text": "工作情况一",
+        "shape_name": "图形46",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形47",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形49",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框30"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工作情况二",
+        "shape_name": "图形52",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形53",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形55",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "04",
+        "shape_name": "文本框31"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "工作情况四",
+        "shape_name": "图形58",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形59",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形61",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "03",
+        "shape_name": "文本框32"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "工作情况三",
+        "shape_name": "图形65",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形66",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_12",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形68",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_13",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形70",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形72",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_15",
+        "match_text": "此处输入您的正文",
+        "shape_name": "图形74",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "单击此处输入正文",
+        "shape_name": "图形77",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入你的正文，文字是您思想的提炼",
+        "shape_name": "图形78",
+        "capacity": {
+          "max_chars_per_line": 56,
+          "max_lines": 3,
+          "total_chars": 168
+        }
+      },
+      {
+        "slot": "title_17",
+        "match_text": "SUMMARY",
+        "shape_name": "文本框33",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "唐峰学校  YOURLOGO",
+        "shape_name": "文本框34",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "研究动态",
+        "shape_name": "文本框35",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "文本框36",
+        "capacity": {
+          "max_chars_per_line": 52,
+          "max_lines": 1,
+          "total_chars": 52
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "文本框37"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "第二章",
+        "shape_name": "文本框38",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "《输入您的答辩题目》",
+        "shape_name": "文本框39",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "文本框40",
+        "capacity": {
+          "max_chars_per_line": 50,
+          "max_lines": 3,
+          "total_chars": 150
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入小标题",
+        "shape_name": "文本框41",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "图形87",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 3,
+          "total_chars": 129
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入小标题",
+        "shape_name": "文本框42",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "图形89",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 3,
+          "total_chars": 129
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "输入小标题",
+        "shape_name": "文本框43",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "图形91",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 3,
+          "total_chars": 129
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框44",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框45",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框46",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框47",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "图形93",
+        "capacity": {
+          "max_chars_per_line": 100,
+          "max_lines": 2,
+          "total_chars": 200
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击添加标题",
+        "shape_name": "图形94",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此录入上述图表的描述说明，在此录入上述",
+        "shape_name": "图形95",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 5,
+          "total_chars": 120
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "单击添加标题",
+        "shape_name": "图形96",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此录入上述图表的描述说明，在此录入上述",
+        "shape_name": "图形97",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 5,
+          "total_chars": 115
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "单击添加标题",
+        "shape_name": "图形98",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "在此录入上述图表的描述说明，在此录入上述",
+        "shape_name": "图形99",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 5,
+          "total_chars": 115
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "单击添加标题",
+        "shape_name": "图形100",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "在此录入上述图表的描述说明，在此录入上述",
+        "shape_name": "图形101",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 5,
+          "total_chars": 115
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "请在此输入文字",
+        "shape_name": "文本框49",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "请在此输入文字",
+        "shape_name": "文本框51",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "请在此输入文字",
+        "shape_name": "文本框53",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "请在此输入文字",
+        "shape_name": "文本框55",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "“",
+        "shape_name": "文本框56"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题文字添加",
+        "shape_name": "图形109"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "图形110"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "图形111"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "标题文字添加",
+        "shape_name": "图形113"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文字添加",
+        "shape_name": "图形115"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "唐峰学校  YOURLOGO",
+        "shape_name": "文本框57",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "研究内容",
+        "shape_name": "文本框58",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "文本框59",
+        "capacity": {
+          "max_chars_per_line": 52,
+          "max_lines": 1,
+          "total_chars": 52
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框60"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "第三章",
+        "shape_name": "文本框61",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "《输入您的答辩题目》",
+        "shape_name": "文本框62",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "输入标题",
+        "shape_name": "文本框63",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题",
+        "shape_name": "文本框65",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "文本框66",
+        "capacity": {
+          "max_chars_per_line": 79,
+          "max_lines": 3,
+          "total_chars": 237
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "输入您的标题",
+        "shape_name": "文本框67",
+        "capacity": {
+          "max_chars_per_line": 2,
+          "max_lines": 6,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框68",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 13,
+          "total_chars": 442
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "添加您的标题",
+        "shape_name": "文本框69"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字言简意赅，简单",
+        "shape_name": "文本框70"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加您的标题",
+        "shape_name": "文本框71"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字言简意赅，简单",
+        "shape_name": "文本框72"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加您的标题",
+        "shape_name": "文本框73"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字言简意赅，简单",
+        "shape_name": "文本框74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加您的标题",
+        "shape_name": "文本框75"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字言简意赅，简单",
+        "shape_name": "文本框76"
+      }
+    ],
+    "17": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框77",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题 单击此处输入文字内容加以解释说",
+        "shape_name": "文本框78",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 4,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框79",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 单击此处输入文字内容加以解释说",
+        "shape_name": "文本框80",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 4,
+          "total_chars": 60
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框81",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入文字内容加以解释说明，可根据",
+        "shape_name": "文本框82",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 11,
+          "total_chars": 330
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "唐峰学校  YOURLOGO",
+        "shape_name": "文本框83",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "进度安排",
+        "shape_name": "文本框84",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "文本框85",
+        "capacity": {
+          "max_chars_per_line": 52,
+          "max_lines": 1,
+          "total_chars": 52
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "文本框86"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "第四章",
+        "shape_name": "文本框87",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "《输入您的答辩题目》",
+        "shape_name": "文本框88",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 单击此处输入文字内容加以解释说",
+        "shape_name": "图形140",
+        "capacity": {
+          "max_chars_per_line": 50,
+          "max_lines": 4,
+          "total_chars": 200
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "文本框89",
+        "capacity": {
+          "max_chars_per_line": 46,
+          "max_lines": 4,
+          "total_chars": 184
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "图形142",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 单击此处输入文字内容加以解释说",
+        "shape_name": "文本框90",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 4,
+          "total_chars": 72
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "文本框91",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 3,
+          "total_chars": 111
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入小标题",
+        "shape_name": "文本框92"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "文本框93",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 3,
+          "total_chars": 111
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入小标题",
+        "shape_name": "文本框94"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "文本框95",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 3,
+          "total_chars": 111
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "输入小标题",
+        "shape_name": "文本框96"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "请您在此处输入小标题",
+        "shape_name": "文本框97",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 1,
+          "total_chars": 33
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "图形151"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "图形152"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "图形153"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "图形154",
+        "capacity": {
+          "max_chars_per_line": 47,
+          "max_lines": 5,
+          "total_chars": 235
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "请输入标题04",
+        "shape_name": "图形155"
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击此处请输入文本内容点击此处请输入文本",
+        "shape_name": "文本框98",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 3,
+          "total_chars": 93
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "请输入标题05",
+        "shape_name": "图形156"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击此处请输入文本内容点击此处请输入文本",
+        "shape_name": "文本框99",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 3,
+          "total_chars": 93
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "请输入标题06",
+        "shape_name": "图形157"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击此处请输入文本内容点击此处请输入文本",
+        "shape_name": "文本框100",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 3,
+          "total_chars": 93
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "请输入标题01",
+        "shape_name": "图形158"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击此处请输入文本内容点击此处请输入文本",
+        "shape_name": "文本框101",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 3,
+          "total_chars": 93
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "请输入标题02",
+        "shape_name": "图形159"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "点击此处请输入文本内容点击此处请输入文本",
+        "shape_name": "文本框102",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 3,
+          "total_chars": 93
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "请输入标题03",
+        "shape_name": "图形160"
+      },
+      {
+        "slot": "desc_6",
+        "match_text": "点击此处请输入文本内容点击此处请输入文本",
+        "shape_name": "文本框103",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 3,
+          "total_chars": 93
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "唐峰学校  YOURLOGO",
+        "shape_name": "文本框104",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "参考文献",
+        "shape_name": "文本框105",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "文本框106",
+        "capacity": {
+          "max_chars_per_line": 52,
+          "max_lines": 1,
+          "total_chars": 52
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "文本框107"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "第五章",
+        "shape_name": "文本框108",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "《输入您的答辩题目》",
+        "shape_name": "文本框109",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "O1",
+        "shape_name": "文本框110"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "O2",
+        "shape_name": "文本框111"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "O3",
+        "shape_name": "文本框112"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题文字",
+        "shape_name": "文本框113",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "输入标题文字",
+        "shape_name": "文本框115",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "输入标题文字",
+        "shape_name": "文本框117",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "标题文字添加",
+        "shape_name": "文本框120",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框121"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题文字添加",
+        "shape_name": "文本框122",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "标题文字添加",
+        "shape_name": "文本框123",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文字添加",
+        "shape_name": "文本框124",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文字添加",
+        "shape_name": "文本框125",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "此处标题文字",
+        "shape_name": "图形177",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框126",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 2,
+          "total_chars": 74
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "此处标题文字",
+        "shape_name": "图形178",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框127",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 2,
+          "total_chars": 74
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "此处标题文字",
+        "shape_name": "图形179",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框128",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 2,
+          "total_chars": 74
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "此处标题文字",
+        "shape_name": "图形180",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框129",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 2,
+          "total_chars": 74
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "商道惟诚 知行致远",
+        "shape_name": "文本框134",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "演讲人：小唐峰",
+        "shape_name": "文本框135",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "导师：XXX",
+        "shape_name": "文本框136",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "唐峰学校  YOURLOGO",
+        "shape_name": "文本框138",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": "DOUGHNUT (-4120)",
+      "picture_count": 2
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

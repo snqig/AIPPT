@@ -1,0 +1,1555 @@
+{
+  "template_id": "职业规划_职业规划",
+  "category": "职业规划",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 20,
+  "removable_pages": [
+    19
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 6,
+      "name": "全国大学生职业规划大"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 7,
+      "end_page": 11,
+      "name": "市场分析"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 12,
+      "end_page": 16,
+      "name": "社会实践"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 17,
+      "end_page": 20,
+      "name": "就业规划"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "参赛人： 第一PPT",
+        "shape_name": "矩形: 圆角 9"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "穿越风雨",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "抵达梦想彼岸",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "赛道： 成长赛道",
+        "shape_name": "矩形: 圆角 9"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "专业： 应用与教育心理学",
+        "shape_name": "矩形: 圆角 9"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "目",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "录",
+        "shape_name": "文本框 58"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "自我认知",
+        "shape_name": "平行四边形 66"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "平行四边形 65"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "行业分析",
+        "shape_name": "平行四边形 69"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "平行四边形 70"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "成长行动",
+        "shape_name": "平行四边形 72"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "平行四边形 73"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "就业规划",
+        "shape_name": "平行四边形 75"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "平行四边形 76"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "基本信息",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "自我评价",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "Part.01 自我认知",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "Self awareness",
+        "shape_name": "文本框 11"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "行业分析",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "成长行动",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "就业规划",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "自我认知",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "XXXX",
+        "shape_name": "文本框 48"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "模员",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "应用与教育心理学",
+        "shape_name": "文本框 69"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "平均绩点4.5",
+        "shape_name": "文本框 70"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "学院",
+        "shape_name": "圆角矩形 86"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "专业",
+        "shape_name": "圆角矩形 87"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "优势",
+        "shape_name": "圆角矩形 88"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "面貌",
+        "shape_name": "圆角矩形 89"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "绩点",
+        "shape_name": "圆角矩形 90"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "求真务实",
+        "shape_name": "文本框 99"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 100"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "基本信息",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "XXX",
+        "shape_name": "文本框 74"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "理想主义",
+        "shape_name": "文本框 50"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "组织能力",
+        "shape_name": "文本框 63"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "责任心强",
+        "shape_name": "文本框 46"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "热情洋溢",
+        "shape_name": "文本框 49"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "领导力",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "适应性强",
+        "shape_name": "文本框 45"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "需要认可",
+        "shape_name": "文本框 48"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "善于沟通",
+        "shape_name": "文本框 134"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "模队合作",
+        "shape_name": "文本框 140"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "追求和谐",
+        "shape_name": "文本框 54"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "自我评价",
+        "shape_name": "文本框 145"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "行业分析",
+        "shape_name": "文本框 146"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "成长行动",
+        "shape_name": "文本框 147"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "就业规划",
+        "shape_name": "文本框 148"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "自我认知",
+        "shape_name": "文本框 150"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "E",
+        "shape_name": "椭圆 164"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "N",
+        "shape_name": "椭圆 166"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "F",
+        "shape_name": "椭圆 173"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "J",
+        "shape_name": "椭圆 175"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "求真务实",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_21",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_22",
+        "match_text": "积极乐观",
+        "shape_name": "文本框 51"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "I型 研究型",
+        "shape_name": "矩形: 圆角 9"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "S型 社会型",
+        "shape_name": "矩形: 圆角 9"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "A型 艺术型",
+        "shape_name": "矩形: 圆角 9"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "自我评价",
+        "shape_name": "文本框 145"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "行业分析",
+        "shape_name": "文本框 146"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "成长行动",
+        "shape_name": "文本框 147"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "就业规划",
+        "shape_name": "文本框 148"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "自我认知",
+        "shape_name": "文本框 150"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "热情激励他人",
+        "shape_name": "文本框 58"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "擅长交流沟通协助",
+        "shape_name": "文本框 59"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "外向型",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "内向型",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "直觉型",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "现实型",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "逻辑型",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "感受型",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "计划型",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "展望型",
+        "shape_name": "文本框 44"
+      },
+      {
+        "slot": "title_21",
+        "match_text": "坚决",
+        "shape_name": "文本框 48"
+      },
+      {
+        "slot": "title_22",
+        "match_text": "谨慎",
+        "shape_name": "文本框 49"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "行业背景",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "市场现状",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "Part.02 行业分析",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "行业分析",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "市场分析",
+        "shape_name": "文本框 9"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "职业晋升专业化",
+        "shape_name": "文本框 63"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "市场需求增长",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "服务模式创新",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "经验累积",
+        "shape_name": "圆角矩形 49"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "专业提升",
+        "shape_name": "圆角矩形 53"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "职业晋升",
+        "shape_name": "圆角矩形 54"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "经验积累的重要性",
+        "shape_name": "文本框 55"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "深化专业知识技能",
+        "shape_name": "文本框 56"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "晋升为高级咨询师或专家",
+        "shape_name": "文本框 57"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "线上咨询，服务无界",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "多元治疗，适应需求",
+        "shape_name": "文本框 58"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "跨域服务，拓宽市场",
+        "shape_name": "文本框 59"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "持续提升，增强竞争力",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "period",
+        "match_text": "202X年市场规模",
+        "shape_name": "文本框 72"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "130亿美元",
+        "shape_name": "文本框 73"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "行业背景",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "行业分析",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "成长行动",
+        "shape_name": "文本框 47"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "就业规划",
+        "shape_name": "文本框 48"
+      },
+      {
+        "slot": "title_21",
+        "match_text": "自我认知",
+        "shape_name": "文本框 71"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 77"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 78"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "市场需求增长",
+        "shape_name": "文本框 55"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "市场需求上升，专业发展空间大",
+        "shape_name": "文本框 46"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "市场需求增长",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "人工智能",
+        "shape_name": "圆角矩形 63"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "虚拟现实",
+        "shape_name": "圆角矩形 47"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "技术融合",
+        "shape_name": "文本框 109"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "多元服务",
+        "shape_name": "文本框 113"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "家庭治疗",
+        "shape_name": "圆角矩形 115"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "在线课程",
+        "shape_name": "圆角矩形 116"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "线下辅导",
+        "shape_name": "圆角矩形 117"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "服务范围拓宽",
+        "shape_name": "文本框 119"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "社会意识觉醒",
+        "shape_name": "文本框 128"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "咨询需求上升",
+        "shape_name": "文本框 129"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "专业服务多样化",
+        "shape_name": "文本框 130"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "模体咨询",
+        "shape_name": "圆角矩形 114"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "市场现状",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "行业分析",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "成长行动",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_21",
+        "match_text": "就业规划",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_22",
+        "match_text": "自我认知",
+        "shape_name": "文本框 34"
+      }
+    ],
+    "10": [
+      {
+        "slot": "period",
+        "match_text": "202X年数据",
+        "shape_name": "文本框 101"
+      },
+      {
+        "slot": "title",
+        "match_text": "精神分裂",
+        "shape_name": "文本框 75"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "物质依赖",
+        "shape_name": "文本框 76"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "痴呆",
+        "shape_name": "文本框 77"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "抑郁症",
+        "shape_name": "文本框 78"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "焦虑障碍",
+        "shape_name": "文本框 80"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "双相情感障碍",
+        "shape_name": "文本框 104"
+      },
+      {
+        "slot": "percent",
+        "match_text": "8%",
+        "shape_name": "矩形 105"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "7%",
+        "shape_name": "矩形 106"
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "6%",
+        "shape_name": "矩形 107"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "4.9%",
+        "shape_name": "矩形 108"
+      },
+      {
+        "slot": "percent_4",
+        "match_text": "1%",
+        "shape_name": "矩形 109"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "0.9%",
+        "shape_name": "矩形 110"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "心理咨询专业报考人数",
+        "shape_name": "文本框 114"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "66.6万人",
+        "shape_name": "文本框 139"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "心理咨询师报考率上涨",
+        "shape_name": "文本框 144"
+      },
+      {
+        "slot": "percent_5",
+        "match_text": "56%",
+        "shape_name": "文本框 145"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "心理咨询师就业人数",
+        "shape_name": "文本框 148"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "688万人",
+        "shape_name": "文本框 149"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "行业分析",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "行业分析",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "成长行动",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "就业规划",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "自我认知",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "求真务实",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 38"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "市场需求",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "市场痛点",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "专业人才短缺",
+        "shape_name": "文本框 25"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "行业监管不足",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "公众认知偏差",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "专业素质高",
+        "shape_name": "圆角矩形 63"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "经验丰富者稀缺",
+        "shape_name": "圆角矩形 40"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "监管体系不完善",
+        "shape_name": "圆角矩形 67"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "服务质量参差不齐",
+        "shape_name": "圆角矩形 69"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "心理健康意识提升",
+        "shape_name": "圆角矩形 79"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "压力与心理问题增加",
+        "shape_name": "圆角矩形 80"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "政策支持与推广",
+        "shape_name": "圆角矩形 81"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "市场分析",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "行业分析",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "成长行动",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "就业规划",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "自我认知",
+        "shape_name": "文本框 34"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "专业成绩",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "志愿服务",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "Part.03 成长行动",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "Growth action",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "社会实践",
+        "shape_name": "文本框 8"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 44"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "求真务实",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "认知心理学",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "生物心理学",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "英语四级",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "667分",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "英语六级",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "629分",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "心理治疗师资格证书",
+        "shape_name": "文本框 52"
+      },
+      {
+        "slot": "number",
+        "match_text": "93",
+        "shape_name": "文本框 85"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "学科",
+        "shape_name": "文本框 87"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "成绩",
+        "shape_name": "文本框 88"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "学科",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "成绩",
+        "shape_name": "文本框 92"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "发展心理学",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "心理测量学",
+        "shape_name": "文本框 94"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "95",
+        "shape_name": "文本框 95"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "98",
+        "shape_name": "文本框 96"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "96",
+        "shape_name": "文本框 97"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "职业心理咨询",
+        "shape_name": "文本框 98"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "咨询关系建立与维护",
+        "shape_name": "文本框 99"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "95",
+        "shape_name": "文本框 101"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "心理咨询伦理",
+        "shape_name": "文本框 104"
+      },
+      {
+        "slot": "title_21",
+        "match_text": "模体咨询技巧",
+        "shape_name": "文本框 105"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "95",
+        "shape_name": "文本框 106"
+      },
+      {
+        "slot": "number_7",
+        "match_text": "98",
+        "shape_name": "文本框 107"
+      },
+      {
+        "slot": "title_22",
+        "match_text": "心理咨询研究设计",
+        "shape_name": "文本框 102"
+      },
+      {
+        "slot": "title_23",
+        "match_text": "心理障碍与诊断",
+        "shape_name": "文本框 103"
+      },
+      {
+        "slot": "number_8",
+        "match_text": "95",
+        "shape_name": "文本框 108"
+      },
+      {
+        "slot": "number_9",
+        "match_text": "98",
+        "shape_name": "文本框 109"
+      },
+      {
+        "slot": "title_24",
+        "match_text": "职业伦理与法律",
+        "shape_name": "文本框 113"
+      },
+      {
+        "slot": "title_25",
+        "match_text": "心理评估与诊断",
+        "shape_name": "文本框 114"
+      },
+      {
+        "slot": "number_10",
+        "match_text": "98",
+        "shape_name": "文本框 115"
+      },
+      {
+        "slot": "number_11",
+        "match_text": "92",
+        "shape_name": "文本框 116"
+      },
+      {
+        "slot": "number_12",
+        "match_text": "93",
+        "shape_name": "文本框 117"
+      },
+      {
+        "slot": "title_26",
+        "match_text": "专业成绩",
+        "shape_name": "文本框 145"
+      },
+      {
+        "slot": "title_27",
+        "match_text": "行业分析",
+        "shape_name": "文本框 146"
+      },
+      {
+        "slot": "title_28",
+        "match_text": "成长行动",
+        "shape_name": "文本框 147"
+      },
+      {
+        "slot": "title_29",
+        "match_text": "就业规划",
+        "shape_name": "文本框 148"
+      },
+      {
+        "slot": "title_30",
+        "match_text": "自我认知",
+        "shape_name": "文本框 150"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "period",
+        "match_text": "202X年-202X学年",
+        "shape_name": "文本框 102"
+      },
+      {
+        "slot": "period",
+        "match_text": "202X年-202X学年",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "period",
+        "match_text": "202X年-202X学年",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "攀登成绩高峰",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "毅力铸就卓越，再创新高无疆",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "每步铸就辉煌",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "奖项荣誉",
+        "shape_name": "文本框 33"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "行业分析",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "成长行动",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "就业规划",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "自我认知",
+        "shape_name": "文本框 42"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "志愿时长达",
+        "shape_name": "文本框 80"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "365小时",
+        "shape_name": "文本框 77"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "志愿次数",
+        "shape_name": "文本框 85"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "199次",
+        "shape_name": "文本框 86"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "志愿服务",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "行业分析",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "成长行动",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "就业规划",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "自我认知",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "求真务实",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 44"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "社会调查实践",
+        "shape_name": "单圆角矩形 21"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "社区志愿服务活动",
+        "shape_name": "单圆角矩形 29"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "企业实习体验",
+        "shape_name": "单圆角矩形 40"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "支教活动参与",
+        "shape_name": "单圆角矩形 52"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "经历塑造卓越才能",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "云南省",
+        "shape_name": "文本框 77"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "社会实践",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "行业分析",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "成长行动",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "就业规划",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "自我认知",
+        "shape_name": "文本框 34"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "行动规划",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "职业发展规划",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "Part.04 就业规划",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "Growth action",
+        "shape_name": "文本框 11"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "行动规划",
+        "shape_name": "文本框 45"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "行业分析",
+        "shape_name": "文本框 46"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "成长行动",
+        "shape_name": "文本框 47"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "就业规划",
+        "shape_name": "文本框 48"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "自我认知",
+        "shape_name": "文本框 50"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "参加模拟考试",
+        "shape_name": "文本框 86"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "了解认证要求",
+        "shape_name": "文本框 69"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "制定备考计划",
+        "shape_name": "文本框 77"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "资格认证准备",
+        "shape_name": "文本框 110"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "资格认证准备",
+        "shape_name": "文本框 117"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "资格认证准备",
+        "shape_name": "文本框 121"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "求真务实",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勇于创新",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "职业发展规划",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "行业分析",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "成长行动",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "就业规划",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "自我认知",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "专业深造学习",
+        "shape_name": "缺角矩形 98"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "积累实践经验",
+        "shape_name": "缺角矩形 117"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "拓展职业网络",
+        "shape_name": "缺角矩形 123"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "输入相关文字内容",
+        "shape_name": "文本框 102"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "输入相关文字内容",
+        "shape_name": "文本框 61"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "参赛人： XXX",
+        "shape_name": "矩形: 圆角 9"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "展望未来",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "共筑职业梦想",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "赛道： 成长赛道",
+        "shape_name": "矩形: 圆角 9"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "专业： 应用与教育心理学",
+        "shape_name": "矩形: 圆角 9"
+      }
+    ]
+  }
+}

@@ -31,20 +31,34 @@ output_intro.pptx
 output_resume.pptx
 output_test.pptx
 output_ws02.pptx
+Q4_销售*.pptx
+苏州达昌*.pptx
+company_intro.pptx
+project_intro.pptx
+vnerp_complete.pptx
+iphone_launch.pptx
+
+# Debug scripts
+debug_*.py
+check_meta*.py
+check_problem*.py
+edge_test.py
+full_check.py
+verify_*.py
+smoke_test_all.py
+generate_screenshots.py
+generate_thumbnails.py
+insert_tables.py
+trim_ppt.py
 
 # Debug output dirs
 output_batch/
 output_edge/
 output_smoke/
 
-# PPTX binary templates (exclude all, include only sample)
+# PPTX binary templates (exclude all)
 models/**/*.pptx
 models/**/*.png
-!models/工作总结/工作总结.pptx
-!models/工作总结/工作总结.meta.json
-!models/工作总结/工作总结.pptx.png
-!models/templates_index.json
-!models/preview_manifest.json
 
 # JSON business data (keep only sample)
 business_*.json
