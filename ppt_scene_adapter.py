@@ -365,7 +365,7 @@ class SceneAdapter:
         # meta 文件名格式为 xxx.meta.json，对应模板为 xxx.pptx
         name = meta_path.name
         if name.endswith(".meta.json"):
-            pptx_name = name[:-10] + ".pptx"
+            pptx_name = name[:-10]
         else:
             pptx_name = meta_path.stem + ".pptx"
         return str(meta_path.parent / pptx_name)
