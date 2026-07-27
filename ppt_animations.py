@@ -6,6 +6,8 @@ PPT 动画效果注入模块
 参考：ECMA-376 第 4 版 §19.5.1（timing）
 ECMA-376 约束：p:childTnLst 必须是 p:cTn 的子元素（不能颠倒顺序）
 """
+from typing import Any, Optional
+
 from lxml import etree
 
 from aippt.logger import logger
@@ -414,12 +416,12 @@ TRIGGER_MAP = {
 
 
 # ==================== 核心实现 ====================
-def _p(tag):
+def _p(tag: str) -> str:
     """构造 p: 命名空间的 Element 标签"""
     return f"{{{NS_P}}}{tag}"
 
 
-def _find_shape_by_role(slide, role):
+def _find_shape_by_role(slide: Any, role: str) -> Optional[int]:
     """
     根据 role（title/desc/number 等）定位 slide 中的 shape
     优先匹配 shape name 中包含 role 的，其次匹配文本特征
@@ -463,7 +465,9 @@ def _find_shape_by_role(slide, role):
         return None
 
 
-def _build_paragraph_tgt(parent_cBhvr, shape_id, paragraph_idx):
+def _build_paragraph_tgt(parent_cBhvr: etree._Element,
+                         shape_id: int,
+                         paragraph_idx: int) -> None:
     """
     构建按段落动画的目标引用：p:tgtEl > p:spTgt + p:txEl > p:p（指定段落索引）
 
@@ -479,9 +483,15 @@ def _build_paragraph_tgt(parent_cBhvr, shape_id, paragraph_idx):
     p_elem.set("id", str(paragraph_idx))
 
 
-def _build_by_bullet_nodes(spec, shape_id, paragraph_count, duration_ms, delay_ms,
-                            trigger, cTn_id_start, bullet_delay_ms: int = 500,
-                            bullet_order: list[int] = None):
+def _build_by_bullet_nodes(spec: dict[str, Any],
+                           shape_id: int,
+                           paragraph_count: int,
+                           duration_ms: int,
+                           delay_ms: int,
+                           trigger: str,
+                           cTn_id_start: int,
+                           bullet_delay_ms: int = 500,
+                           bullet_order: Optional[list[int]] = None) -> list[etree._Element]:
     """
     构建按段落（bullet）逐步显示的动画节点列表
 
@@ -624,7 +634,9 @@ def _build_by_bullet_nodes(spec, shape_id, paragraph_count, duration_ms, delay_m
     return nodes
 
 
-def _build_anim_effect_node(spec, shape_id, duration_ms, delay_ms, trigger, cTn_id_start):
+def _build_anim_effect_node(spec: dict[str, Any], shape_id: int,
+                            duration_ms: int, delay_ms: int,
+                            trigger: str, cTn_id_start: int) -> etree._Element:
     """
     构建单个动画的 <p:par> 节点（含 cTn + childTnLst + 行为元素）
 
@@ -748,7 +760,8 @@ def _build_anim_effect_node(spec, shape_id, duration_ms, delay_ms, trigger, cTn_
     return outer_par
 
 
-def _append_anim_effect(parent, spec, shape_id, cTn_id, duration_ms):
+def _append_anim_effect(parent: etree._Element, spec: dict[str, Any],
+                       shape_id: int, cTn_id: int, duration_ms: int) -> None:
     """
     追加 <p:animEffect> 元素到 parent
     """
@@ -764,7 +777,8 @@ def _append_anim_effect(parent, spec, shape_id, cTn_id, duration_ms):
     spTgt.set("spid", str(shape_id))
 
 
-def _append_emph_anim(parent, spec, shape_id, cTn_id, duration_ms):
+def _append_emph_anim(parent: etree._Element, spec: dict[str, Any],
+                     shape_id: int, cTn_id: int, duration_ms: int) -> None:
     """
     追加强调动画的 <p:anim> 元素到 parent
     根据 preset_id 选择不同的属性动画
@@ -829,7 +843,7 @@ def _append_emph_anim(parent, spec, shape_id, cTn_id, duration_ms):
         fltVal2.set("val", "1.1")
 
 
-def _build_timing_tree(animation_nodes):
+def _build_timing_tree(animation_nodes: list[etree._Element]) -> etree._Element:
     """
     构建完整的 <p:timing> 树结构
 
@@ -853,6 +867,9 @@ def _build_timing_tree(animation_nodes):
         </p:par>
       </p:tnLst>
     </p:timing>
+
+    :param animation_nodes: 已构建好的 <p:par> 动画节点列表
+    :return: <p:timing> 根 Element
     """
     timing = etree.Element(_p("timing"))
     tnLst = etree.SubElement(timing, _p("tnLst"))
@@ -899,7 +916,8 @@ def _build_timing_tree(animation_nodes):
     return timing
 
 
-def inject_animations(slide, animations_spec, slide_type="CONTENT"):
+def inject_animations(slide: Any, animations_spec: list[dict[str, Any]],
+                     slide_type: str = "CONTENT") -> bool:
     """
     为 slide 注入动画效果（直接修改 slide XML，添加 <p:timing> 子元素）
 
@@ -1045,7 +1063,8 @@ def inject_animations(slide, animations_spec, slide_type="CONTENT"):
     return True
 
 
-def validate_animations(animations_spec, slide_num=None):
+def validate_animations(animations_spec: list[dict[str, Any]],
+                       slide_num: Optional[int] = None) -> list[str]:
     """
     校验动画配置是否合法
 
@@ -1113,8 +1132,11 @@ def validate_animations(animations_spec, slide_num=None):
     return warnings
 
 
-def list_animations():
-    """列出所有可用动画效果（按类别分组）"""
+def list_animations() -> dict[str, Any]:
+    """列出所有可用动画效果（按类别分组）
+
+    :return: 包含 entrance/exit/emphasis/total 四个键的字典
+    """
     entrance = [(k, v) for k, v in ANIMATION_CATALOG.items() if v["preset_class"] == "entr"]
     exit_a = [(k, v) for k, v in ANIMATION_CATALOG.items() if v["preset_class"] == "exit"]
     emph = [(k, v) for k, v in ANIMATION_CATALOG.items() if v["preset_class"] == "emph"]

@@ -344,6 +344,11 @@ def main():
     p_s4.add_argument("--trim-pages", default="", help="可选，要删除的页码（逗号分隔，如 6,10,11）")
     p_s4.add_argument("--insert-tables", action="store_true",
                       help="可选，自动插入表格页（对比表+报价表）")
+    # T006：双引擎模式选择参数
+    p_s4.add_argument("--mode", default="template", choices=["template", "auto"],
+                      help="渲染模式：template（模板替换，默认）/ auto（无模板自动布局）")
+    p_s4.add_argument("--theme", default=None,
+                      help="视觉主题名（仅 auto 模式生效，如 商务蓝/极简灰/科技青）")
 
     args = parser.parse_args()
 
@@ -722,6 +727,60 @@ def main():
     elif args.cmd == "step4-generate":
         # Step 4: 生成 PPT
         outline = json.loads(Path(args.outline).read_text(encoding="utf-8"))
+
+        # T006：双引擎模式分支
+        # - mode=auto：无模板自动布局，跳过模板相关校验，直接走 AutoLayoutRenderer
+        # - mode=template：原有模板替换逻辑（100% 向后兼容）
+        if args.mode == "auto":
+            from aippt.render import AutoLayoutRenderer, RenderArgs
+            from aippt.theme_loader import list_themes
+            from aippt.validators import validate_all as _validate_all_auto
+
+            # auto 模式仅校验 outline 基础结构（无模板 meta）
+            fixed_outline, pre_check = _validate_all_auto(outline, meta=None, auto_fix=True)
+            if pre_check.fixed:
+                logger.info("渲染前自动修复 %d 项", len(pre_check.fixed))
+                for fix in pre_check.fixed:
+                    logger.info("  ✓ %s", fix)
+                Path(args.outline).write_text(
+                    json.dumps(fixed_outline, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+            if pre_check.errors:
+                logger.error("渲染前终检发现 %d 项错误，已拦截:", len(pre_check.errors))
+                for err in pre_check.errors:
+                    logger.error("  [%s] %s: %s", err.code, err.path, err.message)
+                print(json.dumps(pre_check.to_dict(), ensure_ascii=False, indent=2))
+                return 1
+
+            # 主题校验（未指定时使用商务蓝）
+            theme_name = args.theme or "商务蓝"
+            available_themes = list_themes()
+            if available_themes and theme_name not in available_themes:
+                logger.warning("主题 %s 未找到，可用: %s，降级到默认主题",
+                               theme_name, available_themes)
+
+            renderer = AutoLayoutRenderer(theme_name=theme_name)
+            render_args = RenderArgs(
+                transitions=args.transitions,
+                animations=args.animations,
+                animation_theme=args.animation_theme,
+                theme=theme_name,
+            )
+            result = renderer.render_outline(fixed_outline, args.output, render_args)
+
+            logger.info("--- 质量校验 ---")
+            logger.info("总页数: %d", result.total_pages)
+            logger.info("元素数: %d", result.replaced)
+            logger.info("渲染模式: %s, 主题: %s", result.mode, theme_name)
+            logger.info("成品 PPT: %s", args.output)
+            print(json.dumps({
+                "mode": result.mode,
+                "theme": theme_name,
+                "output_path": result.output_path,
+                "total_pages": result.total_pages,
+                "element_count": result.replaced,
+            }, ensure_ascii=False, indent=2))
+            return 0
 
         # === 渲染前终检（六层防御体系 Layer 3-5）===
         from aippt.validators import validate_all

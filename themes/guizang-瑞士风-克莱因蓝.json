@@ -1,0 +1,114 @@
+{
+  "name": "guizang-瑞士风-克莱因蓝",
+  "name_en": "klein_blue",
+  "description": "guizang-ppt-skill 瑞士风预设：克莱因蓝 IKB（通用/AI/科技场景，瑞士风首选锚点色）",
+  "color": {
+    "primary": "#002FA7",
+    "primary_dark": "#00195A",
+    "primary_light": "#0E51FE",
+    "secondary": "#737373",
+    "accent": "#737373",
+    "text_primary": "#0A0A0A",
+    "text_secondary": "#737373",
+    "text_on_primary": "#FFFFFF",
+    "text_on_dark": "#FFFFFF",
+    "bg_page": "#FAFAF8",
+    "bg_section": "#F3F3EF",
+    "card_bg": "#FAFAF8",
+    "card_border": "#E4E4DA",
+    "divider": "#E4E4DA",
+    "number_bg": "#002FA7",
+    "number_fg": "#FFFFFF",
+    "kpi_bg": "#FAFAF8",
+    "kpi_border": "#E4E4DA",
+    "kpi_number": "#002FA7",
+    "cover_bg": "#00195A",
+    "cover_title": "#FFFFFF",
+    "cover_subtitle": "#4075FE",
+    "divider_bg": "#00195A",
+    "divider_number": "#FFFFFF",
+    "divider_title": "#FFFFFF"
+  },
+  "font": {
+    "family": "Microsoft YaHei",
+    "family_en": "Calibri",
+    "title": {
+      "size_pt": 36,
+      "bold": true,
+      "color": "text_primary"
+    },
+    "subtitle": {
+      "size_pt": 20,
+      "bold": false,
+      "color": "text_secondary"
+    },
+    "body": {
+      "size_pt": 16,
+      "bold": false,
+      "color": "text_primary"
+    },
+    "desc": {
+      "size_pt": 14,
+      "bold": false,
+      "color": "text_secondary"
+    },
+    "number": {
+      "size_pt": 28,
+      "bold": true,
+      "color": "number_fg"
+    },
+    "year": {
+      "size_pt": 24,
+      "bold": true,
+      "color": "primary"
+    },
+    "kpi_number": {
+      "size_pt": 48,
+      "bold": true,
+      "color": "kpi_number"
+    },
+    "kpi_label": {
+      "size_pt": 14,
+      "bold": false,
+      "color": "text_secondary"
+    },
+    "cover_title": {
+      "size_pt": 44,
+      "bold": true,
+      "color": "cover_title"
+    },
+    "cover_subtitle": {
+      "size_pt": 22,
+      "bold": false,
+      "color": "cover_subtitle"
+    },
+    "divider_number": {
+      "size_pt": 72,
+      "bold": true,
+      "color": "divider_number"
+    },
+    "divider_title": {
+      "size_pt": 40,
+      "bold": true,
+      "color": "divider_title"
+    }
+  },
+  "spacing": {
+    "safe_margin_inch": 0.333,
+    "grid_gutter_inch": 0.167,
+    "card_padding_inch": 0.133,
+    "section_gap_inch": 0.267,
+    "element_gap_inch": 0.1
+  },
+  "effect": {
+    "card_shadow": false,
+    "card_radius": true,
+    "card_radius_inch": 0.08
+  },
+  "layout": {
+    "cover_split_ratio": 0.45,
+    "divider_number_ratio": 0.35,
+    "kpi_card_per_row": 4,
+    "numbered_list_card_per_row": 2
+  }
+}

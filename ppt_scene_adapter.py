@@ -268,11 +268,20 @@ class SceneAdapter:
             }
         }
 
-    def get_template_detail(self, template_id):
+    def get_template_detail(self, template_id: str) -> dict[str, Any]:
         """
         获取模板详情（meta 摘要 + 章节结构 + 槽位统计）
+
         :param template_id: 模板ID
-        :return: 模板详情字典
+        :return: 包含模板基本信息、章节结构和槽位统计的字典
+            - template_id: 模板ID
+            - category: 场景分类
+            - total_pages: 总页数
+            - removable_pages: 可删除的版权页页码列表
+            - chapter_count: 章节数量
+            - total_slots: 总槽位数量
+            - chapters: 章节详情列表，每个元素含 key/name/page/start_page/end_page
+            - page_slot_summary: 各页槽位数量映射
         """
         meta, meta_path = self.get_template_meta(template_id=template_id)
         total_slots = sum(len(v) for v in meta.get("page_slots", {}).values())
@@ -295,12 +304,15 @@ class SceneAdapter:
             }
         }
 
-    def validate_business_data(self, scene, business_data):
+    def validate_business_data(self, scene: str, business_data: dict[str, Any]) -> tuple[bool, list[str]]:
         """
         校验业务数据是否符合场景Schema
-        :param scene: 场景名
-        :param business_data: 业务数据
-        :return: (is_valid, issues列表)
+
+        :param scene: 场景名（如"工作总结"）
+        :param business_data: 业务数据，应包含 cover/sections/end 三层结构
+        :return: 二元组 (is_valid, issues)
+            - is_valid: 校验是否通过
+            - issues: 问题列表，空列表表示无问题
         """
         schema = SCENE_SCHEMAS.get(scene)
         if not schema:
@@ -342,17 +354,22 @@ class SceneAdapter:
         is_valid = len(issues) == 0
         return is_valid, issues
 
-    def list_templates(self, category=None, style_tag=None, min_pages=None, max_pages=None,
-                       color_scheme=None, industry=None):
+    def list_templates(self, category: Optional[str] = None,
+                       style_tag: Optional[str] = None,
+                       min_pages: Optional[int] = None,
+                       max_pages: Optional[int] = None,
+                       color_scheme: Optional[str] = None,
+                       industry: Optional[str] = None) -> list[dict[str, Any]]:
         """
-        按条件筛选模板
+        按条件筛选模板（所有条件为 AND 关系）
+
         :param category: 分类名（如"工作总结"）
         :param style_tag: 风格标签（如"商务"）
-        :param min_pages: 最小页数
-        :param max_pages: 最大页数
+        :param min_pages: 最小页数（含）
+        :param max_pages: 最大页数（含）
         :param color_scheme: 色系筛选（如"蓝色系"）。缺字段的模板视为不匹配，仅过滤时跳过
         :param industry: 行业筛选（如"金融"）。匹配 industry 数组中任一元素即可
-        :return: 模板列表
+        :return: 模板元信息列表，每个元素为 templates_index.json 中的模板 dict
         """
         results = []
         for t in self.index.get("templates", []):
@@ -378,8 +395,16 @@ class SceneAdapter:
             results.append(t)
         return results
 
-    def get_template_meta(self, template_id=None, path=None):
-        """加载模板 meta"""
+    def get_template_meta(self, template_id: Optional[str] = None,
+                          path: Optional[str] = None) -> tuple[dict[str, Any], str]:
+        """
+        加载模板 meta 文件
+
+        :param template_id: 模板ID（与 path 二选一）
+        :param path: meta 文件相对路径（与 template_id 二选一）
+        :return: 二元组 (meta_dict, meta_file_abs_path)
+        :raises ValueError: 模板不存在或 path 无效
+        """
         if path:
             meta_path = self.templates_root / path
         else:
@@ -392,8 +417,15 @@ class SceneAdapter:
         with open(meta_path, 'r', encoding='utf-8') as f:
             return json.load(f), str(meta_path)
 
-    def get_template_pptx(self, meta):
-        """根据 meta 获取对应的 pptx 路径"""
+    def get_template_pptx(self, meta: dict[str, Any]) -> str:
+        """
+        根据 meta 获取对应的 pptx 文件绝对路径
+
+        规则：meta 文件名为 xxx.meta.json，对应模板为 xxx.pptx
+
+        :param meta: 模板元数据 dict，需含 _meta_file_path 字段
+        :return: pptx 文件绝对路径
+        """
         meta_path = Path(meta.get("_meta_file_path", ""))
         # meta 文件名格式为 xxx.meta.json，对应模板为 xxx.pptx
         name = meta_path.name
@@ -404,13 +436,23 @@ class SceneAdapter:
             pptx_name = meta_path.stem + ".pptx"
         return str(meta_path.parent / pptx_name)
 
-    def adapt(self, scene, business_data, meta):
+    def adapt(self, scene: str, business_data: dict[str, Any],
+              meta: dict[str, Any]) -> dict[str, dict[str, str]]:
         """
         将业务字段适配为渲染所需的 slot_data
+
+        执行流程：
+        1. 填充封面（cover）
+        2. 填充目录页（catalog）
+        3. 填充各章节（chapter_*）按页面模式分派
+        4. 兜底填充未归属章节的页面（orphan pages）
+        5. 填充结束页（end）
+
         :param scene: 场景名（如"工作总结"）
-        :param business_data: 业务字段数据
-        :param meta: 模板 meta
-        :return: {"页码": {"槽位名": "值"}}
+        :param business_data: 业务字段数据，需符合场景 Schema
+        :param meta: 模板 meta dict
+        :return: slot_data，结构为 {"页码字符串": {"槽位名": "值"}}
+        :raises ValueError: 不支持的场景
         """
         schema = SCENE_SCHEMAS.get(scene)
         if not schema:
@@ -466,14 +508,18 @@ class SceneAdapter:
     def _is_chart_decoration(self, text: str) -> bool:
         return is_chart_decoration_text(text)
 
-    def _is_chapter_title(self, text, section_def):
+    def _is_chapter_title(self, text: str, section_def: dict[str, Any]) -> bool:
         """判断是否为章节标题文本（与 section name 匹配）"""
         if not text or not section_def:
             return False
         section_name = section_def.get("name", "")
         return text.strip() == section_name.strip()
 
-    def _fill_cover(self, slot_data, chapters, page_slots, business_data, schema):
+    def _fill_cover(self, slot_data: dict[str, dict[str, str]],
+                    chapters: list[dict[str, Any]],
+                    page_slots: dict[str, list[dict[str, Any]]],
+                    business_data: dict[str, Any],
+                    schema: dict[str, Any]) -> None:
         """填充封面页字段"""
         cover_chapter = next((c for c in chapters if c.get("key") == "cover"), None)
         if not cover_chapter:
@@ -506,7 +552,10 @@ class SceneAdapter:
                         slot_data.setdefault(cover_page, {})[slot_name] = cover_input[field_key]
                     field_idx += 1
 
-    def _fill_catalog(self, slot_data, chapters, page_slots, schema):
+    def _fill_catalog(self, slot_data: dict[str, dict[str, str]],
+                      chapters: list[dict[str, Any]],
+                      page_slots: dict[str, list[dict[str, Any]]],
+                      schema: dict[str, Any]) -> None:
         """填充目录页：章节名 + 序号"""
         catalog_chapter = next((c for c in chapters if c.get("key") == "catalog"), None)
         if not catalog_chapter:
@@ -529,15 +578,19 @@ class SceneAdapter:
                 slot_data.setdefault(catalog_page, {})[slot_name] = chapter_sections[title_idx]["name"]
                 title_idx += 1
 
-    def _detect_page_pattern(self, page_slot_list, page_meta=None, page_idx=0):
+    def _detect_page_pattern(self, page_slot_list: list[dict[str, Any]],
+                            page_meta: Optional[dict[str, Any]] = None,
+                            page_idx: int = 0) -> str:
         """
         识别页面槽位模式
-        返回: 'cover' | 'divider' | 'numbered_list' | 'timeline' | 'preset_titles'
+
+        返回值取值：'cover' | 'divider' | 'numbered_list' | 'timeline' | 'preset_titles'
               | 'skill_percent' | 'kpi' | 'two_column' | 'chart' | 'table' | 'content'
 
         :param page_slot_list: 该页槽位列表
         :param page_meta: 可选，meta 中的 page_meta[page_num]，含 has_chart/has_table 等标志
         :param page_idx: 该页 0 基页码，默认 0；首页强制识别为 cover（向后兼容）
+        :return: 页面模式字符串
         """
         # 首页强制识别为封面
         if page_idx == 0:
@@ -620,7 +673,11 @@ class SceneAdapter:
 
         return "content"
 
-    def _fill_orphan_pages(self, slot_data, chapters, page_slots, business_data, schema):
+    def _fill_orphan_pages(self, slot_data: dict[str, dict[str, str]],
+                           chapters: list[dict[str, Any]],
+                           page_slots: dict[str, list[dict[str, Any]]],
+                           business_data: dict[str, Any],
+                           schema: dict[str, Any]) -> None:
         """
         兜底填充未归属章节的页面
         策略：cover 之后、第一个 chapter 之前的页面，归入第一个 section
@@ -682,7 +739,11 @@ class SceneAdapter:
             if page_input:
                 slot_data[page_str] = page_input
 
-    def _fill_chapters(self, slot_data, chapters, page_slots, business_data, schema):
+    def _fill_chapters(self, slot_data: dict[str, dict[str, str]],
+                      chapters: list[dict[str, Any]],
+                      page_slots: dict[str, list[dict[str, Any]]],
+                      business_data: dict[str, Any],
+                      schema: dict[str, Any]) -> None:
         """填充各章节内容"""
         chapter_chapters = [c for c in chapters if c.get("key", "").startswith("chapter_")]
         chapter_sections = schema["chapter_sections"]
@@ -738,7 +799,9 @@ class SceneAdapter:
                 if page_input:
                     slot_data[page_str] = page_input
 
-    def _fill_divider_page(self, page_slot_list, section_def, section_data):
+    def _fill_divider_page(self, page_slot_list: list[dict[str, Any]],
+                           section_def: dict[str, Any],
+                           section_data: list[dict[str, Any]]) -> dict[str, str]:
         """填充章节分隔页：PART.0N + 章节名 + 序号"""
         page_input = {}
         section_name = section_data[0].get("section_title", section_def["name"]) if section_data else section_def["name"]
@@ -764,7 +827,9 @@ class SceneAdapter:
                     title_count += 1
         return page_input
 
-    def _fill_numbered_list_page(self, page_slot_list, section_data, item_idx):
+    def _fill_numbered_list_page(self, page_slot_list: list[dict[str, Any]],
+                                 section_data: list[dict[str, Any]],
+                                 item_idx: int) -> tuple[dict[str, str], int]:
         """填充数字列表页：number=01/02/03 + title=名称 + desc=描述"""
         page_input = {}
         num_counter = 1
@@ -809,7 +874,9 @@ class SceneAdapter:
                     page_input[slot_name] = ""
         return page_input, item_idx
 
-    def _fill_timeline_page(self, page_slot_list, section_data, item_idx):
+    def _fill_timeline_page(self, page_slot_list: list[dict[str, Any]],
+                            section_data: list[dict[str, Any]],
+                            item_idx: int) -> tuple[dict[str, str], int]:
         """填充时间轴页：year/title 交替，按时间线展开 items"""
         page_input = {}
         year_slots = [s for s in page_slot_list if s.get("slot", "").startswith("year")]
@@ -875,7 +942,9 @@ class SceneAdapter:
 
         return page_input, item_idx
 
-    def _fill_preset_titles_page(self, page_slot_list, section_data, item_idx):
+    def _fill_preset_titles_page(self, page_slot_list: list[dict[str, Any]],
+                                 section_data: list[dict[str, Any]],
+                                 item_idx: int) -> tuple[dict[str, str], int]:
         """
         填充预设标题列表页：多个并列 title_N，依次填 items 的 title
         规则：title 后紧跟的 desc 配对同一 item；连续 desc（无新 title）取下一个 item
@@ -920,7 +989,9 @@ class SceneAdapter:
                     page_input[slot_name] = ""
         return page_input, item_idx
 
-    def _fill_kpi_page(self, page_slot_list, section_data, item_idx):
+    def _fill_kpi_page(self, page_slot_list: list[dict[str, Any]],
+                      section_data: list[dict[str, Any]],
+                      item_idx: int) -> tuple[dict[str, str], int]:
         """
         填充KPI卡片页：多个短title展示关键指标
         规则：每个title槽位取一个item的title，无desc配对
@@ -948,7 +1019,9 @@ class SceneAdapter:
                 page_input[slot_name] = ""
         return page_input, item_idx
 
-    def _fill_chart_page(self, page_slot_list, section_def, section_data):
+    def _fill_chart_page(self, page_slot_list: list[dict[str, Any]],
+                         section_def: dict[str, Any],
+                         section_data: list[dict[str, Any]]) -> dict[str, str]:
         """
         填充图表页：仅填充标题类槽位，图表数据由模板自带或由 renderer 单独处理
         策略：
@@ -983,7 +1056,9 @@ class SceneAdapter:
                 page_input[slot_name] = ""
         return page_input
 
-    def _fill_table_page(self, page_slot_list, section_def, section_data):
+    def _fill_table_page(self, page_slot_list: list[dict[str, Any]],
+                         section_def: dict[str, Any],
+                         section_data: list[dict[str, Any]]) -> dict[str, str]:
         """
         填充表格页：仅填充标题类槽位，表格数据由模板自带或后续扩展
         策略：与 chart 页类似，title 填 section/item 标题，其他槽位清空
@@ -1012,7 +1087,11 @@ class SceneAdapter:
                 page_input[slot_name] = ""
         return page_input
 
-    def _fill_two_column_page(self, page_slot_list, section_data, item_idx, section_def=None):
+    def _fill_two_column_page(self, page_slot_list: list[dict[str, Any]],
+                              section_data: list[dict[str, Any]],
+                              item_idx: int,
+                              section_def: Optional[dict[str, Any]] = None
+                              ) -> tuple[dict[str, str], int]:
         """
         填充双栏对比页：左右两列对称的title+desc结构
         规则：title/desc交替填充，左列先填，右列后填
@@ -1063,7 +1142,8 @@ class SceneAdapter:
                     page_input[slot_name] = ""
         return page_input, item_idx
 
-    def _fill_skill_percent_page(self, page_slot_list, section_data):
+    def _fill_skill_percent_page(self, page_slot_list: list[dict[str, Any]],
+                                 section_data: list[dict[str, Any]]) -> dict[str, str]:
         """填充技能百分比页：title=技能名 + percent=数值 + desc=描述"""
         page_input = {}
         # 按原始顺序遍历，支持 title/desc/percent 配对
@@ -1114,7 +1194,11 @@ class SceneAdapter:
                 page_input[slot_name] = match_text.strip()
         return page_input
 
-    def _fill_content_page(self, page_slot_list, section_data, item_idx, section_def=None):
+    def _fill_content_page(self, page_slot_list: list[dict[str, Any]],
+                           section_data: list[dict[str, Any]],
+                           item_idx: int,
+                           section_def: Optional[dict[str, Any]] = None
+                           ) -> tuple[dict[str, str], int]:
         """
         填充标准内容页：title/desc 配对，跳过装饰性/章节标题
         规则：
@@ -1201,7 +1285,11 @@ class SceneAdapter:
                     page_input[slot_name] = ""
         return page_input, item_idx
 
-    def _fill_end(self, slot_data, chapters, page_slots, business_data, schema):
+    def _fill_end(self, slot_data: dict[str, dict[str, str]],
+                  chapters: list[dict[str, Any]],
+                  page_slots: dict[str, list[dict[str, Any]]],
+                  business_data: dict[str, Any],
+                  schema: dict[str, Any]) -> None:
         """填充结束页"""
         end_chapter = next((c for c in chapters if c.get("key") == "end"), None)
         if not end_chapter:
@@ -1222,20 +1310,26 @@ class SceneAdapter:
                 slot_data.setdefault(end_page, {})[slot_info["slot"]] = thanks
                 break
 
-    def render(self, scene, business_data, template_id=None, output_path=None, auto_fit=True,
-               transitions=None, animations=None):
+    def render(self, scene: str, business_data: dict[str, Any],
+               template_id: Optional[str] = None,
+               output_path: Optional[str] = None,
+               auto_fit: bool = True,
+               transitions: Optional[Any] = None,
+               animations: Optional[Any] = None) -> str:
         """
         一键渲染：业务数据 → 适配 → 渲染
+
         :param scene: 场景名
         :param business_data: 业务字段
         :param template_id: 模板ID（不指定则取该分类第一个）
-        :param output_path: 输出路径
+        :param output_path: 输出路径（不指定则自动生成 output_<scene>_<id>.pptx）
         :param auto_fit: 是否启用长文本字号自适应
         :param transitions: 可选，转场配置 {"页码": {"type": "fade", "speed": "med"}, ...} 或 "auto"
                             "auto" 表示为每页添加 fade 转场（speed=med）
         :param animations: 可选，动画配置 {"页码": [...], ...} 或 "auto"
                            "auto" 表示为每页添加推荐动画（基于页面位置推荐）
         :return: 输出文件路径
+        :raises ValueError: 模板不存在或场景无可用模板
         """
         # 选取模板
         if template_id:
@@ -1266,13 +1360,18 @@ class SceneAdapter:
                         transitions=transitions, animations=animations)
         return output_path
 
-    def render_batch(self, scene, business_data, output_dir="output_batch", auto_fit=True):
+    def render_batch(self, scene: str, business_data: dict[str, Any],
+                     output_dir: str = "output_batch",
+                     auto_fit: bool = True) -> list[dict[str, Any]]:
         """
         批量生成：同一份内容生成同分类所有模板 PPT
+
         :param scene: 场景名
         :param business_data: 业务字段
-        :param output_dir: 输出目录
-        :return: 生成文件列表
+        :param output_dir: 输出目录（不存在自动创建）
+        :param auto_fit: 是否启用长文本字号自适应
+        :return: 生成结果列表，每个元素含 template_id/output/status 字段
+        :raises ValueError: 场景无可用模板
         """
         templates = self.list_templates(category=scene)
         if not templates:

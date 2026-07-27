@@ -1,0 +1,66 @@
+{
+  "name": "科技青",
+  "name_en": "tech_cyan",
+  "description": "科技青主题：深青主色 + 渐变背景 + 强对比色，适合公司简介/职业规划/开题报告等科技感场景",
+  "color": {
+    "primary": "#0891B2",
+    "primary_dark": "#155E75",
+    "primary_light": "#06B6D4",
+    "secondary": "#64748B",
+    "accent": "#F97316",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "text_on_primary": "#FFFFFF",
+    "text_on_dark": "#F1F5F9",
+    "bg_page": "#FFFFFF",
+    "bg_section": "#F0F9FF",
+    "card_bg": "#FFFFFF",
+    "card_border": "#BAE6FD",
+    "divider": "#BAE6FD",
+    "number_bg": "#0891B2",
+    "number_fg": "#FFFFFF",
+    "kpi_bg": "#F0F9FF",
+    "kpi_border": "#BAE6FD",
+    "kpi_number": "#0891B2",
+    "cover_bg": "#155E75",
+    "cover_title": "#FFFFFF",
+    "cover_subtitle": "#BAE6FD",
+    "divider_bg": "#0F172A",
+    "divider_number": "#06B6D4",
+    "divider_title": "#FFFFFF"
+  },
+  "font": {
+    "family": "Microsoft YaHei",
+    "family_en": "Calibri",
+    "title": {"size_pt": 36, "bold": true, "color": "text_primary"},
+    "subtitle": {"size_pt": 20, "bold": false, "color": "text_secondary"},
+    "body": {"size_pt": 16, "bold": false, "color": "text_primary"},
+    "desc": {"size_pt": 14, "bold": false, "color": "text_secondary"},
+    "number": {"size_pt": 28, "bold": true, "color": "number_fg"},
+    "year": {"size_pt": 24, "bold": true, "color": "primary"},
+    "kpi_number": {"size_pt": 48, "bold": true, "color": "kpi_number"},
+    "kpi_label": {"size_pt": 14, "bold": false, "color": "text_secondary"},
+    "cover_title": {"size_pt": 44, "bold": true, "color": "cover_title"},
+    "cover_subtitle": {"size_pt": 22, "bold": false, "color": "cover_subtitle"},
+    "divider_number": {"size_pt": 80, "bold": true, "color": "divider_number"},
+    "divider_title": {"size_pt": 40, "bold": true, "color": "divider_title"}
+  },
+  "spacing": {
+    "safe_margin_inch": 0.5,
+    "grid_gutter_inch": 0.25,
+    "card_padding_inch": 0.2,
+    "section_gap_inch": 0.4,
+    "element_gap_inch": 0.15
+  },
+  "effect": {
+    "card_shadow": false,
+    "card_radius": true,
+    "card_radius_inch": 0.1
+  },
+  "layout": {
+    "cover_split_ratio": 0.4,
+    "divider_number_ratio": 0.4,
+    "kpi_card_per_row": 4,
+    "numbered_list_card_per_row": 2
+  }
+}

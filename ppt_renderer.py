@@ -2,6 +2,15 @@
 PPT 渲染引擎 - 阶段二核心模块
 功能：基于 meta 元数据，将结构化内容精准替换到模板，100% 保留原样式
 依赖：python-pptx
+
+架构说明（T001 + 3.3.3 模块化拆分）：
+    主引擎 PptRenderer 继承 BaseRenderer，负责模板渲染调度：
+    - 继承 aippt.render.base_renderer.BaseRenderer（双引擎统一抽象层）
+    - 具体能力下沉到 aippt 子模块：
+      - aippt.text_replacer：文本替换 / shape 定位 / 字号自适应
+      - aippt.chart_replacer：图表数据源替换（4 类图表）
+      - aippt.table_filler：表格动态行扩展
+    - 100% 向后兼容：保留 render(slot_data, ...) 旧签名，新增 render_outline() 适配统一接口
 """
 import json
 import argparse
@@ -15,6 +24,18 @@ from pptx.util import Pt, Inches
 
 from aippt.config import DEFAULT_REMOVE_COPYRIGHT, DEFAULT_AUTO_FIT
 from aippt.logger import logger
+from aippt.render import BaseRenderer, RenderArgs, RenderResult
+from aippt.text_replacer import (
+    iter_all_shapes as _iter_all_shapes_impl,
+    find_shape as _find_shape_impl,
+    replace_text as _replace_text_impl,
+    auto_fit as _auto_fit_impl,
+)
+from aippt.chart_replacer import replace_chart_data as _replace_chart_data_impl
+from aippt.table_filler import (
+    fill_dynamic_table as _fill_dynamic_table_impl,
+    set_cell_text as _set_cell_text_impl,
+)
 
 try:
     from ppt_transitions import inject_transition
@@ -25,8 +46,20 @@ except Exception:
     _ANIM_IMPORT_ERROR = "animation/transition modules not available"
 
 
-class PptRenderer:
-    """PPT 渲染引擎：模板 + meta + 结构化内容 → 成品 PPT"""
+class PptRenderer(BaseRenderer):
+    """PPT 渲染引擎：模板 + meta + 结构化内容 → 成品 PPT
+
+    继承 BaseRenderer（T001 双引擎抽象层）。
+    MODE = "template"，与 AutoLayoutRenderer（MODE="auto"）通过 mode 区分。
+
+    向后兼容说明：
+        - render(slot_data, output_path, ...) 旧签名保留，所有现有调用方无需修改
+        - 新增 render_outline(outline_data, output_path, render_args) 适配统一接口
+        - BaseRenderer.render() 抽象方法由 render_outline 实现
+    """
+
+    #: 引擎模式标识
+    MODE: str = "template"
 
     def __init__(self, template_path: str, meta_path: str) -> None:
         template = Path(template_path)
@@ -47,9 +80,24 @@ class PptRenderer:
         auto_fit: bool = DEFAULT_AUTO_FIT,
         transitions: Optional[Any] = None,
         animations: Optional[Any] = None,
-        notes_map: dict[int, str] = None,
-        animation_theme: str = None,
+        notes_map: Optional[dict[int, str]] = None,
+        animation_theme: Optional[str] = None,
     ) -> str:
+        """
+        渲染 PPT：模板 + meta + slot_data → 成品 PPT
+
+        :param slot_data: 槽位数据，结构 {"页码字符串": {"槽位名": "值"}}
+            含 chart_data/table_data 时自动触发图表/表格替换
+        :param output_path: 输出文件路径
+        :param remove_copyright: 是否自动删除版权页（默认 True）
+        :param auto_fit: 是否启用长文本字号自适应（默认 True）
+        :param transitions: 全局转场配置 "auto"/"none"/dict/None
+        :param animations: 全局动画配置 "auto"/"none"/dict/None
+        :param notes_map: 演讲者备注，键为 page_id（从1开始），值为备注文本
+        :param animation_theme: 动画主题名（business/tech/formal），None 不启用
+        :return: 输出文件路径
+        :raises FileNotFoundError: 模板或 meta 文件不存在
+        """
         prs = Presentation(self.template_path)
         page_slots = self.meta.get('page_slots', {})
         stats: dict[str, int] = {'replaced': 0, 'missed': 0, 'skipped': 0}
@@ -133,7 +181,73 @@ class PptRenderer:
         logger.info("替换 %d / 未匹配 %d / 跳过 %d", stats['replaced'], stats['missed'], stats['skipped'])
         if removed_pages:
             logger.info("已删除版权页: %s", removed_pages)
+        # 缓存渲染统计供 render_outline 复用
+        self._last_stats = stats
+        self._last_removed_pages = removed_pages
         return str(output_path)
+
+    # ==================== 统一抽象接口实现（T001）====================
+
+    def render_outline(
+        self,
+        outline_data: dict[str, Any],
+        output_path: str,
+        render_args: Optional[RenderArgs] = None,
+    ) -> RenderResult:
+        """BaseRenderer 统一接口实现：outline → business_data → slot_data → 渲染
+
+        本方法为 PptRenderer 适配 BaseRenderer 抽象接口的入口，内部复用现有
+        SceneAdapter.adapt() 完成 outline → slot_data 转换，再调用 render()。
+
+        :param outline_data: outline.json 原始字典，必须含 scene 字段
+        :param output_path: 输出 PPTX 路径
+        :param render_args: 渲染参数容器，None 使用默认值
+        :return: RenderResult 渲染结果
+        :raises ValueError: outline_data 缺少 scene 字段
+        """
+        args = self.normalize_args(render_args)
+        scene = outline_data.get("scene")
+        if not scene:
+            raise ValueError("outline_data 缺少 scene 字段，template 模式必须指定场景")
+
+        # 延迟导入避免循环依赖
+        from ppt_scene_adapter import SceneAdapter
+        from aippt_outline import outline_to_business_data
+
+        adapter = SceneAdapter()
+        business_data = outline_to_business_data(outline_data)
+        slot_data = adapter.adapt(scene, business_data, self.meta)
+
+        # 调用现有 render() 完成实际渲染（100% 复用现有逻辑）
+        self.render(
+            slot_data,
+            output_path,
+            remove_copyright=args.remove_copyright,
+            auto_fit=args.auto_fit,
+            transitions=args.transitions,
+            animations=args.animations,
+            notes_map=args.notes_map,
+            animation_theme=args.animation_theme,
+        )
+
+        # 收集渲染统计（render() 已缓存到 self._last_stats）
+        stats = getattr(self, "_last_stats", {"replaced": 0, "missed": 0, "skipped": 0})
+        removed = getattr(self, "_last_removed_pages", [])
+
+        from pptx import Presentation as _Prs
+        total_pages = len(_Prs(output_path).slides)
+
+        return RenderResult(
+            output_path=output_path,
+            mode=self.MODE,
+            total_pages=total_pages,
+            replaced=stats.get("replaced", 0),
+            missed=stats.get("missed", 0),
+            skipped=stats.get("skipped", 0),
+            removed_pages=removed,
+            warnings=[],
+            meta={"template_path": self.template_path},
+        )
 
     def _apply_animation_theme(
         self,
@@ -205,7 +319,7 @@ class PptRenderer:
         return (theme_transitions if theme_transitions else transitions,
                 theme_animations if theme_animations else animations)
 
-    def _inject_notes(self, slide, notes_text: str) -> None:
+    def _inject_notes(self, slide: Any, notes_text: str) -> None:
         """
         注入演讲者备注到 slide
 
@@ -289,69 +403,18 @@ class PptRenderer:
 
         return "CONTENT"
 
-    def _iter_all_shapes(self, shapes):
-        for s in shapes:
-            yield s
-            if s.shape_type == 6:  # GROUP
-                yield from self._iter_all_shapes(s.shapes)
+    def _iter_all_shapes(self, shapes: Any) -> Any:
+        """递归遍历所有 shape，含 GROUP 内的子 shape（委托 aippt.text_replacer）"""
+        yield from _iter_all_shapes_impl(shapes)
 
-    def _find_shape(self, shapes, slot_info: dict[str, Any], used: set[int]) -> Optional[BaseShape]:
-        match_text = slot_info.get('match_text', '').strip()
-        shape_name = slot_info.get('shape_name', '')
-        all_shapes = list(self._iter_all_shapes(shapes))
-
-        # 策略1：shape_name + match_text 双匹配（最精确）
-        if shape_name and match_text:
-            for s in all_shapes:
-                if id(s._element) in used:
-                    continue
-                if not s.has_text_frame:
-                    continue
-                if s.name == shape_name and match_text in s.text_frame.text:
-                    return s
-
-        # 策略2：match_text 文本匹配
-        if match_text:
-            for s in all_shapes:
-                if id(s._element) in used:
-                    continue
-                if not s.has_text_frame:
-                    continue
-                if match_text in s.text_frame.text:
-                    return s
-
-        # 策略3：shape_name 匹配（兜底）
-        if shape_name:
-            for s in all_shapes:
-                if id(s._element) in used:
-                    continue
-                if not s.has_text_frame:
-                    continue
-                if s.name == shape_name:
-                    return s
-
-        return None
+    def _find_shape(self, shapes: Any, slot_info: dict[str, Any],
+                    used: set[int]) -> Optional[BaseShape]:
+        """根据槽位信息定位目标 shape（委托 aippt.text_replacer）"""
+        return _find_shape_impl(shapes, slot_info, used)
 
     def _replace_text(self, shape: BaseShape, new_text: str) -> None:
-        tf = shape.text_frame
-        paragraphs = list(tf.paragraphs)
-        if not paragraphs:
-            return
-
-        first_para = paragraphs[0]
-
-        # 保留第一个 run 的格式，仅改其 text，删除同段其余 run
-        if first_para.runs:
-            first_para.runs[0].text = new_text
-            for run in first_para.runs[1:]:
-                run._r.getparent().remove(run._r)
-        else:
-            run = first_para.add_run()
-            run.text = new_text
-
-        # 删除其余段落（保留首段段落属性）
-        for para in paragraphs[1:]:
-            para._p.getparent().remove(para._p)
+        """替换 shape 的文本，保留首个 run 的格式（委托 aippt.text_replacer）"""
+        _replace_text_impl(shape, new_text)
 
     def _auto_fit(
         self,
@@ -362,137 +425,24 @@ class PptRenderer:
         page_str: Optional[str] = None,
         slot_name: Optional[str] = None,
     ) -> None:
-        tf = shape.text_frame
-        if not tf.paragraphs or not tf.paragraphs[0].runs:
-            return
-        run = tf.paragraphs[0].runs[0]
-        if run.font.size is None:
-            return
-        original_size_pt = run.font.size.pt
+        """长文本字号自适应（委托 aippt.text_replacer）"""
+        _auto_fit_impl(shape, new_text, original_text, slot_info, page_str, slot_name)
 
-        # 策略1：优先使用 meta 中的 capacity（事前预警）
-        capacity = None
-        if slot_info and isinstance(slot_info.get('capacity'), dict):
-            capacity = slot_info['capacity'].get('total_chars')
-
-        # 策略2：回退到运行时几何估算
-        if capacity is None:
-            try:
-                box_w = shape.width        # EMU
-                box_h = shape.height       # EMU
-            except Exception:
-                return
-            if not box_w or not box_h:
-                return
-            EMU_PER_PT = 12700
-            char_w = original_size_pt * 0.55 * EMU_PER_PT
-            line_h = original_size_pt * 1.2 * EMU_PER_PT
-            chars_per_line = max(1, int(box_w / char_w))
-            lines_available = max(1, int(box_h / line_h))
-            capacity = chars_per_line * lines_available
-
-        text_len = len(new_text)
-        if text_len <= capacity:
-            return
-
-        if page_str and slot_name:
-            logger.warning("页%s 槽位 %s: 文本长度 %d 超过容量 %d，自动缩字号", page_str, slot_name, text_len, capacity)
-
-        # 按比例缩小字号，下限 8pt
-        ratio = (capacity / text_len) ** 0.5
-        new_size = max(8, int(original_size_pt * ratio))
-        if new_size < original_size_pt:
-            run.font.size = Pt(new_size)
-
-    # ==================== 图表与表格动态扩展 ====================
+    # ==================== 图表与表格动态扩展（委托子模块）====================
 
     def _replace_chart_data(self, shape: BaseShape, chart_data_dict: dict[str, Any]) -> None:
-        """替换图表数据，100% 保留模板样式（字体/颜色/坐标轴格式/图例位置）
+        """替换图表数据，100% 保留模板样式（委托 aippt.chart_replacer）
 
         支持 4 类图表：bar（柱状图）、line（折线图）、pie（饼图）、radar（雷达图）
         多系列自动适配：M>N 仅替换前 N 系列；M<N 多余系列清空数据；M==N 直接替换
-        使用 chart.replace_data(ChartData) API，保留图表样式（系列数与模板一致）
 
         :param shape: GraphicFrame 形状，含 chart
         :param chart_data_dict: {"categories": [...], "series": [{"name": "...", "data": [...]}]}
         """
-        from pptx.chart.data import ChartData
-
-        try:
-            chart = shape.chart
-        except Exception as e:
-            logger.warning("无法访问图表数据: %s", e)
-            return
-
-        # 检查图表类型，映射到 bar/line/pie/radar 四大类
-        ct_str = str(chart.chart_type).upper()
-        if 'BAR' in ct_str or 'COLUMN' in ct_str:
-            chart_category = 'bar'
-        elif 'LINE' in ct_str:
-            chart_category = 'line'
-        elif 'PIE' in ct_str:
-            chart_category = 'pie'
-        elif 'RADAR' in ct_str:
-            chart_category = 'radar'
-        else:
-            logger.warning("不支持的图表类型: %s，跳过数据替换", chart.chart_type)
-            return
-
-        categories = chart_data_dict.get('categories', [])
-        new_series = chart_data_dict.get('series', [])
-        if not categories or not new_series:
-            logger.warning("图表数据为空（categories=%d, series=%d），跳过",
-                           len(categories), len(new_series))
-            return
-
-        try:
-            plot = chart.plots[0]
-        except Exception as e:
-            logger.warning("无法访问图表 plot: %s", e)
-            return
-
-        # 多系列自动适配：缓存 series 集合到本地变量，获取模板原有系列数
-        chart_series = list(plot.series)
-        n = len(chart_series)  # 模板原有系列数
-        m = len(new_series)    # 新数据系列数
-
-        if m > n:
-            logger.warning("图表系列数不匹配：模板 %d 系列，新数据 %d 系列，仅替换前 %d 系列",
-                           n, m, n)
-        elif m < n:
-            logger.warning("图表系列数不匹配：模板 %d 系列，新数据 %d 系列，多余 %d 系列清空数据",
-                           n, m, n - m)
-
-        # 构造 ChartData，保持系列数与模板一致（N 系列），保留图表样式
-        chart_data = ChartData()
-        chart_data.categories = categories
-        for i in range(n):
-            if i < m:
-                # 替换为新数据
-                ser = new_series[i]
-                chart_data.add_series(ser.get('name', ''), ser.get('data', []))
-            else:
-                # 多余系列清空数据（置零，保留系列结构避免破坏图表样式）
-                orig_name = ''
-                try:
-                    orig_name = chart_series[i].name or ''
-                except Exception:
-                    pass
-                chart_data.add_series(orig_name, [0] * len(categories))
-
-        # 替换图表数据（replace_data 保留图表类型、坐标轴格式、图例等样式）
-        try:
-            chart.replace_data(chart_data)
-        except Exception as e:
-            # replace_data 可能因外部 Excel 链接报错（.target_part undefined），
-            # 但图表 XML 数据通常已更新（分类/系列值已写入），图表显示正常
-            logger.warning("图表数据替换（Excel 同步异常，图表 XML 已更新）: %s", e)
-
-        logger.info("图表数据替换完成（类型=%s, 系列=%d/%d, 分类=%d）",
-                    chart_category, min(m, n), n, len(categories))
+        _replace_chart_data_impl(shape, chart_data_dict)
 
     def _fill_dynamic_table(self, shape: BaseShape, table_data: dict[str, Any]) -> None:
-        """动态填充表格数据，保留第 0 行表头样式模板
+        """动态填充表格数据，保留第 0 行表头样式模板（委托 aippt.table_filler）
 
         - 根据数据行数动态增减行（克隆最后一行保持样式一致性）
         - 填入表头数据（覆盖模板占位文本，保留样式）
@@ -502,92 +452,15 @@ class PptRenderer:
         :param shape: GraphicFrame 形状，含 table
         :param table_data: {"headers": [...], "rows": [[...], ...]}
         """
-        try:
-            table = shape.table
-        except Exception as e:
-            logger.warning("无法访问表格数据: %s", e)
-            return
-
-        headers = table_data.get('headers', [])
-        rows = table_data.get('rows', [])
-        if not headers:
-            logger.warning("表格 headers 为空，跳过填充")
-            return
-
-        current_rows = len(table.rows)
-        if current_rows == 0:
-            logger.warning("表格无行数据，无法填充")
-            return
-        needed_rows = len(rows) + 1  # +1 为表头行
-
-        # 动态增减行（python-pptx 的 _RowCollection 不支持负索引，需用正索引）
-        if needed_rows > current_rows:
-            # 新增行：以最后一行为模板克隆（保留行结构与单元格样式）
-            last_tr = table.rows[current_rows - 1]._tr
-            added = 0
-            for _ in range(needed_rows - current_rows):
-                new_tr = deepcopy(last_tr)
-                last_tr.addnext(new_tr)
-                last_tr = new_tr
-                added += 1
-            logger.info("表格新增 %d 行（%d → %d）", added, current_rows, needed_rows)
-        elif needed_rows < current_rows:
-            # 删除多余行（从末尾删除，保留表头）
-            extra = current_rows - needed_rows
-            for _ in range(extra):
-                remaining = len(table.rows)
-                last_tr = table.rows[remaining - 1]._tr
-                last_tr.getparent().remove(last_tr)
-            logger.info("表格删除 %d 行（%d → %d）", extra, current_rows, needed_rows)
-
-        # 填入表头数据（第 0 行，保留单元格样式）
-        col_count = len(table.columns)
-        for col_idx, header_text in enumerate(headers):
-            if col_idx < col_count:
-                cell = table.cell(0, col_idx)
-                self._set_cell_text(cell, str(header_text))
-
-        # 填入数据行
-        for row_idx, row_data in enumerate(rows, start=1):
-            if row_idx >= len(table.rows):
-                break
-            # 自动行高适配：默认 0.4 英寸，内容较长时增至 0.6
-            try:
-                max_cell_len = max((len(str(c)) for c in row_data), default=0)
-                row_height = Inches(0.6) if max_cell_len > 20 else Inches(0.4)
-                table.rows[row_idx].height = row_height
-            except Exception:
-                pass
-            for col_idx, cell_text in enumerate(row_data):
-                if col_idx < col_count:
-                    cell = table.cell(row_idx, col_idx)
-                    self._set_cell_text(cell, str(cell_text))
-
-        logger.info("表格填充完成（表头=%d 列, 数据行=%d）", min(len(headers), col_count), len(rows))
+        _fill_dynamic_table_impl(shape, table_data)
 
     def _set_cell_text(self, cell: Any, text: str) -> None:
-        """设置单元格文本，保留首个 run 的格式（字体/字号/颜色/粗体）
+        """设置单元格文本，保留首个 run 的格式（委托 aippt.table_filler）
 
         :param cell: pptx table Cell 对象
         :param text: 要填入的文本
         """
-        tf = cell.text_frame
-        paragraphs = list(tf.paragraphs)
-        if not paragraphs:
-            cell.text = str(text)
-            return
-        first_para = paragraphs[0]
-        if first_para.runs:
-            # 保留首个 run 的格式，仅替换其 text，删除同段其余 run
-            first_para.runs[0].text = str(text)
-            for run in first_para.runs[1:]:
-                run._r.getparent().remove(run._r)
-        else:
-            # 没有现有 run，直接设置（会创建新 run，继承段落/单元格级格式）
-            cell.text = str(text)
-        # 删除多余段落（保留首段段落属性）
-        for para in paragraphs[1:]:
-            para._p.getparent().remove(para._p)
+        _set_cell_text_impl(cell, text)
 
     def _remove_slides(self, prs: Any, page_numbers: list[int]) -> list[int]:
         removed: list[int] = []
@@ -600,7 +473,13 @@ class PptRenderer:
                 removed.append(page_num)
         return removed
 
-    def duplicate_slide(self, prs: Any, slide_index: int):
+    def duplicate_slide(self, prs: Any, slide_index: int) -> Any:
+        """复制指定 slide，返回新 slide 对象
+
+        :param prs: Presentation 对象
+        :param slide_index: 源 slide 索引（0-based）
+        :return: 新创建的 slide 对象
+        """
         source = prs.slides[slide_index]
         new_slide = prs.slides.add_slide(source.slide_layout)
         # 清空新 slide 自带占位符
@@ -615,7 +494,8 @@ class PptRenderer:
 
 
 # ==================== CLI 入口 ====================
-def cmd_render(args):
+def cmd_render(args: Any) -> None:
+    """CLI render 子命令处理"""
     with open(args.data, 'r', encoding='utf-8') as f:
         slot_data = json.load(f)
     renderer = PptRenderer(args.template, args.meta)

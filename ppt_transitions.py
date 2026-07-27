@@ -6,6 +6,8 @@ PPT 转场效果注入模块
 参考：ECMA-376 第 4 版 + PowerPoint 2010+ 扩展（p14 命名空间）
       PowerPoint 2015+ 扩展（p159 命名空间，Morph 平滑切换）
 """
+from typing import Any, Optional
+
 from lxml import etree
 
 
@@ -359,14 +361,15 @@ DIR_ALIASES = {
 }
 
 
-def _resolve_dir(dir_alias):
+def _resolve_dir(dir_alias: Optional[str]) -> Optional[str]:
     """将方向别名解析为 ECMA-376 方向值"""
     if not dir_alias:
         return None
     return DIR_ALIASES.get(dir_alias, dir_alias)
 
 
-def _build_transition_element(spec, speed_enum, duration_ms):
+def _build_transition_element(spec: dict[str, Any], speed_enum: str,
+                              duration_ms: int) -> etree._Element:
     """
     根据转场规范构建单个 <p:transition> 元素（不含 mc:AlternateContent 包裹）
 
@@ -412,12 +415,18 @@ def _build_transition_element(spec, speed_enum, duration_ms):
     return p_transition
 
 
-def _build_alternate_content(transition_elem, spec, speed_enum, duration_ms):
+def _build_alternate_content(transition_elem: etree._Element,
+                             spec: dict[str, Any],
+                             speed_enum: str,
+                             duration_ms: int) -> etree._Element:
     """
     用 mc:AlternateContent 包裹 PowerPoint 2010+ 转场
     Choice：使用 p14 转场；Fallback：使用 fade 作为降级
 
     :param transition_elem: 已构建好的 p:transition 元素（含 p14 子元素）
+    :param spec: 转场规范（保留参数，便于扩展）
+    :param speed_enum: 速度枚举值
+    :param duration_ms: 时长（毫秒）
     :return: mc:AlternateContent 元素
     """
     nsmap = {"mc": NS_MC, "p": NS_P, "p14": NS_P14}
@@ -439,7 +448,7 @@ def _build_alternate_content(transition_elem, spec, speed_enum, duration_ms):
     return mc_ac
 
 
-def _build_morph_xml(slide_id, option="byObject"):
+def _build_morph_xml(slide_id: Optional[int], option: str = "byObject") -> str:
     """
     构建 Morph 平滑切换的 AlternateContent XML 字符串
 
@@ -464,7 +473,7 @@ def _build_morph_xml(slide_id, option="byObject"):
     return xml
 
 
-def inject_transition(slide, transition_spec):
+def inject_transition(slide: Any, transition_spec: dict[str, Any]) -> bool:
     """
     为 slide 注入转场效果（直接修改 slide XML）
 
@@ -569,10 +578,16 @@ def inject_transition(slide, transition_spec):
 apply_transition = inject_transition
 
 
-def _insert_at_schema_position(sld_elem, new_elem, elem_local_name):
+def _insert_at_schema_position(sld_elem: etree._Element,
+                               new_elem: etree._Element,
+                               elem_local_name: str) -> None:
     """
     按 ECMA-376 schema 顺序插入新元素到 p:sld 中
     p:sld 子元素顺序：cSld, clrMapOvr, transition, timing
+
+    :param sld_elem: slide 根 XML 元素 <p:sld>
+    :param new_elem: 待插入的新元素
+    :param elem_local_name: 新元素的 localname，用于在 schema 顺序中定位
     """
     # schema 顺序索引
     schema_order = ["cSld", "clrMapOvr", "transition", "timing", "AlternateContent"]
@@ -591,7 +606,8 @@ def _insert_at_schema_position(sld_elem, new_elem, elem_local_name):
     sld_elem.insert(insert_pos, new_elem)
 
 
-def validate_transition(transition_spec, slide_num=None):
+def validate_transition(transition_spec: dict[str, Any],
+                        slide_num: Optional[int] = None) -> list[str]:
     """
     校验转场配置是否合法
 
@@ -634,8 +650,11 @@ def validate_transition(transition_spec, slide_num=None):
     return warnings
 
 
-def list_transitions():
-    """列出所有可用转场效果（按命名空间分组）"""
+def list_transitions() -> dict[str, Any]:
+    """列出所有可用转场效果（按命名空间分组）
+
+    :return: 包含 ecma376/p14_extension/total 三个键的字典
+    """
     ecma = [(k, v) for k, v in TRANSITION_CATALOG.items() if v["ns"] == "p"]
     p14 = [(k, v) for k, v in TRANSITION_CATALOG.items() if v["ns"] == "p14"]
     return {
