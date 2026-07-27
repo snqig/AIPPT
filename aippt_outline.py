@@ -279,6 +279,12 @@ def main():
     p_auto.add_argument("--animations", default="auto", help="动画配置（auto/none）")
     p_auto.add_argument("--animation-theme", default=None,
                         help="动画预设主题（business/tech/formal），优先级低于单页配置，高于 --transitions/--animations")
+    p_auto.add_argument("--enable-assets", action="store_true",
+                        help="启用联网资产获取（图标/图片），默认关闭")
+    p_auto.add_argument("--icon-set", default="lucide",
+                        help="图标集名（lucide / heroicons / phosphor），默认 lucide")
+    p_auto.add_argument("--asset-cache-dir", default="assets/cache",
+                        help="资产缓存目录（默认 assets/cache）")
 
     # 子命令：validate（格式校验）
     p_val = sub.add_parser("validate",
@@ -349,6 +355,35 @@ def main():
                       help="渲染模式：template（模板替换，默认）/ auto（无模板自动布局）")
     p_s4.add_argument("--theme", default=None,
                       help="视觉主题名（仅 auto 模式生效，如 商务蓝/极简灰/科技青）")
+    # T613：版式变体覆盖参数
+    p_s4.add_argument("--layout-variant-override", default=None,
+                      help='版式变体覆盖 JSON（仅 auto 模式生效），如 \'{"kpi":"grid_2x2"}\'')
+    # T801：联网资产获取参数
+    p_s4.add_argument("--enable-assets", action="store_true",
+                      help="启用联网资产获取（图标/图片），默认关闭")
+    p_s4.add_argument("--icon-set", default="lucide",
+                      help="图标集名（lucide / heroicons / phosphor），默认 lucide")
+    p_s4.add_argument("--asset-cache-dir", default="assets/cache",
+                      help="资产缓存目录（默认 assets/cache）")
+
+    # T613：辅助查询命令 - list-variants（查询页面布局变体）
+    p_lv = sub.add_parser("list-variants",
+                          help="查询自动布局引擎已注册的页面版式变体")
+    p_lv.add_argument("--page-type", default=None,
+                      help="指定页面类型筛选（如 kpi / numbered_list）")
+
+    # T615：排版自检命令 - lint-layout（检测渲染后 PPTX 的排版问题）
+    p_lint = sub.add_parser("lint-layout",
+                            help="对渲染后的 PPTX 进行排版质量自检（溢出/重叠/间距/字号/空文本框）")
+    p_lint.add_argument("--pptx", required=True, help="待检测的 PPTX 文件路径")
+    p_lint.add_argument("--output", default=None,
+                        help="可选，将报告保存为 JSON 文件（默认打印到 stdout）")
+    p_lint.add_argument("--no-overflow", action="store_true", help="跳过元素溢出检测")
+    p_lint.add_argument("--no-overlap", action="store_true", help="跳过元素重叠检测")
+    p_lint.add_argument("--no-spacing", action="store_true", help="跳过间距异常检测")
+    p_lint.add_argument("--no-fontsize", action="store_true", help="跳过字号下限检测")
+    p_lint.add_argument("--no-empty", action="store_true", help="跳过空文本框检测")
+    p_lint.add_argument("--verbose", action="store_true", help="输出 info 级别问题")
 
     args = parser.parse_args()
 
@@ -415,6 +450,48 @@ def main():
         )
         print(json.dumps(templates, ensure_ascii=False, indent=2))
         return 0
+
+    elif args.cmd == "list-variants":
+        # T613：查询自动布局引擎已注册的页面版式变体
+        from aippt.layout import list_layout_variants
+        variants = list_layout_variants(args.page_type)
+        print(json.dumps(variants, ensure_ascii=False, indent=2))
+        return 0
+
+    elif args.cmd == "lint-layout":
+        # T615：排版自检 - 对渲染后 PPTX 文件执行几何排版质量检测
+        from aippt.layout.layout_lint import lint_pptx, format_report
+
+        try:
+            report = lint_pptx(
+                args.pptx,
+                check_overflow=not args.no_overflow,
+                check_overlap=not args.no_overlap,
+                check_spacing=not args.no_spacing,
+                check_fontsize=not args.no_fontsize,
+                check_empty=not args.no_empty,
+            )
+        except FileNotFoundError as e:
+            logger.error(str(e))
+            return 1
+        except Exception as e:
+            logger.error("排版自检失败: %s", e)
+            return 1
+
+        # 控制台输出人类可读报告
+        print(format_report(report, verbose=args.verbose))
+
+        # JSON 输出（保存到文件或 stdout 由 --output 决定）
+        report_dict = report.to_dict()
+        if args.output:
+            Path(args.output).write_text(
+                json.dumps(report_dict, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            logger.info("报告已保存: %s", args.output)
+
+        # 退出码：有 error 级别问题返回 1，否则 0
+        return 0 if report.passed else 1
 
     elif args.cmd == "validate":
         # 六层防御体系 · 格式校验入口
@@ -760,11 +837,29 @@ def main():
                                theme_name, available_themes)
 
             renderer = AutoLayoutRenderer(theme_name=theme_name)
+            # T613：解析 --layout-variant-override JSON，传入 args.extra
+            variant_override = None
+            if args.layout_variant_override:
+                try:
+                    variant_override = json.loads(args.layout_variant_override)
+                    if not isinstance(variant_override, dict):
+                        logger.warning("--layout-variant-override 必须是 JSON 对象，已忽略")
+                        variant_override = None
+                except json.JSONDecodeError as e:
+                    logger.warning("--layout-variant-override JSON 解析失败: %s，已忽略", e)
+            extra: dict = {}
+            if variant_override:
+                extra["variant_override"] = variant_override
+            extra["scene"] = outline.get("scene", "")
             render_args = RenderArgs(
                 transitions=args.transitions,
                 animations=args.animations,
                 animation_theme=args.animation_theme,
                 theme=theme_name,
+                enable_assets=args.enable_assets or False,
+                icon_set=args.icon_set or "lucide",
+                asset_cache_dir=args.asset_cache_dir or "assets/cache",
+                extra=extra,
             )
             result = renderer.render_outline(fixed_outline, args.output, render_args)
 

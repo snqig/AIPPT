@@ -70,7 +70,7 @@
         "page_id": {"type": "integer", "minimum": 1},
         "page_type": {
           "type": "string",
-          "enum": ["cover", "catalog", "divider", "numbered_list", "kpi", "timeline", "two_column", "skill_percent", "preset_titles", "chart", "table", "ending"]
+          "enum": ["cover", "catalog", "divider", "numbered_list", "kpi", "timeline", "two_column", "skill_percent", "preset_titles", "chart", "table", "image", "ending"]
         },
         "title": {"type": "string", "maxLength": 80},
         "subtitle": {"type": "string", "maxLength": 80},
@@ -189,6 +189,30 @@
             "items": {"type": "string", "maxLength": 30}
           }
         },
+        "image_path": {
+          "type": "string",
+          "description": "T614 图片页：单图模式下的图片路径（本地路径或 URL）"
+        },
+        "image_items": {
+          "type": "array",
+          "description": "T614 图片页：多图模式（最多 4 张），每项含 path + caption",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": ["path"],
+            "properties": {
+              "path": {"type": "string", "description": "图片路径（本地或 URL）"},
+              "caption": {"type": "string", "maxLength": 50, "description": "图片说明文字"}
+            },
+            "additionalProperties": false
+          }
+        },
+        "image_layout": {
+          "type": "string",
+          "description": "T614 图片页版式：single（单图大图）/ grid_2（双图）/ grid_2x2（四图网格）",
+          "enum": ["single", "grid_2", "grid_2x2"]
+        },
         "transition": {
           "type": ["string", "null"],
           "enum": [
@@ -198,25 +222,65 @@
             "wedge", "comb", "randomBar", "strips",
             "conveyor", "doors", "ferris", "flip", "flythrough", "gallery", "glitter",
             "honeycomb", "pan", "prism", "reveal", "ripple", "shred", "switch",
-            "vortex", "warp", "window", "flash", "wheelReverse"
+            "vortex", "warp", "window", "flash", "wheelReverse",
+            "morph"
           ]
+        },
+        "transition_option": {
+          "type": ["string", "null"],
+          "description": "T615+ 超强方案：转场选项（仅 morph 支持）",
+          "enum": [null, "byObject", "byWord", "byChar"]
         },
         "animations": {
           "type": ["object", "null"],
           "properties": {
             "entry": {
               "type": ["string", "null"],
-              "enum": [null, "fade", "fly_in", "zoom", "wipe", "slide_in", "bounce", "spin"]
+              "enum": [null, "fade", "fly_in", "zoom", "wipe", "slide_in", "bounce", "spin",
+                       "appear", "float_in", "split", "box", "dissolve", "swivel",
+                       "wheel", "blinds", "checker", "wedge", "random_bars", "strips",
+                       "plus", "circle", "diamond"]
             },
             "exit": {
               "type": ["string", "null"],
-              "enum": [null, "fade_out", "fly_out", "zoom_out", "slide_out"]
+              "enum": [null, "fade_out", "fly_out", "zoom_out", "slide_out",
+                       "wipe_out", "disappear"]
             },
             "emphasis": {
               "type": ["string", "null"],
-              "enum": [null, "pulse", "spin", "shake", "grow_shrink", "color_blast"]
+              "enum": [null, "pulse", "spin", "shake", "grow_shrink", "color_blast",
+                       "bold_flash"]
             },
-            "by_bullet": {"type": "boolean"}
+            "by_bullet": {"type": "boolean"},
+            "dir": {
+              "type": ["string", "null"],
+              "description": "超强方案 P0：入场方向（仅对 fly_in/wipe 等方向敏感效果有意义）",
+              "enum": [null, "from_left", "from_right", "from_top", "from_bottom",
+                       "from_top_left", "from_top_right", "from_bottom_left", "from_bottom_right",
+                       "up", "down"]
+            },
+            "bullet_delay_ms": {
+              "type": ["integer", "null"],
+              "description": "超强方案 P0：by_bullet 段间延迟（毫秒），推荐 100-800",
+              "minimum": 0,
+              "maximum": 3000
+            },
+            "delay_ms": {
+              "type": ["integer", "null"],
+              "description": "超强方案 P0：单页入场延迟（毫秒），覆盖默认角色延迟",
+              "minimum": 0,
+              "maximum": 5000
+            },
+            "intensity": {
+              "type": ["string", "null"],
+              "description": "超强方案 P1：动画强度，引擎映射到 duration 与 bullet_delay",
+              "enum": [null, "low", "med", "high"]
+            },
+            "sequence": {
+              "type": ["string", "null"],
+              "description": "超强方案 P1：by_bullet 段落播放顺序",
+              "enum": [null, "sequential", "staggered", "custom"]
+            }
           },
           "additionalProperties": false
         }

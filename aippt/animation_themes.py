@@ -1,6 +1,6 @@
 """
 PPT 动画预设主题模块
-功能：提供 3 套预设动画/转场主题（business/tech/formal），
+功能：提供 6 套预设动画/转场主题（business/tech/formal/cinematic/dynamic-impact/minimal-plus），
       根据页面类型自动选择合适的转场与动画效果，实现一键风格切换。
 依赖：ppt_animations.py 的 ANIMATION_CATALOG、ppt_transitions.py 的 TRANSITION_CATALOG
 
@@ -11,7 +11,15 @@ PPT 动画预设主题模块
     4. --transitions / --animations 全局参数
 
 设计约束：100% 向后兼容，theme 未传入时行为与原版完全一致。
+
+超强方案新增（P0）：
+    - cinematic：电影感叙事，morph 转场为主，fly_in from_bottom + 较长 bullet_delay
+    - dynamic-impact：高视觉冲击，vortex/switch 谨慎使用，bounce + 强 emphasis
+    - minimal-plus：极简增强，cut/fade + appear + by_bullet 保留控制力
+    - 主题支持 dir / bullet_delay_ms / intensity / rhythm 透传字段
 """
+from typing import Optional
+
 from aippt.logger import logger
 
 
@@ -115,6 +123,72 @@ ANIMATION_THEMES = {
             "ending":        {"transition": "fade", "animations": {"entry": "fade",   "exit": None, "emphasis": None,      "by_bullet": False}},
         },
     },
+    # ---------- 电影感叙事（超强方案 P0 新增）----------
+    "cinematic": {
+        "description": "电影感叙事：优先 morph 转场（byObject），列表 fly_in from_bottom + by_bullet + 较长段间 delay，"
+                       "封面 zoom + 标题延迟强调，KPI 大数字 zoom + pulse。"
+                       "适合故事型汇报、融资路演、年终回顾等叙事性强的场景。",
+        "global_transition": "morph",
+        "global_transition_option": "byObject",  # morph 选项：byObject/byWord/byChar
+        "rhythm": "slow-build",                   # 节奏曲线：slow-build 段间 delay 较长
+        "page_overrides": {
+            "cover":         {"transition": "morph", "animations": {"entry": "zoom",   "exit": None, "emphasis": "pulse",  "by_bullet": False, "delay_ms": 200}},
+            "catalog":       {"transition": "morph", "animations": {"entry": "fly_in", "exit": None, "emphasis": None,     "by_bullet": True,  "dir": "from_bottom", "bullet_delay_ms": 500}},
+            "divider":       {"transition": "morph", "animations": {"entry": "zoom",   "exit": None, "emphasis": "spin",   "by_bullet": False}},
+            "numbered_list": {"transition": "morph", "animations": {"entry": "fly_in", "exit": None, "emphasis": None,     "by_bullet": True,  "dir": "from_bottom", "bullet_delay_ms": 600}},
+            "two_column":    {"transition": "morph", "animations": {"entry": "fly_in", "exit": None, "emphasis": None,     "by_bullet": True,  "dir": "from_bottom", "bullet_delay_ms": 500}},
+            "skill_percent": {"transition": "morph", "animations": {"entry": "fly_in", "exit": None, "emphasis": None,     "by_bullet": True,  "dir": "from_bottom", "bullet_delay_ms": 500}},
+            "preset_titles": {"transition": "morph", "animations": {"entry": "fly_in", "exit": None, "emphasis": None,     "by_bullet": True,  "dir": "from_bottom", "bullet_delay_ms": 500}},
+            "kpi":           {"transition": "fade",  "animations": {"entry": "zoom",   "exit": None, "emphasis": "pulse",  "by_bullet": False, "delay_ms": 300}},
+            "timeline":      {"transition": "morph", "animations": {"entry": "fly_in", "exit": None, "emphasis": None,     "by_bullet": True,  "dir": "from_left",   "bullet_delay_ms": 500}},
+            "chart":         {"transition": "morph", "animations": {"entry": "zoom",   "exit": None, "emphasis": None,     "by_bullet": False}},
+            "table":         {"transition": "morph", "animations": {"entry": "wipe",   "exit": None, "emphasis": None,     "by_bullet": False}},
+            "ending":        {"transition": "morph", "animations": {"entry": "zoom",   "exit": None, "emphasis": "pulse",  "by_bullet": False, "delay_ms": 200}},
+        },
+    },
+    # ---------- 高视觉冲击（超强方案 P0 新增）----------
+    "dynamic-impact": {
+        "description": "高视觉冲击：全局以 zoom 为主，列表页 bounce + by_bullet 快速段间，KPI zoom + 高频 pulse，"
+                       "分隔页 flip，封面/结尾 zoom + grow_shrink 强调。"
+                       "适合产品发布、内部动员会、年轻团队等高冲击场景。谨慎使用 vortex/switch。",
+        "global_transition": "zoom",
+        "rhythm": "fast-start",                   # 节奏曲线：fast-start 段间 delay 较短
+        "page_overrides": {
+            "cover":         {"transition": "zoom",   "animations": {"entry": "bounce",   "exit": None, "emphasis": "grow_shrink", "by_bullet": False}},
+            "catalog":       {"transition": "zoom",   "animations": {"entry": "fly_in",   "exit": None, "emphasis": None,          "by_bullet": True,  "bullet_delay_ms": 200}},
+            "divider":       {"transition": "flip",   "animations": {"entry": "zoom",     "exit": None, "emphasis": "spin",         "by_bullet": False}},
+            "numbered_list": {"transition": "zoom",   "animations": {"entry": "bounce",   "exit": None, "emphasis": None,          "by_bullet": True,  "bullet_delay_ms": 200}},
+            "two_column":    {"transition": "zoom",   "animations": {"entry": "fly_in",   "exit": None, "emphasis": None,          "by_bullet": True,  "bullet_delay_ms": 200}},
+            "skill_percent": {"transition": "zoom",   "animations": {"entry": "fly_in",   "exit": None, "emphasis": "pulse",       "by_bullet": True,  "bullet_delay_ms": 200}},
+            "preset_titles": {"transition": "zoom",   "animations": {"entry": "bounce",   "exit": None, "emphasis": None,          "by_bullet": True,  "bullet_delay_ms": 200}},
+            "kpi":           {"transition": "zoom",   "animations": {"entry": "zoom",     "exit": None, "emphasis": "pulse",       "by_bullet": False, "delay_ms": 200}},
+            "timeline":      {"transition": "flip",   "animations": {"entry": "fly_in",   "exit": None, "emphasis": None,          "by_bullet": True,  "dir": "from_left", "bullet_delay_ms": 200}},
+            "chart":         {"transition": "zoom",   "animations": {"entry": "zoom",     "exit": None, "emphasis": "pulse",       "by_bullet": False}},
+            "table":         {"transition": "zoom",   "animations": {"entry": "wipe",     "exit": None, "emphasis": None,          "by_bullet": False}},
+            "ending":        {"transition": "zoom",   "animations": {"entry": "zoom",     "exit": None, "emphasis": "grow_shrink", "by_bullet": False}},
+        },
+    },
+    # ---------- 极简增强（超强方案 P0 新增）----------
+    "minimal-plus": {
+        "description": "极简增强：以 cut/fade 为主，列表页 appear + by_bullet（几乎无动画感但保留逐条控制力），"
+                       "几乎无 emphasis，封面/结尾 fade。适合极简汇报、纯内容输出、追求干净的场景。",
+        "global_transition": "fade",
+        "rhythm": "steady",                       # 节奏曲线：steady 稳定
+        "page_overrides": {
+            "cover":         {"transition": "fade", "animations": {"entry": "fade",   "exit": None, "emphasis": None, "by_bullet": False}},
+            "catalog":       {"transition": "cut",  "animations": {"entry": "appear", "exit": None, "emphasis": None, "by_bullet": True,  "bullet_delay_ms": 100}},
+            "divider":       {"transition": "fade", "animations": {"entry": "fade",   "exit": None, "emphasis": None, "by_bullet": False}},
+            "numbered_list": {"transition": "fade", "animations": {"entry": "appear", "exit": None, "emphasis": None, "by_bullet": True,  "bullet_delay_ms": 100}},
+            "two_column":    {"transition": "fade", "animations": {"entry": "appear", "exit": None, "emphasis": None, "by_bullet": True,  "bullet_delay_ms": 100}},
+            "skill_percent": {"transition": "fade", "animations": {"entry": "appear", "exit": None, "emphasis": None, "by_bullet": True,  "bullet_delay_ms": 100}},
+            "preset_titles": {"transition": "fade", "animations": {"entry": "appear", "exit": None, "emphasis": None, "by_bullet": True,  "bullet_delay_ms": 100}},
+            "kpi":           {"transition": "fade", "animations": {"entry": "fade",   "exit": None, "emphasis": None, "by_bullet": False}},
+            "timeline":      {"transition": "fade", "animations": {"entry": "appear", "exit": None, "emphasis": None, "by_bullet": True,  "bullet_delay_ms": 150}},
+            "chart":         {"transition": "fade", "animations": {"entry": "fade",   "exit": None, "emphasis": None, "by_bullet": False}},
+            "table":         {"transition": "fade", "animations": {"entry": "fade",   "exit": None, "emphasis": None, "by_bullet": False}},
+            "ending":        {"transition": "fade", "animations": {"entry": "fade",   "exit": None, "emphasis": None, "by_bullet": False}},
+        },
+    },
 }
 
 
@@ -137,25 +211,38 @@ def list_themes() -> list[str]:
     return list(ANIMATION_THEMES.keys())
 
 
-def build_page_transition_spec(transition_name: str, speed: str = "med") -> dict:
+def build_page_transition_spec(transition_name: str, speed: str = "med",
+                               option: Optional[str] = None) -> dict:
     """将主题的 transition 名转换为 inject_transition 所需的 spec dict
 
-    :param transition_name: 转场名（如 fade/push/zoom/flip），见 TRANSITION_CATALOG
+    :param transition_name: 转场名（如 fade/push/zoom/flip/morph），见 TRANSITION_CATALOG
     :param speed: 速度（slow/med/fast），默认 med
-    :return: {"type": transition_name, "speed": speed}；transition_name 为空或 none 时返回 None
+    :param option: 转场选项，目前仅 morph 支持 byObject/byWord/byChar（超强方案 P0 新增）
+    :return: {"type": transition_name, "speed": speed, "option": option}；
+             transition_name 为空或 none 时返回 None
     """
     if not transition_name or transition_name == "none":
         return None
-    return {"type": transition_name, "speed": speed}
+    spec = {"type": transition_name, "speed": speed}
+    # morph 转场支持 byObject/byWord/byChar 选项
+    if transition_name == "morph" and option:
+        spec["option"] = option
+    return spec
 
 
 def build_page_animations_spec(page_type: str, anims_cfg: dict) -> list[dict]:
     """将主题的 animations 配置展开为 inject_animations 所需的 spec 列表
 
     主题配置格式（与 outline.json 的 animations 字段一致）：
-        {"entry": "fade", "exit": None, "emphasis": "pulse", "by_bullet": True}
+        {"entry": "fade", "exit": None, "emphasis": "pulse", "by_bullet": True,
+         "dir": "from_bottom", "bullet_delay_ms": 500, "delay_ms": 200}
     展开后的 spec 列表格式（供 inject_animations 消费）：
         [{"shape": "title", "effect": "fade", "trigger": "on_load", "duration_ms": 600}, ...]
+
+    超强方案 P0 新增透传字段：
+        - dir: 入场方向（如 from_bottom/from_left/from_right），透传到 inject_animations
+        - bullet_delay_ms: by_bullet 段间延迟（毫秒），透传到 text_build 配置
+        - delay_ms: 单页延迟（毫秒），覆盖默认 delay
 
     :param page_type: 页面类型（小写，如 cover/kpi/numbered_list）
     :param anims_cfg: 主题 animations 配置 dict
@@ -168,6 +255,10 @@ def build_page_animations_spec(page_type: str, anims_cfg: dict) -> list[dict]:
     exit_eff = anims_cfg.get("exit")
     emphasis = anims_cfg.get("emphasis")
     by_bullet = anims_cfg.get("by_bullet", False)
+    # 超强方案 P0 新增字段透传
+    direction = anims_cfg.get("dir")              # 入场方向
+    bullet_delay_ms = anims_cfg.get("bullet_delay_ms")  # by_bullet 段间延迟
+    page_delay_ms = anims_cfg.get("delay_ms")     # 单页延迟
 
     # 无入场效果则不生成动画（退场/强调依附于入场之后）
     if not entry:
@@ -182,9 +273,18 @@ def build_page_animations_spec(page_type: str, anims_cfg: dict) -> list[dict]:
             "trigger": trigger,
             "duration_ms": duration,
         }
+        # 入场方向透传（仅对 fly_in/wipe 等方向敏感效果有意义）
+        if direction:
+            item["dir"] = direction
+        # 单页延迟透传（覆盖默认 group delay）
+        if page_delay_ms is not None:
+            item["delay_ms"] = page_delay_ms
         # 列表类页面的 body shape 启用按段落逐步显示
         if by_bullet and shape == "body":
             item["text_build"] = "by_bullet"
+            # by_bullet 段间延迟透传
+            if bullet_delay_ms is not None:
+                item["bullet_delay_ms"] = bullet_delay_ms
         spec.append(item)
 
     # 退场动画（附加在入场之后，作用于 title）

@@ -9,7 +9,8 @@ aippt.layout 子包：自动布局引擎
     1. 单位统一英寸，对齐 python-pptx 原生坐标体系
     2. 所有样式从主题 Design Token 读取，禁止硬编码
     3. 自动生成元素附加 role + shape_id，供动画模块匹配
-    4. 渲染输出为原生可编辑 PPTX 元素，禁止图片嵌入
+    4. 渲染输出为原生可编辑 PPTX 元素
+    5. 图片/图标嵌入仅在 --enable-assets 模式下可用
 """
 from aippt.layout.ppt_auto_layout import (
     # 常量
@@ -24,13 +25,15 @@ from aippt.layout.ppt_auto_layout import (
     get_token, hex_to_rgb,
     # 原子组件
     add_text_box, add_shape, add_line, add_card, render_number_badge,
+    add_image_box,
     # 页面分发
-    PAGE_LAYOUT_REGISTRY, register_layout, dispatch_page_layout,
+    PAGE_LAYOUT_REGISTRY, DEFAULT_VARIANT,
+    register_layout, dispatch_page_layout, list_layout_variants,
     # Presentation 工具
     create_presentation, add_blank_slide,
 )
 
-# 导入 page_layouts 触发 5 类页面布局函数注册（cover/catalog/divider/numbered_list/kpi）
+# 导入 page_layouts 触发 8 类页面布局函数注册（含变体）
 from aippt.layout import page_layouts  # noqa: F401
 
 __all__ = [
@@ -40,7 +43,8 @@ __all__ = [
     "safe_area", "column_x", "row_y",
     "split_horizontal", "split_vertical", "grid_matrix",
     "get_token", "hex_to_rgb",
-    "add_text_box", "add_shape", "add_line", "add_card", "render_number_badge",
-    "PAGE_LAYOUT_REGISTRY", "register_layout", "dispatch_page_layout",
+    "add_text_box", "add_shape", "add_line", "add_card", "render_number_badge", "add_image_box",
+    "PAGE_LAYOUT_REGISTRY", "DEFAULT_VARIANT",
+    "register_layout", "dispatch_page_layout", "list_layout_variants",
     "create_presentation", "add_blank_slide",
 ]

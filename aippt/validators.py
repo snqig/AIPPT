@@ -64,6 +64,17 @@ ANIM_EXIT_ENUM = ["fade_out", "fly_out", "zoom_out", "slide_out"]
 # 强调动画枚举
 ANIM_EMPHASIS_ENUM = ["pulse", "spin", "shake", "grow_shrink", "color_blast"]
 
+# 超强方案 P1 新增字段枚举（A007 校验用）
+ANIM_INTENSITY_ENUM = {"low", "med", "high"}
+ANIM_SEQUENCE_ENUM = {"sequential", "staggered", "custom"}
+ANIM_MORPH_OPTION_ENUM = {"byObject", "byWord", "byChar"}
+ANIM_DIR_ENUM = {
+    "from_left", "from_right", "from_top", "from_bottom",
+    "from_top_left", "from_top_right", "from_bottom_left", "from_bottom_right",
+}
+# bullet_delay_ms / delay_ms 合理范围（毫秒）
+ANIM_DELAY_MS_RANGE = (0, 5000)
+
 # 不支持 by_bullet 的页面类型（封面/分隔/KPI/结尾等单元素页）
 BY_BULLET_FORBIDDEN_PAGES = {"cover", "divider", "kpi", "ending", "chart", "table"}
 # 商务场景不推荐使用的高动态转场特效
@@ -316,6 +327,7 @@ def validate_animations(outline: dict[str, Any]) -> ValidationResult:
       A004: by_bullet 类型错误（应为布尔值）
       A005: 页面类型不支持逐段动画（warning，可自动关闭）
       A006: 不推荐使用高动态特效（warning）
+      A007: 超强方案 P1 新字段非法（intensity/sequence/dir/bullet_delay_ms/delay_ms/transition_option，warning，可降级移除）
 
     :param outline: 大纲数据
     :return: ValidationResult
@@ -429,6 +441,48 @@ def validate_animations(outline: dict[str, Any]) -> ValidationResult:
                     f"页面类型 {ptype} 不支持逐段动画，已标记需自动关闭",
                     f"by_bullet=true 仅适用于 numbered_list/catalog/timeline/preset_titles 等多段落页面",
                 )
+
+        # A007: 超强方案 P1 新字段校验（intensity/sequence/dir/bullet_delay_ms/delay_ms）
+        # 全部为 warning 级别，可由 auto_fix_outline 降级移除，不阻断渲染
+        intensity_val = animations.get("intensity")
+        if isinstance(intensity_val, str) and intensity_val not in ANIM_INTENSITY_ENUM:
+            result.add_warning(
+                "A007", f"{page_path}.animations.intensity",
+                f"intensity 非法值 '{intensity_val}'，将降级移除",
+                f"合法值: {sorted(ANIM_INTENSITY_ENUM)}",
+            )
+
+        sequence_val = animations.get("sequence")
+        if isinstance(sequence_val, str) and sequence_val not in ANIM_SEQUENCE_ENUM:
+            result.add_warning(
+                "A007", f"{page_path}.animations.sequence",
+                f"sequence 非法值 '{sequence_val}'，将降级移除",
+                f"合法值: {sorted(ANIM_SEQUENCE_ENUM)}",
+            )
+
+        dir_val = animations.get("dir")
+        if isinstance(dir_val, str) and dir_val not in ANIM_DIR_ENUM:
+            result.add_warning(
+                "A007", f"{page_path}.animations.dir",
+                f"dir 非法值 '{dir_val}'，将降级移除",
+                f"合法值: {sorted(ANIM_DIR_ENUM)}",
+            )
+
+        for delay_field in ("bullet_delay_ms", "delay_ms"):
+            delay_val = animations.get(delay_field)
+            if delay_val is not None:
+                if not isinstance(delay_val, int) or isinstance(delay_val, bool):
+                    result.add_warning(
+                        "A007", f"{page_path}.animations.{delay_field}",
+                        f"{delay_field} 类型错误: 应为整数，实际为 {type(delay_val).__name__}，将降级移除",
+                        f"{delay_field} 必须是整数毫秒值，范围 {ANIM_DELAY_MS_RANGE}",
+                    )
+                elif not (ANIM_DELAY_MS_RANGE[0] <= delay_val <= ANIM_DELAY_MS_RANGE[1]):
+                    result.add_warning(
+                        "A007", f"{page_path}.animations.{delay_field}",
+                        f"{delay_field} 越界: {delay_val}，将降级移除",
+                        f"合法范围 {ANIM_DELAY_MS_RANGE} 毫秒",
+                    )
 
     return result
 
@@ -649,6 +703,47 @@ def auto_fix_outline(outline: dict[str, Any]) -> tuple[dict[str, Any], Validatio
             del page["transition"]
             result.add_fix(
                 f"{page_path}.transition 非法值 '{transition}' 已移除，将继承全局 auto"
+            )
+
+        # Fix 6.6: 超强方案 P1 新字段降级（A007 - intensity/sequence/dir/bullet_delay_ms/delay_ms）
+        # 非法值直接移除，由渲染器继承默认行为
+        if isinstance(animations, dict):
+            # intensity 非法 → 移除
+            iv = animations.get("intensity")
+            if isinstance(iv, str) and iv not in ANIM_INTENSITY_ENUM:
+                del animations["intensity"]
+                result.add_fix(f"{page_path}.animations.intensity 非法值 '{iv}' 已移除")
+            # sequence 非法 → 移除
+            sv = animations.get("sequence")
+            if isinstance(sv, str) and sv not in ANIM_SEQUENCE_ENUM:
+                del animations["sequence"]
+                result.add_fix(f"{page_path}.animations.sequence 非法值 '{sv}' 已移除")
+            # dir 非法 → 移除
+            dv = animations.get("dir")
+            if isinstance(dv, str) and dv not in ANIM_DIR_ENUM:
+                del animations["dir"]
+                result.add_fix(f"{page_path}.animations.dir 非法值 '{dv}' 已移除")
+            # bullet_delay_ms / delay_ms 类型/越界 → 移除
+            for delay_field in ("bullet_delay_ms", "delay_ms"):
+                dval = animations.get(delay_field)
+                if dval is not None:
+                    is_invalid_type = not isinstance(dval, int) or isinstance(dval, bool)
+                    is_out_of_range = (
+                        isinstance(dval, int) and not isinstance(dval, bool)
+                        and not (ANIM_DELAY_MS_RANGE[0] <= dval <= ANIM_DELAY_MS_RANGE[1])
+                    )
+                    if is_invalid_type or is_out_of_range:
+                        del animations[delay_field]
+                        result.add_fix(
+                            f"{page_path}.animations.{delay_field} 非法值 {dval!r} 已移除"
+                        )
+
+        # Fix 6.7: 超强方案 P1 - transition_option（morph 选项）非法值降级
+        t_opt = page.get("transition_option")
+        if isinstance(t_opt, str) and t_opt not in ANIM_MORPH_OPTION_ENUM:
+            del page["transition_option"]
+            result.add_fix(
+                f"{page_path}.transition_option 非法值 '{t_opt}' 已移除"
             )
 
     # 仅当原大纲已有 pages 字段或 pages 非空时才写回，避免给 cover/sections/end 格式强加空 pages

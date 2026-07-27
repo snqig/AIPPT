@@ -36,14 +36,10 @@ from aippt.table_filler import (
     fill_dynamic_table as _fill_dynamic_table_impl,
     set_cell_text as _set_cell_text_impl,
 )
+from aippt.image_replacer import replace_images as _replace_images_impl
 
-try:
-    from ppt_transitions import inject_transition
-    from ppt_animations import inject_animations, RECOMMENDED_ANIMATIONS
-    _ANIM_MODULES_READY = True
-except Exception:
-    _ANIM_MODULES_READY = False
-    _ANIM_IMPORT_ERROR = "animation/transition modules not available"
+_ANIM_MODULES_READY = True
+_ANIM_IMPORT_ERROR = ""
 
 
 class PptRenderer(BaseRenderer):
@@ -119,8 +115,8 @@ class PptRenderer(BaseRenderer):
 
             for slot_info in slots:
                 slot_name = slot_info.get('slot', '')
-                # chart_data/table_data 由专门逻辑处理，跳过文本替换
-                if slot_name in ('chart_data', 'table_data'):
+                # chart_data/table_data/image_data 由专门逻辑处理，跳过文本替换
+                if slot_name in ('chart_data', 'table_data', 'image_data'):
                     continue
                 if slot_name not in page_input:
                     stats['skipped'] += 1
@@ -150,6 +146,11 @@ class PptRenderer(BaseRenderer):
                     elif 'table_data' in page_input and hasattr(shape, 'has_table') and shape.has_table:
                         self._fill_dynamic_table(shape, page_input['table_data'])
                         stats['replaced'] += 1
+
+            # 处理图片替换（检测到 image_data 时触发，T301 新增）
+            if 'image_data' in page_input and isinstance(page_input['image_data'], dict):
+                replaced_imgs = self._replace_images(slide, page_input['image_data'])
+                stats['replaced'] += replaced_imgs
 
         # 演讲者备注注入：在删除版权页之前进行，page_id 与原始页码对齐
         # notes_map 键为 page_id（从 1 开始），值为该页备注文本；默认 None 不注入
@@ -340,29 +341,31 @@ class PptRenderer(BaseRenderer):
         transitions: Any,
         animations: Any,
     ) -> None:
+        from aippt.animation_scheduler import inject_page_effects
+        from aippt.animation_themes import SLIDE_TYPE_TO_PAGE_TYPE
         chapters = self.meta.get('chapters', [])
         total = len(prs.slides)
+        theme_name = getattr(self, 'animation_theme', None)
 
         for page_num, slide in enumerate(prs.slides, 1):
-            if transitions:
-                if transitions == "auto":
-                    inject_transition(slide, {"type": "fade", "speed": "med"})
-                elif isinstance(transitions, dict) and str(page_num) in transitions:
-                    inject_transition(slide, transitions[str(page_num)])
+            slide_type = self._infer_slide_type(page_num, chapters, total)
+            page_type = SLIDE_TYPE_TO_PAGE_TYPE.get(slide_type, "numbered_list")
 
-            if animations:
-                slide_type = self._infer_slide_type(page_num, chapters, total)
+            t_name = None
+            if isinstance(transitions, dict) and str(page_num) in transitions:
+                t_spec = transitions[str(page_num)]
+                if isinstance(t_spec, dict):
+                    t_name = t_spec.get("type")
 
-                if animations == "auto":
-                    anim_spec = RECOMMENDED_ANIMATIONS.get(
-                        slide_type, RECOMMENDED_ANIMATIONS.get("CONTENT", [])
-                    )
-                    if anim_spec:
-                        inject_animations(slide, anim_spec, slide_type)
-                elif isinstance(animations, dict) and str(page_num) in animations:
-                    anim_spec = animations[str(page_num)]
-                    if anim_spec:
-                        inject_animations(slide, anim_spec, slide_type)
+            a_spec = None
+            if isinstance(animations, dict) and str(page_num) in animations:
+                a_spec = animations[str(page_num)]
+
+            inject_page_effects(slide, page_type,
+                theme_name=theme_name,
+                page_animations=a_spec,
+                page_transition=t_name,
+            )
 
     def _infer_slide_type(self, page_num: int, chapters: list[dict[str, Any]], total_pages: int) -> str:
         # 优先识别复合页面：含 chart/table 形状的页面
@@ -461,6 +464,18 @@ class PptRenderer(BaseRenderer):
         :param text: 要填入的文本
         """
         _set_cell_text_impl(cell, text)
+
+    def _replace_images(self, slide: Any, image_data: dict[str, dict[str, Any]]) -> int:
+        """替换 slide 中的图片 shape（委托 aippt.image_replacer，T301 新增）
+
+        支持本地路径与 URL，等比覆盖（cover）/等比包含（contain）两种填充模式。
+        匹配策略：按 picture shape 出现顺序依次替换 image_data 中的项。
+
+        :param slide: python-pptx Slide 对象
+        :param image_data: {slot_name: {"path"/"url": "...", "fit": "cover"/"contain"}}
+        :return: 成功替换的图片数量
+        """
+        return _replace_images_impl(slide, image_data)
 
     def _remove_slides(self, prs: Any, page_numbers: list[int]) -> list[int]:
         removed: list[int] = []

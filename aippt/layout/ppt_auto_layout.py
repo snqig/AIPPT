@@ -12,7 +12,8 @@
     - 单位统一英寸（Inches），对齐 python-pptx 原生坐标体系
     - 所有样式从主题 Design Token 读取，禁止硬编码颜色/字号/间距
     - 自动生成元素必须附加 role、唯一 shape_id，供动画模块匹配
-    - 渲染输出全部为原生可编辑 PPTX 元素，禁止图片嵌入
+    - 渲染输出全部为原生可编辑 PPTX 元素
+    - 图片嵌入仅在 --enable-assets 模式下启用，默认不启用
     - 16:9 画布默认 13.333 x 7.5 英寸
 
 页面布局函数注册表 PAGE_LAYOUT_REGISTRY：
@@ -483,6 +484,48 @@ def add_line(
     return connector
 
 
+def add_image_box(
+    slide: Slide,
+    rect: GridRect,
+    image_path: str,
+    role: str,
+    ctx: LayoutContext,
+    theme: dict[str, Any],
+    mask: str = "none",
+    overlay: bool = False,
+) -> Optional[BaseShape]:
+    left, top, width, height = rect.to_emu()
+    try:
+        pic = slide.shapes.add_picture(image_path, left, top, width, height)
+        ctx.register(role, pic)
+        if overlay:
+            _add_image_overlay(slide, rect, theme, ctx)
+        return pic
+    except Exception as e:
+        logger.warning("add_image_box failed: %s", e)
+        return None
+
+
+def _add_image_overlay(
+    slide: Slide,
+    rect: GridRect,
+    theme: dict[str, Any],
+    ctx: LayoutContext,
+) -> BaseShape:
+    left, top, width, height = rect.to_emu()
+    shp = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left, top, width, height)
+    overlay_color = get_token(theme, "color.image_overlay", "#000000")
+    overlay_opacity = get_token(theme, "effect.image_overlay_opacity", 35000)
+    shp.fill.solid()
+    shp.fill.fore_color.rgb = hex_to_rgb(overlay_color)
+    from pptx.oxml.ns import qn
+    alpha_elem = shp.fill.fore_color._color
+    alpha_elem.set(qn("a:alpha"), str(int(overlay_opacity)))
+    shp.line.fill.background()
+    ctx.register("image_overlay", shp)
+    return shp
+
+
 def add_card(
     slide: Slide,
     rect: GridRect,
@@ -546,27 +589,38 @@ def render_number_badge(
 
 
 # ==================== 页面布局函数注册表 ====================
-#: page_type → layout_func(slide, page_data, theme, ctx) 注册表
-#: T004 起逐步注册 cover/catalog/divider/numbered_list/kpi
-#: T101 起补齐 timeline/two_column/table
-PAGE_LAYOUT_REGISTRY: dict[str, Callable[[Slide, dict, dict, LayoutContext], None]] = {}
+#: 二级注册表：page_type → {variant_name → layout_func}
+#: T613 升级：支持 layout_variant 版式变体机制
+#: 每种 page_type 至少含 "default" 变体，可扩展 "grid_2x2" / "single_column" 等
+PAGE_LAYOUT_REGISTRY: dict[str, dict[str, Callable[[Slide, dict, dict, LayoutContext], None]]] = {}
+
+#: 默认变体名
+DEFAULT_VARIANT = "default"
 
 
-def register_layout(page_type: str) -> Callable:
-    """页面布局函数注册装饰器
+def register_layout(page_type: str, variant: str = DEFAULT_VARIANT) -> Callable:
+    """页面布局函数注册装饰器（T613 支持 variant）
 
     用法：
+        # 默认变体
         @register_layout("cover")
         def layout_cover(slide, page_data, theme, ctx):
             ...
 
+        # 指定变体（如 KPI 页 2×2 网格变体）
+        @register_layout("kpi", variant="grid_2x2")
+        def layout_kpi_grid(slide, page_data, theme, ctx):
+            ...
+
     :param page_type: 页面类型（cover/catalog/divider/numbered_list/kpi/...）
+    :param variant: 版式变体名，默认 "default"
     :return: 装饰器函数
     """
     def decorator(func: Callable) -> Callable:
-        if page_type in PAGE_LAYOUT_REGISTRY:
-            logger.warning("页面类型 %s 已注册布局函数，将被覆盖", page_type)
-        PAGE_LAYOUT_REGISTRY[page_type] = func
+        variants = PAGE_LAYOUT_REGISTRY.setdefault(page_type, {})
+        if variant in variants:
+            logger.warning("page_type=%s variant=%s 已注册，将被覆盖", page_type, variant)
+        variants[variant] = func
         return func
     return decorator
 
@@ -576,26 +630,65 @@ def dispatch_page_layout(
     page_data: dict[str, Any],
     theme: dict[str, Any],
     ctx: LayoutContext,
+    variant_override: Optional[dict[str, str]] = None,
 ) -> list[ElementMeta]:
-    """页面分发入口：根据 page_type 调用对应布局函数
+    """页面分发入口：根据 page_type + variant 调用对应布局函数（T613 支持 variant）
+
+    variant 选择优先级（高 → 低）：
+        1. variant_override[page_type]：CLI 全局 --layout-variant-override 参数
+        2. page_data["layout_variant"]：单页 outline 内显式指定
+        3. "default"：默认变体
 
     :param slide: 目标 slide
     :param page_data: outline.json 中的单页数据
     :param theme: 主题字典
     :param ctx: 布局上下文
+    :param variant_override: 全局变体覆盖映射 {page_type: variant_name}，可选
     :return: 当前页生成的元素 ElementMeta 列表
-    :raises ValueError: 未注册的 page_type
+    :raises ValueError: 未注册的 page_type 且无 numbered_list 兜底
     """
     page_type = page_data.get("page_type", "numbered_list")
-    layout_func = PAGE_LAYOUT_REGISTRY.get(page_type)
-    if layout_func is None:
+    variants = PAGE_LAYOUT_REGISTRY.get(page_type)
+
+    if variants is None:
         # 兜底：使用 numbered_list 布局
         logger.warning("未注册的 page_type: %s，降级为 numbered_list", page_type)
-        layout_func = PAGE_LAYOUT_REGISTRY.get("numbered_list")
-        if layout_func is None:
+        variants = PAGE_LAYOUT_REGISTRY.get("numbered_list")
+        if variants is None:
             raise ValueError(f"page_type {page_type} 未注册且无 numbered_list 兜底")
+        page_type = "numbered_list"
+
+    # 选择 variant：全局 override > 单页显式 > default
+    variant_name = DEFAULT_VARIANT
+    if variant_override and page_type in variant_override:
+        variant_name = variant_override[page_type]
+    elif "layout_variant" in page_data:
+        variant_name = page_data["layout_variant"]
+
+    layout_func = variants.get(variant_name)
+    if layout_func is None:
+        # 变体未注册，回退 default
+        if variant_name != DEFAULT_VARIANT:
+            logger.warning("page_type=%s variant=%s 未注册，回退 default",
+                          page_type, variant_name)
+        layout_func = variants.get(DEFAULT_VARIANT)
+        if layout_func is None:
+            # 极端情况：该 page_type 无 default 变体，取第一个注册的
+            layout_func = next(iter(variants.values()))
     layout_func(slide, page_data, theme, ctx)
     return ctx.elements
+
+
+def list_layout_variants(page_type: Optional[str] = None) -> dict[str, list[str]]:
+    """查询已注册的页面布局变体（T613 新增，供 CLI list-variants 调用）
+
+    :param page_type: 指定页面类型，None 查询全部
+    :return: {page_type: [variant_name, ...]} 字典
+    """
+    if page_type:
+        variants = PAGE_LAYOUT_REGISTRY.get(page_type, {})
+        return {page_type: list(variants.keys())}
+    return {pt: list(variants.keys()) for pt, variants in PAGE_LAYOUT_REGISTRY.items()}
 
 
 def create_presentation(slide_width_inch: float = CANVAS_WIDTH_INCH,

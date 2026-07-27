@@ -176,9 +176,9 @@ metadata:
 
 > 全局命令行参数 `--transitions` / `--animations` 合法值：`auto` / `none` / 对应枚举列表中的具体名称。
 
-### 4.5 动画预设主题（3 套）
+### 4.5 动画预设主题（6 套，超强方案）
 
-为降低逐页配置动画/转场的成本，内置 3 套预设主题，通过 `--animation-theme` 一键切换风格。每套主题根据页面类型（page_type）自动分配合适的转场与动画效果。
+为降低逐页配置动画/转场的成本，内置 6 套预设主题，通过 `--animation-theme` 一键切换风格。每套主题根据页面类型（page_type）自动分配合适的转场与动画效果。
 
 **主题清单：**
 
@@ -187,6 +187,9 @@ metadata:
 | `business` | 简约商务：以 fade/push 为主，克制柔和。列表页用 fly_in + by_bullet，KPI 用 zoom，封面/分隔用 fade | 工作汇报、述职报告、年终总结等正式商务场景 |
 | `tech` | 活力科技：以 zoom/flip 为主，动感明快。列表页用 wipe + by_bullet，KPI 用 zoom + emphasis:pulse，封面用 zoom | 产品发布、技术分享、创意提案等活力场景 |
 | `formal` | 沉稳正式：以 fade/wipe 为主，庄重克制。列表页用 fade + by_bullet，KPI 用 fade，封面用 fade，几乎不用 emphasis | 政府汇报、金融报告、学术答辩等庄重场景 |
+| `cinematic` | 电影感叙事：morph（byObject）转场为主，列表 fly_in from_bottom + by_bullet + 较长段间 delay（500-600ms），封面 zoom + 标题延迟强调，KPI 大数字 zoom + pulse | 故事型汇报、融资路演、年终回顾等叙事性强的场景 |
+| `dynamic-impact` | 高视觉冲击：全局 zoom 为主，列表页 bounce + by_bullet 快速段间（200ms），KPI zoom + 高频 pulse，分隔 flip，封面/结尾 zoom + grow_shrink 强调 | 产品发布、内部动员会、年轻团队等高冲击场景 |
+| `minimal-plus` | 极简增强：cut/fade 为主，列表页 appear + by_bullet（几乎无动画感但保留逐条控制力），几乎无 emphasis | 极简汇报、纯内容输出、追求干净的场景 |
 
 **优先级（高 → 低）：**
 
@@ -195,7 +198,37 @@ metadata:
 3. `--animation-theme` 主题的 `global_transition`
 4. `--transitions` / `--animations` 全局参数
 
-> 主题未传入时（默认 None）行为与原版完全一致，100% 向后兼容。
+**主题透传字段（超强方案 P0 新增，可选）：**
+
+主题与单页 `animations` 配置支持以下扩展字段，引擎自动透传到 OOXML 注入层：
+
+| 字段 | 类型 | 说明 | 示例 |
+|---|---|---|---|
+| `dir` | string | 入场方向（仅对 fly_in/wipe 等方向敏感效果有意义） | `"from_bottom"` / `"from_left"` / `"from_right"` |
+| `bullet_delay_ms` | int | by_bullet 段间延迟（毫秒） | `600`（cinematic）/ `200`（dynamic-impact） |
+| `delay_ms` | int | 单页入场延迟（毫秒），覆盖默认角色延迟 | `200` |
+| `rhythm` | string | 主题节奏曲线（仅主题级） | `"slow-build"` / `"fast-start"` / `"steady"` |
+
+主题 morph 转场选项（仅 morph 转场支持，超强方案 P0 新增）：
+
+| 选项 | 说明 | 适用场景 |
+|---|---|---|
+| `byObject` | 按对象变形（默认） | 通用 |
+| `byWord` | 按文字变形 | 标题、字幕 |
+| `byChar` | 按字符变形 | 数字、强调文字 |
+
+**场景推荐（超强方案）：**
+
+| 场景 | 推荐主题 | 关键页配置 | 效果感受 |
+|---|---|---|---|
+| 年终总结（正式） | `business` | 列表 fly_in + by_bullet；KPI zoom + pulse | 专业有节奏 |
+| 产品发布 | `tech` / `cinematic` | 列表 wipe/fly_in + by_bullet；封面 morph + zoom | 动感+叙事 |
+| 融资路演 | `cinematic` | 全页 morph；列表 from_bottom + 较长 delay | 电影感 |
+| 内部动员会 | `dynamic-impact` | 高冲击入场 + 强调；谨慎使用 vortex | 强视觉冲击 |
+| 政府/学术 | `formal` | fade + by_bullet；几乎无强调 | 庄重克制 |
+| 极简汇报 | `minimal-plus` | appear + by_bullet | 干净但可控 |
+
+> 主题未传入时（默认 None）行为与原版完全一致，100% 向后兼容。引擎对未知字段直接忽略，保证旧 Skill 不受影响。
 
 ---
 
@@ -542,7 +575,7 @@ python aippt_outline.py auto-generate \
   [--template-id 模板ID] \
   [--transitions auto] \
   [--animations auto] \
-  [--animation-theme business|tech|formal]
+  [--animation-theme business|tech|formal|cinematic|dynamic-impact|minimal-plus]
 ```
 说明：自动完成需求理解、大纲生成、模板匹配、渲染全流程；未指定模板时自动选择最优模板。生成的是骨架 PPT，建议用 step2-outline 填充真实内容后用 step4-generate 重渲染。`--animation-theme` 可一键应用预设动画/转场风格（见 4.5 节），优先级低于单页配置、高于 `--transitions`/`--animations`。
 
@@ -554,11 +587,36 @@ python aippt_outline.py step4-generate \
   --output 输出文件路径.pptx \
   --transitions auto \
   --animations auto \
-  [--animation-theme business|tech|formal] \
+  [--animation-theme business|tech|formal|cinematic|dynamic-impact|minimal-plus] \
   [--trim-pages 6,10,11] \
-  [--insert-tables]
+  [--insert-tables] \
+  [--mode template|auto] \
+  [--theme 商务蓝|极简灰|科技青|...] \
+  [--layout-variant-override '{"kpi":"grid_2x2"}']
 ```
 说明：输入标准 outline.json，输出成品 PPT，并附残留占位文本校验报告。step4-generate 内置渲染前终检（六层防御体系 Layer 3-5），格式错误会被自动拦截。`--animation-theme` 按页面类型自动注入转场/动画（见 4.5 节），outline 单页显式 `transition`/`animations` 字段优先级最高。
+
+**2.1 双渲染引擎模式说明**
+
+| 模式 | `--mode` | 渲染器 | 适用场景 | 是否需要模板 |
+|---|---|---|---|---|
+| 模板模式（默认） | `template` | `PptRenderer` | 企业标准化、品牌规范、正式汇报，100% 样式保真 | 需要 `--template-id` |
+| 自动布局模式 | `auto` | `AutoLayoutRenderer` | 快速草稿、无模板、临时方案，代码实时生成版式 | 不需要模板，需指定 `--theme` |
+
+双引擎共用 outline.json、动画模块、校验体系、错误码，向后 100% 兼容。auto 模式下：
+- `--theme`：视觉主题名（如 商务蓝/极简灰/科技青），未指定时默认商务蓝，可用 `list-themes` 查询全部
+- `--layout-variant-override`：版式变体覆盖 JSON（如 `{"kpi":"grid_2x2"}`），可用 `list-variants` 查询每种页面支持的变体
+
+**2.2 自动布局模式示例**
+```bash
+python aippt_outline.py step4-generate \
+  --outline outline.json \
+  --mode auto \
+  --theme 商务蓝 \
+  --layout-variant-override '{"kpi":"grid_2x2"}' \
+  --animations auto \
+  --output output.pptx
+```
 
 **3. 四步工作流独立子命令**
 ```bash
@@ -649,7 +707,37 @@ python import_templates.py rebuild-index [--models-dir models]
 ```
 说明：重新生成 templates_index.json 全局模板索引。
 
-### 10.5 辅助工具命令
+### 10.5 排版自检命令（T615）
+
+**1. 对渲染后 PPTX 进行排版质量自检**
+```bash
+python aippt_outline.py lint-layout \
+  --pptx 输出文件.pptx \
+  [--output report.json] \
+  [--no-overflow] [--no-overlap] [--no-spacing] [--no-fontsize] [--no-empty] \
+  [--verbose]
+```
+说明：检测渲染后 PPTX 的几何排版质量，输出结构化问题报告。与 `validate`（outline 数据校验）互补，本命令校验渲染后几何结果。
+
+检测项：
+- **元素溢出**（error/warning）：shape 超出画布边界或安全区
+- **元素重叠**（warning）：同页非装饰文本元素重叠
+- **间距异常**（info）：相邻元素间距过小（< 0.05 inch）
+- **字号下限**（warning）：文本字号低于 10pt
+- **空文本框**（info）：大尺寸文本框无内容残留
+
+退出码：0 表示通过（无 error 级别问题），1 表示未通过。`--verbose` 输出 info 级别问题；`--output` 将 JSON 报告保存到文件。装饰元素（bg/card/divider/line/badge）自动跳过。
+
+**2. 自动布局辅助查询命令**
+```bash
+# 查询全部可用视觉主题
+python -c "from aippt.theme_loader import list_themes; print(list_themes())"
+
+# 查询自动布局引擎已注册的页面版式变体
+python aippt_outline.py list-variants [--page-type kpi]
+```
+
+### 10.6 辅助工具命令
 
 ```bash
 # 裁剪指定页面
@@ -782,15 +870,18 @@ python generate_thumbnails.py --models-dir models --layout 2x2 [--force]
   ```
 
 ### 14.8 动画预设主题
-- **能力**：内置 3 套预设主题，一键切换整体动画/转场风格
+- **能力**：内置 6 套预设主题，一键切换整体动画/转场风格（超强方案）
 - **主题清单**：
   | 主题名 | 风格 | 适用场景 |
   |---|---|---|
   | `business` | 简约商务 | 工作汇报、年终总结、述职报告 |
   | `tech` | 活力科技 | 产品发布、科技分享、创新汇报 |
   | `formal` | 沉稳正式 | 政府汇报、正式致辞、学术答辩 |
+  | `cinematic` | 电影感叙事（morph + fly_in from_bottom + 较长 delay） | 故事型汇报、融资路演、年终回顾 |
+  | `dynamic-impact` | 高视觉冲击（bounce + 强 emphasis + 快速段间） | 产品发布、内部动员会、年轻团队 |
+  | `minimal-plus` | 极简增强（appear + by_bullet 保留控制力） | 极简汇报、纯内容输出、追求干净 |
 - **优先级**：单页 outline 显式配置 > 主题 page_overrides > 主题 global_transition > 全局 `--transitions`/`--animations`
-- **命令**：`python aippt_outline.py step4-generate ... --animation-theme business`
+- **命令**：`python aippt_outline.py step4-generate ... --animation-theme cinematic`
 
 ---
 

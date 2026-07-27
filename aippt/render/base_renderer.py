@@ -33,6 +33,9 @@ class RenderArgs:
     :param notes_map: 演讲者备注 {page_id: 备注文本}（page_id 从 1 开始）
     :param animation_theme: 动画主题名（business/tech/formal）
     :param theme: 视觉主题名（仅 auto 模式生效，如 商务蓝/极简灰/科技青）
+    :param enable_assets: 是否启用联网资产获取（图片/图标）
+    :param icon_set: 图标集名（lucide / heroicons / phosphor 等）
+    :param asset_cache_dir: 资产缓存目录
     :param extra: 引擎专属参数扩展位，避免基类频繁变更
     """
     remove_copyright: bool = True
@@ -42,6 +45,9 @@ class RenderArgs:
     notes_map: Optional[dict[int, str]] = None
     animation_theme: Optional[str] = None
     theme: Optional[str] = None
+    enable_assets: bool = False
+    icon_set: str = "lucide"
+    asset_cache_dir: str = "assets/cache"
     extra: dict[str, Any] = field(default_factory=dict)
 
 

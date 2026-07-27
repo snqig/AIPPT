@@ -415,7 +415,10 @@ class SceneAdapter:
             else:
                 raise ValueError(f"模板不存在: {template_id}")
         with open(meta_path, 'r', encoding='utf-8') as f:
-            return json.load(f), str(meta_path)
+            meta = json.load(f)
+        # 注入 _meta_file_path，供 get_template_pptx 定位 PPTX 文件
+        meta["_meta_file_path"] = str(meta_path)
+        return meta, str(meta_path)
 
     def get_template_pptx(self, meta: dict[str, Any]) -> str:
         """

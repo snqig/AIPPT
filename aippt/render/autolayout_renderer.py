@@ -21,6 +21,7 @@ from __future__ import annotations
 from typing import Any, Optional
 
 from pptx import Presentation
+from pptx.slide import Slide
 from pptx.util import Pt
 
 from aippt.logger import logger
@@ -29,6 +30,8 @@ from aippt.theme_loader import load_theme
 from aippt.layout import (
     create_presentation, add_blank_slide,
     dispatch_page_layout, LayoutContext, PAGE_LAYOUT_REGISTRY,
+    safe_area, column_x, row_y, GridRect, get_token,
+    add_image_box,
 )
 
 
@@ -79,6 +82,10 @@ class AutoLayoutRenderer(BaseRenderer):
         """
         args = self.normalize_args(render_args)
 
+        # T613：从 args.extra 读取全局 variant_override 映射
+        # 结构：{"kpi": "grid_2x2", "numbered_list": "single_column"}
+        variant_override = args.extra.get("variant_override") if args.extra else None
+
         # 支持两种 outline 格式：pages 数组 或 cover/sections/end
         pages = outline_data.get("pages")
         if not pages:
@@ -86,6 +93,11 @@ class AutoLayoutRenderer(BaseRenderer):
             pages = self._convert_outline_to_pages(outline_data)
             if not pages:
                 raise ValueError("outline_data 缺少 pages 数组，且无法从 cover/sections/end 转换")
+
+        # T801：资产获取（图片/图标）
+        page_assets: dict[int, dict[str, str]] = {}
+        if args.enable_assets:
+            page_assets = self._fetch_page_assets(pages, args)
 
         # 创建 16:9 画布
         prs = create_presentation()
@@ -104,7 +116,15 @@ class AutoLayoutRenderer(BaseRenderer):
 
             slide = add_blank_slide(prs)
             ctx = LayoutContext(page_num=page_num)
-            elements = dispatch_page_layout(slide, page_data, self.theme, ctx)
+            elements = dispatch_page_layout(
+                slide, page_data, self.theme, ctx,
+                variant_override=variant_override,
+            )
+
+            # T801: 资产注入（在布局元素之后放置图片/图标）
+            page_asset_map = page_assets.get(page_num, {})
+            if page_asset_map:
+                self._apply_page_assets(slide, page_data, page_asset_map, self.theme, ctx)
 
             # 收集元素元数据（供动画模块使用）
             for el in elements:
@@ -117,7 +137,7 @@ class AutoLayoutRenderer(BaseRenderer):
 
         # T007：动画/转场注入（接入现有 ppt_animations / ppt_transitions 模块）
         if args.transitions or args.animations:
-            self._inject_effects(prs, args, all_elements)
+            self._inject_effects(prs, args, all_elements, pages)
 
         # T008：auto_fit 自适应（复用现有 aippt.text_replacer.auto_fit）
         # 对所有有文本的 shape 执行字号自适应，下限 10pt
@@ -198,47 +218,47 @@ class AutoLayoutRenderer(BaseRenderer):
         prs: Presentation,
         args: RenderArgs,
         elements: list[dict],
+        outline_pages: Optional[list[dict]] = None,
     ) -> None:
-        """T007：动画/转场注入（接入现有 ppt_animations / ppt_transitions 模块）
+        """T007：动画/转场注入（调度层对接）
 
         实现链路：
-            1. 按页码分组元素，构建 page_num → elements 映射
-            2. 遍历每页 slide：
-               - 转场：args.transitions 为 "auto" 时按 page_type 自动选择 fade/push
-               - 动画：args.animations 为 "auto" 时按 page_type 匹配 RECOMMENDED_ANIMATIONS
-            3. shape 角色匹配：通过 shape.name 中包含的 role 关键字定位
-               （自动布局生成的 shape.name 格式为 p{page_num}_{role}_{seq}）
+            1. 按页码分组元素，获取 page_type
+            2. 调度层接管规则匹配、时序计算、三层层注入
+
+        优先级（高 → 低）：
+            1. outline.json 单页显式 transition/animations 字段（outline_pages）
+            2. CLI args.transitions / args.animations（dict[page_num] 形式）
+            3. --animation-theme 主题默认
 
         :param prs: Presentation 对象
         :param args: 渲染参数
         :param elements: 全部元素元数据列表
+        :param outline_pages: outline.json 的 pages 数组，用于读取单页显式配置
         """
         try:
-            from ppt_transitions import inject_transition
-            from ppt_animations import inject_animations, RECOMMENDED_ANIMATIONS
+            from aippt.animation_scheduler import inject_page_effects, list_animation_themes
         except Exception as e:
-            logger.warning("动画/转场模块加载失败，跳过注入: %s", e)
+            logger.warning("动画调度层模块加载失败，跳过注入: %s", e)
             return
 
-        # 按页码分组元素
+        theme_name = args.animation_theme
+        if theme_name and theme_name not in list_animation_themes():
+            logger.warning("未知动画主题 %s，跳过主题注入", theme_name)
+            theme_name = None
+
+        # 构建 page_num → outline page_data 映射，读取单页显式 transition/animations
+        outline_by_page: dict[int, dict] = {}
+        if outline_pages:
+            for pd in outline_pages:
+                pnum = pd.get("page_id")
+                if pnum is not None:
+                    outline_by_page[int(pnum)] = pd
+
         page_elements: dict[int, list[dict]] = {}
         for el in elements:
             page_num = el.get("page_num", 0)
             page_elements.setdefault(page_num, []).append(el)
-
-        # 页面类型 → slide_type 映射（用于动画 auto 匹配）
-        page_type_to_slide_type = {
-            "cover": "COVER",
-            "catalog": "CONTENT",
-            "divider": "CHAPTER",
-            "numbered_list": "CONTENT",
-            "kpi": "KPI",
-            "timeline": "TIMELINE",
-            "two_column": "CONTENT",
-            "chart": "CHART",
-            "table": "TABLE",
-            "ending": "END",
-        }
 
         injected_pages = 0
         for page_num, slide in enumerate(prs.slides, 1):
@@ -246,40 +266,30 @@ class AutoLayoutRenderer(BaseRenderer):
             if not page_els:
                 continue
             page_type = page_els[0].get("page_type", "numbered_list")
-            slide_type = page_type_to_slide_type.get(page_type, "CONTENT")
 
-            # 转场注入
-            if args.transitions:
-                if args.transitions == "auto":
-                    # 按 page_type 自动选择转场
-                    if page_type == "cover":
-                        t_spec = {"type": "fade", "speed": "slow"}
-                    elif page_type == "divider":
-                        t_spec = {"type": "push", "dir": "from_left", "speed": "med"}
-                    else:
-                        t_spec = {"type": "fade", "speed": "med"}
-                    inject_transition(slide, t_spec)
-                elif isinstance(args.transitions, dict) and str(page_num) in args.transitions:
-                    inject_transition(slide, args.transitions[str(page_num)])
+            # 优先级 1：outline 单页显式 transition/animations
+            outline_pd = outline_by_page.get(page_num, {})
+            t_name = outline_pd.get("transition")
+            a_spec = outline_pd.get("animations")
 
-            # 动画注入
-            if args.animations:
-                if args.animations == "auto":
-                    # 按 slide_type 匹配推荐动画
-                    anim_spec = RECOMMENDED_ANIMATIONS.get(
-                        slide_type, RECOMMENDED_ANIMATIONS.get("CONTENT", [])
-                    )
-                    if anim_spec:
-                        inject_animations(slide, anim_spec, slide_type)
-                elif isinstance(args.animations, dict) and str(page_num) in args.animations:
-                    anim_spec = args.animations[str(page_num)]
-                    if anim_spec:
-                        inject_animations(slide, anim_spec, slide_type)
+            # 优先级 2：CLI args.transitions / args.animations（outline 未显式时使用）
+            if t_name is None and isinstance(args.transitions, dict) and str(page_num) in args.transitions:
+                t_spec = args.transitions[str(page_num)]
+                if isinstance(t_spec, dict):
+                    t_name = t_spec.get("type")
+            if a_spec is None and isinstance(args.animations, dict) and str(page_num) in args.animations:
+                a_spec = args.animations[str(page_num)]
 
+            inject_page_effects(slide, page_type,
+                theme_name=theme_name,
+                page_animations=a_spec,
+                page_transition=t_name,
+            )
             injected_pages += 1
 
-        logger.info("动画/转场注入完成: %d 页（转场=%s, 动画=%s）",
+        logger.info("动画/转场注入完成: %d 页（主题=%s, 转场=%s, 动画=%s）",
                     injected_pages,
+                    theme_name or "none",
                     args.transitions if args.transitions else "off",
                     args.animations if args.animations else "off")
 
@@ -352,3 +362,83 @@ class AutoLayoutRenderer(BaseRenderer):
         if adjusted_count:
             logger.info("auto_fit 下限保护: %d 个 shape 字号回拉到 %dpt",
                         adjusted_count, MIN_FONT_PT)
+
+    def _fetch_page_assets(
+        self,
+        pages: list[dict],
+        args: RenderArgs,
+    ) -> dict[int, dict[str, str]]:
+        from aippt.assets.asset_planner import build_asset_plan
+        from aippt.assets.asset_fetcher import fetch_assets
+
+        result: dict[int, dict[str, str]] = {}
+        asset_cache = args.asset_cache_dir
+        scene = args.extra.get("scene", "") if args.extra else ""
+        style = args.theme or ""
+
+        for page_data in pages:
+            page_num = page_data.get("page_id", 0)
+            if not page_num:
+                continue
+
+            if page_data.get("assets"):
+                plan = page_data["assets"]
+            else:
+                plan = build_asset_plan(page_data, scene=scene, style=style)
+
+            if not plan:
+                continue
+
+            assets = fetch_assets(plan, cache_dir=asset_cache,
+                                 enable_photos=args.enable_assets)
+            page_map: dict[str, str] = {}
+            for a in assets:
+                page_map[a.slot] = a.local_path
+
+            if page_map:
+                result[page_num] = page_map
+
+        total = sum(len(v) for v in result.values())
+        if total:
+            logger.info("Asset fetch: %d assets across %d pages", total, len(result))
+        return result
+
+    def _apply_page_assets(
+        self,
+        slide: Slide,
+        page_data: dict,
+        asset_map: dict[str, str],
+        theme: dict,
+        ctx: LayoutContext,
+    ) -> None:
+        page_type = page_data.get("page_type", "numbered_list")
+        if not asset_map:
+            return
+
+        area = safe_area(get_token(theme, "spacing.safe_margin_inch", 0.5))
+
+        for slot, local_path in asset_map.items():
+            if slot.startswith("img_"):
+                if page_type == "cover":
+                    rect = GridRect(left=8.5, top=0.8, width=4.0, height=5.9)
+                    add_image_box(slide, rect, local_path, "hero_image", ctx, theme,
+                                 mask="rounded", overlay=True)
+                elif page_type in ("numbered_list", "catalog"):
+                    rect = GridRect(left=area.left, top=area.top,
+                                    width=area.width, height=2.0)
+                    add_image_box(slide, rect, local_path, "hero_image", ctx, theme,
+                                 mask="rounded", overlay=False)
+                elif page_type == "ending":
+                    rect = GridRect(left=0, top=0, width=13.333, height=7.5)
+                    add_image_box(slide, rect, local_path, "hero_image", ctx, theme,
+                                 overlay=True)
+
+            elif slot.startswith("icon_"):
+                idx = int(slot.split("_")[1]) if "_" in slot else 0
+                items = page_data.get("items", []) or []
+                if idx >= len(items):
+                    continue
+                icon_y = area.top + 0.6 + idx * 0.85
+                rect = GridRect(left=area.left + 0.1, top=icon_y,
+                                width=0.4, height=0.4)
+                add_image_box(slide, rect, local_path, "icon", ctx, theme)

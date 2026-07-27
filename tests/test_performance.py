@@ -47,9 +47,10 @@ def _find_template_for_scene(scene: str) -> tuple[str, str, str]:
     if not templates:
         pytest.skip(f"场景 {scene} 无可用模板")
     t = templates[0]
-    meta, _ = adapter.get_template_meta(template_id=t["template_id"])
+    meta, meta_abs_path = adapter.get_template_meta(template_id=t["template_id"])
     pptx_path = adapter.get_template_pptx(meta)
-    return t["template_id"], pptx_path, meta.get("path", "")
+    # 返回绝对路径，避免测试中重复拼接前缀
+    return t["template_id"], pptx_path, str(Path(meta_abs_path).resolve())
 
 
 # ==================== 单份渲染性能测试 ====================
@@ -59,8 +60,7 @@ def test_single_render_performance():
     """单份生成耗时基线：应在 0.10~3.50 秒内完成"""
     scene = "工作总结"
     biz_data = _load_business_data(scene)
-    template_id, pptx_path, meta_rel = _find_template_for_scene(scene)
-    meta_path = ROOT / "models" / meta_rel if not Path(meta_rel).is_absolute() else Path(meta_rel)
+    template_id, pptx_path, meta_path = _find_template_for_scene(scene)
 
     adapter = SceneAdapter()
     meta, _ = adapter.get_template_meta(template_id=template_id)
@@ -95,8 +95,7 @@ def test_render_memory_usage():
     """单份生成内存占用基线：应低于 100MB"""
     scene = "工作总结"
     biz_data = _load_business_data(scene)
-    template_id, pptx_path, meta_rel = _find_template_for_scene(scene)
-    meta_path = ROOT / "models" / meta_rel if not Path(meta_rel).is_absolute() else Path(meta_rel)
+    template_id, pptx_path, meta_path = _find_template_for_scene(scene)
 
     adapter = SceneAdapter()
     meta, _ = adapter.get_template_meta(template_id=template_id)
@@ -131,8 +130,7 @@ def test_batch_render_performance():
     """批量渲染 5 份平均耗时基线：单份平均应低于 3.5 秒"""
     scene = "工作总结"
     biz_data = _load_business_data(scene)
-    template_id, pptx_path, meta_rel = _find_template_for_scene(scene)
-    meta_path = ROOT / "models" / meta_rel if not Path(meta_rel).is_absolute() else Path(meta_rel)
+    template_id, pptx_path, meta_path = _find_template_for_scene(scene)
 
     adapter = SceneAdapter()
     meta, _ = adapter.get_template_meta(template_id=template_id)

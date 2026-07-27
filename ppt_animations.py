@@ -491,7 +491,8 @@ def _build_by_bullet_nodes(spec: dict[str, Any],
                            trigger: str,
                            cTn_id_start: int,
                            bullet_delay_ms: int = 500,
-                           bullet_order: Optional[list[int]] = None) -> list[etree._Element]:
+                           bullet_order: Optional[list[int]] = None,
+                           staggered: bool = False) -> list[etree._Element]:
     """
     构建按段落（bullet）逐步显示的动画节点列表
 
@@ -509,6 +510,8 @@ def _build_by_bullet_nodes(spec: dict[str, Any],
     :param bullet_order: 段落播放顺序，默认 [0,1,2,...] 顺序播放；
                          传入 [2,0,1] 表示先播第3段再第1段再第2段；
                          长度必须等于 paragraph_count，否则忽略并警告
+    :param staggered: 超强方案 P1 新增。True 时后续段落用 with_prev 触发（段落间重叠，
+                      更动感）；False 时（默认）后续段落用 after_prev（依次衔接）
     :return: list of <p:par> Element
     """
     # 校验 bullet_order：长度必须等于 paragraph_count，否则忽略并警告
@@ -523,12 +526,15 @@ def _build_by_bullet_nodes(spec: dict[str, Any],
     # 确定播放序列：bullet_order 指定顺序，否则 0..paragraph_count-1
     play_sequence = bullet_order if bullet_order is not None else list(range(paragraph_count))
 
+    # 超强方案 P1：staggered 模式下后续段落使用 with_prev（段落重叠）
+    subsequent_trigger = "with_prev" if staggered else "after_prev"
+
     nodes = []
     cTn_id = cTn_id_start
 
     for seq_idx, para_idx in enumerate(play_sequence):
-        # 第一个段落按用户指定 trigger，后续段落用 after_prev 自动衔接
-        para_trigger = trigger if seq_idx == 0 else "after_prev"
+        # 第一个段落按用户指定 trigger，后续段落按 staggered/sequential 决定
+        para_trigger = trigger if seq_idx == 0 else subsequent_trigger
         node_type, delay_value = TRIGGER_MAP.get(para_trigger, TRIGGER_MAP["on_load"])
 
         outer_par = etree.Element(_p("par"))
@@ -562,9 +568,13 @@ def _build_by_bullet_nodes(spec: dict[str, Any],
         inner_cTn.set("nodeType", node_type)
         inner_stCondLst = etree.SubElement(inner_cTn, _p("stCondLst"))
         inner_cond = etree.SubElement(inner_stCondLst, _p("cond"))
-        # 段间延迟：第一段 delay=0，后续段落 delay=bullet_delay_ms * (seq_idx+1)
+        # 段间延迟：第一段 delay=0
+        # - sequential 模式：后续段落 delay=bullet_delay_ms * (seq_idx+1)（在前一段结束后额外延迟）
+        # - staggered 模式（超强方案 P1）：后续段落 delay=bullet_delay_ms * seq_idx（从启动算起的绝对延迟，交错更紧凑）
         if seq_idx == 0:
             para_delay = 0
+        elif staggered:
+            para_delay = bullet_delay_ms * seq_idx
         else:
             para_delay = bullet_delay_ms * (seq_idx + 1)
         inner_cond.set("delay", str(para_delay))
@@ -1018,10 +1028,22 @@ def inject_animations(slide: Any, animations_spec: list[dict[str, Any]],
             non_empty = [p for p in target_shape.text_frame.paragraphs
                          if p.text.strip()]
             para_count = max(1, len(non_empty))
+
+            # 超强方案 P0/P1：从 spec 读取 bullet_delay_ms 与 sequence 透传给节点树
+            spec_bullet_delay = anim_spec.get("bullet_delay_ms")
+            if spec_bullet_delay is not None:
+                spec_bullet_delay = int(spec_bullet_delay)
+            else:
+                spec_bullet_delay = 500  # 默认段间延迟
+            spec_sequence = anim_spec.get("sequence", "sequential")
+            staggered_mode = (spec_sequence == "staggered")
+
             # 每个 by_bullet 段落消耗 5 个 ID
             nodes = _build_by_bullet_nodes(
                 catalog_spec, shape_id, para_count, duration_ms, delay_ms,
-                trigger, cTn_id_counter
+                trigger, cTn_id_counter,
+                bullet_delay_ms=spec_bullet_delay,
+                staggered=staggered_mode,
             )
             animation_nodes.extend(nodes)
             cTn_id_counter += 5 * para_count
