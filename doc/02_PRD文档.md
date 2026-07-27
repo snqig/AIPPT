@@ -1,10 +1,11 @@
 # AIPPT 产品需求文档（PRD）
 
-> **文档版本**：v1.0  
+> **文档版本**：v2.2  
 > **创建日期**：2026-07-24  
+> **最近更新**：2026-07-27（v2.2 双引擎 + 设计稿解析 + 主题生成器）  
 > **产品名称**：AIPPT（AI-driven PPT Auto-Generation System）  
-> **当前版本**：v2.0.0  
-> **产品定位**：开源 AI 驱动的 PPT 自动生成系统，通过「模板槽位替换」架构将结构化大纲一键转化为成品 PPT
+> **当前版本**：v2.2.0  
+> **产品定位**：开源 AI 驱动的 PPT 自动生成系统，通过「模板槽位替换 + 无模板自动布局」双引擎架构将结构化大纲一键转化为成品 PPT
 
 ---
 
@@ -13,6 +14,7 @@
 | 版本 | 日期 | 修订人 | 修订内容 |
 |------|------|--------|---------|
 | v1.0 | 2026-07-24 | 产品团队 | 初版，基于 v2.0.0 现有能力 + 需求规划输出 |
+| v2.2 | 2026-07-27 | 产品团队 | 新增双引擎架构、设计稿 CV 解析、主题生成器、5 套视觉主题；模板扩展至 236 套 |
 
 ---
 
@@ -28,19 +30,22 @@
 
 市场上已有多款 AI PPT 工具（ChatPPT、Gamma、Beautiful.ai 等），但全部为云端 SaaS，存在数据安全风险、网络依赖、无法定制等问题。
 
-AIPPT 定位为**开源、本地运行、模板驱动**的 PPT 自动生成引擎，面向有技术能力的用户和需要私有化部署的企业。
+AIPPT 定位为**开源、本地运行、双引擎驱动**的 PPT 自动生成引擎，面向有技术能力的用户和需要私有化部署的企业。v2.2 引入无模板自动布局引擎与设计稿 CV 解析能力，从「模板驱动」升级为「模板 + 设计令牌」双轨架构。
 
 ### 2.2 产品目标
 
 | 目标维度 | 目标描述 | 当前达成 |
 |---------|---------|---------|
-| 核心渲染 | 模板槽位替换准确率 ≥ 98% | ✅ 100%（实测 2000+ 槽位） |
+| 核心渲染（模板引擎） | 模板槽位替换准确率 ≥ 98% | ✅ 100%（实测 2000+ 槽位） |
+| 核心渲染（自动引擎） | 无模板自动布局生成原生可编辑 PPTX | ✅ v2.2 新增，T503 验证通过 |
 | 生成速度 | 单份 PPT 生成 ≤ 3 秒 | ✅ 0.15-0.92 秒 |
-| 场景覆盖 | 支持 ≥ 10 类常见商务场景 | ✅ 10 类 |
-| 模板数量 | ≥ 50 套可用模板 | ✅ 79 套 |
+| 场景覆盖 | 支持 ≥ 10 类常见商务场景 | ✅ 11 类 |
+| 模板数量 | ≥ 50 套可用模板 | ✅ 236 套 |
+| 视觉主题 | 支持多套主题切换 | ✅ 5 套（3 商务 + 2 设计令牌） |
 | 样式还原 | 100% 保留原模板字体/颜色/布局 | ✅ 100% |
 | 易用性 | 支持 CLI 和 Python API 两种调用方式 | ✅ 已支持 |
-| 扩展性 | 支持用户自行导入模板 | ✅ 已支持 |
+| 扩展性 | 支持用户自行导入模板 + 自定义主题 | ✅ 已支持 |
+| 设计稿注入 | 从设计稿图片自动提取主题令牌 | ✅ T501 原型完成 |
 
 ---
 
@@ -65,34 +70,51 @@ AIPPT 定位为**开源、本地运行、模板驱动**的 PPT 自动生成引�
 ### 4.1 功能架构总览
 
 ```
-AIPPT 功能架构
-├── 1. 渲染引擎（ppt_renderer.py）
-│   ├── 1.1 模板槽位替换
-│   ├── 1.2 文字自适应
-│   ├── 1.3 版权页清理
-│   ├── 1.4 转场效果注入
-│   └── 1.5 动画效果注入
-├── 2. 场景适配层（ppt_scene_adapter.py）
-│   ├── 2.1 10 类场景 Schema
-│   ├── 2.2 业务字段 → 槽位映射
-│   ├── 2.3 页面模式自动识别（8 类）
-│   └── 2.4 业务数据校验
-├── 3. 大纲转换（aippt_outline.py）
-│   ├── 3.1 四步工作流 CLI
-│   ├── 3.2 场景关键词识别
-│   └── 3.3 outline.json ↔ business_data.json
-├── 4. 模板管理
-│   ├── 4.1 模板库（79 套 / 10 分类）
-│   ├── 4.2 模板导入工具
-│   ├── 4.3 元数据解析
-│   └── 4.4 模板索引管理
-├── 5. 批量与扩展
-│   ├── 5.1 批量渲染
-│   ├── 5.2 PPT 裁剪工具
-│   └── 5.3 表格插入工具
-└── 6. [待实现] 智能输入
-    ├── 6.1 LLM 集成生成大纲
-    └── 6.2 文档导入（Word/PDF/Markdown）
+AIPPT 功能架构（v2.2）
+├── 1. 渲染引擎层（render/）
+│   ├── 1.1 BaseRenderer 抽象基类（统一接口 render_outline）
+│   ├── 1.2 PptRenderer（模板槽位替换引擎）
+│   │   ├── 模板槽位替换 / 文字自适应 / 版权页清理
+│   │   └── 子模块：text_replacer / chart_replacer / table_filler
+│   ├── 1.3 AutoLayoutRenderer（无模板自动布局引擎）★ v2.2 新增
+│   │   ├── 12 列网格 + 安全区 + 分区计算
+│   │   ├── 5 类核心页面布局（cover/catalog/divider/numbered_list/kpi）
+│   │   └── 文本 auto_fit（10pt 下限）
+│   ├── 1.4 转场效果注入（39 种，含 Morph）
+│   └── 1.5 动画效果注入（20+ 种，含 by_bullet）
+├── 2. 主题系统（themes/）★ v2.2 新增
+│   ├── 2.1 theme_loader（含 fallback 机制）
+│   ├── 2.2 5 套视觉主题 JSON
+│   │   ├── 商务蓝 / 极简灰 / 科技青
+│   │   └── guizang-瑞士风-克莱因蓝 / guizang-杂志风-靛蓝瓷
+│   └── 2.3 ppt_auto_layout（页面元素生成器）
+├── 3. 设计稿解析与主题生成 ★ v2.2 新增
+│   ├── 3.1 design_tokens.py（guizang 设计令牌直接抽取）
+│   ├── 3.2 design_parser.py（CV 解析：K-means 配色 + 轮廓字号 + 空白带间距）
+│   └── 3.3 theme_generator.py（解析器输出 → 标准 theme JSON + overrides 微调）
+├── 4. 场景适配层（ppt_scene_adapter.py）
+│   ├── 4.1 11 类场景 Schema
+│   ├── 4.2 业务字段 → 槽位映射
+│   ├── 4.3 页面模式自动识别（8 类）
+│   └── 4.4 业务数据校验
+├── 5. 大纲转换与校验（aippt_outline.py）
+│   ├── 5.1 四步工作流 CLI（step1~step4）
+│   ├── 5.2 场景关键词识别
+│   ├── 5.3 outline.json ↔ business_data.json
+│   └── 5.4 六层防御校验（validate 子命令）
+├── 6. 模板管理
+│   ├── 6.1 模板库（236 套 / 11 分类）
+│   ├── 6.2 模板导入工具
+│   ├── 6.3 元数据解析与质量门禁
+│   └── 6.4 模板索引管理
+├── 7. 批量与扩展
+│   ├── 7.1 批量渲染
+│   ├── 7.2 PPT 裁剪工具
+│   ├── 7.3 表格插入工具
+│   └── 7.4 SmartArt 替换
+└── 8. [待实现] 智能输入
+    ├── 8.1 LLM 集成生成大纲
+    └── 8.2 文档导入（Word/PDF/Markdown）
 ```
 
 ### 4.2 详细功能需求（EARS 原则）
@@ -166,10 +188,10 @@ AIPPT 功能架构
 
 ---
 
-#### F-06：场景 Schema 管理
+#### F-06：场景 Schema管理
 
 **Ubiquitous**：
-- The system shall 预定义 10 类商务场景的 Schema：工作总结、年终总结、工作汇报、工作计划、述职报告、个人简历、自我介绍、开题报告、公司简介、职业规划
+- The system shall 预定义 11 类商务场景的 Schema：工作总结、年终总结、工作汇报、工作计划、述职报告、个人简历、自我介绍、开题报告、公司简介、职业规划、安全教育
 - The system shall 每个 Schema 包含 `cover_fields`（封面字段）、`chapter_sections`（章节定义）、`end_fields`（结束字段）
 
 **Event-driven**：
@@ -222,6 +244,65 @@ AIPPT 功能架构
 - When 执行 step2-outline --scene --purpose --audience --length，the system shall 基于场景 Schema 生成结构化大纲 outline.json
 - When 执行 step3-visuals --outline，the system shall 推荐匹配模板并按得分排序
 - When 执行 step4-generate --outline --template-id，the system shall 完成大纲→business_data→PPT 的全链路生成
+
+---
+
+#### F-13：无模板自动布局引擎（v2.2 新增）
+
+**Ubiquitous**：
+- The system shall 提供独立的 `AutoLayoutRenderer` 类，继承 `BaseRenderer`，与 `PptRenderer` 共用统一接口 `render_outline(outline_data, output_path, render_args)`
+- The system shall 基于 12 列网格 + 安全区 + 分区计算生成布局，所有坐标尺寸使用 inches（对齐 python-pptx 原生坐标系）
+- The system shall 支持 5 类核心页面布局：cover（封面）、catalog（目录）、divider（章节分隔）、numbered_list（数字列表）、kpi（KPI 卡片）
+- The system shall 所有样式读取自主题 Design Token 配置，禁止在代码中硬编码颜色、字号、间距
+
+**Optional**：
+- Where 用户指定 `--mode auto` 参数，the system shall 调用 AutoLayoutRenderer 进行无模板渲染
+- Where 用户指定 `--theme <主题名>` 参数，the system shall 加载对应主题 JSON；主题不可用时 fallback 到默认主题
+
+**Event-driven**：
+- When 生成每个元素后，the system shall 收集 shape_id + role 列表，用于动画模块匹配
+- When 文本超出文本框容量，the system shall 自动缩小字号，下限 10pt
+
+**Unwanted**：
+- If 指定主题文件不存在，then the system shall 记录 warning 并使用默认主题，不中断渲染
+- If outline 中包含不支持的 page_type，then the system shall 跳过该页并记录 warning
+
+---
+
+#### F-14：设计稿 CV 解析（v2.2 新增，T501）
+
+**Event-driven**：
+- When 用户调用 `design_parser.parse_design_image(image_path)`，the system shall 使用 OpenCV/Pillow 分析图片，输出设计令牌字典
+- When 执行配色提取，the system shall 使用 HSV 色彩空间过滤低饱和度/亮度像素，再进行 K-means 聚类，输出主色/辅助色/文本色/背景色
+- When 执行字体预估，the system shall 通过轮廓检测识别文本区域，按像素高度预估字号
+- When 执行间距测量，the system shall 检测空白带（horizontal/vertical projection），对齐 8px 刻度原则
+
+**Ubiquitous**：
+- The system shall 同时提供 `design_tokens.py` 模块，直接抽取 guizang-ppt-skill 的 CSS 变量作为主要方案，CV 解析作为辅助
+
+---
+
+#### F-15：主题生成器（v2.2 新增，T502）
+
+**Event-driven**：
+- When 用户调用 `theme_generator.generate_theme(parsed_tokens, theme_name, overrides)`，the system shall 将解析器输出转换为标准 theme JSON 格式
+- When 生成主题文件，the system shall 校验 WCAG 对比度，确保文本色与背景色对比度 ≥ 4.5
+
+**Optional**：
+- Where 用户提供 `overrides` 参数，the system shall 用用户指定值覆盖解析器提取的值，支持手动微调
+
+**Ubiquitous**：
+- The system shall 预置 9 套 guizang 主题预设（4 套瑞士风 + 5 套杂志风）供选择
+- The system shall 生成的主题文件可直接被 `theme_loader.py` 加载，无需人工修改
+
+---
+
+#### F-16：渲染引擎模块化（v2.2 新增）
+
+**Ubiquitous**：
+- The system shall 将 `ppt_renderer.py` 的渲染子逻辑拆分为独立子模块：`text_replacer.py`（文本替换/shape 定位/字号自适应）、`chart_replacer.py`（4 类图表数据替换）、`table_filler.py`（动态表格行扩展）
+- The system shall 主引擎 `PptRenderer` 仅负责调度，子模块函数为无状态纯函数，便于独立测试与复用
+- The system shall 对调用方零侵入：现有 `renderer.render(slot_data, output_path, ...)` 调用方式保持不变
 
 ---
 
@@ -425,10 +506,14 @@ results = adapter.render_batch("工作总结", data, output_dir="output_batch")
 
 | 编号 | 验收项 | 验收标准 | 测试方法 |
 |------|--------|---------|---------|
-| AC-07 | 10 类场景覆盖 | 10 类场景均有可用模板并能成功生成 | 场景校验脚本 |
+| AC-07 | 11 类场景覆盖 | 11 类场景均有可用模板并能成功生成 | 场景校验脚本 |
 | AC-08 | 业务数据校验 | 不符合 Schema 的数据返回明确的问题清单 | validate CLI |
 | AC-09 | 页面模式识别 | 8 类页面模式均能正确识别 | 元数据校验 |
 | AC-10 | 批量渲染 | 同分类所有模板均生成成功 | smoke_test_all.py |
+| AC-10a | 无模板自动布局 | `--mode auto` 能生成 5 类核心页面（cover/catalog/divider/numbered_list/kpi） | T503 集成测试 |
+| AC-10b | 主题切换 | `--theme` 参数能切换 5 套主题，封面/正文颜色随之变化 | T503 主题对比测试 |
+| AC-10c | 设计稿解析 | `design_parser.parse_design_image()` 能从设计稿图片提取配色/字号/间距 | T501 验证脚本 |
+| AC-10d | 主题生成器 | `theme_generator.generate_theme()` 能输出符合 schema 的 theme JSON | T502 单元测试 |
 
 ### 8.3 边界场景验收
 
@@ -468,11 +553,13 @@ results = adapter.render_batch("工作总结", data, output_dir="output_batch")
 | 开题报告 | 4 | background / literature / methodology / conclusion |
 | 公司简介 | 9 | overview / honors / leadership / business / main_products / marketing / market_analysis / development / future |
 | 职业规划 | 4 | self_analysis / career_goal / action_plan / risk_assessment |
+| 安全教育 | 视模板而定 | safety_awareness / hazards / prevention / emergency 等 |
 
-### 9.3 模板分布统计
+### 9.3 模板分布统计（v2.2）
 
 | 分类 | 模板数量 |
 |------|---------|
+| 安全教育 | 157 |
 | 工作总结 | 39 |
 | 工作汇报 | 12 |
 | 年终总结 | 8 |
@@ -483,7 +570,7 @@ results = adapter.render_batch("工作总结", data, output_dir="output_batch")
 | 个人简历 | 1 |
 | 自我介绍 | 1 |
 | 职业规划 | 1 |
-| **合计** | **79** |
+| **合计** | **236** |
 
 ---
 

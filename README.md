@@ -5,7 +5,7 @@
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE)
 [![opencode skill](https://img.shields.io/badge/opencode-skill-purple)](SKILL.md)
 
-将用户描述或结构化大纲一键转化为成品 PPT。采用「模板槽位替换 + 自动布局」双引擎架构，100% 保留原模板字体、配色与版式，支持 **11 类商务场景、39 种转场效果（含 Morph）、20+ 动画效果、SmartArt 文本替换、演讲者备注注入、图表/表格动态扩展、3 套动画预设主题、5 套视觉主题（含 Swiss/杂志风设计令牌）、无模板自动布局生成、六层防御校验体系**。
+将用户描述或结构化大纲一键转化为成品 PPT。采用「模板槽位替换 + 自动布局」双引擎架构，100% 保留原模板字体、配色与版式，支持 **11 类商务场景、236 套模板、39 种转场效果（含 Morph）、20+ 动画效果、SmartArt 文本替换、演讲者备注注入、图表/表格动态扩展、3 套动画预设主题、5 套视觉主题（含 Swiss/杂志风设计令牌）、无模板自动布局生成、设计稿 CV 解析、六层防御校验体系**。
 
 ---
 
@@ -15,6 +15,7 @@
 |------|------|
 | **双引擎架构** | Template 引擎（槽位替换，保留模板 100% 样式）+ AutoLayout 引擎（无模板自动生成，基于 Design Token） |
 | **11 类场景** | 工作总结 / 年终总结 / 工作汇报 / 工作计划 / 述职报告 / 个人简历 / 自我介绍 / 开题报告 / 公司简介 / 职业规划 / 安全教育 |
+| **236 套模板** | 含安全教育 157 / 工作总结 39 / 工作汇报 12 / 年终总结 8 / 述职报告 8 / 工作计划 5 / 公司简介 2 / 开题报告 2 / 个人简历 1 / 自我介绍 1 / 职业规划 1 |
 | **样式 100% 保留** | 字体、颜色、字号、粗斜体与原模板完全一致，仅替换槽位文本 |
 | **文字自适应** | 超长文本自动缩小字号，避免溢出文本框 |
 | **版权页清理** | 生成时自动删除模板中版权/广告页（`--keep-copyright` 可保留）|
@@ -228,8 +229,12 @@ python -c "from aippt.theme_generator import generate_theme_from_image, save_the
 ├── SKILL.md                          # opencode skill 定义（六层防御）
 ├── SKILL_USAGE.md                    # 完整使用手册
 └── doc/                              # 文档
+    ├── 01_需求规划文档.md            # 项目需求规划（阶段一）
+    ├── 02_PRD文档.md                 # 产品需求文档 PRD
+    ├── 03_功能评审报告.md            # v2.0.0 全模块代码审查 + 架构分析
+    ├── 04_READMEMODELS.md            # 模板制作完全指南
     ├── upgrade_guide.md              # 升级指引
-    ├── benchmark_reference.md        # 对标项目吸收说明
+    ├── benchmark_reference.md        # 对标项目吸收说明（含 guizang 集成）
     └── template_contribution_guide.md # 模板贡献指南
 ```
 
@@ -382,11 +387,22 @@ python ppt_meta_tool.py check --dir models
 
 ## 📖 完整文档
 
+### 项目文档（doc/）
+
+| 文档 | 内容 |
+|------|------|
+| **[doc/01_需求规划文档.md](doc/01_需求规划文档.md)** | 项目需求规划（阶段一），产品定位与范围 |
+| **[doc/02_PRD文档.md](doc/02_PRD文档.md)** | 产品需求文档 PRD，功能规格与版本规划 |
+| **[doc/03_功能评审报告.md](doc/03_功能评审报告.md)** | v2.0.0 全模块代码审查 + 架构分析报告 |
+| **[doc/04_READMEMODELS.md](doc/04_READMEMODELS.md)** | 模板制作完全指南（7 步从零制作可识别模板） |
+| **[doc/upgrade_guide.md](doc/upgrade_guide.md)** | 从旧版本升级指引 |
+| **[doc/benchmark_reference.md](doc/benchmark_reference.md)** | 对标项目吸收说明（含 guizang-ppt-skill 集成） |
+| **[doc/template_contribution_guide.md](doc/template_contribution_guide.md)** | 模板贡献指南 |
+
+### Skill 与使用手册
+
 - **[SKILL.md](SKILL.md)** — opencode skill 定义，含六层防御、12 类页面示例、动画转场枚举
 - **[SKILL_USAGE.md](SKILL_USAGE.md)** — 完整使用手册（CLI / API / 数据格式 / 模板接入）
-- **[doc/upgrade_guide.md](doc/upgrade_guide.md)** — 从旧版本升级指引
-- **[doc/benchmark_reference.md](doc/benchmark_reference.md)** — 对标项目吸收说明
-- **[doc/template_contribution_guide.md](doc/template_contribution_guide.md)** — 模板贡献指南
 
 ---
 

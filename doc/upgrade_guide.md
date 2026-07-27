@@ -1,8 +1,8 @@
 # AIPPT 升级指引
 
 > 适用范围：基于 `python-pptx 1.0.2` 的 PPT 自动生成系统
-> 架构基础：槽位替换 + 五步工作流
-> 当前版本：v2.1
+> 架构基础：双引擎（模板槽位替换 + 无模板自动布局）+ 五步工作流 + 设计稿注入
+> 当前版本：v2.2
 > 兼容策略：100% 向后兼容，所有新增能力均为可选参数
 
 ---
@@ -37,13 +37,25 @@
 - **质量门禁**：模板入库前强制质量评分，低于阈值拒绝入库。
 - **模板标签体系**：`style_tags` / `color_scheme` / `industry` / `page_range` / `quality_score` 五维标签。
 
+### 1.4 v2.2 —— 双引擎与设计稿注入（当前版本）
+
+- **双引擎架构**：新增 `BaseRenderer` 抽象基类 + `AutoLayoutRenderer` 无模板自动布局引擎，与 `PptRenderer` 共用 `render_outline` 接口，100% 向后兼容。
+- **12 列网格自动布局**：`ppt_auto_layout.py` 基于 12 列网格 + 安全区 + 分区计算，支持 5 类核心页面（cover/catalog/divider/numbered_list/kpi），单位 inches 对齐 python-pptx 原生坐标系。
+- **5 套视觉主题**：3 套商务主题（商务蓝/极简灰/科技青）+ 2 套 guizang 设计令牌主题（瑞士风-克莱因蓝/杂志风-靛蓝瓷），`theme_loader.py` 含 fallback 机制。
+- **设计稿 CV 解析（T501）**：`design_parser.py` 使用 OpenCV/Pillow 提取配色（HSV + K-means）、字号（轮廓检测）、间距（空白带投影）。
+- **设计令牌直接抽取**：`design_tokens.py` 直接抽取 guizang-ppt-skill 的 CSS 变量（Swiss/杂志风配色 + vw/vh 字体阶梯 + 8px 间距令牌），规避 AGPL 许可传染。
+- **主题生成器（T502）**：`theme_generator.py` 将解析器输出转换为标准 theme JSON，支持 `overrides` 手动微调 + WCAG 对比度校验。
+- **渲染引擎模块化**：`ppt_renderer.py` 拆分为 `text_replacer.py` / `chart_replacer.py` / `table_filler.py` 子模块，主引擎仅调度，对调用方零侵入。
+- **CLI 新增参数**：`step4-generate` 新增 `--mode [template|auto]`（默认 template）和 `--theme`（auto 模式生效）。
+- **模板扩展至 236 套**：新增安全教育 157 套 + 个人简历（岗位竞聘）1 套。
+
 ---
 
-## 二、从 v1.x 升级到 v2.1
+## 二、从 v1.x 升级到 v2.2
 
 ### 2.1 破坏性变更（无）
 
-> 强调：v2.1 实现 **100% 向后兼容**，所有新增能力均为可选参数，不传则行为与 v1.x 完全一致。
+> 强调：v2.2 实现 **100% 向后兼容**，所有新增能力均为可选参数，不传则行为与 v1.x 完全一致。
 
 | 新增能力 | 默认值 | 不传时行为 |
 | --- | --- | --- |
@@ -53,6 +65,8 @@
 | `removable_pages` | 未配置 | 不删除任何页 |
 | `chart_data` / `table_data` | 未提供 | 不触发动态扩展 |
 | SmartArt 替换 | 自动识别 | 无 SmartArt 时静默跳过 |
+| `--mode` | `template` | 使用模板引擎，与旧版一致 |
+| `--theme` | `None` | auto 模式下使用默认主题，与旧版一致 |
 
 ### 2.2 新增依赖
 
@@ -60,20 +74,25 @@
 | --- | --- | --- | --- |
 | `jsonschema` | ≥ 4.0 | 必选 | 六层防御校验的 JSON Schema 引擎 |
 | `pywin32` | ≥ 306 | 可选 | Windows 平台通过 COM 调用 PowerPoint 生成模板预览图 |
+| `opencv-python` | ≥ 4.8 | 可选（v2.2） | 设计稿 CV 解析（T501），不安装则 design_parser 不可用 |
+| `numpy` | ≥ 1.24 | 可选（v2.2） | opencv 依赖，K-means 聚类 |
+| `Pillow` | ≥ 10.0 | 可选（v2.2） | 设计稿图片读取与测试图片生成 |
 
 安装命令：
 
 ```bash
 pip install jsonschema
-pip install pywin32   # 仅 Windows 需要，且仅用于模板预览图
+pip install pywin32          # 仅 Windows 需要，且仅用于模板预览图
+pip install opencv-python numpy Pillow  # v2.2 设计稿解析（T501）
 ```
 
 ### 2.3 配置迁移
 
-v2.1 对模板元数据做了字段扩展，但 **旧版 `meta.json` 无需手动修改**，迁移工具会自动补全：
+v2.2 对模板元数据做了字段扩展，但 **旧版 `meta.json` 无需手动修改**，迁移工具会自动补全：
 
 1. **新增字段自动补全**：`style_tags` / `color_scheme` / `industry` / `page_range` / `quality_score` 由 `ppt_meta_tool.py` 在校验时自动补全默认值。
 2. **索引文件迁移**：为旧版 `templates_index.json` 补充新标签字段。
+3. **主题目录初始化（v2.2 新增）**：首次运行 AutoLayoutRenderer 时自动创建 `themes/` 目录并加载默认主题。
 
 ```bash
 # 1. 迁移索引文件，补充新标签字段
@@ -234,11 +253,108 @@ python import_templates.py auto-annotate \
 3. 更新 `templates_index.json` 索引。
 4. 输出质量报告（不符合门禁的项会标记 `quality_gate: fail`）。
 
+### 3.7 启用无模板自动布局（v2.2 新增）
+
+无需准备 PPTX 模板，直接从 outline.json 生成原生可编辑 PPTX：
+
+```bash
+python aippt_outline.py step4-generate \
+  --outline outline.json \
+  --mode auto \
+  --theme 商务蓝 \
+  --output output.pptx
+```
+
+参数说明：
+
+| 参数 | 取值 | 说明 |
+| --- | --- | --- |
+| `--mode` | `template`（默认）/ `auto` | template 调用 PptRenderer，auto 调用 AutoLayoutRenderer |
+| `--theme` | 主题名 | 仅 auto 模式生效。可选：商务蓝 / 极简灰 / 科技青 / guizang-瑞士风-克莱因蓝 / guizang-杂志风-靛蓝瓷 |
+
+**支持页面类型**：cover / catalog / divider / numbered_list / kpi（5 类核心页面，后续将扩展 timeline/two_column/chart/table/ending）
+
+**布局规范**：
+- 12 列网格 + 安全区（边距 0.5 inch）+ 分区计算
+- 所有坐标尺寸使用 inches（对齐 python-pptx 原生坐标系）
+- 所有样式读取自主题 Design Token，无硬编码
+- 文本超出容量时自动缩字号，下限 10pt
+- 生成的元素自带 `shape_id` + `role`，可被动画模块匹配
+
+### 3.8 启用设计稿 CV 解析（v2.2 新增，T501）
+
+从任意设计稿图片提取设计令牌：
+
+```python
+from aippt.design_parser import parse_design_image
+from aippt.design_tokens import SWISS_THEMES, FONT_LADDER_SWISS, vw_to_pt
+
+# 方案1：CV 解析任意设计稿图片
+tokens = parse_design_image("design_sample.png")
+# tokens 包含：colors / typography / spacing / shape
+
+# 方案2：直接使用 guizang 预设令牌（推荐，准确可靠）
+klein_blue = SWISS_THEMES["克莱因蓝"]
+# klein_blue = {"name": "克莱因蓝 IKB", "accent": "#002FA7", ...}
+
+# 字体大小转换（vw → pt）
+h1_size_pt = vw_to_pt(FONT_LADDER_SWISS["h1"]["size_vw"])  # 6.0 vw → 约 43.2 pt
+```
+
+**双轨策略**：
+- **主方案**：`design_tokens.py` 直接抽取 guizang-ppt-skill 的 CSS 变量（准确、可靠、规避 AGPL）
+- **辅助方案**：`design_parser.py` CV 解析任意设计稿图片（处理非 guizang 设计稿）
+
+### 3.9 启用主题生成器（v2.2 新增，T502）
+
+将解析器输出转换为标准 theme JSON：
+
+```python
+from aippt.theme_generator import generate_theme
+from aippt.design_parser import parse_design_image
+
+# 1. 解析设计稿
+tokens = parse_design_image("brand_design.png")
+
+# 2. 生成主题 JSON，支持 overrides 手动微调
+theme_json = generate_theme(
+    parsed_tokens=tokens,
+    theme_name="品牌定制主题",
+    overrides={
+        "colors.primary": "#C8102E",  # 强制覆盖主色
+        "typography.h1.size_pt": 44,  # 强制覆盖 h1 字号
+    },
+    output_path="themes/品牌定制主题.json"
+)
+
+# 3. 使用新主题生成 PPT
+# python aippt_outline.py step4-generate --mode auto --theme "品牌定制主题" ...
+```
+
+**预置 guizang 主题预设**（9 套）：
+
+| 风格 | 主题名 | 主色 |
+| --- | --- | --- |
+| 瑞士风 | 克莱因蓝 | #002FA7 |
+| 瑞士风 | 柠檬黄 | #F5C518 |
+| 瑞士风 | 柠檬绿 | #A4C639 |
+| 瑞士风 | 安全橙 | #FF6B1A |
+| 杂志风 | 靛蓝瓷 | #0A1F3D |
+| 杂志风 | 朱砂红 | #C3272B |
+| 杂志风 | 翡翠绿 | #2E8B57 |
+| 杂志风 | 紫水晶 | #6C3483 |
+| 杂志风 | 古铜金 | #B7950B |
+
+**质量校验**：
+- WCAG 对比度校验（文本色与背景色对比度 ≥ 4.5）
+- 主题 schema 校验（字段完整性）
+- 可直接被 `theme_loader.py` 加载
+
 ---
 
 ## 四、SKILL.md 升级要点
 
-v2.1 的 SKILL.md 相较 v1.x 新增以下章节，**旧的提示词与示例全部保留**，仅做增量扩展：
+v2.2 的 SKILL.md 相较 v1.x 新增以下章节，**旧的提示词与示例全部保留**，仅做增量扩展：
 
 | 新增章节 | 作用 |
 | --- | --- |
