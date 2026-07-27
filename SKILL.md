@@ -11,7 +11,7 @@ metadata:
 
 # AIPPT Generator Skill
 
-依托 AIPPT 渲染引擎，提供模板保真式 PPT 一键生成能力。采用「槽位替换」架构，100% 保留模板字体、配色与版式，支持 11 类商务场景、38 种转场效果、20+ 动画效果，可将用户自然语言需求转化为可下载的成品 .pptx 文件。
+依托 AIPPT 渲染引擎，提供模板保真式 PPT 一键生成能力。采用「槽位替换」架构，100% 保留模板字体、配色与版式，支持 11 类商务场景、39 种转场效果（含 Morph 平滑切换）、20+ 动画效果、SmartArt 文本替换、演讲者备注注入、图表/表格动态扩展，可将用户自然语言需求转化为可下载的成品 .pptx 文件。
 
 **核心分工**：宿主大模型负责需求理解、内容创作、大纲编排、参数组装与流程调度；AIPPT 引擎负责模板管理、槽位渲染、效果注入与文件输出。
 
@@ -150,10 +150,10 @@ metadata:
 
 `cover` / `catalog` / `divider` / `numbered_list` / `kpi` / `timeline` / `two_column` / `skill_percent` / `preset_titles` / `chart` / `table` / `ending`
 
-### 4.3 转场效果枚举（38 种，按推荐度分级）
+### 4.3 转场效果枚举（39 种，按推荐度分级）
 
 **一级推荐**（商务通用，`auto` 模式优先选用）：
-`fade`（淡入） / `push`（推进） / `wipe`（擦除） / `dissolve`（溶解） / `cut`（切出）
+`fade`（淡入） / `push`（推进） / `wipe`（擦除） / `dissolve`（溶解） / `cut`（切出） / `morph`（平滑切换，需 PowerPoint 2016+）
 
 **二级推荐**（适度动感）：
 `zoom`（缩放） / `flip`（翻转） / `conveyor`（传送带） / `split`（分割） / `reveal`（揭开） / `random`（随机）
@@ -161,7 +161,7 @@ metadata:
 **三级特效**（谨慎使用，仅创意场景）：
 `vortex`（漩涡） / `switch`（切换） / `fling`（抛出） / `gallery`（画廊） / `cube`（立方体） / `doors`（开门） / `window`（开窗）
 
-> 完整 38 种效果可通过 `python ppt_transitions.py list` 查询。商务汇报类场景禁止使用三级特效。
+> 完整 39 种效果可通过 `python ppt_transitions.py list` 查询。商务汇报类场景禁止使用三级特效。`morph` 适合连续叙事的图文切换，但需客户端版本支持。
 
 ### 4.4 元素动画枚举（20+ 种）
 
@@ -175,6 +175,27 @@ metadata:
 `pulse` / `spin` / `shake` / `grow_shrink` / `color_blast`
 
 > 全局命令行参数 `--transitions` / `--animations` 合法值：`auto` / `none` / 对应枚举列表中的具体名称。
+
+### 4.5 动画预设主题（3 套）
+
+为降低逐页配置动画/转场的成本，内置 3 套预设主题，通过 `--animation-theme` 一键切换风格。每套主题根据页面类型（page_type）自动分配合适的转场与动画效果。
+
+**主题清单：**
+
+| 主题名 | 风格说明 | 适用场景 |
+|---|---|---|
+| `business` | 简约商务：以 fade/push 为主，克制柔和。列表页用 fly_in + by_bullet，KPI 用 zoom，封面/分隔用 fade | 工作汇报、述职报告、年终总结等正式商务场景 |
+| `tech` | 活力科技：以 zoom/flip 为主，动感明快。列表页用 wipe + by_bullet，KPI 用 zoom + emphasis:pulse，封面用 zoom | 产品发布、技术分享、创意提案等活力场景 |
+| `formal` | 沉稳正式：以 fade/wipe 为主，庄重克制。列表页用 fade + by_bullet，KPI 用 fade，封面用 fade，几乎不用 emphasis | 政府汇报、金融报告、学术答辩等庄重场景 |
+
+**优先级（高 → 低）：**
+
+1. outline.json 单页显式 `transition` / `animations` 字段
+2. `--animation-theme` 主题的 `page_overrides`（按 page_type 匹配）
+3. `--animation-theme` 主题的 `global_transition`
+4. `--transitions` / `--animations` 全局参数
+
+> 主题未传入时（默认 None）行为与原版完全一致，100% 向后兼容。
 
 ---
 
@@ -520,9 +541,10 @@ python aippt_outline.py auto-generate \
   --output 输出文件路径.pptx \
   [--template-id 模板ID] \
   [--transitions auto] \
-  [--animations auto]
+  [--animations auto] \
+  [--animation-theme business|tech|formal]
 ```
-说明：自动完成需求理解、大纲生成、模板匹配、渲染全流程；未指定模板时自动选择最优模板。生成的是骨架 PPT，建议用 step2-outline 填充真实内容后用 step4-generate 重渲染。
+说明：自动完成需求理解、大纲生成、模板匹配、渲染全流程；未指定模板时自动选择最优模板。生成的是骨架 PPT，建议用 step2-outline 填充真实内容后用 step4-generate 重渲染。`--animation-theme` 可一键应用预设动画/转场风格（见 4.5 节），优先级低于单页配置、高于 `--transitions`/`--animations`。
 
 **2. 基于大纲渲染生成**（最常用）
 ```bash
@@ -532,10 +554,11 @@ python aippt_outline.py step4-generate \
   --output 输出文件路径.pptx \
   --transitions auto \
   --animations auto \
+  [--animation-theme business|tech|formal] \
   [--trim-pages 6,10,11] \
   [--insert-tables]
 ```
-说明：输入标准 outline.json，输出成品 PPT，并附残留占位文本校验报告。step4-generate 内置渲染前终检（六层防御体系 Layer 3-5），格式错误会被自动拦截。
+说明：输入标准 outline.json，输出成品 PPT，并附残留占位文本校验报告。step4-generate 内置渲染前终检（六层防御体系 Layer 3-5），格式错误会被自动拦截。`--animation-theme` 按页面类型自动注入转场/动画（见 4.5 节），outline 单页显式 `transition`/`animations` 字段优先级最高。
 
 **3. 四步工作流独立子命令**
 ```bash
@@ -577,9 +600,16 @@ python aippt_outline.py validate \
 
 **1. 查询模板列表**
 ```bash
-python aippt_outline.py list-templates [--scene 场景名] [--style 风格] [--min-pages N] [--max-pages N]
+python aippt_outline.py list-templates [--scene 场景名] [--style 风格] [--min-pages N] [--max-pages N] [--color-scheme 色系] [--industry 行业]
 ```
-输出：结构化 JSON 列表，包含 template_id、场景、风格标签、页数。
+参数说明：
+- `--scene`：按场景筛选（如 工作总结、述职报告）
+- `--style`：按风格标签筛选（如 商务）
+- `--min-pages` / `--max-pages`：页数范围
+- `--color-scheme`：按色系筛选，枚举值 `蓝色系/灰色系/红色系/绿色系/多彩/黑白`
+- `--industry`：按适用行业筛选，枚举值 `通用/金融/教育/科技/制造/医疗/政府`
+
+输出：结构化 JSON 列表，包含 template_id、场景、风格标签、页数、color_scheme、industry、page_range、quality_score 等字段。向后兼容：缺字段的模板在不指定对应筛选条件时仍会被列出，仅在指定筛选条件时跳过。
 
 **2. 查看模板元数据**
 ```bash
@@ -685,6 +715,84 @@ python generate_thumbnails.py --models-dir models --layout 2x2 [--force]
 - ✅ title 控制在 15 字以内
 - ✅ 生成前用 `SceneAdapter.validate_business_data` 校验
 - ✅ 输出前完成第六章 10 项自检清单
+
+---
+
+## 十四、高级渲染能力（v2 新增）
+
+### 14.1 SmartArt 文本替换
+- **能力**：通过 dgm 命名空间直接操作 SmartArt XML 节点，精准替换文本节点，100% 保留 SmartArt 结构、布局、配色、形状层级
+- **模块**：`ppt_smartart.py`
+- **API**：
+  - `replace_smartart_text(slide, replacements: dict)` — 按 `{old_text: new_text}` 替换
+  - `list_smartart_text(slide)` — 列出所有 SmartArt 文本节点便于调试
+- **使用场景**：模板含组织架构图、流程图、关系图等 SmartArt 元素时，自动识别并替换文本
+
+### 14.2 演讲者备注注入
+- **能力**：每页可传入备注文本，自动写入演讲者备注栏，适配原生备注结构
+- **API**：`PptRenderer.render(..., notes_map: dict[int, str] = None)`
+- **notes_map 格式**：`{1: "封面备注文本", 2: "目录页备注文本", ...}`，键为 page_id（从 1 开始）
+- **向后兼容**：不传 notes_map 时行为不变
+
+### 14.3 动画时间线精细控制
+- **能力**：在 `by_bullet` 模式下，支持段间延迟、播放顺序自定义
+- **API**：`_build_by_bullet_nodes(..., bullet_delay_ms=500, bullet_order=None)`
+  - `bullet_delay_ms`：段间延迟毫秒数，默认 500ms
+  - `bullet_order`：播放顺序列表，如 `[2, 0, 1]` 表示先播第3段再第1段再第2段；默认 `[0, 1, 2, ...]` 顺序播放
+- **使用场景**：配合演讲节奏，让列表要点按特定顺序逐条出现
+
+### 14.4 图表数据源动态替换
+- **能力**：基于 python-pptx chart 对象，传入结构化数据自动更新图表数值，100% 保留模板配色、字体、坐标轴样式
+- **支持类型**：`bar`（柱状图）、`line`（折线图）、`pie`（饼图）、`radar`（雷达图）
+- **多系列适配**：模板原有 N 系列，新数据 M 系列；M>N 仅替换前 N 系列，M<N 多余系列清空
+- **API**：`PptRenderer._replace_chart_data(shape, chart_data_dict)`
+- **数据结构**：见 [5.10 chart 页示例](#510-chart图表页)
+
+### 14.5 表格动态行扩展
+- **能力**：模板预设表头样式，传入 N 行数据自动追加/删除行，继承表头样式与列宽
+- **API**：`PptRenderer._fill_dynamic_table(shape, table_data)`
+- **数据结构**：见 [5.11 table 页示例](#511-table表格页)
+- **自动行高**：根据内容长度调整行高，避免溢出
+
+### 14.6 模板自动 Profile 与质量门禁
+- **能力**：输入任意 PPTX，全自动解析母版/版式/元素角色/页面模式/色系，生成完整元数据并执行 4 类质量校验
+- **模块**：
+  - `aippt/profile_layouts.py` — 母版与版式深度解析
+  - `aippt/ppt_element_classifier.py` — 元素角色识别（含置信度）
+  - `ppt_meta_tool.py` — 8 模式分类 + 色系识别 + 4 类质量校验
+- **质量校验 4 类**：
+  1. `meta_required`：必填字段完整性
+  2. `rendering_test`：渲染测试（实际渲染到临时目录，校验输出页数）
+  3. `style_check`：样式检查（字体一致性、配色协调、字号合理性）
+  4. `meta_completeness`：元数据完整性（page_type/slots/chapters/template_id）
+- **命令**：`python ppt_meta_tool.py check --template-id 模板ID` 或 `--dir models` 批量校验
+- **低置信度 warning**：识别不确定的元素自动标记，输出 `{shape_name, position, reason}` 供人工复核
+
+### 14.7 模板标签体系
+- **能力**：每个模板支持多维标签筛选
+- **标签字段**：
+  - `style_tags`：风格标签（如 `["商务", "16:9"]`）
+  - `color_scheme`：色系（`蓝色系` / `灰色系` / `红色系` / `绿色系` / `多彩` / `黑白`）
+  - `industry`：适用行业（`["通用", "金融", "教育", "科技", "制造", "医疗", "政府"]`）
+  - `page_range`：页数范围（如 `"10-15页"`）
+  - `quality_score`：质量评分（0-100）
+- **筛选命令**：
+  ```bash
+  python aippt_outline.py list-templates --scene 工作总结 --color-scheme 蓝色系 --industry 金融
+  ```
+
+### 14.8 动画预设主题
+- **能力**：内置 3 套预设主题，一键切换整体动画/转场风格
+- **主题清单**：
+  | 主题名 | 风格 | 适用场景 |
+  |---|---|---|
+  | `business` | 简约商务 | 工作汇报、年终总结、述职报告 |
+  | `tech` | 活力科技 | 产品发布、科技分享、创新汇报 |
+  | `formal` | 沉稳正式 | 政府汇报、正式致辞、学术答辩 |
+- **优先级**：单页 outline 显式配置 > 主题 page_overrides > 主题 global_transition > 全局 `--transitions`/`--animations`
+- **命令**：`python aippt_outline.py step4-generate ... --animation-theme business`
+
+---
 
 ---
 

@@ -149,7 +149,8 @@ def validate_outline(outline):
 
 
 def generate_ppt(business_data, scene, template_id=None, output_path="final.pptx",
-                 transitions="auto", animations="auto", templates_root="models"):
+                 transitions="auto", animations="auto", templates_root="models",
+                 animation_theme=None):
     """
     从 business_data 直接生成 PPT
 
@@ -159,6 +160,7 @@ def generate_ppt(business_data, scene, template_id=None, output_path="final.pptx
     :param output_path: 输出路径
     :param transitions: 转场配置
     :param animations: 动画配置
+    :param animation_theme: 动画预设主题名（business/tech/formal），None 表示不启用
     :return: 输出文件路径
     """
     from ppt_renderer import PptRenderer
@@ -197,8 +199,54 @@ def generate_ppt(business_data, scene, template_id=None, output_path="final.pptx
     renderer = PptRenderer(pptx_path, meta_path)
     renderer.render(slot_data, output_path,
                     remove_copyright=True, auto_fit=True,
-                    transitions=transitions, animations=animations)
+                    transitions=transitions, animations=animations,
+                    animation_theme=animation_theme)
     return output_path
+
+
+def _extract_outline_page_effects(outline):
+    """从 outline.pages 数组提取每页显式 transition/animation 配置
+
+    仅提取 outline 中显式设置了 transition/animations 字段的页面，
+    转换为渲染引擎所需的 per-page dict 格式。
+    用于 --animation-theme 启用时，让单页显式配置优先于主题默认值。
+
+    :param outline: outline dict
+    :return: (transitions_dict, animations_dict) 两个 {page_num: spec} dict，
+             仅包含显式设置的页
+    """
+    from aippt.animation_themes import build_page_transition_spec, build_page_animations_spec
+
+    transitions_dict: dict[str, dict] = {}
+    animations_dict: dict[str, list] = {}
+
+    pages = outline.get("pages")
+    if not pages or not isinstance(pages, list):
+        return transitions_dict, animations_dict
+
+    for page in pages:
+        if not isinstance(page, dict):
+            continue
+        page_id = page.get("page_id")
+        if page_id is None:
+            continue
+        page_type = page.get("page_type", "numbered_list")
+
+        # transition：仅提取显式设置（None 表示未设置，不提取）
+        explicit_t = page.get("transition")
+        if explicit_t is not None and explicit_t != "none":
+            t_spec = build_page_transition_spec(explicit_t)
+            if t_spec:
+                transitions_dict[str(page_id)] = t_spec
+
+        # animations：仅提取显式设置
+        explicit_a = page.get("animations")
+        if explicit_a is not None:
+            a_spec = build_page_animations_spec(page_type, explicit_a)
+            if a_spec:
+                animations_dict[str(page_id)] = a_spec
+
+    return transitions_dict, animations_dict
 
 
 def main():
@@ -216,6 +264,10 @@ def main():
     p_lt.add_argument("--style", default=None, help="按风格标签筛选")
     p_lt.add_argument("--min-pages", type=int, default=None, help="最小页数")
     p_lt.add_argument("--max-pages", type=int, default=None, help="最大页数")
+    p_lt.add_argument("--color-scheme", default=None,
+                      help="按色系筛选（如 蓝色系/灰色系/红色系/绿色系/多彩/黑白）")
+    p_lt.add_argument("--industry", default=None,
+                      help="按适用行业筛选（如 通用/金融/教育/科技/制造/医疗/政府）")
 
     # 子命令：auto-generate（全链路一键生成）
     p_auto = sub.add_parser("auto-generate",
@@ -225,6 +277,8 @@ def main():
     p_auto.add_argument("--template-id", default=None, help="指定模板 ID（不指定则自动匹配）")
     p_auto.add_argument("--transitions", default="auto", help="转场配置（auto/none）")
     p_auto.add_argument("--animations", default="auto", help="动画配置（auto/none）")
+    p_auto.add_argument("--animation-theme", default=None,
+                        help="动画预设主题（business/tech/formal），优先级低于单页配置，高于 --transitions/--animations")
 
     # 子命令：validate（格式校验）
     p_val = sub.add_parser("validate",
@@ -285,6 +339,8 @@ def main():
     p_s4.add_argument("--output", default="final.pptx", help="PPT 输出路径")
     p_s4.add_argument("--transitions", default="auto", help="转场配置（auto/none）")
     p_s4.add_argument("--animations", default="auto", help="动画配置（auto/none）")
+    p_s4.add_argument("--animation-theme", default=None,
+                      help="动画预设主题（business/tech/formal），优先级低于单页配置，高于 --transitions/--animations")
     p_s4.add_argument("--trim-pages", default="", help="可选，要删除的页码（逗号分隔，如 6,10,11）")
     p_s4.add_argument("--insert-tables", action="store_true",
                       help="可选，自动插入表格页（对比表+报价表）")
@@ -350,6 +406,7 @@ def main():
         templates = adapter.list_templates(
             category=args.scene, style_tag=args.style,
             min_pages=args.min_pages, max_pages=args.max_pages,
+            color_scheme=args.color_scheme, industry=args.industry,
         )
         print(json.dumps(templates, ensure_ascii=False, indent=2))
         return 0
@@ -460,9 +517,26 @@ def main():
         biz_path.write_text(
             json.dumps(business_data, ensure_ascii=False, indent=2), encoding="utf-8"
         )
+        # 动画主题：提取 outline 单页显式配置（优先级高于主题），主题默认由渲染引擎注入
+        anim_theme = args.animation_theme
+        t_cfg = args.transitions
+        a_cfg = args.animations
+        if anim_theme:
+            from aippt.animation_themes import get_theme, list_themes
+            if anim_theme not in list_themes():
+                logger.error("未知动画主题: %s（可用: %s）", anim_theme, list_themes())
+                return 1
+            logger.info("启用动画主题: %s", anim_theme)
+            t_dict, a_dict = _extract_outline_page_effects(outline)
+            # 单页显式配置以 dict 形式传入，覆盖主题默认值
+            if t_dict:
+                t_cfg = t_dict
+            if a_dict:
+                a_cfg = a_dict
         generate_ppt(business_data, scene, template_id=template_id,
                      output_path=args.output,
-                     transitions=args.transitions, animations=args.animations)
+                     transitions=t_cfg, animations=a_cfg,
+                     animation_theme=anim_theme)
         elapsed = _time.time() - start_ts
         logger.info("[4/4] 生成完成，耗时 %.1fs", elapsed)
         logger.info("成品 PPT: %s", args.output)
@@ -692,9 +766,26 @@ def main():
         )
         logger.info("business_data 已保存: %s", biz_path)
 
+        # 动画主题：提取 outline 单页显式配置（优先级高于主题），主题默认由渲染引擎注入
+        anim_theme = args.animation_theme
+        t_cfg = args.transitions
+        a_cfg = args.animations
+        if anim_theme:
+            from aippt.animation_themes import list_themes
+            if anim_theme not in list_themes():
+                logger.error("未知动画主题: %s（可用: %s）", anim_theme, list_themes())
+                return 1
+            logger.info("启用动画主题: %s", anim_theme)
+            t_dict, a_dict = _extract_outline_page_effects(outline)
+            # 单页显式配置以 dict 形式传入，覆盖主题默认值
+            if t_dict:
+                t_cfg = t_dict
+            if a_dict:
+                a_cfg = a_dict
         generate_ppt(business_data, outline["scene"],
                      template_id=args.template_id, output_path=args.output,
-                     transitions=args.transitions, animations=args.animations)
+                     transitions=t_cfg, animations=a_cfg,
+                     animation_theme=anim_theme)
         if args.trim_pages:
             pages = [int(x.strip()) for x in args.trim_pages.split(",") if x.strip()]
             from trim_ppt import trim_slides

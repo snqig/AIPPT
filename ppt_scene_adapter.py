@@ -342,13 +342,16 @@ class SceneAdapter:
         is_valid = len(issues) == 0
         return is_valid, issues
 
-    def list_templates(self, category=None, style_tag=None, min_pages=None, max_pages=None):
+    def list_templates(self, category=None, style_tag=None, min_pages=None, max_pages=None,
+                       color_scheme=None, industry=None):
         """
         按条件筛选模板
         :param category: 分类名（如"工作总结"）
         :param style_tag: 风格标签（如"商务"）
         :param min_pages: 最小页数
         :param max_pages: 最大页数
+        :param color_scheme: 色系筛选（如"蓝色系"）。缺字段的模板视为不匹配，仅过滤时跳过
+        :param industry: 行业筛选（如"金融"）。匹配 industry 数组中任一元素即可
         :return: 模板列表
         """
         results = []
@@ -361,6 +364,17 @@ class SceneAdapter:
                 continue
             if max_pages and t["total_pages"] > max_pages:
                 continue
+            # 色系筛选：缺字段时该模板跳过（仅过滤时跳过，不影响其他条件下的列出）
+            if color_scheme is not None:
+                if "color_scheme" not in t:
+                    continue
+                if t["color_scheme"] != color_scheme:
+                    continue
+            # 行业筛选：industry 为数组，命中任一元素即可
+            if industry is not None:
+                t_industries = t.get("industry", [])
+                if not isinstance(t_industries, list) or industry not in t_industries:
+                    continue
             results.append(t)
         return results
 

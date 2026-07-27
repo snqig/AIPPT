@@ -215,6 +215,26 @@ def import_templates(
                         len(meta.get('page_slots', {})))
             template_id = meta.get('template_id', '')
             total_pages = meta.get('total_pages', 0)
+
+            # P1-2.2.2 模板质量门禁：在生成 meta 后、加入索引前自动校验
+            # 若 rendering_test 或 meta_completeness 失败，输出 warning 但不阻断（避免破坏现有流程）
+            # 校验结果写入 meta["quality_report"] 字段
+            try:
+                from ppt_meta_tool import run_quality_check
+                quality_report = run_quality_check(meta, target_pptx)
+                meta["quality_report"] = quality_report
+                # 重新写入 meta（包含 quality_report 字段）
+                with open(target_meta, 'w', encoding='utf-8') as f:
+                    json.dump(meta, f, ensure_ascii=False, indent=2)
+                if quality_report.get("check_pass"):
+                    logger.info("  质量校验通过: issues=0, warnings=%d",
+                                quality_report.get("total_warnings", 0))
+                else:
+                    logger.warning("  质量校验未通过（不阻断导入）: issues=%d, warnings=%d",
+                                   quality_report.get("total_issues", 0),
+                                   quality_report.get("total_warnings", 0))
+            except Exception as e:
+                logger.warning("  质量校验异常（不阻断导入）: %s", e)
         except Exception as e:
             logger.error("  meta 生成异常: %s", e)
             failures.append({"file": src_pptx.name, "error": str(e)})
@@ -222,13 +242,23 @@ def import_templates(
             total_pages = 0
 
         screenshot_ok = False
-        if use_screenshot:
+        # 若 auto-annotate 已生成 2x2 缩略图（.thumbnail.png），主流程跳过单页截图
+        existing_thumbnail = target_dir / f"{target_name.replace('.pptx', '')}.thumbnail.png"
+        if use_screenshot and existing_thumbnail.exists():
+            logger.info("  已存在 2x2 缩略图，跳过单页截图: %s", existing_thumbnail.name)
+            screenshot_ok = True
+        elif use_screenshot:
             time.sleep(0.3)
             screenshot_ok = export_screenshot(target_pptx, target_png)
             if screenshot_ok:
                 logger.info("  截图: %s", target_png.name)
             else:
                 logger.warning("  截图未生成")
+
+        # thumbnail_path：若 auto-annotate 已生成 2x2 缩略图则复用，否则为 None
+        thumbnail_relpath = None
+        if existing_thumbnail.exists():
+            thumbnail_relpath = str(existing_thumbnail.relative_to(models_path))
 
         preview_manifest.append({
             "template_id": template_id,
@@ -238,6 +268,7 @@ def import_templates(
             "pptx_path": str(target_pptx.relative_to(models_path)),
             "meta_path": str(target_meta.relative_to(models_path)),
             "screenshot": str(target_png.relative_to(models_path)) if screenshot_ok else None,
+            "thumbnail_path": thumbnail_relpath,
             "total_pages": total_pages,
             "matched_keyword": matched_kw,
         })
@@ -274,6 +305,21 @@ def update_templates_index(models_dir: str) -> bool:
         logger.warning("未找到 meta 文件")
         return False
 
+    # 复用 migrate_index 的 page_range 计算与默认值，保证索引一致性
+    try:
+        from migrate_index import calc_page_range, DEFAULT_COLOR_SCHEME, DEFAULT_INDUSTRY, DEFAULT_QUALITY_SCORE
+    except ImportError:
+        # 兜底：脚本被移动到其他位置时仍可工作
+        DEFAULT_COLOR_SCHEME = "蓝色系"
+        DEFAULT_INDUSTRY = ["通用"]
+        DEFAULT_QUALITY_SCORE = 80
+
+        def calc_page_range(total_pages: int) -> str:
+            if not isinstance(total_pages, int) or total_pages <= 0:
+                return "10-15页"
+            lower = (total_pages - 1) // 5 * 5 + 1
+            return f"{lower}-{lower + 4}页"
+
     index = {
         "total": 0,
         "categories": {},
@@ -288,14 +334,20 @@ def update_templates_index(models_dir: str) -> bool:
         except Exception:
             continue
 
+        total_pages = meta.get('total_pages', 0)
         template_info = {
             "template_id": meta.get('template_id', ''),
             "category": meta.get('category', ''),
             "name": meta_path.stem.replace('.meta', ''),
             "path": str(meta_path.relative_to(models_path)).replace('\\', '/'),
             "style_tags": meta.get('style_tags', []),
-            "total_pages": meta.get('total_pages', 0),
-            "chapter_count": len(meta.get('chapters', []))
+            "total_pages": total_pages,
+            "chapter_count": len(meta.get('chapters', [])),
+            # 新增字段：色系来自 meta 自动识别，行业/质量分默认值兜底
+            "color_scheme": meta.get('color_scheme', DEFAULT_COLOR_SCHEME),
+            "industry": meta.get('industry', list(DEFAULT_INDUSTRY)),
+            "page_range": calc_page_range(total_pages),
+            "quality_score": meta.get('quality_score', DEFAULT_QUALITY_SCORE),
         }
         index['templates'].append(template_info)
         category_map[meta.get('category', '未分类')].append(template_info)
@@ -314,14 +366,60 @@ def update_templates_index(models_dir: str) -> bool:
     return True
 
 
+def update_preview_manifest(template_id: str, thumbnail_path: str) -> bool:
+    """
+    更新 preview_manifest.json 中指定模板的 thumbnail_path 字段
+
+    :param template_id: 模板 ID
+    :param thumbnail_path: 缩略图路径
+    :return: 是否更新成功
+    """
+    manifest_path = Path("models") / "preview_manifest.json"
+    if not manifest_path.exists():
+        logger.warning("preview_manifest.json 不存在: %s", manifest_path)
+        return False
+
+    try:
+        with open(manifest_path, 'r', encoding='utf-8') as f:
+            manifest = json.load(f)
+    except Exception as e:
+        logger.warning("读取 preview_manifest 失败: %s", e)
+        return False
+
+    if not isinstance(manifest, list):
+        logger.warning("preview_manifest 格式异常，应为列表")
+        return False
+
+    updated = False
+    for item in manifest:
+        if item.get("template_id") == template_id:
+            item["thumbnail_path"] = thumbnail_path
+            updated = True
+            break
+
+    if not updated:
+        logger.debug("preview_manifest 中未找到 template_id=%s，跳过更新", template_id)
+        return False
+
+    try:
+        with open(manifest_path, 'w', encoding='utf-8') as f:
+            json.dump(manifest, f, ensure_ascii=False, indent=2)
+        logger.info("preview_manifest 已更新: %s -> %s", template_id, thumbnail_path)
+        return True
+    except Exception as e:
+        logger.warning("写入 preview_manifest 失败: %s", e)
+        return False
+
+
 def auto_annotate(pptx_path: Path, scene: str, output_dir: Path) -> dict[str, Any]:
     """
     自定义模板自动标注：解析模板结构、识别槽位、分类页面类型，生成标准 .meta.json
+    生成 meta 后同步生成 2x2 多页缩略图（封面/目录/内容/结尾），并更新 preview_manifest
 
     :param pptx_path: 模板 pptx 路径
     :param scene: 所属场景
     :param output_dir: 元数据输出目录
-    :return: 标注结果字典（含 warnings / layout_profile 新增字段，向后兼容原有字段）
+    :return: 标注结果字典（含 warnings / layout_profile / thumbnail_path 字段，向后兼容原有字段）
     """
     from ppt_meta_tool import generate_single_meta
     from aippt.profile_layouts import profile_layouts
@@ -362,6 +460,25 @@ def auto_annotate(pptx_path: Path, scene: str, output_dir: Path) -> dict[str, An
     except Exception as e:
         logger.warning("layout_profile/分类告警采集失败: %s", e)
 
+    # 生成 2x2 多页缩略图（封面/目录/内容/结尾），失败不阻断 meta 生成
+    thumbnail_path: str | None = None
+    try:
+        from generate_thumbnails import generate_thumbnail_for_pptx
+        # 缩略图命名：模板名.thumbnail.png
+        thumb_output = output_dir / f"{pptx_path.stem}.thumbnail.png"
+        thumbnail_path = generate_thumbnail_for_pptx(pptx_path, thumb_output, layout="2x2")
+        if thumbnail_path is None:
+            logger.warning("缩略图生成失败（pywin32 未安装或截图失败），不阻断 meta 生成: %s", pptx_path.name)
+    except Exception as e:
+        logger.warning("缩略图生成异常，不阻断 meta 生成: %s", e)
+
+    # 同步更新 preview_manifest 中的 thumbnail_path 字段
+    if thumbnail_path:
+        try:
+            update_preview_manifest(meta.get("template_id", ""), thumbnail_path)
+        except Exception as e:
+            logger.warning("更新 preview_manifest 失败: %s", e)
+
     # 更新全局索引（参考主流程 update_templates_index(models_path)）
     try:
         update_templates_index(output_dir.parent)
@@ -376,9 +493,11 @@ def auto_annotate(pptx_path: Path, scene: str, output_dir: Path) -> dict[str, An
         "chapter_count": len(meta.get("chapters", [])),
         "slots_count": slots_count,
         "removable_pages": meta.get("removable_pages", []),
+        "color_scheme": meta.get("color_scheme", "蓝色系"),
         "meta_path": str(meta_path),
         "warnings": all_warnings,
         "layout_profile": layout_profile,
+        "thumbnail_path": thumbnail_path,
     }
 
 

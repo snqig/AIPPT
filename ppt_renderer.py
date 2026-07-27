@@ -48,6 +48,7 @@ class PptRenderer:
         transitions: Optional[Any] = None,
         animations: Optional[Any] = None,
         notes_map: dict[int, str] = None,
+        animation_theme: str = None,
     ) -> str:
         prs = Presentation(self.template_path)
         page_slots = self.meta.get('page_slots', {})
@@ -114,6 +115,13 @@ class PptRenderer:
         if remove_copyright and self.meta.get('removable_pages'):
             removed_pages = self._remove_slides(prs, self.meta['removable_pages'])
 
+        # 动画主题：在 _inject_effects 之前，根据主题为每页设置默认 transition/animations
+        # 优先级：单页显式 transitions/animations（dict）> 主题 page_overrides > 主题 global_transition
+        if animation_theme:
+            transitions, animations = self._apply_animation_theme(
+                prs, animation_theme, transitions, animations
+            )
+
         if transitions or animations:
             if not _ANIM_MODULES_READY:
                 logger.warning("动画/转场模块加载失败，跳过注入: %s", _ANIM_IMPORT_ERROR)
@@ -126,6 +134,76 @@ class PptRenderer:
         if removed_pages:
             logger.info("已删除版权页: %s", removed_pages)
         return str(output_path)
+
+    def _apply_animation_theme(
+        self,
+        prs: Any,
+        theme_name: str,
+        transitions: Any,
+        animations: Any,
+    ) -> tuple[Any, Any]:
+        """根据动画主题为每页构建默认 transition/animations，并与显式配置合并
+
+        优先级：显式 transitions/animations（dict）> 主题 page_overrides > 主题 global_transition
+
+        :param prs: Presentation 对象
+        :param theme_name: 主题名（business/tech/formal）
+        :param transitions: 已有的 transitions 配置（"auto"/"none"/dict/None）
+        :param animations: 已有的 animations 配置（"auto"/"none"/dict/None）
+        :return: 合并后的 (transitions, animations)
+        """
+        try:
+            from aippt.animation_themes import (
+                get_theme, build_page_transition_spec, build_page_animations_spec,
+                SLIDE_TYPE_TO_PAGE_TYPE,
+            )
+        except Exception as e:
+            logger.warning("动画主题模块加载失败，跳过主题注入: %s", e)
+            return transitions, animations
+
+        try:
+            theme = get_theme(theme_name)
+        except KeyError as e:
+            logger.warning("%s，跳过主题注入", e)
+            return transitions, animations
+
+        chapters = self.meta.get('chapters', [])
+        total = len(prs.slides)
+        overrides = theme.get("page_overrides", {})
+        global_transition = theme.get("global_transition")
+
+        # 构建主题默认的 transitions/animations dict
+        theme_transitions: dict[str, dict] = {}
+        theme_animations: dict[str, list] = {}
+        for page_num in range(1, total + 1):
+            slide_type = self._infer_slide_type(page_num, chapters, total)
+            page_type = SLIDE_TYPE_TO_PAGE_TYPE.get(slide_type, "numbered_list")
+            page_cfg = overrides.get(page_type, {})
+
+            # transition：page_overrides > global_transition
+            t_name = page_cfg.get("transition") or global_transition
+            if t_name and t_name != "none":
+                t_spec = build_page_transition_spec(t_name)
+                if t_spec:
+                    theme_transitions[str(page_num)] = t_spec
+
+            # animations：仅 page_overrides 中有配置的页面才注入
+            a_cfg = page_cfg.get("animations")
+            if a_cfg:
+                a_spec = build_page_animations_spec(page_type, a_cfg)
+                if a_spec:
+                    theme_animations[str(page_num)] = a_spec
+
+        # 合并：显式 dict 覆盖主题默认（单页 outline 配置优先级最高）
+        if isinstance(transitions, dict):
+            theme_transitions.update(transitions)
+        if isinstance(animations, dict):
+            theme_animations.update(animations)
+
+        logger.info("动画主题 %s 已应用: %d 页转场, %d 页动画",
+                    theme_name, len(theme_transitions), len(theme_animations))
+        return (theme_transitions if theme_transitions else transitions,
+                theme_animations if theme_animations else animations)
 
     def _inject_notes(self, slide, notes_text: str) -> None:
         """
@@ -437,12 +515,15 @@ class PptRenderer:
             return
 
         current_rows = len(table.rows)
+        if current_rows == 0:
+            logger.warning("表格无行数据，无法填充")
+            return
         needed_rows = len(rows) + 1  # +1 为表头行
 
-        # 动态增减行
+        # 动态增减行（python-pptx 的 _RowCollection 不支持负索引，需用正索引）
         if needed_rows > current_rows:
             # 新增行：以最后一行为模板克隆（保留行结构与单元格样式）
-            last_tr = table.rows[-1]._tr
+            last_tr = table.rows[current_rows - 1]._tr
             added = 0
             for _ in range(needed_rows - current_rows):
                 new_tr = deepcopy(last_tr)
@@ -454,7 +535,8 @@ class PptRenderer:
             # 删除多余行（从末尾删除，保留表头）
             extra = current_rows - needed_rows
             for _ in range(extra):
-                last_tr = table.rows[-1]._tr
+                remaining = len(table.rows)
+                last_tr = table.rows[remaining - 1]._tr
                 last_tr.getparent().remove(last_tr)
             logger.info("表格删除 %d 行（%d → %d）", extra, current_rows, needed_rows)
 
