@@ -1,0 +1,1385 @@
+{
+  "template_id": "安全教育__安全教育_(20)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 31,
+  "removable_pages": [
+    30,
+    31
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 13,
+      "name": "食品安全"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 14,
+      "end_page": 19,
+      "name": "食品安全"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 20,
+      "end_page": 25,
+      "name": "食品安全"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 26,
+      "end_page": 28,
+      "name": "争当食品小卫士"
+    },
+    {
+      "key": "end",
+      "page": 29,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "食品安全最重要",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "病从口入",
+        "shape_name": "矩形 35"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "注重卫生",
+        "shape_name": "矩形 36"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "均衡饮食",
+        "shape_name": "矩形 37"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目 录",
+        "shape_name": "文本框 25"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "中小学生食品安全应注意的问题",
+        "shape_name": "Rectangle 24"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 35"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 01",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "食品安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "油炸食品",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "主要危害是：",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 2,
+          "total_chars": 62
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "含致癌物质；",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "破坏维生素，使蛋白质变性。",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "油炸淀粉导致心血管疾病；",
+        "shape_name": "文本框 34"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "腌制类食品",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "加工类肉质食品",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "主要危害是：",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 22",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "含大量防腐剂，加重肝脏负担。",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 45,
+          "max_lines": 1,
+          "total_chars": 45
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 28",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "饼干类食品",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "不含低温烘烤和全麦饼干",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 36,
+          "max_lines": 1,
+          "total_chars": 36
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 19",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "热量过多、营养成分低。",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 1,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "3",
+        "shape_name": "椭圆 28",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "严重破坏维生素；",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 1,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "2",
+        "shape_name": "椭圆 31",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "主要危害是：",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 1,
+          "total_chars": 31
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "汽水、可乐类食品",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 30",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 36",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "主要危害是：",
+        "shape_name": "文本框 4"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "方便类食品",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "罐头类食品",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "话梅蜜饯类食品",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "冷冻甜品类食品",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "冰淇淋、冰棒和各种雪糕。",
+        "shape_name": "文本框 5"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "十大垃圾食品",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "烧烤类食品",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "主要危害是：",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "Oval 7"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "Oval 8"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "Oval 9"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "1只烤鸡腿＝60支烟的毒性；",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 49,
+          "max_lines": 1,
+          "total_chars": 49
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 02",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "食品安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "影响身体正常发育",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "容易引发多种疾病",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "恶劣的加工环境",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "乱用或超量使用食品添加剂",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "亚硝酸盐",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "漂白剂",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "染色剂",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "塑化剂",
+        "shape_name": "矩形 14",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "漂白剂",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "甲醛",
+        "shape_name": "矩形 16"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "防腐剂",
+        "shape_name": "矩形 17",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "瘦肉精",
+        "shape_name": "矩形 18",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "罂粟壳",
+        "shape_name": "矩形 19",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "中小学生食品安全应注意的问题",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 03",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "食品安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "拒绝“三无”产品",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "无生产日期",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 2,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "无质量合格证",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 2,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "无生产厂家",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 2,
+          "total_chars": 16
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "购买正规厂家生产的食品",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "包装干净整洁，图案字迹清晰；",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "产品名称",
+        "shape_name": "矩形 25",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "配料表",
+        "shape_name": "矩形 26",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "产品标准号",
+        "shape_name": "矩形 27",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "生产许可证",
+        "shape_name": "矩形 28",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "保质日期",
+        "shape_name": "矩形 29",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "QS标识",
+        "shape_name": "矩形 30",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "生产日期",
+        "shape_name": "矩形 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "厂名、厂址",
+        "shape_name": "矩形 32",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何分清食品保质期和保存期？",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "食品是否适合自己食用?",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "食品安全歌",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "小食品对人体的危害",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "点击进入",
+        "shape_name": "文本框 7"
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "感谢您的欣赏~",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "病从口入",
+        "shape_name": "矩形 25"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "注重卫生",
+        "shape_name": "矩形 26"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "均衡饮食",
+        "shape_name": "矩形 27"
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

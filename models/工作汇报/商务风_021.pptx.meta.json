@@ -1,0 +1,1826 @@
+{
+  "template_id": "工作汇报_商务风_021",
+  "category": "工作汇报",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 26,
+  "removable_pages": [
+    25,
+    26
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 6,
+      "name": "概况与核心实力"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 7,
+      "end_page": 10,
+      "name": "业务与产业生态"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 11,
+      "end_page": 15,
+      "name": "创新与可持续发展"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 16,
+      "end_page": 18,
+      "name": "文化与社会责任"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 19,
+      "end_page": 26,
+      "name": "愿景与未来展望"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "共",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "强",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "共",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "赢",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "某集模企业企业通用",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "奋斗|创新|合作|向前",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "LOGO|企业集模名称",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 14",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 15",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "椭圆 16",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "椭圆 17",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "椭圆 18",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "目",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "录",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "概况与核心实力",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "业务与产业生态",
+        "shape_name": "文本框 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "创新与可持续发展",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "文化与社会责任",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "愿景与未来展望",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title",
+        "match_text": "奋斗|创新|合作|向前",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "LOGO|企业集模名称",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "概况与核心实力",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 7"
+      },
+      {
+        "slot": "title",
+        "match_text": "关键文字",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 4,
+          "total_chars": 132
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 14"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 4,
+          "total_chars": 132
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "概况与核心实力",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "概况与核心实力",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 5,
+          "total_chars": 110
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 4,
+          "total_chars": 88
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 38",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 39",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 4,
+          "total_chars": 88
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "概况与核心实力",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 4,
+          "total_chars": 76
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 4,
+          "total_chars": 76
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 4,
+          "total_chars": 76
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title",
+        "match_text": "奋斗|创新|合作|向前",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "LOGO|企业集模名称",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "业务与产业生态",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "业务与产业生态",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 76,
+          "max_lines": 2,
+          "total_chars": 152
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "业务与产业生态",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 7"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 8"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "椭圆 9"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "业务与产业生态",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 4,
+          "total_chars": 108
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 4,
+          "total_chars": 108
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 4,
+          "total_chars": 108
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title",
+        "match_text": "奋斗|创新|合作|向前",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "LOGO|企业集模名称",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "创新与可持续发展",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "创新与可持续发展",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "创新与可持续发展",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 6"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 9"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 10"
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "创新与可持续发展",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "关键文字",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "创新与可持续发展",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 4,
+          "total_chars": 68
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 4,
+          "total_chars": 68
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title",
+        "match_text": "奋斗|创新|合作|向前",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "LOGO|企业集模名称",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文化与社会责任",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "文化与社会责任",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 4,
+          "total_chars": 68
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 4,
+          "total_chars": 68
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "文化与社会责任",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "关键文字",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "关键文字",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title",
+        "match_text": "奋斗|创新|合作|向前",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "LOGO|企业集模名称",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "愿景与未来展望",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "愿景与未来展望",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "未来展望",
+        "shape_name": "矩形: 圆角 16"
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 4,
+          "total_chars": 68
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "未来展望",
+        "shape_name": "矩形: 圆角 20"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 4,
+          "total_chars": 68
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "未来展望",
+        "shape_name": "矩形: 圆角 23"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 4,
+          "total_chars": 68
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "未来展望",
+        "shape_name": "矩形: 圆角 26"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 4,
+          "total_chars": 68
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "愿景与未来展望",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键文字",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "关键文字",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "关键文字",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "愿景与未来展望",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "percent",
+        "match_text": "60%",
+        "shape_name": "Title 3"
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 2,
+          "total_chars": 60
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的正文内容，请尽量言简意赅",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 2,
+          "total_chars": 60
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "愿景与未来展望",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键文字",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键文字",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "关键文字",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "单击此处输入您的正文内容",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 26"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 27"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "椭圆 28"
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "共",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "强",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "共",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "赢",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "某集模企业企业通用",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "奋斗|创新|合作|向前",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "LOGO|企业集模名称",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

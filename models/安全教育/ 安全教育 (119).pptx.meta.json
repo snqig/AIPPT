@@ -1,0 +1,438 @@
+{
+  "template_id": "安全教育__安全教育_(119)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 21,
+  "removable_pages": [
+    20,
+    21
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 3,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 13,
+      "end_page": 21,
+      "name": "落水不要错误施救"
+    }
+  ],
+  "page_slots": {
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "什么是溺水？",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "1.溺水的急救方法",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2.游泳的注意事项",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "3.落水不要错误施救",
+        "shape_name": "文本框 45"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "4.落水，如何自救",
+        "shape_name": "文本框 47"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "目录",
+        "shape_name": "文本框 64",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "1.溺水的急救方 法",
+        "shape_name": "文本框 60",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "溺水的急救方法",
+        "shape_name": "文本框 14"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "溺水的急救方法",
+        "shape_name": "文本框 18"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "溺水的急救方法",
+        "shape_name": "文本框 15"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "溺水的急救方法",
+        "shape_name": "文本框 15"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "2.游泳的注意事项",
+        "shape_name": "文本框 60",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "为什么为发生溺水呢？",
+        "shape_name": "文本框 13"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "防溺水安全知识",
+        "shape_name": "文本框 11"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "3.落水不要错误施救",
+        "shape_name": "文本框 60",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 3,
+          "total_chars": 39
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "落水不要错误施救",
+        "shape_name": "文本框 12"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "要保证自身安全",
+        "shape_name": "文本框 13"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "4.落水，如何自救",
+        "shape_name": "文本框 60",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 3,
+          "total_chars": 39
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "落水，如何自救",
+        "shape_name": "文本框 11"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "落水，如何自救",
+        "shape_name": "文本框 11"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "不擅自与他人结伴游泳",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "不擅自与他人结伴游泳",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "不到不熟悉的水域游泳",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "不擅自下水施救",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 26
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 16
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 25
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

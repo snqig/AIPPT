@@ -1,0 +1,696 @@
+{
+  "template_id": "安全教育__安全教育_(108)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 22,
+  "removable_pages": [
+    21,
+    22
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    }
+  ],
+  "page_slots": {
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "延迟符",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "什么叫森林防火",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "森林火灾的危害",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "森林火灾的案例",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "如何有效防止森林防火",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "目 录",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "文本框 41"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "延迟符",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "什么叫森林防火",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "什么叫森林防火",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "延迟符",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "森林火灾的危害",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "森林火灾的危害",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "一、 烧毁森林",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "二、烧毁林下植物资源",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "三、危害野生动物",
+        "shape_name": "TextBox 13"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "森林火灾的危害",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "四、引起水土流失",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "五、使下游河流水质下降",
+        "shape_name": "TextBox 13"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "森林火灾的危害",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "六、引起空气污染",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "七、威胁人民生命财产安全",
+        "shape_name": "TextBox 13"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "延迟符",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "森林火灾的案例",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "森林火灾的案例",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "案例1",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "森林火灾的案例",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "案例2",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "森林火灾的案例",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "案例3",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "延迟符",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何有效防止森林火灾",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "4",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "如何有效防止森林火灾",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "如何有效防止森林火灾",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "森林防火十不准",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 6,
+          "total_chars": 18
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "如何有效防止森林火灾",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "你知道吗？",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 1,
+          "total_chars": 33
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "如何有效防止森林火灾",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "森林防火拍手歌",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 6,
+          "total_chars": 18
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "如何有效防止森林火灾",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "森林防火标语",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "如何有效防止森林火灾",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "森林防火 人人有责",
+        "shape_name": "TextBox 1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

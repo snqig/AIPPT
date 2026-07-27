@@ -1,0 +1,558 @@
+{
+  "template_id": "安全教育__安全教育_(93)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 24,
+  "removable_pages": [
+    23,
+    24
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "end",
+      "page": 22,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "遇到陌生人怎么办？",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "怎样识别坏人的误区",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何防范陌生人",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "遇到陌生人怎么办？",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "同学们一定要防备陌生人",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 5"
+      }
+    ],
+    "6": [
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 5"
+      },
+      {
+        "slot": "title",
+        "match_text": "小朋友，好吃的糖果给你~",
+        "shape_name": "TextBox 19",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 3,
+          "total_chars": 24
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "怎样识别坏人的误区",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "误区二、坏人都是男性",
+        "shape_name": "TextBox 2",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "小朋友要牢记！",
+        "shape_name": "TextBox 7",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "坏人惯用的方法",
+        "shape_name": "TextBox 14",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "假装求救",
+        "shape_name": "圆角矩形 2",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "伪装身份",
+        "shape_name": "圆角矩形 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "威逼利诱",
+        "shape_name": "圆角矩形 34",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "和我走吧，我是圣诞老人。",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 3,
+          "total_chars": 27
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "TextBox 18"
+      },
+      {
+        "slot": "title",
+        "match_text": "假装求救",
+        "shape_name": "TextBox 19",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "小朋友，快来帮帮叔叔。",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 3,
+          "total_chars": 21
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "TextBox 18"
+      },
+      {
+        "slot": "title",
+        "match_text": "伪装身份",
+        "shape_name": "TextBox 19",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "TextBox 18"
+      },
+      {
+        "slot": "title",
+        "match_text": "威逼利诱",
+        "shape_name": "TextBox 19",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "如何防范陌生人",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "切记不要给陌生人开门",
+        "shape_name": "PA-文本框 49",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 1,
+          "total_chars": 31
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "陌生人给东西要说不要",
+        "shape_name": "PA-文本框 49",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 2,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "小朋友，叔叔有好玩具。",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 3,
+          "total_chars": 21
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "链接拉票要注意",
+        "shape_name": "PA-文本框 49",
+        "capacity": {
+          "max_chars_per_line": 38,
+          "max_lines": 2,
+          "total_chars": 76
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "不予理睬，家装家里没有人",
+        "shape_name": "矩形 55",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

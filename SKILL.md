@@ -1,82 +1,136 @@
 ---
 name: aippt-generator
-description: Transform user ideas or source documents into presentation-ready PPT through a four-step workflow (Understand → Outline → Visuals → Iterate). Use when user mentions "PPT", "演示文稿", "幻灯片", "汇报材料", or provides documents for presentation generation.
+description: Transform user ideas or source documents into presentation-ready PPT through a five-step closed-loop workflow (Understand → Outline → Expand → Match → Generate). Use when user mentions "PPT", "演示文稿", "幻灯片", "汇报材料", "安全教育", or provides documents for presentation generation.
 license: MIT
 compatibility: opencode
 metadata:
   audience: knowledge-workers
   workflow: ai-presentation
-  scenes: 工作总结/年终总结/工作汇报/工作计划/述职报告/个人简历/自我介绍/开题报告/公司简介/职业规划
+  scenes: 工作总结/年终总结/工作汇报/工作计划/述职报告/个人简历/自我介绍/开题报告/公司简介/职业规划/安全教育
 ---
 
 # AIPPT Generator Skill
 
-将用户想法或源文档转化为成品 PPT，通过四步智能工作流：
+依托 AIPPT 渲染引擎，提供模板保真式 PPT 一键生成能力。采用「槽位替换」架构，100% 保留模板字体、配色与版式，支持 11 类商务场景、39 种转场效果（含 Morph 平滑切换）、20+ 动画效果、SmartArt 文本替换、演讲者备注注入、图表/表格动态扩展，可将用户自然语言需求转化为可下载的成品 .pptx 文件。
 
-1. **Understand & Parse** — 澄清意图，解析输入
-2. **Build Outline** — 生成层级化大纲骨架（含真实业务内容）
-3. **Match Visuals** — 匹配场景与模板
-4. **Iterate & Refine** — 迭代完善并生成 PPT
+**核心分工**：宿主大模型负责需求理解、内容创作、大纲编排、参数组装与流程调度；AIPPT 引擎负责模板管理、槽位渲染、效果注入与文件输出。
 
-## ⚡ 一句话生成模式（快捷入口）
+---
 
-用户说一句话即可直达成品 PPT。AI 自动完成：
+## 一、数据契约（铁则，违反则渲染必然失败）
 
+> ⚠️ **重要提示**：你输出的 JSON 将直接作为渲染命令的输入，程序不会做语义理解，只会严格按字段名读取。任何多余文字、格式偏差都会直接导致程序报错，无法生成 PPT。
+
+### 1.1 格式铁则（必须严格遵守，不可商量）
+
+1. **纯输出原则**：所有结构化数据（需求参数、大纲、槽位数据）必须输出**纯 JSON 文本**，严禁包裹 markdown 代码块，严禁前后添加解释性文字、备注、说明。
+2. **字段零自创原则**：所有字段名必须与本规范完全一致，拼写、大小写、下划线严格对齐，禁止自创字段、禁止用近义词替代。
+3. **枚举封闭原则**：`scene`、`page_type` 等枚举字段，必须从给定列表中取值，禁止中文别名、大小写变体、自定义新值。
+4. **结构匹配原则**：数组嵌套层级、对象结构必须与示例完全一致，同数组内对象结构必须统一。
+5. **真实渲染原则**：所有 PPT 必须通过调用 AIPPT 命令行工具生成真实 .pptx 文件，禁止以文本描述、Markdown 模拟、代码块伪代码等方式代替成品文件交付。
+6. **样式保真原则**：仅修改模板槽位内的文本、图片、数据内容，不得要求或尝试修改模板本身的版式、字体、配色与布局。
+7. **动画转场枚举封闭原则**：所有转场（`transition`）、动画（`animations.entry/exit/emphasis`）效果名称必须从官方枚举列表中选择，禁止中文别名、自定义名称、大小写变体。`animations` 必须为对象结构，`by_bullet` 必须为布尔值。无特殊需求时全局统一使用 `auto`，由渲染引擎按页面类型自动匹配，禁止逐页随机分配效果。
+
+### 1.2 优先级与后果关联
+
+**格式合规 > 内容详实**。宁可精简内容保证格式正确，也不能为了内容丰富破坏格式。
+
+| 行为 | 后果 |
+|---|---|
+| 格式错误 | 渲染命令执行失败 = 用户拿不到成品 PPT |
+| 内容略简陋但格式正确 | 可正常生成 = 用户可获得可用成品 |
+
+**分工边界**：你只负责产出符合契约的结构化数据，渲染引擎只会按槽位机械替换，不会自动修正你的格式错误，也不会补全缺失字段。格式有任何偏差，都会直接失败。
+
+### 1.3 术语 100% 统一
+
+整个 SKILL 文档内，所有字段名、页面类型、参数名必须和代码、JSON Schema 完全同名，杜绝任何别名、俗称、简称。
+
+- ✅ 全程统一使用 `kpi` 作为页面类型名称，所有地方提及都写 `page_type: kpi`
+- ❌ 一会写 "KPI 页"，一会写 "指标卡片页"，一会写 `kpi_card`
+
+---
+
+## 二、完整正例（可直接运行的基准参照）
+
+以下是完整的、可直接通过校验、可直接渲染的 outline.json 示例，作为模型的基准参照。生成大纲时必须严格对照此结构。
+
+```json
+{
+  "scene": "年终总结",
+  "purpose": "2025年度业绩复盘与2026规划汇报",
+  "audience": "部门管理层",
+  "total_pages": 6,
+  "pages": [
+    {"page_id": 1, "page_type": "cover", "title": "2025年度工作总结", "subtitle": "复盘·前行"},
+    {"page_id": 2, "page_type": "catalog", "title": "目录", "items": ["业绩概览", "工作成果", "明年规划"]},
+    {"page_id": 3, "page_type": "divider", "section_no": "01", "title": "业绩概览"},
+    {"page_id": 4, "page_type": "kpi", "title": "核心指标", "kpi_items": [
+      {"label": "用户量", "value": "128万", "trend": "+35%"},
+      {"label": "营收", "value": "8600万", "trend": "+28%"},
+      {"label": "留存率", "value": "72%", "trend": "+5pct"}
+    ],
+     "animations": {"entry": "fade", "emphasis": "pulse", "by_bullet": false}},
+    {"page_id": 5, "page_type": "numbered_list", "title": "核心成果", "items": [
+      {"subtitle": "用户增长", "desc": "新增用户同比提升35%"}
+    ],
+     "transition": "push",
+     "animations": {"entry": "fly_in", "by_bullet": true}},
+    {"page_id": 6, "page_type": "ending", "title": "感谢观看", "subtitle": "欢迎指正"}
+  ]
+}
 ```
-用户输入 → AI 理解意图 → AI 填充真实大纲内容 → CLI 渲染 → 成品 PPT
-```
 
-**关键**：无需修改 Python 代码，AI Agent 在 Step 2 自动生成真实业务内容（而非占位文本）。
+### 2.1 动画与转场字段规范（单页覆盖，可选）
 
-## ⚠️ 强制流程约束
+大纲单页对象可添加 `transition` 与 `animations` 字段，**仅对当前页生效，优先级高于全局 `--transitions` / `--animations`**。无特殊需求时省略该字段，继承全局 `auto`。
 
-**四步必须依次执行，不可跳过、不可乱序。** 每一步都有明确的产出物和用户确认 gate：
-
-| 步骤 | 命令 | 产出物 | 确认 gate |
+| 字段 | 类型 | 必填 | 合法值 | 说明 |
 |---|---|---|---|---|
-| Step 1 | `step1-understand` | 场景识别结果 + 澄清问题清单 | 用户回答澄清问题 |
-| Step 2 | `step2-outline` | outline.json（含真实业务内容） | 用户审阅大纲内容与逻辑 |
-| Step 3 | `step3-visuals` | 视觉匹配建议 + 模板推荐 | 用户确认模板选择 |
-| Step 4 | `step4-generate` | 成品 .pptx 文件 | 用户验收 PPT |
+| `transition` | string | 否 | 转场枚举列表 / `none` | 单页转场效果，不填则继承全局 |
+| `animations.entry` | string | 否 | 入场动画枚举 / `null` | 元素入场动画 |
+| `animations.exit` | string | 否 | 退场动画枚举 / `null` | 元素退场动画，商务场景不推荐 |
+| `animations.emphasis` | string | 否 | 强调动画枚举 / `null` | 仅重点数据页使用，每页不超过 1 处 |
+| `animations.by_bullet` | boolean | 否 | `true` / `false` | 是否按段落逐条播放，默认 `false` |
 
-**禁止行为**：
-- ❌ 跳过 Step 1 直接生成大纲
-- ❌ 跳过 Step 2 直接生成 PPT
-- ❌ Step 3 未确认模板就进入 Step 4
-- ❌ 在用户未确认前进入下一步
+**使用约束**：
+- `animations` 必须为对象结构，禁止直接写字符串（如 `"animations": "fly_in"` ❌）
+- `by_bullet` 必须为布尔值，禁止写字符串（如 `"by_bullet": "true"` ❌）
+- `by_bullet: true` 仅适用于 `numbered_list` / `catalog` / `timeline` / `preset_titles` 等多段落页面；`cover` / `divider` / `kpi` / `ending` 禁用
+- 商务场景优先使用 `fade` / `push` / `wipe` 等简约效果，禁用 `vortex` / `fling` 等炫技特效
 
-**正确做法**：每步执行后，向用户呈现产出物并显式询问"是否确认进入下一步？"，得到肯定答复后才继续。
+---
 
-## 何时使用
+## 三、高频错误对照表（精准命中常见错误）
 
-**仅当**用户请求涉及以下情况时使用：
-- 从零创建演示文稿或 PPT
-- 将文档（Word/PDF/markdown）转换为幻灯片
-- 为演示生成大纲
-- 改进或重构现有演示内容
+| 错误类型 | 错误写法 | 正确写法 | 错误原因 |
+|---|---|---|---|
+| 页面类型用中文 | `"page_type": "KPI指标页"` | `"page_type": "kpi"` | 枚举值必须用规定英文，程序无法识别中文 |
+| 页面类型大小写错 | `"page_type": "KPI"` | `"page_type": "kpi"` | 枚举值全小写，大小写敏感 |
+| 字段名自创 | `"kpi_list": [...]` | `"kpi_items": [...]` | 字段名必须严格对齐，程序只读 `kpi_items` |
+| 多余包裹代码块 | ```json {...}``` | 直接输出 `{...}` | 程序直接解析文本，代码块标记会导致 JSON 解析失败 |
+| 前后加解释文字 | `以下是生成的大纲：{...}` | 直接输出 `{...}` | 多余文字会导致 JSON 解析失败 |
+| 同数组结构不一致 | `[{"label":"xx"}, {"name":"yy"}]` | `[{"label":"xx"}, {"label":"yy"}]` | 同数组内对象字段必须统一 |
+| page_id 从 0 开始 | `"page_id": 0` | `"page_id": 1` | 页码必须从 1 开始连续递增 |
+| page_id 不连续 | `1, 2, 5, 6` | `1, 2, 3, 4` | 页码必须连续递增 |
+| total_pages 不匹配 | `total_pages: 5` 但 pages 有 6 个 | `total_pages: 6` | total_pages 必须等于 pages 数组长度 |
+| 必填字段缺失 | KPI 页缺 `kpi_items` | 补全 `kpi_items` | 每种页面类型有必填字段，不可省略 |
+| 转场用中文 | `"transition": "淡入效果"` | `"transition": "fade"` | 必须使用英文枚举值，程序无法识别中文 |
+| 动画字段层级错 | `"animations": "fly_in"` | `"animations": {"entry": "fly_in"}` | `animations` 必须是对象，不能直接写字符串 |
+| by_bullet 类型错 | `"by_bullet": "true"` | `"by_bullet": true` | 必须是布尔值，字符串会导致解析失败 |
+| 自定义效果名 | `"transition": "smooth_fade"` | `"transition": "fade"` | 枚举值封闭，禁止自定义新效果 |
+| 大小写错误 | `"transition": "Fade"` | `"transition": "fade"` | 枚举值严格小写，大小写敏感 |
+| 封面用逐段动画 | cover 页 `"by_bullet": true` | `"by_bullet": false` 或省略 | `by_bullet` 仅适用于列表/目录/时间轴页 |
 
-**不要用于**：
-- 与演示无关的通用文档摘要
-- 无内容生成需求的纯设计任务
+---
 
-## 工作流
+## 四、枚举值定义（封闭列表，禁止自创）
 
-### Step 1: Understand & Parse — "听懂需求"  [`step1-understand`]
+### 4.1 场景枚举（共 11 类）
 
-**命令**：`python aippt_outline.py step1-understand --text "用户描述"`
+`工作总结` / `年终总结` / `工作汇报` / `工作计划` / `述职报告` / `个人简历` / `自我介绍` / `开题报告` / `公司简介` / `职业规划` / `安全教育`
 
-**产出**：场景识别结果 + 待澄清问题清单（JSON 输出）
-
-**意图澄清**：生成任何内容前，必须先澄清以下要素：
-- **Goal**：用途（学术汇报 / 商业路演 / 项目复盘 / 培训材料 / 公司介绍 / 述职等）
-- **Audience**：受众
-- **Tone & Style**：正式 / 轻松 / 说服 / 信息型
-- **Length**：期望页数
-- **Key messages**：2-3 条必须传达的核心信息
-
-**自动推断**（增强模式）：若用户输入已包含足够信息（如"2025年度AI研发团队年终总结"），AI 应自动推断缺失信息（受众=管理层、风格=正式、长度=12页），仅追问真正缺失的关键信息，避免穷举问题。
-
-**场景识别**：根据用户描述映射到本项目支持的 10 类场景之一：
+**场景关键词映射**：
 
 | 用户描述关键词 | 推荐场景 |
 |---|---|
@@ -90,95 +144,377 @@ metadata:
 | 开题、答辩、论文 | `开题报告` |
 | 公司介绍、企业简介、公司概况 | `公司简介` |
 | 职业规划、职业生涯、发展规划 | `职业规划` |
+| 安全教育、安全培训、安全生产、消防教育 | `安全教育` |
 
-**触发问**（必要时询问，避免穷举）：
-> "这次 PPT 的主要用途是什么？受众是谁？"
-> "有偏好的风格吗（学术 / 商务 / 创意）？"
-> "大概多少页？"
-> "有必须包含的关键信息或数据吗？"
+### 4.2 页面类型枚举（共 12 类）
 
-若用户提供文档，解析时需：
-- 识别标题层级与段落主题
-- 提取关键数据点与统计数字
-- 识别章节间逻辑关系
+`cover` / `catalog` / `divider` / `numbered_list` / `kpi` / `timeline` / `two_column` / `skill_percent` / `preset_titles` / `chart` / `table` / `ending`
 
-### Step 2: Build Outline — "搭建骨架"  [`step2-outline`]
+### 4.3 转场效果枚举（39 种，按推荐度分级）
 
-**命令**：`python aippt_outline.py step2-outline --scene 工作汇报 --purpose "..." --audience "..." --length 14 --keys "关键信息" --output outline.json`
+**一级推荐**（商务通用，`auto` 模式优先选用）：
+`fade`（淡入） / `push`（推进） / `wipe`（擦除） / `dissolve`（溶解） / `cut`（切出） / `morph`（平滑切换，需 PowerPoint 2016+）
 
-**产出**：outline.json（含 scene/cover/sections/end 的完整大纲）
+**二级推荐**（适度动感）：
+`zoom`（缩放） / `flip`（翻转） / `conveyor`（传送带） / `split`（分割） / `reveal`（揭开） / `random`（随机）
 
-**确认 gate**：向用户展示大纲结构，询问"大纲内容和逻辑是否需要调整？"，确认后才进入 Step 3
+**三级特效**（谨慎使用，仅创意场景）：
+`vortex`（漩涡） / `switch`（切换） / `fling`（抛出） / `gallery`（画廊） / `cube`（立方体） / `doors`（开门） / `window`（开窗）
 
-理解意图后，生成结构化大纲。**增强模式：AI 应直接生成包含真实业务内容的 outline.json，而非占位文本。**
+> 完整 39 种效果可通过 `python ppt_transitions.py list` 查询。商务汇报类场景禁止使用三级特效。`morph` 适合连续叙事的图文切换，但需客户端版本支持。
 
-**大纲内容生成规则**：
-1. 封面标题：从用户输入中提取或推导
-2. 各章节要点：根据场景 Schema 的 chapter_sections 生成 2-4 条具体要点
-3. 每条要点：title ≤ 15 字，desc 30-60 字（适配模板容量，避免触发缩字号）
-4. 内容必须真实可信、具体可操作，不得编造数据
-5. 缺失具体数字时使用合理估算并标注"约"
+### 4.4 元素动画枚举（20+ 种）
 
-**用户只说一句话时的完整行为示例**：
+**入场动画**（`animations.entry`，最常用）：
+`fade` / `fly_in` / `zoom` / `wipe` / `slide_in` / `bounce` / `spin`
 
-用户: "帮我做一个2025年度AI研发团队年终总结，重点突出大模型落地成果和技术突破"
+**退场动画**（`animations.exit`，商务场景不推荐）：
+`fade_out` / `fly_out` / `zoom_out` / `slide_out`
 
-AI 应自动完成：
-1. 识别场景 → 年终总结
-2. 推断缺失信息 → 受众=管理层，风格=正式商务，长度=12页
-3. 生成完整大纲（含真实内容）：
+**强调动画**（`animations.emphasis`，仅重点数据页使用）：
+`pulse` / `spin` / `shake` / `grow_shrink` / `color_blast`
+
+> 全局命令行参数 `--transitions` / `--animations` 合法值：`auto` / `none` / 对应枚举列表中的具体名称。
+
+### 4.5 动画预设主题（3 套）
+
+为降低逐页配置动画/转场的成本，内置 3 套预设主题，通过 `--animation-theme` 一键切换风格。每套主题根据页面类型（page_type）自动分配合适的转场与动画效果。
+
+**主题清单：**
+
+| 主题名 | 风格说明 | 适用场景 |
+|---|---|---|
+| `business` | 简约商务：以 fade/push 为主，克制柔和。列表页用 fly_in + by_bullet，KPI 用 zoom，封面/分隔用 fade | 工作汇报、述职报告、年终总结等正式商务场景 |
+| `tech` | 活力科技：以 zoom/flip 为主，动感明快。列表页用 wipe + by_bullet，KPI 用 zoom + emphasis:pulse，封面用 zoom | 产品发布、技术分享、创意提案等活力场景 |
+| `formal` | 沉稳正式：以 fade/wipe 为主，庄重克制。列表页用 fade + by_bullet，KPI 用 fade，封面用 fade，几乎不用 emphasis | 政府汇报、金融报告、学术答辩等庄重场景 |
+
+**优先级（高 → 低）：**
+
+1. outline.json 单页显式 `transition` / `animations` 字段
+2. `--animation-theme` 主题的 `page_overrides`（按 page_type 匹配）
+3. `--animation-theme` 主题的 `global_transition`
+4. `--transitions` / `--animations` 全局参数
+
+> 主题未传入时（默认 None）行为与原版完全一致，100% 向后兼容。
+
+---
+
+## 五、12 类页面类型最小示例（生成时直接对照填空）
+
+每种 page_type 的标准结构，生成对应页面时必须严格对照。
+
+### 5.1 cover（封面页）
+```json
+{"page_id": 1, "page_type": "cover", "title": "2025年度工作总结", "subtitle": "复盘·前行"}
+```
+
+### 5.2 catalog（目录页）
+```json
+{"page_id": 2, "page_type": "catalog", "title": "目录", "items": ["业绩概览", "工作成果", "明年规划"]}
+```
+
+### 5.3 divider（章节分隔页）
+```json
+{"page_id": 3, "page_type": "divider", "section_no": "01", "title": "业绩概览"}
+```
+
+### 5.4 numbered_list（数字列表页）
+```json
+{
+  "page_id": 4, "page_type": "numbered_list", "title": "核心工作成果",
+  "items": [
+    {"subtitle": "用户增长体系搭建", "desc": "完成全链路获客体系建设，新增用户同比提升35%"},
+    {"subtitle": "营收结构优化", "desc": "增值服务占比提升至42%，盈利能力显著增强"}
+  ]
+}
+```
+
+### 5.5 kpi（KPI 卡片页）
+```json
+{
+  "page_id": 5, "page_type": "kpi", "title": "核心指标",
+  "kpi_items": [
+    {"label": "用户量", "value": "128万", "trend": "+35%"},
+    {"label": "营收", "value": "8600万", "trend": "+28%"}
+  ]
+}
+```
+
+### 5.6 timeline（时间轴页）
+```json
+{
+  "page_id": 6, "page_type": "timeline", "title": "年度里程碑",
+  "timeline_items": [
+    {"time": "2025年3月", "event": "核心产品上线，首月用户破10万"},
+    {"time": "2025年7月", "event": "完成B轮融资，金额5000万美元"}
+  ]
+}
+```
+
+### 5.7 two_column（双栏对比页）
+```json
+{
+  "page_id": 7, "page_type": "two_column", "title": "竞品对比",
+  "left_title": "我方优势", "left_items": ["技术领先", "成本可控"],
+  "right_title": "竞品现状", "right_items": ["技术滞后", "成本高昂"]
+}
+```
+
+### 5.8 skill_percent（技能百分比页）
+```json
+{
+  "page_id": 8, "page_type": "skill_percent", "title": "能力雷达",
+  "skills": [
+    {"name": "数据分析", "percent": 90},
+    {"name": "项目管理", "percent": 85}
+  ]
+}
+```
+
+### 5.9 preset_titles（预设标题列表页）
+```json
+{"page_id": 9, "page_type": "preset_titles", "title": "核心模块", "items": ["用户增长", "营收提升", "团队建设"]}
+```
+
+### 5.10 chart（图表页）
+```json
+{
+  "page_id": 10, "page_type": "chart", "title": "季度营收趋势",
+  "chart_type": "bar",
+  "chart_data": {"categories": ["Q1","Q2","Q3","Q4"], "series": [{"name":"营收","data":[1200,1500,1800,2100]}]}
+}
+```
+
+### 5.11 table（表格页）
+```json
+{
+  "page_id": 11, "page_type": "table", "title": "产品对比",
+  "headers": ["产品", "价格", "销量"],
+  "rows": [["产品A", "99元", "1.2万"], ["产品B", "199元", "0.8万"]]
+}
+```
+
+### 5.12 ending（结尾页）
+```json
+{"page_id": 12, "page_type": "ending", "title": "感谢观看", "subtitle": "欢迎指正"}
+```
+
+---
+
+## 六、输出前强制自检清单（10 项）
+
+在每个输出节点（需求参数、大纲、槽位数据）输出前，必须逐项完成以下自检，全部通过后方可输出：
+
+- ✅ 所有 `page_type` 都在枚举列表内，无中文、无大小写错误
+- ✅ 所有必填字段都存在，无缺失、无拼写错误
+- ✅ `total_pages` 数值与 `pages` 数组长度完全相等
+- ✅ 所有数组内对象结构统一，字段名一致
+- ✅ 纯 JSON 输出，无代码块、无多余文字、无解释说明
+- ✅ 所有 `transition`、`animations.entry/exit/emphasis` 名称均来自官方枚举列表，无中文、无自定义、无大小写错误
+- ✅ `animations` 为对象结构，包含 `entry` / `exit` / `emphasis` / `by_bullet` 子字段，未直接写字符串
+- ✅ `by_bullet` 为布尔值 `true` / `false`，而非字符串
+- ✅ 仅 `numbered_list` / `catalog` / `timeline` / `preset_titles` 等多段落页面开启 `by_bullet`，`cover` / `divider` / `kpi` / `ending` 未开启
+- ✅ 无特殊需求时优先使用全局 `auto`，未随意自定义每页效果
+
+---
+
+## 七、六层防御体系总览
+
+模型生成的内容会经过六道关卡，格式合规率接近 100%：
+
+| 层级 | 防御点 | 实现方式 |
+|---|---|---|
+| 第一层 | 模型端自检 | SKILL 指令引导（第一至六章） |
+| 第二层 | JSON Schema 机器化校验 | `schemas/*.schema.json` + `jsonschema` 库 |
+| 第三层 | 分步校验流程 | `aippt/validators.py` 的 `validate_requirement` / `validate_outline` |
+| 第四层 | 模板槽位匹配校验 | `validate_template_match`（结合 meta.json） |
+| 第五层 | 运行时兜底自动修复 | `auto_fix_outline`（page_id重排/截断/枚举标准化/动画字段降级） |
+| 第六层 | 标准化错误反馈 | 错误码体系（F0xx/S0xx/T0xx/A0xx）+ 修正建议 |
+
+### 7.1 错误码分类
+
+| 错误码前缀 | 错误类型 | 示例 |
+|---|---|---|
+| F0xx | 基础格式错误 | JSON 解析失败、类型不匹配 |
+| F1xx | 字段规则错误 | 字段缺失、枚举非法、长度超限 |
+| S0xx | 结构逻辑错误 | 页数不匹配、ID 不连续 |
+| T0xx | 模板匹配错误 | 槽位不匹配、页面类型不兼容 |
+| A0xx | 动画转场错误 | 转场/动画名称非法、`by_bullet` 类型错、字段层级错 |
+
+### 7.2 可自动修复 vs 刚性拦截
+
+| 类型 | 处理方式 | 示例 |
+|---|---|---|
+| 可自动修复 | 静默处理 + 日志记录 | page_id 重排、数组截断、枚举大小写标准化、移除空值字段、`by_bullet` 自动关闭、动画字段降级为 `auto` |
+| 刚性拦截 | 返回错误，由模型修正 | 必填字段缺失、枚举值非法、页数严重偏差、JSON 语法错误、转场/动画名称非法、`animations` 类型错 |
+
+**动画转场错误码明细**：
+
+| 错误码 | 级别 | 错误说明 | 修正建议 |
+|---|---|---|---|
+| A001 | error | 转场效果名称非法 | 请从枚举列表选择：`fade`, `push`, `wipe`, `dissolve`, `zoom`, `flip`, `cut`, `split`, `reveal`, `random`, `vortex`, `switch`, `fling`, `gallery`, `cube`, `doors`, `window`, `conveyor` |
+| A002 | error | 动画效果名称非法 | 入场动画合法值：`fade`, `fly_in`, `zoom`, `wipe`, `slide_in`, `bounce`, `spin`；退场：`fade_out`, `fly_out`, `zoom_out`, `slide_out`；强调：`pulse`, `spin`, `shake`, `grow_shrink`, `color_blast` |
+| A003 | error | `animations` 字段类型错误 | `animations` 必须为对象结构，如 `{"entry": "fly_in", "by_bullet": true}`，不能直接写字符串 |
+| A004 | error | `by_bullet` 类型错误 | `by_bullet` 必须是布尔值 `true` / `false`，不能写字符串 `"true"` |
+| A005 | warning | 页面类型不支持逐段动画 | 当前页面类型（如 `cover` / `divider` / `kpi` / `ending`）不建议开启 `by_bullet`，已自动关闭 |
+| A006 | warning | 不推荐使用高动态特效 | 商务场景建议使用 `fade` / `push` / `wipe` 等简约转场，避免 `vortex` / `fling` 等炫技特效 |
+
+### 7.3 错误反馈三要素（修正精准可落地）
+
+校验失败时，返回结构化错误信息，包含三个核心信息，模型可直接定位修改：
+
+1. **精准定位**：用 JSON Path 指明错误位置，例如 `pages[2].kpi_items[1].label`
+2. **明确原因**：说明违反了哪条规则，例如 "字段缺失：缺少必填字段 label"
+3. **修正指引**：给出正确写法或可选值，例如 "可选枚举值：cover, catalog, divider, kpi..."
+
+**错误反馈示例**：
+```json
+{
+  "validate_pass": false,
+  "errors": [
+    {
+      "code": "F102",
+      "level": "error",
+      "path": "pages[2].page_type",
+      "message": "页面类型枚举值非法: 数据指标页",
+      "suggestion": "请从以下列表选择: cover, catalog, divider, numbered_list, kpi, timeline, two_column, skill_percent, preset_titles, chart, table, ending"
+    }
+  ]
+}
+```
+
+### 7.4 修正原则：最小改动
+
+格式错误修正时必须遵循：
+
+- 只修改报错位置的字段，不要重写整个大纲
+- 优先从枚举列表、示例中复制正确写法，不要自己发明新写法
+- 修正后必须重新执行第六章自检清单，确认无误再重试
+- 同一错误连续 2 次修正失败，主动向用户说明问题，请求确认需求
+
+---
+
+## 八、标准工作流（五步闭环）
+
+### 8.1 步骤一：需求拆解与参数提取
+
+**输入**：用户自然语言描述
+**执行动作**：从用户描述中提取生成参数，输出标准化需求参数字典
+
+**命令**：`python aippt_outline.py step1-understand --text "用户描述"`
+
+**输出格式**：
 ```json
 {
   "scene": "年终总结",
-  "cover": {
-    "title": "2025年度AI研发团队年终总结",
-    "reporter": "AI研发团队",
-    "period": "2025年度"
-  },
-  "sections": [
-    {
-      "key": "annual_review",
-      "name": "年度工作回顾",
-      "items": [
-        {"title": "大模型产品矩阵成型", "desc": "全年上线3个核心AI产品，覆盖文本生成、代码辅助和多模态理解场景"},
-        {"title": "技术架构全面升级", "desc": "完成推理引擎v3.0升级，推理成本降低60%，服务可用性达99.99%"}
-      ]
-    },
-    {
-      "key": "achievements",
-      "name": "主要业绩成果",
-      "items": [
-        {"title": "开源生态建设", "desc": "发布3个开源项目，累计获得GitHub Star超1万，社区贡献者达200+"},
-        {"title": "专利申请与论文", "desc": "全年提交专利申请12项，在ACL/NeurIPS等顶会发表论文5篇"}
-      ]
-    },
-    {
-      "key": "experience",
-      "name": "经验与不足",
-      "items": [
-        {"title": "技术瓶颈突破", "desc": "攻克大模型推理延迟难题，端到端响应时间从2.1s优化至0.8s"},
-        {"title": "人才梯队建设", "desc": "核心算法团队扩充至30人，但高级AI人才招聘仍面临挑战"}
-      ]
-    },
-    {
-      "key": "next_year",
-      "name": "2026年度规划",
-      "items": [
-        {"title": "多模态技术深化", "desc": "重点布局视频理解和多模态生成，目标产出3个可商用产品"},
-        {"title": "全球化战略启动", "desc": "计划拓展东南亚和日本市场，组建本地化团队"},
-        {"title": "AI基础设施升级", "desc": "自建千卡级训练集群，支撑百亿参数模型训练"}
-      ]
-    }
-  ],
-  "end": {"thanks": "感谢聆听"}
+  "audience": "部门管理层",
+  "purpose": "2025年度业绩复盘与2026规划汇报",
+  "page_count": 12,
+  "tone": "正式专业",
+  "focus_points": ["业绩达成", "问题复盘", "明年规划"]
 }
 ```
-4. 向用户展示大纲，询问"大纲内容和逻辑是否需要调整？"
-5. 确认后进入 Step 3
 
-**各场景章节结构**：对应 `ppt_scene_adapter.py` 中 `SCENE_SCHEMAS` 的 `chapter_sections`：
+**约束规则**：
+- `scene` 必须从「4.1 场景枚举」中选择，不匹配时自动归类到最接近的场景
+- `page_count` 必须为正整数，默认值：工作总结类 10-12 页，简历类 4-6 页
+- `focus_points` 提取用户明确强调的核心内容，无则留空数组
 
-| 场景 | 章节结构（固定 4-9 章） |
+**自检（步骤一后）**：校验场景枚举、页数范围、字段完整性
+
+### 8.2 步骤二：结构化大纲生成（核心）
+
+**输入**：步骤一生成的需求参数字典
+**执行动作**：基于场景与受众，创作符合商务逻辑的完整 PPT 大纲，输出标准 outline.json
+
+**命令**：`python aippt_outline.py step2-outline --scene 年终总结 --purpose "..." --audience "..." --length 12 --keys "关键信息" --output outline.json`
+
+**输出要求**：页数严格等于 `page_count`，必须包含 1 页封面、1 页目录、1 页结尾页，其余为内容页；每页必须指定合法 `page_type`。
+
+**约束规则**：
+- 每页字段必须与「第五章 12 类页面类型最小示例」完全对应，不得缺省必填字段
+- `numbered_list` 每页要点控制在 3-5 个；`kpi` 每页 3-4 个指标；`timeline` 每页 4-6 个节点
+- 内容逻辑符合对应场景的专业汇报结构，层级清晰，要点具象化
+- 每条 desc 控制在 30-60 字（适配模板容量，避免触发缩字号）
+- title 控制在 15 字以内
+
+**确认 gate**：向用户展示大纲结构，询问"大纲内容和逻辑是否需要调整？"，确认后才进入 Step 3
+
+**自检（步骤二后）**：校验页面类型、必填字段、数组长度、整体结构
+
+### 8.3 步骤三：内容扩写与槽位适配（可选）
+
+**适用场景**：用户要求内容详实、或模板槽位需要完整正文时执行
+**执行动作**：将大纲要点扩写为完整正文段落，确保内容长度适配模板槽位容量
+**输出**：更新后的 outline.json，将短要点替换为完整表述
+
+**约束规则**：
+- 正文内容控制在合理长度，优先保证可读性，避免过度堆砌
+- 自动适配槽位数量，内容不足则补充维度，超出则精简提炼
+- 数据类内容优先使用「结论 + 数据 + 对比」的结构化表达
+
+### 8.4 步骤四：模板智能匹配
+
+**命令**：`python aippt_outline.py step3-visuals --outline outline.json`
+
+**执行动作**：调用模板列表查询命令，获取对应场景下的全部可用模板，基于内容风格自动选择最优模板
+
+**模板截图浏览**：每个模板在导入时已通过 PowerPoint COM 生成 2x2 多页缩略图（封面/目录/内容/结尾），路径记录在 `models/preview_manifest.json`。
+
+**匹配优先级**：
+1. 场景完全匹配
+2. 页数与大纲页数接近
+3. 风格与受众适配（正式商务、简约科技、清新活力等）
+
+**确认 gate**：向用户展示模板候选的**首页截图**和视觉建议，询问"选用哪个模板？动画/转场配置？"，确认后才进入 Step 4
+
+**自检（步骤三后）**：校验模板 ID 格式、场景匹配性
+
+### 8.5 步骤五：渲染生成与结果交付
+
+**命令**：`python aippt_outline.py step4-generate --outline outline.json --template-id 模板ID --output final.pptx --transitions auto --animations auto`
+
+**渲染前必做参数二次校验**：
+- ✅ `--outline` 指向的文件是合法 JSON
+- ✅ `--template-id` 是从模板列表中获取的真实 ID
+- ✅ 所有参数名拼写正确，无多余空格与特殊字符
+
+**默认参数**：
+- `--transitions auto`：自动匹配页面转场效果
+- `--animations auto`：自动匹配入场 / 强调动画
+- `remove_copyright=True`：自动清理模板版权页
+- `auto_fit=True`：开启超长文本字号自适应
+
+**参数合法取值表**：
+
+| 参数 | 合法值 | 说明 |
+|---|---|---|
+| `--transitions` | `auto` / `none` / 具体转场名称（如 `fade`、`push`） | 全局转场效果，默认 `auto`；具体名称须来自 4.3 转场枚举 |
+| `--animations` | `auto` / `none` / 具体动画名称（如 `fade`、`fly_in`） | 全局入场动画，默认 `auto`；具体名称须来自 4.4 动画枚举 |
+
+**单页覆盖优先级**：outline.json 单页对象的 `transition` / `animations` 字段优先于全局 `--transitions` / `--animations`；未指定单页字段时继承全局配置。
+
+**可选参数**：
+- `--trim-pages 6,10,11`：裁剪指定页面
+- `--insert-tables`：自动插入表格页（对比表+报价表）
+
+**内置渲染前终检**：step4-generate 内置六层防御体系校验（Layer 3-5），格式错误会被自动拦截，不会执行渲染。
+
+**交付内容**：
+1. 成品 PPT 文件路径
+2. 基本信息：页数、使用模板、生成耗时
+3. 核心内容摘要
+4. 残留占位文本校验报告
+
+**确认 gate**：向用户呈现 PPT 路径和质量指标，询问"是否需要迭代修改？"
+
+---
+
+## 九、各场景章节结构
+
+对应 `ppt_scene_adapter.py` 中 `SCENE_SCHEMAS` 的 `chapter_sections`：
+
+| 场景 | 章节结构 |
 |---|---|
 | 工作总结 | 工作内容 / 项目进度 / 问题不足 / 下步计划 |
 | 年终总结 | 年度回顾 / 业绩成果 / 经验不足 / 新年规划 |
@@ -190,237 +526,327 @@ AI 应自动完成：
 | 开题报告 | 选题背景 / 研究现状 / 研究方法 / 论文结论 |
 | 公司简介 | 概况 / 荣誉 / 团队 / 业务 / 产品 / 营销 / 市场分析 / 发展 / 未来 |
 | 职业规划 | 自我分析 / 职业目标 / 行动计划 / 风险评估 |
+| 安全教育 | 安全概述 / 危险源识别 / 安全措施 / 安全培训 / 应急预案 |
 
-**输出格式**：先以可编辑格式呈现给用户确认，再进入下一步。
+---
 
-> **示例大纲**（项目复盘 → 工作汇报场景）：
-> ```
-> 1. 标题页：Q3 项目复盘报告
-> 2. 工作进展：Q3 三大里程碑节点
-> 3. 阶段成果：核心指标与交付物
-> 4. 困难挑战：风险与应对
-> 5. 后续安排：Q4 行动计划
-> ```
+## 十、可用工具命令全集
 
-### Step 3: Match Visuals — "穿上外衣"  [`step3-visuals`]
+### 10.1 核心生成命令
 
-**命令**：`python aippt_outline.py step3-visuals --outline outline.json`
-
-**产出**：模板候选列表 + 版式匹配建议 + 风格适配决策（JSON 输出）
-
-**确认 gate**：向用户展示模板候选的**首页截图**和视觉建议，询问"选用哪个模板？动画/转场配置？"，确认后才进入 Step 4
-
-大纲确认后，匹配视觉处理。
-
-**模板截图浏览**：每个模板在导入时已通过 PowerPoint COM 生成首页 PNG 截图，路径记录在 `models/preview_manifest.json`。Step 3 输出中会包含每个候选模板的 `screenshot` 字段（相对路径），用户可：
-
-1. **查看截图选择模板**：打开 `models/<分类>/<模板名>.png` 预览模板风格
-2. **按截图对比**：将同分类的多个模板截图并排对比，挑选最匹配的视觉风格
-3. **参考模板特征**：结合 meta 中的 `total_pages`、`has_chart`、`has_picture` 等字段综合判断
-
+**1. 全链路一键生成**
 ```bash
-# 查看某分类下所有模板截图
-ls models/工作总结/*.png
-
-# 用默认图片查看器打开某模板截图
-start models/工作总结/商务风_001.pptx.png
+python aippt_outline.py auto-generate \
+  --prompt "用户原始需求文本" \
+  --output 输出文件路径.pptx \
+  [--template-id 模板ID] \
+  [--transitions auto] \
+  [--animations auto] \
+  [--animation-theme business|tech|formal]
 ```
+说明：自动完成需求理解、大纲生成、模板匹配、渲染全流程；未指定模板时自动选择最优模板。生成的是骨架 PPT，建议用 step2-outline 填充真实内容后用 step4-generate 重渲染。`--animation-theme` 可一键应用预设动画/转场风格（见 4.5 节），优先级低于单页配置、高于 `--transitions`/`--animations`。
 
-**场景 → 模板匹配**：调用 `ppt_scene_adapter.py` 的 `SceneAdapter.list_templates(category=场景名)` 列出可用模板，按以下规则推荐：
-
-| 内容特征 | 推荐模板特征 |
-|---|---|
-| 数据密集 | 含图表页的模板（meta 中 `page_meta` 含 `has_chart`） |
-| 时间线叙事 | 含 timeline 页面模式的模板 |
-| KPI 展示 | 含 KPI 页面模式的模板 |
-| 对比论述 | 含双栏页面的模板 |
-| 图文并茂 | 含 picture 的模板 |
-
-**模板导入与截图生成**：新模板通过 `import_templates.py` 导入时会自动：
-1. 根据首页文本关键词分类到 10 大类目
-2. 复制到 `models/<分类>/` 并重命名
-3. 生成 meta.json 元数据
-4. 用 PowerPoint COM 生成首页 PNG 截图
-5. 支持 `--removable-tail N` 标记末尾 N 页为可删除（版权页/致谢页）
-
+**2. 基于大纲渲染生成**（最常用）
 ```bash
-# 导入新模板（自动分类+截图+末尾2页标记删除）
-python import_templates.py --src "新模板目录" --prefix 新模板 --removable-tail 2
-
-# 无 PowerPoint 环境时跳过截图
-python import_templates.py --src "新模板目录" --prefix 新模板 --no-screenshot
-```
-
-**页面模式自动识别**：渲染时 `SceneAdapter._detect_page_pattern` 自动识别 8 类页面模式（divider / numbered_list / timeline / preset_titles / skill_percent / kpi / two_column / chart / table / content），无需手动指定。
-
-**风格建议**：
-- 学术汇报 → 简约、数据导向、低饱和度
-- 商业路演 → 大胆、品牌化、视觉密集
-- 项目复盘 → 时间线或里程碑视觉
-- 培训材料 → 步骤化、教学式布局
-
-### Step 4: Iterate & Refine — "共同完善并生成"  [`step4-generate`]
-
-**命令**：`python aippt_outline.py step4-generate --outline outline.json --template-id 工作汇报_工作汇报 --output final.pptx --transitions auto --animations auto`
-
-**产出**：成品 .pptx 文件 + 替换统计 + 残留校验报告
-
-**确认 gate**：向用户呈现 PPT 路径和质量指标，询问"是否需要迭代修改？"
-
-**交互式迭代**：
-- 支持"边聊边改"：通过对话修改大纲或内容
-- 接受结构、措辞、视觉建议的反馈
-- 按用户方向重新生成特定章节
-
-**质量检查**：
-- 章节间逻辑流畅
-- 关键信息突出
-- 长度符合预期
-- 每条 desc 控制在 30-60 字（适配模板容量，避免触发缩字号）
-
-**生成 PPT**：大纲确认后，执行以下流程：
-
-```bash
-# 1. 大纲 → business_data JSON
-python aippt_outline.py --scene 工作汇报 --outline outline.json --output business_custom.json
-
-# 2. business_data → PPT
-python ppt_scene_adapter.py generate \
-  --scene 工作汇报 \
-  --template-id 工作汇报_工作汇报 \
-  --data business_custom.json \
-  --output final.pptx \
+python aippt_outline.py step4-generate \
+  --outline 大纲文件路径.json \
+  --template-id 模板ID \
+  --output 输出文件路径.pptx \
   --transitions auto \
-  --animations auto
+  --animations auto \
+  [--animation-theme business|tech|formal] \
+  [--trim-pages 6,10,11] \
+  [--insert-tables]
+```
+说明：输入标准 outline.json，输出成品 PPT，并附残留占位文本校验报告。step4-generate 内置渲染前终检（六层防御体系 Layer 3-5），格式错误会被自动拦截。`--animation-theme` 按页面类型自动注入转场/动画（见 4.5 节），outline 单页显式 `transition`/`animations` 字段优先级最高。
+
+**3. 四步工作流独立子命令**
+```bash
+# Step 1: 理解与拆解
+python aippt_outline.py step1-understand --text "用户描述"
+
+# Step 2: 构建大纲
+python aippt_outline.py step2-outline --scene 工作汇报 --purpose "..." --audience "..." --length 14 --keys "关键信息" --output outline.json
+
+# Step 3: 视觉匹配
+python aippt_outline.py step3-visuals --outline outline.json
+
+# Step 4: 渲染生成
+python aippt_outline.py step4-generate --outline outline.json --template-id 模板ID --output final.pptx
 ```
 
-或通过 Python API：
+### 10.2 格式校验命令（六层防御体系）
 
-```python
-from ppt_scene_adapter import SceneAdapter
-from ppt_renderer import PptRenderer
+**1. 大纲格式校验**
+```bash
+python aippt_outline.py validate \
+  --outline outline.json \
+  [--template-id 模板ID] \
+  [--auto-fix] \
+  [--output result.json]
+```
+说明：执行六层防御体系校验。`--template-id` 启用模板槽位匹配校验（Layer 4）；`--auto-fix` 自动修复非原则性问题并回写文件（Layer 5）；输出标准化校验结果（Layer 6）。
 
-adapter = SceneAdapter("models")
-meta, _ = adapter.get_template_meta(template_id="工作汇报_工作汇报")
-slot_data = adapter.adapt("工作汇报", business_data, meta)
+**2. 分步校验时机**
 
-renderer = PptRenderer("models/工作汇报/工作汇报.pptx",
-                       "models/工作汇报/工作汇报.meta.json")
-renderer.render(slot_data, "final.pptx",
-                remove_copyright=True, auto_fit=True,
-                transitions="auto", animations="auto")
+| 校验时机 | 校验内容 | 命令 |
+|---|---|---|
+| Step 1 后 | 场景枚举、页数范围、核心参数 | `validate --outline` (需求参数) |
+| Step 2 后 | 大纲结构、页面类型、字段完整性 | `validate --outline outline.json` |
+| Step 3 后 | 模板槽位匹配、页面类型兼容性 | `validate --outline outline.json --template-id 模板ID` |
+| Step 4 前 | 渲染前终检（自动执行） | step4-generate 内置，无需手动调用 |
+
+### 10.3 模板管理命令
+
+**1. 查询模板列表**
+```bash
+python aippt_outline.py list-templates [--scene 场景名] [--style 风格] [--min-pages N] [--max-pages N] [--color-scheme 色系] [--industry 行业]
+```
+参数说明：
+- `--scene`：按场景筛选（如 工作总结、述职报告）
+- `--style`：按风格标签筛选（如 商务）
+- `--min-pages` / `--max-pages`：页数范围
+- `--color-scheme`：按色系筛选，枚举值 `蓝色系/灰色系/红色系/绿色系/多彩/黑白`
+- `--industry`：按适用行业筛选，枚举值 `通用/金融/教育/科技/制造/医疗/政府`
+
+输出：结构化 JSON 列表，包含 template_id、场景、风格标签、页数、color_scheme、industry、page_range、quality_score 等字段。向后兼容：缺字段的模板在不指定对应筛选条件时仍会被列出，仅在指定筛选条件时跳过。
+
+**2. 查看模板元数据**
+```bash
+python ppt_meta_tool.py info --template-id 模板ID
+```
+输出：模板详细信息，包括每页类型、槽位数量、可删除页、章节结构。
+
+**3. 模板质量校验（单模板）**
+```bash
+python ppt_meta_tool.py check --template-id 模板ID
+```
+输出：槽位完整性、章节置信度、渲染兼容性校验结果。
+
+**4. 模板批量校验**
+```bash
+python ppt_meta_tool.py check --dir models
+```
+输出：全量 meta 质量校验报告。
+
+### 10.4 模板接入与校验命令
+
+**1. 批量导入模板**
+```bash
+python import_templates.py import --src "源目录" --prefix 模板前缀 --removable-tail 2 [--force] [--no-screenshot]
+```
+说明：自动分类+复制+生成 meta+2x2 多页缩略图+更新索引。`--removable-tail N` 标记末尾 N 页为可删除。
+
+**2. 自定义模板自动标注**
+```bash
+python import_templates.py auto-annotate --input 模板文件路径.pptx --scene 所属场景 --output 元数据输出目录
+```
+说明：自动解析模板结构、识别槽位、分类页面类型，生成标准 .meta.json 元数据文件。
+
+**3. 全量模板索引更新**
+```bash
+python import_templates.py rebuild-index [--models-dir models]
+```
+说明：重新生成 templates_index.json 全局模板索引。
+
+### 10.5 辅助工具命令
+
+```bash
+# 裁剪指定页面
+python trim_ppt.py --input input.pptx --output output.pptx --pages 1,3,5-8
+
+# 批量插入表格
+python insert_tables.py --template template.pptx --data data.json --output output.pptx
+
+# 多页缩略图生成（2x2 网格）
+python generate_thumbnails.py --models-dir models --layout 2x2 [--force]
 ```
 
-## business_data JSON 格式
+---
 
-四步工作流最终产出符合 `SCENE_SCHEMAS` 的 JSON：
+## 十一、错误处理与降级策略
 
-```json
-{
-  "cover": {
-    "title": "主标题",
-    "reporter": "汇报人",
-    "period": "汇报周期"
-  },
-  "sections": {
-    "<section_key>": [
-      {"title": "要点标题", "desc": "30-60字描述"},
-      {"title": "要点标题", "desc": "30-60字描述"}
-    ]
-  },
-  "end": {
-    "thanks": "结束致谢语"
-  }
-}
-```
+| 错误场景 | 处理方式 |
+|---|---|
+| 模板不存在 | 列出对应场景下所有可用模板，引导用户选择 |
+| 页数不匹配 | 自动调整大纲页数，增删过渡页或内容页，优先保证结构完整 |
+| 槽位数量不匹配 | 自动精简 / 补充内容要点，确保每页要点数与模板槽位数一致 |
+| 渲染执行失败 | 先调用校验命令排查问题，根据错误提示修正数据后重试，最多重试 2 次 |
+| 场景无法匹配 | 自动归类到最相近的通用场景，同时告知用户适配情况 |
+| 内容溢出文本框 | 开启 auto_fit 自动缩小字号；严重溢出时自动精简文案 |
 
-`section_key` 必须对应场景 schema 的 `chapter_sections[].key`（见 Step 2 表格）。
+---
 
-## 不会做的事
+## 十二、最佳实践
+
+1. **内容密度控制**：每页正文要点不超过 5 条，单条描述不超过 2 行，兼顾可读性与美观度
+2. **页面类型搭配**：合理混合使用列表、KPI、时间轴、双栏等多种页面类型，避免版式单调
+3. **动画默认自动**：无特殊要求时统一使用 `auto` 模式，渲染引擎会根据页面类型匹配最优效果
+4. **数据具象化**：优先使用「数字 + 比例 + 对比」的表达，避免空泛描述
+5. **交付简洁化**：生成完成后直接给出文件路径与核心信息，无需冗余铺垫
+6. **四步确认 gate**：每步执行后向用户呈现产出物并显式询问"是否确认进入下一步？"
+7. **格式优先**：格式合规 > 内容详实，宁可精简内容保证格式正确
+8. **最小改动修正**：校验失败时只改报错字段，不重写整个大纲
+9. **动画默认 auto**：90% 以上场景直接使用 `--transitions auto --animations auto`，渲染引擎按页面类型自动匹配专业效果，无需手动定制
+10. **转场风格统一**：同一套 PPT 转场风格不超过 2 种，以 `fade` / `push` 为主，避免花哨特效喧宾夺主
+11. **逐段动画慎用**：仅在 `numbered_list` / `catalog` / `timeline` 页使用 `by_bullet: true` 配合讲解节奏；`cover` / `divider` / `kpi` / `ending` 禁用
+12. **强调动画克制**：`emphasis` 仅用于核心 KPI 数值、关键结论等需突出的内容，每页不超过 1 处
+13. **降级兼容**：若不确定效果是否支持，统一使用 `fade`，兼容性最好、风格最稳妥
+
+---
+
+## 十三、不会做的事
 
 - ❌ 不讲占位文本"待补充具体内容"放入大纲 — AI 必须生成真实、可用的业务内容
 - ❌ 编造具体数字或统计 — 缺失精确数据时使用合理估算并标注"约"，否则询问用户
 - ❌ 跳过大纲确认直接生成 PPT
 - ❌ 在未澄清场景前猜测 section key
+- ❌ 跳过 Step 1 直接生成大纲
+- ❌ Step 3 未确认模板就进入 Step 4
+- ❌ 用 markdown 代码块包裹 JSON 输出
+- ❌ 在 JSON 前后添加解释性文字
+- ❌ 自创字段名或枚举值
+- ❌ 自创转场/动画效果名称，或使用中文别名（如 `"transition": "淡入"`）
+- ❌ 将 `animations` 写成字符串（如 `"animations": "fly_in"`），必须为对象结构
+- ❌ 将 `by_bullet` 写成字符串（如 `"by_bullet": "true"`），必须为布尔值
+- ❌ 在 `cover` / `divider` / `kpi` / `ending` 页开启 `by_bullet: true`
+- ❌ 商务场景使用 `vortex` / `fling` / `switch` 等炫技转场
 - ✅ 每条 desc 控制在 30-60 字（适配模板容量，避免触发缩字号）
 - ✅ title 控制在 15 字以内
 - ✅ 生成前用 `SceneAdapter.validate_business_data` 校验
+- ✅ 输出前完成第六章 10 项自检清单
 
-## 输出格式
+---
 
-最终输出包含：
-1. **结构化大纲**（slide-by-slide）
-2. **视觉风格建议**（按页面类型）
-3. **business_data JSON**（符合场景 schema）
-4. **成品 PPT 文件路径**
-5. **关键信息摘要**（供汇报人参考）
+## 十四、高级渲染能力（v2 新增）
 
-## 示例交互
+### 14.1 SmartArt 文本替换
+- **能力**：通过 dgm 命名空间直接操作 SmartArt XML 节点，精准替换文本节点，100% 保留 SmartArt 结构、布局、配色、形状层级
+- **模块**：`ppt_smartart.py`
+- **API**：
+  - `replace_smartart_text(slide, replacements: dict)` — 按 `{old_text: new_text}` 替换
+  - `list_smartart_text(slide)` — 列出所有 SmartArt 文本节点便于调试
+- **使用场景**：模板含组织架构图、流程图、关系图等 SmartArt 元素时，自动识别并替换文本
 
-**用户**："帮我做一个项目复盘的 PPT"
+### 14.2 演讲者备注注入
+- **能力**：每页可传入备注文本，自动写入演讲者备注栏，适配原生备注结构
+- **API**：`PptRenderer.render(..., notes_map: dict[int, str] = None)`
+- **notes_map 格式**：`{1: "封面备注文本", 2: "目录页备注文本", ...}`，键为 page_id（从 1 开始）
+- **向后兼容**：不传 notes_map 时行为不变
 
-**Agent**：
-> 好的，我来帮你生成项目复盘 PPT。先确认几个问题：
-> 1. 这个项目是做什么的？
-> 2. 复盘的主要受众是谁？
-> 3. 期望多少页？
-> 4. 有需要重点突出的数据或成果吗？
+### 14.3 动画时间线精细控制
+- **能力**：在 `by_bullet` 模式下，支持段间延迟、播放顺序自定义
+- **API**：`_build_by_bullet_nodes(..., bullet_delay_ms=500, bullet_order=None)`
+  - `bullet_delay_ms`：段间延迟毫秒数，默认 500ms
+  - `bullet_order`：播放顺序列表，如 `[2, 0, 1]` 表示先播第3段再第1段再第2段；默认 `[0, 1, 2, ...]` 顺序播放
+- **使用场景**：配合演讲节奏，让列表要点按特定顺序逐条出现
 
-**用户**："AI 教育产品 Q3 复盘，给管理层看，10 页左右，突出用户增长和营收数据"
+### 14.4 图表数据源动态替换
+- **能力**：基于 python-pptx chart 对象，传入结构化数据自动更新图表数值，100% 保留模板配色、字体、坐标轴样式
+- **支持类型**：`bar`（柱状图）、`line`（折线图）、`pie`（饼图）、`radar`（雷达图）
+- **多系列适配**：模板原有 N 系列，新数据 M 系列；M>N 仅替换前 N 系列，M<N 多余系列清空
+- **API**：`PptRenderer._replace_chart_data(shape, chart_data_dict)`
+- **数据结构**：见 [5.10 chart 页示例](#510-chart图表页)
 
-**Agent**：识别为 `工作汇报` 场景 → 自动生成包含真实内容的 5 章节大纲（工作进展/阶段成果/困难挑战/后续安排 + 封面）→ 用户确认 → 生成 business_data JSON → 调用渲染引擎产出 PPT
+### 14.5 表格动态行扩展
+- **能力**：模板预设表头样式，传入 N 行数据自动追加/删除行，继承表头样式与列宽
+- **API**：`PptRenderer._fill_dynamic_table(shape, table_data)`
+- **数据结构**：见 [5.11 table 页示例](#511-table表格页)
+- **自动行高**：根据内容长度调整行高，避免溢出
 
-### 一句话生成示例（无追问）
+### 14.6 模板自动 Profile 与质量门禁
+- **能力**：输入任意 PPTX，全自动解析母版/版式/元素角色/页面模式/色系，生成完整元数据并执行 4 类质量校验
+- **模块**：
+  - `aippt/profile_layouts.py` — 母版与版式深度解析
+  - `aippt/ppt_element_classifier.py` — 元素角色识别（含置信度）
+  - `ppt_meta_tool.py` — 8 模式分类 + 色系识别 + 4 类质量校验
+- **质量校验 4 类**：
+  1. `meta_required`：必填字段完整性
+  2. `rendering_test`：渲染测试（实际渲染到临时目录，校验输出页数）
+  3. `style_check`：样式检查（字体一致性、配色协调、字号合理性）
+  4. `meta_completeness`：元数据完整性（page_type/slots/chapters/template_id）
+- **命令**：`python ppt_meta_tool.py check --template-id 模板ID` 或 `--dir models` 批量校验
+- **低置信度 warning**：识别不确定的元素自动标记，输出 `{shape_name, position, reason}` 供人工复核
 
-**用户**："帮我生成一份2025年度Q4销售团队业绩汇报PPT，面向CEO，12页"
+### 14.7 模板标签体系
+- **能力**：每个模板支持多维标签筛选
+- **标签字段**：
+  - `style_tags`：风格标签（如 `["商务", "16:9"]`）
+  - `color_scheme`：色系（`蓝色系` / `灰色系` / `红色系` / `绿色系` / `多彩` / `黑白`）
+  - `industry`：适用行业（`["通用", "金融", "教育", "科技", "制造", "医疗", "政府"]`）
+  - `page_range`：页数范围（如 `"10-15页"`）
+  - `quality_score`：质量评分（0-100）
+- **筛选命令**：
+  ```bash
+  python aippt_outline.py list-templates --scene 工作总结 --color-scheme 蓝色系 --industry 金融
+  ```
 
-**Agent**（自动推断受众=CEO, 长度=12, 风格=正式商务，无需追问）：
-> 已识别为「工作汇报」场景，自动生成大纲如下：
-> 1. 封面：2025年度Q4销售团队业绩汇报
-> 2. 工作进展：重点客户开拓 / 区域市场覆盖 / 渠道建设
-> 3. 阶段成果：营收达成率120% / 新签客户35家 / 回款周期缩短至45天
-> 4. 困难挑战：市场竞争加剧 / 大客户决策周期延长
-> 5. 后续安排：Q1目标5,000万 / 团队扩编至50人
-> 
-> 大纲内容是否确认？如需调整请告知。
-> 模板推荐：推荐使用「商务风_026」(24页, 含图表页, 适合数据展示)
+### 14.8 动画预设主题
+- **能力**：内置 3 套预设主题，一键切换整体动画/转场风格
+- **主题清单**：
+  | 主题名 | 风格 | 适用场景 |
+  |---|---|---|
+  | `business` | 简约商务 | 工作汇报、年终总结、述职报告 |
+  | `tech` | 活力科技 | 产品发布、科技分享、创新汇报 |
+  | `formal` | 沉稳正式 | 政府汇报、正式致辞、学术答辩 |
+- **优先级**：单页 outline 显式配置 > 主题 page_overrides > 主题 global_transition > 全局 `--transitions`/`--animations`
+- **命令**：`python aippt_outline.py step4-generate ... --animation-theme business`
 
-## 项目结构
+---
+
+---
+
+## 十四、项目结构
 
 ```
 Ppt_work/
-├── aippt/                          # 共享核心包（v2.0 新增）
+├── aippt/                          # 共享核心包
 │   ├── __init__.py
 │   ├── config.py                   # 集中配置（路径/关键词/默认参数）
-│   ├── constants.py                # 共享常量（去重后的占位文本/关键词）
-│   └── logger.py                   # 统一日志模块
-├── aippt_outline.py                # 四步工作流 CLI + 大纲转换
+│   ├── constants.py                # 共享常量（占位文本/关键词）
+│   ├── logger.py                   # 统一日志模块
+│   └── validators.py               # 六层防御体系校验引擎
+├── aippt_outline.py                # 五步工作流 CLI + 大纲转换
 ├── ppt_renderer.py                 # 渲染引擎（模板 → 成品 PPT）
 ├── ppt_scene_adapter.py            # 场景适配（业务字段 → 模板槽位）
 ├── ppt_meta_tool.py                # 模板元数据解析工具
 ├── ppt_animations.py               # 动画效果注入
 ├── ppt_transitions.py              # 转场效果注入
-├── import_templates.py             # 模板批量导入
-├── models/                         # 模板库（10 场景分类）
-├── pyproject.toml                  # 依赖管理 / 类型检查 / lint 配置
+├── import_templates.py             # 模板批量导入 + auto-annotate + rebuild-index
+├── generate_thumbnails.py          # 多页缩略图生成（2x2 网格）
+├── trim_ppt.py                     # 页面裁剪工具
+├── insert_tables.py                # 表格批量插入工具
+├── process_safety_templates.py     # 安全教育模板批量处理
+├── schemas/                        # JSON Schema 定义（六层防御 Layer 2）
+│   ├── requirement_params.schema.json
+│   └── outline.schema.json
+├── models/                         # 模板库（11 场景分类）
+│   ├── templates_index.json        # 全局模板索引
+│   └── preview_manifest.json       # 截图预览清单
 └── SKILL.md
 ```
 
-## 与本项目的对接
+---
+
+## 十五、与本项目的对接
 
 | Skill 步骤 | 项目模块 | 输入 | 输出 |
 |---|---|---|---|
-| Step 1 Understand | `SceneAdapter.list_scenes()` | 用户描述 | 场景名 |
+| Step 1 Understand | `SceneAdapter.list_scenes()` + `detect_scene()` | 用户描述 | 场景名 |
 | Step 2 Outline | `SCENE_SCHEMAS[scene].chapter_sections` | 场景名 | 大纲 JSON |
-| Step 3 Visuals | `SceneAdapter.list_templates(category=scene)` | 场景名 | 模板 ID |
-| Step 4 Generate | `aippt_outline.py` + `PptRenderer.render()` | 大纲 + 模板 | .pptx 文件 |
+| Step 3 Visuals | `SceneAdapter.list_templates(category=scene)` | 场景名 | 模板 ID + 截图 |
+| Step 4 Generate | `aippt_outline.py step4-generate` + `PptRenderer.render()` | 大纲 + 模板 | .pptx 文件 |
 
-## 依赖
+---
+
+## 十六、依赖
 
 - Python 3.10+
 - python-pptx >=1.0.2
 - lxml（动画/转场注入）
+- jsonschema >=4.0（六层防御体系格式校验）
 - 可选: pywin32（截图功能）
+- 可选: Pillow（多页缩略图拼接）
 
 ```bash
 # 安装核心依赖

@@ -1,0 +1,1003 @@
+{
+  "template_id": "工作总结_worksummary_01",
+  "category": "工作总结",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 20,
+  "removable_pages": [],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 7,
+      "name": "工作内容汇报"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 8,
+      "end_page": 11,
+      "name": "项目完成进度"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 12,
+      "end_page": 15,
+      "name": "问题不足讨论"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 16,
+      "end_page": 19,
+      "name": "下步工作计划"
+    },
+    {
+      "key": "end",
+      "page": 20,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作总结/计划",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "WORK REPORT",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "desc",
+        "match_text": "YOUR CONTENT IS ENTE",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "period",
+        "match_text": "2O2X ANNUAL",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PPT TEMPLATE",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "LOGO",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "COMPANY SLOGAN",
+        "shape_name": "文本框 20"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "目录",
+        "shape_name": "文本框 2"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作内容汇报",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "PART O1",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "LOGO",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "COMPANY SLOGAN",
+        "shape_name": "文本框 10"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作内容汇报",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "PROJECT – O1",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PROJECT – O2",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "输入标题文字内容",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "此录入综合描述说明",
+        "shape_name": "文本框 14"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作内容汇报",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入相关文字内容，操作方法：鼠标",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "工作完成阶段",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "完成阶段",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 57"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "完成阶段",
+        "shape_name": "文本框 59"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 61"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "完成阶段",
+        "shape_name": "文本框 63"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "文本框 65"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "完成阶段",
+        "shape_name": "文本框 67"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作内容汇报",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作内容汇报",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "TextBox 32"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "TextBox 32"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "TextBox 32"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "TextBox 32"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "TextBox 32"
+      },
+      {
+        "slot": "desc_6",
+        "match_text": "请替换文字内容，修改文字内容，也可以直接",
+        "shape_name": "TextBox 32"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "项目完成进度",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "PART O2",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "LOGO",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "COMPANY SLOGAN",
+        "shape_name": "文本框 10"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "项目完成进度",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "03",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "desc",
+        "match_text": "此处添加您的文本内容此处添加您的文本内容",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "此处添加您的文本内容此处添加您的文本内容",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "此处添加您的文本内容此处添加您的文本内容",
+        "shape_name": "图形"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "项目完成进度",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此处添加您的文本内容在此处添加您的文本",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "预设标题文本",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此处添加您的文本内容在此处添加您的文本",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "预设标题文本",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此处添加您的文本内容在此处添加您的文本",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "预设标题文本",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "在此处添加您的文本内容在此处添加您的文本",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "预设标题文本",
+        "shape_name": "图形"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "项目完成进度",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "year",
+        "match_text": "2019",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "year_2",
+        "match_text": "2020",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "year_3",
+        "match_text": "2021",
+        "shape_name": "文本框 33"
+      },
+      {
+        "slot": "year_4",
+        "match_text": "2022",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "year_5",
+        "match_text": "2023",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "year_6",
+        "match_text": "2024",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "year_7",
+        "match_text": "2025",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "year_8",
+        "match_text": "2026",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "year_9",
+        "match_text": "2027",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "部门工作业绩汇报",
+        "shape_name": "文本框 55"
+      },
+      {
+        "slot": "percent",
+        "match_text": "67%",
+        "shape_name": "文本框 56"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "项目名称",
+        "shape_name": "文本框 57"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "36%",
+        "shape_name": "文本框 60"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目名称",
+        "shape_name": "文本框 61"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 65"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "问题不足讨论",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "PART O3",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "LOGO",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "COMPANY SLOGAN",
+        "shape_name": "文本框 10"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "问题不足讨论",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "标题文字内容",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "标题文字内容",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "标题文字内容",
+        "shape_name": "文本框 33"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "标题文字内容",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "标题文字内容",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 38"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "问题不足讨论",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题内容",
+        "shape_name": "标题 4"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "矩形 8"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题内容",
+        "shape_name": "标题 4"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "矩形 11"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题内容",
+        "shape_name": "标题 4"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "矩形 14"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "问题不足讨论",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "01"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "02"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "03"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请你单击此处添加合适的文字加以",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请你单击此处添加合适的文字加以",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题 请你单击此处添加合适的文字加以",
+        "shape_name": "文本框 21"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "PART O4",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "LOGO",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "COMPANY SLOGAN",
+        "shape_name": "文本框 10"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题内容",
+        "shape_name": "1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入你的正文，文字是您思想的提炼",
+        "shape_name": "1"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题内容",
+        "shape_name": "1"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入你的正文，文字是您思想的提炼",
+        "shape_name": "1"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "O1",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "TITLE HERE",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "O2",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "TITLE HERE",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "O3",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "TITLE HERE",
+        "shape_name": "文本框 16"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入上述图表的综合描述说明，或者通过",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "BUSINESS TITLE",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "BUSINESS TITLE",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "TITLE O1",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "TITLE O2",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "TITLE O3",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "TITLE O4",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "WORK SUMMARY",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "PROJECT NAME",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "PROJECT NAME",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "PROJECT NAME",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "PROJECT NAME",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "DEPARTMENT",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "DATA DISPLAY",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_16",
+        "match_text": "DATA DISPLAY",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "DATA DISPLAY",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "DATA DISPLAY",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "ENTER DATE",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "2O24",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "title_21",
+        "match_text": "2O25",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "title_22",
+        "match_text": "2O26",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_23",
+        "match_text": "2O27",
+        "shape_name": "文本框 41"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "BUSINESS",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "感谢聆听,谢谢",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "THANK YOU",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "desc",
+        "match_text": "YOUR CONTENT IS ENTE",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "period",
+        "match_text": "2O2X ANNUAL",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PPT TEMPLATE",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "LOGO",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "COMPANY SLOGAN",
+        "shape_name": "文本框 18"
+      }
+    ]
+  }
+}

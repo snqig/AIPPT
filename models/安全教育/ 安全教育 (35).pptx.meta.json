@@ -1,0 +1,1488 @@
+{
+  "template_id": "安全教育__安全教育_(35)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 27,
+  "removable_pages": [
+    26,
+    27
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 8,
+      "name": "活动指导思想及目的"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 9,
+      "end_page": 14,
+      "name": "活动时间以及安排"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 15,
+      "end_page": 19,
+      "name": "活动主题"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 20,
+      "end_page": 24,
+      "name": "活动要求"
+    },
+    {
+      "key": "end",
+      "page": 25,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "加强安全教育·防患于未然",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "演讲者：xxx",
+        "shape_name": "矩形 17",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "文本框 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "1.活动指导思想及目的",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2.活动时间以及安排",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "3.活动主题",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "4.活动要求",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "第一节",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "活动指导思想及目的",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 2,
+          "total_chars": 24
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "标题文本预设",
+        "shape_name": "Rectangle 87",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题文本预设",
+        "shape_name": "Rectangle 87",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "标题文本预设",
+        "shape_name": "Rectangle 87",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本预设",
+        "shape_name": "Rectangle 87",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 2,
+          "total_chars": 62
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "单击此处，添加副标题",
+        "shape_name": "矩形 3"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 2,
+          "total_chars": 62
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击此处，添加副标题",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 2,
+          "total_chars": 62
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击此处，添加副标题",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 2,
+          "total_chars": 62
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击此处，添加副标题",
+        "shape_name": "矩形 8"
+      }
+    ],
+    "6": [
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 5,
+          "total_chars": 85
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 5,
+          "total_chars": 85
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 14",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 5,
+          "total_chars": 85
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 23",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 4,
+          "total_chars": 80
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 24",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 4,
+          "total_chars": 80
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 27",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 4,
+          "total_chars": 80
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 28",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 4,
+          "total_chars": 80
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "第二节",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "活动时间以及安排",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 2,
+          "total_chars": 24
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "TextBox 39",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 6,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "TextBox 39",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 6,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "TextBox 39",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 6,
+          "total_chars": 66
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 39",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "标题文本预设",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题文本预设",
+        "shape_name": "矩形 20",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "텍스트 개체 틀 3"
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 3"
+      },
+      {
+        "slot": "title",
+        "match_text": "单击添加标题",
+        "shape_name": "Rectangle 3"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "텍스트 개체 틀 3"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "Rectangle 3"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "텍스트 개체 틀 3"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 3"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "Rectangle 3",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "텍스트 개체 틀 3"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 3"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击添加标题",
+        "shape_name": "Rectangle 3"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 4,
+          "total_chars": 80
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 4,
+          "total_chars": 80
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 14",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 4,
+          "total_chars": 80
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 4,
+          "total_chars": 80
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "第三节",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "活动主题",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "标题文本预设",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题文本预设",
+        "shape_name": "矩形 8"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "标题文本预设",
+        "shape_name": "矩形 10"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本预设",
+        "shape_name": "矩形 12"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本预设",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题文本预设",
+        "shape_name": "矩形 16"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "点击此处添加标题 此部分内容作为文字排版",
+        "shape_name": "MH_SubTitle_1",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "点击此处添加标题 此部分内容作为文字排版",
+        "shape_name": "MH_SubTitle_2",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "点击此处添加标题 此部分内容作为文字排版",
+        "shape_name": "MH_SubTitle_3",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "点击此处添加标题 此部分内容作为文字排版",
+        "shape_name": "MH_SubTitle_4",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "Oval 62"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "Oval 67"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "Oval 72"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "Oval 77"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "Oval 96"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "03",
+        "shape_name": "Oval 82",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_7",
+        "match_text": "04",
+        "shape_name": "Oval 83",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_8",
+        "match_text": "05",
+        "shape_name": "Oval 84",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_9",
+        "match_text": "01",
+        "shape_name": "Oval 85",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number_10",
+        "match_text": "02",
+        "shape_name": "Oval 86",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 33",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "Oval 62"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "Oval 67"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "Oval 72"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "Oval 77"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "Oval 96"
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 37",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 38",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "第四节",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "活动要求",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "输入标题",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "矩形 4"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "标题文本预设",
+        "shape_name": "Rectangle 68"
+      }
+    ],
+    "23": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "Oval 62"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "Oval 67"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "Oval 72"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "Oval 77"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "Oval 96"
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 2,
+          "total_chars": 56
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "desc",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 31",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 2,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "Rectangle 32",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "Rectangle 22"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 29",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 2,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "Rectangle 30",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "1",
+        "shape_name": "Rectangle 13"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 39",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 2,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "Rectangle 40",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 33",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 2,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "Rectangle 34",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "5",
+        "shape_name": "Rectangle 26"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 35",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 2,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "Rectangle 36",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "2",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "desc_6",
+        "match_text": "点击输入文本内容点击输入文本内容点击输入",
+        "shape_name": "Rectangle 37",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 2,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "Rectangle 38",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "4",
+        "shape_name": "Rectangle 23"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "6",
+        "shape_name": "Rectangle 27"
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "加强安全教育·防患于未然",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "演讲者：xxx",
+        "shape_name": "矩形 17",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 10
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

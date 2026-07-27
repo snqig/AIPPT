@@ -1,6 +1,7 @@
 {
-  "total": 79,
+  "total": 236,
   "categories": {
+    "安全教育": 157,
     "个人简历": 1,
     "公司简介": 2,
     "工作总结": 39,
@@ -14,6 +15,24 @@
   },
   "templates": [
     {
+      "template_id": "安全教育__安全教育_(2)",
+      "category": "安全教育",
+      "name": " 安全教育 (2).pptx",
+      "path": "_annotated/ 安全教育 (2).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 34,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
       "template_id": "个人简历_岗位竞聘",
       "category": "个人简历",
       "name": "岗位竞聘",
@@ -23,7 +42,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "公司简介_公司介绍",
@@ -35,7 +60,13 @@
         "16:9"
       ],
       "total_pages": 35,
-      "chapter_count": 12
+      "chapter_count": 12,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
     },
     {
       "template_id": "公司简介_商务风_042",
@@ -47,7 +78,2821 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(1)",
+      "category": "安全教育",
+      "name": " 安全教育 (1).pptx",
+      "path": "安全教育/ 安全教育 (1).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(10)",
+      "category": "安全教育",
+      "name": " 安全教育 (10).pptx",
+      "path": "安全教育/ 安全教育 (10).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(100)",
+      "category": "安全教育",
+      "name": " 安全教育 (100).pptx",
+      "path": "安全教育/ 安全教育 (100).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(101)",
+      "category": "安全教育",
+      "name": " 安全教育 (101).pptx",
+      "path": "安全教育/ 安全教育 (101).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(102)",
+      "category": "安全教育",
+      "name": " 安全教育 (102).pptx",
+      "path": "安全教育/ 安全教育 (102).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(103)",
+      "category": "安全教育",
+      "name": " 安全教育 (103).pptx",
+      "path": "安全教育/ 安全教育 (103).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(104)",
+      "category": "安全教育",
+      "name": " 安全教育 (104).pptx",
+      "path": "安全教育/ 安全教育 (104).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(105)",
+      "category": "安全教育",
+      "name": " 安全教育 (105).pptx",
+      "path": "安全教育/ 安全教育 (105).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(106)",
+      "category": "安全教育",
+      "name": " 安全教育 (106).pptx",
+      "path": "安全教育/ 安全教育 (106).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(107)",
+      "category": "安全教育",
+      "name": " 安全教育 (107).pptx",
+      "path": "安全教育/ 安全教育 (107).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 1,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(108)",
+      "category": "安全教育",
+      "name": " 安全教育 (108).pptx",
+      "path": "安全教育/ 安全教育 (108).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(109)",
+      "category": "安全教育",
+      "name": " 安全教育 (109).pptx",
+      "path": "安全教育/ 安全教育 (109).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(11)",
+      "category": "安全教育",
+      "name": " 安全教育 (11).pptx",
+      "path": "安全教育/ 安全教育 (11).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(110)",
+      "category": "安全教育",
+      "name": " 安全教育 (110).pptx",
+      "path": "安全教育/ 安全教育 (110).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(111)",
+      "category": "安全教育",
+      "name": " 安全教育 (111).pptx",
+      "path": "安全教育/ 安全教育 (111).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(112)",
+      "category": "安全教育",
+      "name": " 安全教育 (112).pptx",
+      "path": "安全教育/ 安全教育 (112).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(113)",
+      "category": "安全教育",
+      "name": " 安全教育 (113).pptx",
+      "path": "安全教育/ 安全教育 (113).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(114)",
+      "category": "安全教育",
+      "name": " 安全教育 (114).pptx",
+      "path": "安全教育/ 安全教育 (114).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 1,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(115)",
+      "category": "安全教育",
+      "name": " 安全教育 (115).pptx",
+      "path": "安全教育/ 安全教育 (115).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 55,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "51-55页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(116)",
+      "category": "安全教育",
+      "name": " 安全教育 (116).pptx",
+      "path": "安全教育/ 安全教育 (116).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(117)",
+      "category": "安全教育",
+      "name": " 安全教育 (117).pptx",
+      "path": "安全教育/ 安全教育 (117).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(118)",
+      "category": "安全教育",
+      "name": " 安全教育 (118).pptx",
+      "path": "安全教育/ 安全教育 (118).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(119)",
+      "category": "安全教育",
+      "name": " 安全教育 (119).pptx",
+      "path": "安全教育/ 安全教育 (119).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(12)",
+      "category": "安全教育",
+      "name": " 安全教育 (12).pptx",
+      "path": "安全教育/ 安全教育 (12).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(120)",
+      "category": "安全教育",
+      "name": " 安全教育 (120).pptx",
+      "path": "安全教育/ 安全教育 (120).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(121)",
+      "category": "安全教育",
+      "name": " 安全教育 (121).pptx",
+      "path": "安全教育/ 安全教育 (121).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(122)",
+      "category": "安全教育",
+      "name": " 安全教育 (122).pptx",
+      "path": "安全教育/ 安全教育 (122).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(123)",
+      "category": "安全教育",
+      "name": " 安全教育 (123).pptx",
+      "path": "安全教育/ 安全教育 (123).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 13,
+      "chapter_count": 1,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "11-15页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(124)",
+      "category": "安全教育",
+      "name": " 安全教育 (124).pptx",
+      "path": "安全教育/ 安全教育 (124).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(125)",
+      "category": "安全教育",
+      "name": " 安全教育 (125).pptx",
+      "path": "安全教育/ 安全教育 (125).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 47,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "46-50页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(126)",
+      "category": "安全教育",
+      "name": " 安全教育 (126).pptx",
+      "path": "安全教育/ 安全教育 (126).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(127)",
+      "category": "安全教育",
+      "name": " 安全教育 (127).pptx",
+      "path": "安全教育/ 安全教育 (127).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 47,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "46-50页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(128)",
+      "category": "安全教育",
+      "name": " 安全教育 (128).pptx",
+      "path": "安全教育/ 安全教育 (128).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 19,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(129)",
+      "category": "安全教育",
+      "name": " 安全教育 (129).pptx",
+      "path": "安全教育/ 安全教育 (129).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(13)",
+      "category": "安全教育",
+      "name": " 安全教育 (13).pptx",
+      "path": "安全教育/ 安全教育 (13).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 23,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(130)",
+      "category": "安全教育",
+      "name": " 安全教育 (130).pptx",
+      "path": "安全教育/ 安全教育 (130).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(131)",
+      "category": "安全教育",
+      "name": " 安全教育 (131).pptx",
+      "path": "安全教育/ 安全教育 (131).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(132)",
+      "category": "安全教育",
+      "name": " 安全教育 (132).pptx",
+      "path": "安全教育/ 安全教育 (132).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 16,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(133)",
+      "category": "安全教育",
+      "name": " 安全教育 (133).pptx",
+      "path": "安全教育/ 安全教育 (133).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 11,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(134)",
+      "category": "安全教育",
+      "name": " 安全教育 (134).pptx",
+      "path": "安全教育/ 安全教育 (134).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(135)",
+      "category": "安全教育",
+      "name": " 安全教育 (135).pptx",
+      "path": "安全教育/ 安全教育 (135).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(136)",
+      "category": "安全教育",
+      "name": " 安全教育 (136).pptx",
+      "path": "安全教育/ 安全教育 (136).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(137)",
+      "category": "安全教育",
+      "name": " 安全教育 (137).pptx",
+      "path": "安全教育/ 安全教育 (137).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 33,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(138)",
+      "category": "安全教育",
+      "name": " 安全教育 (138).pptx",
+      "path": "安全教育/ 安全教育 (138).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(139)",
+      "category": "安全教育",
+      "name": " 安全教育 (139).pptx",
+      "path": "安全教育/ 安全教育 (139).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(14)",
+      "category": "安全教育",
+      "name": " 安全教育 (14).pptx",
+      "path": "安全教育/ 安全教育 (14).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 34,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(140)",
+      "category": "安全教育",
+      "name": " 安全教育 (140).pptx",
+      "path": "安全教育/ 安全教育 (140).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(141)",
+      "category": "安全教育",
+      "name": " 安全教育 (141).pptx",
+      "path": "安全教育/ 安全教育 (141).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(142)",
+      "category": "安全教育",
+      "name": " 安全教育 (142).pptx",
+      "path": "安全教育/ 安全教育 (142).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(143)",
+      "category": "安全教育",
+      "name": " 安全教育 (143).pptx",
+      "path": "安全教育/ 安全教育 (143).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 18,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(144)",
+      "category": "安全教育",
+      "name": " 安全教育 (144).pptx",
+      "path": "安全教育/ 安全教育 (144).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 46,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "46-50页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(145)",
+      "category": "安全教育",
+      "name": " 安全教育 (145).pptx",
+      "path": "安全教育/ 安全教育 (145).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 33,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(146)",
+      "category": "安全教育",
+      "name": " 安全教育 (146).pptx",
+      "path": "安全教育/ 安全教育 (146).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 33,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(147)",
+      "category": "安全教育",
+      "name": " 安全教育 (147).pptx",
+      "path": "安全教育/ 安全教育 (147).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 35,
+      "chapter_count": 16,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(148)",
+      "category": "安全教育",
+      "name": " 安全教育 (148).pptx",
+      "path": "安全教育/ 安全教育 (148).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(149)",
+      "category": "安全教育",
+      "name": " 安全教育 (149).pptx",
+      "path": "安全教育/ 安全教育 (149).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(15)",
+      "category": "安全教育",
+      "name": " 安全教育 (15).pptx",
+      "path": "安全教育/ 安全教育 (15).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(150)",
+      "category": "安全教育",
+      "name": " 安全教育 (150).pptx",
+      "path": "安全教育/ 安全教育 (150).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(151)",
+      "category": "安全教育",
+      "name": " 安全教育 (151).pptx",
+      "path": "安全教育/ 安全教育 (151).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(152)",
+      "category": "安全教育",
+      "name": " 安全教育 (152).pptx",
+      "path": "安全教育/ 安全教育 (152).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 36,
+      "chapter_count": 11,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "36-40页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(153)",
+      "category": "安全教育",
+      "name": " 安全教育 (153).pptx",
+      "path": "安全教育/ 安全教育 (153).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(154)",
+      "category": "安全教育",
+      "name": " 安全教育 (154).pptx",
+      "path": "安全教育/ 安全教育 (154).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 32,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(155)",
+      "category": "安全教育",
+      "name": " 安全教育 (155).pptx",
+      "path": "安全教育/ 安全教育 (155).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(156)",
+      "category": "安全教育",
+      "name": " 安全教育 (156).pptx",
+      "path": "安全教育/ 安全教育 (156).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 30,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(16)",
+      "category": "安全教育",
+      "name": " 安全教育 (16).pptx",
+      "path": "安全教育/ 安全教育 (16).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 14,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "11-15页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(17)",
+      "category": "安全教育",
+      "name": " 安全教育 (17).pptx",
+      "path": "安全教育/ 安全教育 (17).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(18)",
+      "category": "安全教育",
+      "name": " 安全教育 (18).pptx",
+      "path": "安全教育/ 安全教育 (18).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(19)",
+      "category": "安全教育",
+      "name": " 安全教育 (19).pptx",
+      "path": "安全教育/ 安全教育 (19).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(2)",
+      "category": "安全教育",
+      "name": " 安全教育 (2).pptx",
+      "path": "安全教育/ 安全教育 (2).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 34,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(20)",
+      "category": "安全教育",
+      "name": " 安全教育 (20).pptx",
+      "path": "安全教育/ 安全教育 (20).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(21)",
+      "category": "安全教育",
+      "name": " 安全教育 (21).pptx",
+      "path": "安全教育/ 安全教育 (21).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 34,
+      "chapter_count": 19,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(22)",
+      "category": "安全教育",
+      "name": " 安全教育 (22).pptx",
+      "path": "安全教育/ 安全教育 (22).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(23)",
+      "category": "安全教育",
+      "name": " 安全教育 (23).pptx",
+      "path": "安全教育/ 安全教育 (23).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 14,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(24)",
+      "category": "安全教育",
+      "name": " 安全教育 (24).pptx",
+      "path": "安全教育/ 安全教育 (24).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(25)",
+      "category": "安全教育",
+      "name": " 安全教育 (25).pptx",
+      "path": "安全教育/ 安全教育 (25).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(26)",
+      "category": "安全教育",
+      "name": " 安全教育 (26).pptx",
+      "path": "安全教育/ 安全教育 (26).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(27)",
+      "category": "安全教育",
+      "name": " 安全教育 (27).pptx",
+      "path": "安全教育/ 安全教育 (27).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(28)",
+      "category": "安全教育",
+      "name": " 安全教育 (28).pptx",
+      "path": "安全教育/ 安全教育 (28).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(29)",
+      "category": "安全教育",
+      "name": " 安全教育 (29).pptx",
+      "path": "安全教育/ 安全教育 (29).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(3)",
+      "category": "安全教育",
+      "name": " 安全教育 (3).pptx",
+      "path": "安全教育/ 安全教育 (3).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(30)",
+      "category": "安全教育",
+      "name": " 安全教育 (30).pptx",
+      "path": "安全教育/ 安全教育 (30).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(31)",
+      "category": "安全教育",
+      "name": " 安全教育 (31).pptx",
+      "path": "安全教育/ 安全教育 (31).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 38,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "36-40页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(32)",
+      "category": "安全教育",
+      "name": " 安全教育 (32).pptx",
+      "path": "安全教育/ 安全教育 (32).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(33)",
+      "category": "安全教育",
+      "name": " 安全教育 (33).pptx",
+      "path": "安全教育/ 安全教育 (33).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(34)",
+      "category": "安全教育",
+      "name": " 安全教育 (34).pptx",
+      "path": "安全教育/ 安全教育 (34).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(35)",
+      "category": "安全教育",
+      "name": " 安全教育 (35).pptx",
+      "path": "安全教育/ 安全教育 (35).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(36)",
+      "category": "安全教育",
+      "name": " 安全教育 (36).pptx",
+      "path": "安全教育/ 安全教育 (36).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(37)",
+      "category": "安全教育",
+      "name": " 安全教育 (37).pptx",
+      "path": "安全教育/ 安全教育 (37).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(38)",
+      "category": "安全教育",
+      "name": " 安全教育 (38).pptx",
+      "path": "安全教育/ 安全教育 (38).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(39)",
+      "category": "安全教育",
+      "name": " 安全教育 (39).pptx",
+      "path": "安全教育/ 安全教育 (39).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 35,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(4)",
+      "category": "安全教育",
+      "name": " 安全教育 (4).pptx",
+      "path": "安全教育/ 安全教育 (4).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 19,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(40)",
+      "category": "安全教育",
+      "name": " 安全教育 (40).pptx",
+      "path": "安全教育/ 安全教育 (40).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(41)",
+      "category": "安全教育",
+      "name": " 安全教育 (41).pptx",
+      "path": "安全教育/ 安全教育 (41).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(42)",
+      "category": "安全教育",
+      "name": " 安全教育 (42).pptx",
+      "path": "安全教育/ 安全教育 (42).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(43)",
+      "category": "安全教育",
+      "name": " 安全教育 (43).pptx",
+      "path": "安全教育/ 安全教育 (43).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(44)",
+      "category": "安全教育",
+      "name": " 安全教育 (44).pptx",
+      "path": "安全教育/ 安全教育 (44).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(45)",
+      "category": "安全教育",
+      "name": " 安全教育 (45).pptx",
+      "path": "安全教育/ 安全教育 (45).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(46)",
+      "category": "安全教育",
+      "name": " 安全教育 (46).pptx",
+      "path": "安全教育/ 安全教育 (46).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(47)",
+      "category": "安全教育",
+      "name": " 安全教育 (47).pptx",
+      "path": "安全教育/ 安全教育 (47).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(48)",
+      "category": "安全教育",
+      "name": " 安全教育 (48).pptx",
+      "path": "安全教育/ 安全教育 (48).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(49)",
+      "category": "安全教育",
+      "name": " 安全教育 (49).pptx",
+      "path": "安全教育/ 安全教育 (49).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 21,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(5)",
+      "category": "安全教育",
+      "name": " 安全教育 (5).pptx",
+      "path": "安全教育/ 安全教育 (5).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(50)",
+      "category": "安全教育",
+      "name": " 安全教育 (50).pptx",
+      "path": "安全教育/ 安全教育 (50).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(51)",
+      "category": "安全教育",
+      "name": " 安全教育 (51).pptx",
+      "path": "安全教育/ 安全教育 (51).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(52)",
+      "category": "安全教育",
+      "name": " 安全教育 (52).pptx",
+      "path": "安全教育/ 安全教育 (52).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 11,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(53)",
+      "category": "安全教育",
+      "name": " 安全教育 (53).pptx",
+      "path": "安全教育/ 安全教育 (53).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(54)",
+      "category": "安全教育",
+      "name": " 安全教育 (54).pptx",
+      "path": "安全教育/ 安全教育 (54).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 36,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "36-40页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(55)",
+      "category": "安全教育",
+      "name": " 安全教育 (55).pptx",
+      "path": "安全教育/ 安全教育 (55).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(56)",
+      "category": "安全教育",
+      "name": " 安全教育 (56).pptx",
+      "path": "安全教育/ 安全教育 (56).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 38,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "36-40页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(57)",
+      "category": "安全教育",
+      "name": " 安全教育 (57).pptx",
+      "path": "安全教育/ 安全教育 (57).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(58)",
+      "category": "安全教育",
+      "name": " 安全教育 (58).pptx",
+      "path": "安全教育/ 安全教育 (58).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 62,
+      "chapter_count": 10,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "61-65页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(59)",
+      "category": "安全教育",
+      "name": " 安全教育 (59).pptx",
+      "path": "安全教育/ 安全教育 (59).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 35,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(6)",
+      "category": "安全教育",
+      "name": " 安全教育 (6).pptx",
+      "path": "安全教育/ 安全教育 (6).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(60)",
+      "category": "安全教育",
+      "name": " 安全教育 (60).pptx",
+      "path": "安全教育/ 安全教育 (60).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 23,
+      "chapter_count": 1,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(61)",
+      "category": "安全教育",
+      "name": " 安全教育 (61).pptx",
+      "path": "安全教育/ 安全教育 (61).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 11,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(62)",
+      "category": "安全教育",
+      "name": " 安全教育 (62).pptx",
+      "path": "安全教育/ 安全教育 (62).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 17,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(63)",
+      "category": "安全教育",
+      "name": " 安全教育 (63).pptx",
+      "path": "安全教育/ 安全教育 (63).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 34,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(64)",
+      "category": "安全教育",
+      "name": " 安全教育 (64).pptx",
+      "path": "安全教育/ 安全教育 (64).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(65)",
+      "category": "安全教育",
+      "name": " 安全教育 (65).pptx",
+      "path": "安全教育/ 安全教育 (65).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(66)",
+      "category": "安全教育",
+      "name": " 安全教育 (66).pptx",
+      "path": "安全教育/ 安全教育 (66).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 5,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(67)",
+      "category": "安全教育",
+      "name": " 安全教育 (67).pptx",
+      "path": "安全教育/ 安全教育 (67).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 36,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "36-40页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(68)",
+      "category": "安全教育",
+      "name": " 安全教育 (68).pptx",
+      "path": "安全教育/ 安全教育 (68).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(69)",
+      "category": "安全教育",
+      "name": " 安全教育 (69).pptx",
+      "path": "安全教育/ 安全教育 (69).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(7)",
+      "category": "安全教育",
+      "name": " 安全教育 (7).pptx",
+      "path": "安全教育/ 安全教育 (7).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 20,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(70)",
+      "category": "安全教育",
+      "name": " 安全教育 (70).pptx",
+      "path": "安全教育/ 安全教育 (70).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(71)",
+      "category": "安全教育",
+      "name": " 安全教育 (71).pptx",
+      "path": "安全教育/ 安全教育 (71).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 61,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "61-65页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(72)",
+      "category": "安全教育",
+      "name": " 安全教育 (72).pptx",
+      "path": "安全教育/ 安全教育 (72).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(73)",
+      "category": "安全教育",
+      "name": " 安全教育 (73).pptx",
+      "path": "安全教育/ 安全教育 (73).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 32,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(74)",
+      "category": "安全教育",
+      "name": " 安全教育 (74).pptx",
+      "path": "安全教育/ 安全教育 (74).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(75)",
+      "category": "安全教育",
+      "name": " 安全教育 (75).pptx",
+      "path": "安全教育/ 安全教育 (75).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 50,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "46-50页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(76)",
+      "category": "安全教育",
+      "name": " 安全教育 (76).pptx",
+      "path": "安全教育/ 安全教育 (76).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 18,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(77)",
+      "category": "安全教育",
+      "name": " 安全教育 (77).pptx",
+      "path": "安全教育/ 安全教育 (77).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(78)",
+      "category": "安全教育",
+      "name": " 安全教育 (78).pptx",
+      "path": "安全教育/ 安全教育 (78).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(79)",
+      "category": "安全教育",
+      "name": " 安全教育 (79).pptx",
+      "path": "安全教育/ 安全教育 (79).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 45,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "41-45页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(8)",
+      "category": "安全教育",
+      "name": " 安全教育 (8).pptx",
+      "path": "安全教育/ 安全教育 (8).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(80)",
+      "category": "安全教育",
+      "name": " 安全教育 (80).pptx",
+      "path": "安全教育/ 安全教育 (80).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(81)",
+      "category": "安全教育",
+      "name": " 安全教育 (81).pptx",
+      "path": "安全教育/ 安全教育 (81).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 61,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "61-65页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(82)",
+      "category": "安全教育",
+      "name": " 安全教育 (82).pptx",
+      "path": "安全教育/ 安全教育 (82).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(83)",
+      "category": "安全教育",
+      "name": " 安全教育 (83).pptx",
+      "path": "安全教育/ 安全教育 (83).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(84)",
+      "category": "安全教育",
+      "name": " 安全教育 (84).pptx",
+      "path": "安全教育/ 安全教育 (84).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 47,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "46-50页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(85)",
+      "category": "安全教育",
+      "name": " 安全教育 (85).pptx",
+      "path": "安全教育/ 安全教育 (85).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 26,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(86)",
+      "category": "安全教育",
+      "name": " 安全教育 (86).pptx",
+      "path": "安全教育/ 安全教育 (86).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 19,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(87)",
+      "category": "安全教育",
+      "name": " 安全教育 (87).pptx",
+      "path": "安全教育/ 安全教育 (87).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(88)",
+      "category": "安全教育",
+      "name": " 安全教育 (88).pptx",
+      "path": "安全教育/ 安全教育 (88).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(89)",
+      "category": "安全教育",
+      "name": " 安全教育 (89).pptx",
+      "path": "安全教育/ 安全教育 (89).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(9)",
+      "category": "安全教育",
+      "name": " 安全教育 (9).pptx",
+      "path": "安全教育/ 安全教育 (9).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 27,
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(90)",
+      "category": "安全教育",
+      "name": " 安全教育 (90).pptx",
+      "path": "安全教育/ 安全教育 (90).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 25,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(91)",
+      "category": "安全教育",
+      "name": " 安全教育 (91).pptx",
+      "path": "安全教育/ 安全教育 (91).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(92)",
+      "category": "安全教育",
+      "name": " 安全教育 (92).pptx",
+      "path": "安全教育/ 安全教育 (92).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 28,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(93)",
+      "category": "安全教育",
+      "name": " 安全教育 (93).pptx",
+      "path": "安全教育/ 安全教育 (93).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 24,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(94)",
+      "category": "安全教育",
+      "name": " 安全教育 (94).pptx",
+      "path": "安全教育/ 安全教育 (94).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(95)",
+      "category": "安全教育",
+      "name": " 安全教育 (95).pptx",
+      "path": "安全教育/ 安全教育 (95).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 31,
+      "chapter_count": 1,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(96)",
+      "category": "安全教育",
+      "name": " 安全教育 (96).pptx",
+      "path": "安全教育/ 安全教育 (96).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 22,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(97)",
+      "category": "安全教育",
+      "name": " 安全教育 (97).pptx",
+      "path": "安全教育/ 安全教育 (97).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 29,
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(98)",
+      "category": "安全教育",
+      "name": " 安全教育 (98).pptx",
+      "path": "安全教育/ 安全教育 (98).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 32,
+      "chapter_count": 3,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
+    },
+    {
+      "template_id": "安全教育__安全教育_(99)",
+      "category": "安全教育",
+      "name": " 安全教育 (99).pptx",
+      "path": "安全教育/ 安全教育 (99).pptx.meta.json",
+      "style_tags": [
+        "商务",
+        "16:9"
+      ],
+      "total_pages": 55,
+      "chapter_count": 4,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "51-55页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_worksummary_01",
@@ -59,7 +2904,13 @@
         "16:9"
       ],
       "total_pages": 20,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_worksummary_02",
@@ -71,7 +2922,13 @@
         "16:9"
       ],
       "total_pages": 22,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_001",
@@ -83,7 +2940,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_003",
@@ -95,7 +2958,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_005",
@@ -107,7 +2976,13 @@
         "16:9"
       ],
       "total_pages": 22,
-      "chapter_count": 15
+      "chapter_count": 15,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_006",
@@ -119,7 +2994,13 @@
         "16:9"
       ],
       "total_pages": 22,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_009",
@@ -131,7 +3012,13 @@
         "16:9"
       ],
       "total_pages": 28,
-      "chapter_count": 9
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_010",
@@ -143,7 +3030,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_013",
@@ -155,7 +3048,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_017",
@@ -167,7 +3066,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_018",
@@ -179,7 +3084,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_019",
@@ -191,7 +3102,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_022",
@@ -203,7 +3120,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_023",
@@ -215,7 +3138,13 @@
         "16:9"
       ],
       "total_pages": 23,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_025",
@@ -227,7 +3156,13 @@
         "16:9"
       ],
       "total_pages": 22,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_026",
@@ -239,7 +3174,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 8
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_027",
@@ -251,7 +3192,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_028",
@@ -263,7 +3210,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_030",
@@ -275,7 +3228,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_032",
@@ -287,7 +3246,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_033",
@@ -299,7 +3264,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_035",
@@ -311,7 +3282,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_036",
@@ -323,7 +3300,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_037",
@@ -335,7 +3318,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_039",
@@ -347,7 +3336,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_040",
@@ -359,7 +3354,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_041",
@@ -371,7 +3372,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_043",
@@ -383,7 +3390,13 @@
         "16:9"
       ],
       "total_pages": 23,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_044",
@@ -395,7 +3408,13 @@
         "16:9"
       ],
       "total_pages": 24,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_048",
@@ -407,7 +3426,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_049",
@@ -419,7 +3444,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_050",
@@ -431,7 +3462,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_051",
@@ -443,7 +3480,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_053",
@@ -455,7 +3498,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 18
+      "chapter_count": 18,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_056",
@@ -467,7 +3516,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_059",
@@ -479,7 +3534,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_064",
@@ -491,7 +3552,13 @@
         "16:9"
       ],
       "total_pages": 23,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_商务风_066",
@@ -503,7 +3570,13 @@
         "16:9"
       ],
       "total_pages": 22,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作总结_工作总结",
@@ -515,7 +3588,13 @@
         "16:9"
       ],
       "total_pages": 20,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_002",
@@ -527,7 +3606,13 @@
         "16:9"
       ],
       "total_pages": 30,
-      "chapter_count": 8
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_007",
@@ -539,7 +3624,13 @@
         "16:9"
       ],
       "total_pages": 47,
-      "chapter_count": 8
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "46-50页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_008",
@@ -551,7 +3642,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_012",
@@ -563,7 +3660,13 @@
         "16:9"
       ],
       "total_pages": 35,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_021",
@@ -575,7 +3678,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_024",
@@ -587,7 +3696,13 @@
         "16:9"
       ],
       "total_pages": 27,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_034",
@@ -599,7 +3714,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_045",
@@ -611,7 +3732,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_046",
@@ -623,7 +3750,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_055",
@@ -635,7 +3768,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_商务风_058",
@@ -647,7 +3786,13 @@
         "16:9"
       ],
       "total_pages": 36,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "36-40页",
+      "quality_score": 80
     },
     {
       "template_id": "工作汇报_工作汇报",
@@ -659,7 +3804,13 @@
         "16:9"
       ],
       "total_pages": 20,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
     },
     {
       "template_id": "工作计划_商务风_016",
@@ -671,7 +3822,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作计划_商务风_054",
@@ -683,7 +3840,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作计划_商务风_065",
@@ -695,7 +3858,13 @@
         "16:9"
       ],
       "total_pages": 27,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "工作计划_商务风_067",
@@ -707,7 +3876,13 @@
         "16:9"
       ],
       "total_pages": 22,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "工作计划_工作计划",
@@ -719,7 +3894,13 @@
         "16:9"
       ],
       "total_pages": 23,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "年终总结_商务风_014",
@@ -731,7 +3912,13 @@
         "16:9"
       ],
       "total_pages": 27,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "年终总结_商务风_015",
@@ -743,7 +3930,13 @@
         "16:9"
       ],
       "total_pages": 34,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "31-35页",
+      "quality_score": 80
     },
     {
       "template_id": "年终总结_商务风_020",
@@ -755,7 +3948,13 @@
         "16:9"
       ],
       "total_pages": 22,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "年终总结_商务风_038",
@@ -767,7 +3966,13 @@
         "16:9"
       ],
       "total_pages": 24,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "年终总结_商务风_057",
@@ -779,7 +3984,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "年终总结_商务风_060",
@@ -791,7 +4002,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 9
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "年终总结_商务风_063",
@@ -803,7 +4020,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "年终总结_年终总结",
@@ -815,7 +4038,13 @@
         "16:9"
       ],
       "total_pages": 20,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
     },
     {
       "template_id": "开题报告_商务风_029",
@@ -827,7 +4056,13 @@
         "16:9"
       ],
       "total_pages": 28,
-      "chapter_count": 8
+      "chapter_count": 8,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "开题报告_开题报告",
@@ -839,7 +4074,13 @@
         "16:9"
       ],
       "total_pages": 24,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "职业规划_职业规划",
@@ -851,7 +4092,13 @@
         "16:9"
       ],
       "total_pages": 20,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
     },
     {
       "template_id": "自我介绍_简约学术风研究生复试",
@@ -863,7 +4110,13 @@
         "16:9"
       ],
       "total_pages": 27,
-      "chapter_count": 9
+      "chapter_count": 9,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "述职报告_商务风_004",
@@ -875,7 +4128,13 @@
         "16:9"
       ],
       "total_pages": 26,
-      "chapter_count": 2
+      "chapter_count": 2,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "26-30页",
+      "quality_score": 80
     },
     {
       "template_id": "述职报告_商务风_011",
@@ -887,7 +4146,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "述职报告_商务风_031",
@@ -899,7 +4164,13 @@
         "16:9"
       ],
       "total_pages": 23,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "述职报告_商务风_047",
@@ -911,7 +4182,13 @@
         "16:9"
       ],
       "total_pages": 23,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "述职报告_商务风_052",
@@ -923,7 +4200,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "述职报告_商务风_061",
@@ -935,7 +4218,13 @@
         "16:9"
       ],
       "total_pages": 21,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "述职报告_商务风_062",
@@ -947,7 +4236,13 @@
         "16:9"
       ],
       "total_pages": 25,
-      "chapter_count": 7
+      "chapter_count": 7,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "21-25页",
+      "quality_score": 80
     },
     {
       "template_id": "述职报告_述职报告",
@@ -959,7 +4254,13 @@
         "16:9"
       ],
       "total_pages": 20,
-      "chapter_count": 6
+      "chapter_count": 6,
+      "color_scheme": "蓝色系",
+      "industry": [
+        "通用"
+      ],
+      "page_range": "16-20页",
+      "quality_score": 80
     }
   ]
 }

@@ -1,0 +1,1498 @@
+{
+  "template_id": "公司简介_公司介绍",
+  "category": "公司简介",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 35,
+  "removable_pages": [],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 6,
+      "name": "公司与团队"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 7,
+      "end_page": 11,
+      "name": "企业荣誉"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 12,
+      "end_page": 12,
+      "name": "领导人物"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 13,
+      "end_page": 15,
+      "name": "产品与服务"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 16,
+      "end_page": 18,
+      "name": "主打产品"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 19,
+      "end_page": 20,
+      "name": "市场与营销"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 21,
+      "end_page": 22,
+      "name": "市场分析"
+    },
+    {
+      "key": "chapter_8",
+      "start_page": 23,
+      "end_page": 26,
+      "name": "发展与计划"
+    },
+    {
+      "key": "chapter_9",
+      "start_page": 27,
+      "end_page": 34,
+      "name": "前景与未来"
+    },
+    {
+      "key": "end",
+      "page": 35,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "诚信铸就品质  创新引领未来",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "period",
+        "match_text": "202X",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "公司介绍PPT模板",
+        "shape_name": "文本框 2"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "公司与团队",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "产品与服务",
+        "shape_name": "文本框 78"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "市场与营销",
+        "shape_name": "文本框 85"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "发展与计划",
+        "shape_name": "文本框 92"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "前景与未来",
+        "shape_name": "文本框 49"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "目录",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "PART ONE",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "公司与团队",
+        "shape_name": "文本框 12"
+      }
+    ],
+    "4": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 7"
+      },
+      {
+        "slot": "title",
+        "match_text": "企业精神",
+        "shape_name": "TextBox 8"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "文化结构",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "合作共赢",
+        "shape_name": "矩形 30"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "专业",
+        "shape_name": "矩形 31"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "“",
+        "shape_name": "矩形 32"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "企业文化",
+        "shape_name": "文本框 34"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "企业大事记",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里或者通过复制您的文本后您",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "year",
+        "match_text": "2010",
+        "shape_name": "圆角矩形 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "企业大事记",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里或者通过复制您的文本后您",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "year_2",
+        "match_text": "2012",
+        "shape_name": "圆角矩形 39"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "企业大事记",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里或者通过复制您的文本后您",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "year_3",
+        "match_text": "2014",
+        "shape_name": "圆角矩形 65"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "企业大事记",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里或者通过复制您的文本后您",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "year_4",
+        "match_text": "2018",
+        "shape_name": "圆角矩形 73"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "企业大事记",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "您的内容打在这里或者通过复制您的文本后您",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "year_5",
+        "match_text": "2019",
+        "shape_name": "圆角矩形 80"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "发展历程",
+        "shape_name": "文本框 57"
+      }
+    ],
+    "6": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "卓越成效",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "创新品质",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "合作共赢",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "初心不忘共成长 凝心聚力谱新篇 您的内容",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "经营理念",
+        "shape_name": "文本框 32"
+      }
+    ],
+    "7": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "MH_Desc_1"
+      },
+      {
+        "slot": "title",
+        "match_text": "企业荣誉简要",
+        "shape_name": "TextBox 14"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "企业荣誉",
+        "shape_name": "文本框 42"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "2013某某省 十强广告运营商",
+        "shape_name": "矩形 17"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2014某某市户外广告独家运营商",
+        "shape_name": "矩形 18"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2015某某省 十强广告运营商",
+        "shape_name": "矩形 19"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "2016某某市户外广告独家运营商",
+        "shape_name": "矩形 20"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "2017某某省 十强广告运营商",
+        "shape_name": "矩形 21"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "2018某某市户外广告独家运营商",
+        "shape_name": "矩形 22"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里或者通过复制您的文本后在",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "诚信铸就品质",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "创新引领未来",
+        "shape_name": "TextBox 15"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "企业资质",
+        "shape_name": "文本框 32"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "专业",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "年轻",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "创新",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "团结",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "团队介绍",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "董事兼总经理",
+        "shape_name": "矩形 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "黄某某 先生",
+        "shape_name": "矩形 22"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "董事兼总经理",
+        "shape_name": "矩形 45"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "黄某某 先生",
+        "shape_name": "矩形 46"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "董事兼总经理",
+        "shape_name": "矩形 51"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "黄某某 先生",
+        "shape_name": "矩形 52"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "董事兼总经理",
+        "shape_name": "矩形 57"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "黄某某 先生",
+        "shape_name": "矩形 58"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "团队介绍",
+        "shape_name": "文本框 31"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "团队介绍",
+        "shape_name": "TextBox 76"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此添加文字说明请在此添加文字说明请在",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "请在此添加文字说明",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "李先生",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "请在此添加文字说明",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "张先生",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "请在此添加文字说明",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "王女士",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "团队介绍",
+        "shape_name": "文本框 42"
+      }
+    ],
+    "12": [
+      {
+        "slot": "reporter",
+        "match_text": "请输入姓名 CEO&企业创始人",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "约翰·史密斯 于2003年5月被任命为首",
+        "shape_name": "TextBox 7"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title",
+        "match_text": "领导人物",
+        "shape_name": "文本框 16"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "PART TWO",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "产品与服务",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "产品一",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "MH_Text_1"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "MH_Text_1"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "MH_Text_1"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "MH_Text_1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "产品二",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "产品三",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "产品四",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "经营产品",
+        "shape_name": "文本框 43"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "产品特色分析概述",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "点击输入简要文字内容，文字内容需概括精炼",
+        "shape_name": "TextBox 34"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "产品特色",
+        "shape_name": "TextBox 18"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "点击输入简要文字内容文字内容需概括精炼不",
+        "shape_name": "Rectangle 19"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "920K",
+        "shape_name": "Rectangle 24"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "130K",
+        "shape_name": "Rectangle 25"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "160K",
+        "shape_name": "Rectangle 26"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "Text Here",
+        "shape_name": "Rectangle 27"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "Text Here",
+        "shape_name": "Rectangle 28"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "Text Here",
+        "shape_name": "Rectangle 29"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入简要文字内容文字内容需概括精炼不",
+        "shape_name": "Rectangle 9"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "产品特色",
+        "shape_name": "TextBox 32"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "点击输入简要文字内容文字内容需概括精炼不",
+        "shape_name": "Rectangle 14"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "产品特色",
+        "shape_name": "TextBox 33"
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "产品特色",
+        "shape_name": "文本框 42"
+      }
+    ],
+    "16": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "MH_Text_1"
+      },
+      {
+        "slot": "title",
+        "match_text": "互联网产品规格型号",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "主打产品",
+        "shape_name": "文本框 15"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "产品序列名称",
+        "shape_name": "TextBox 15"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "产品序列名称",
+        "shape_name": "TextBox 15"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "产品序列名称",
+        "shape_name": "TextBox 15"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "MH_Text_1"
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "产品展示",
+        "shape_name": "文本框 25"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "无责任退换售后",
+        "shape_name": "圆角矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "有偿补贴经济损失",
+        "shape_name": "圆角矩形 5"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "Rectangle 12"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "Rectangle 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "优质售后服务流程",
+        "shape_name": "TextBox 15"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "点击输入简要文字内容文字内容需概括精炼不",
+        "shape_name": "Rectangle 17"
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "售后服务",
+        "shape_name": "文本框 20"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "PART THREE",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "市场与营销",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "市场调研结果",
+        "shape_name": "矩形 104"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入上述图表的综合描述说明在此录入上",
+        "shape_name": "矩形 47"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里或者通过复制您的文本后在",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "点击添加标题",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里或者通过复制您的文本后在",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "点击添加标题",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里或者通过复制您的文本后在",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "点击添加标题",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "您的内容打在这里，或者通过复制您的文后在",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "点击添加标题",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "前期调研",
+        "shape_name": "文本框 69"
+      }
+    ],
+    "21": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "市场专员调查",
+        "shape_name": "圆角矩形 7"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "市场分析",
+        "shape_name": "文本框 18"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "南京",
+        "shape_name": "MH_SubTitle_1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "武汉",
+        "shape_name": "MH_SubTitle_2"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "无锡",
+        "shape_name": "MH_SubTitle_3"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "杭州",
+        "shape_name": "MH_SubTitle_4"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "宁波",
+        "shape_name": "MH_SubTitle_5"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "上海",
+        "shape_name": "MH_SubTitle_6"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "北京",
+        "shape_name": "MH_SubTitle_7"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "青岛",
+        "shape_name": "MH_SubTitle_8"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "大连",
+        "shape_name": "MH_SubTitle_9"
+      },
+      {
+        "slot": "number",
+        "match_text": "0",
+        "shape_name": "MH_Other_37"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "250",
+        "shape_name": "MH_Other_38"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "500",
+        "shape_name": "MH_Other_39"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "750",
+        "shape_name": "MH_Other_40"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "100",
+        "shape_name": "MH_Other_41"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "19年销售额",
+        "shape_name": "MH_Other_43"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "20年销售额",
+        "shape_name": "MH_Other_45"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "添加文字",
+        "shape_name": "KSO_Shape"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "添加文字",
+        "shape_name": "KSO_Shape"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "单位：亿元",
+        "shape_name": "MH_Other_45"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在这里说点什么，单击此处添加文字单击此处",
+        "shape_name": "TextBox 78"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "03",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "盈利情况",
+        "shape_name": "文本框 72"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "PART FOUR",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "发展与计划",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "24": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "线下推广计划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "自媒体推广计划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "地推推广计划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "推广计划",
+        "shape_name": "文本框 55"
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "互联技术推广",
+        "shape_name": "矩形 26"
+      },
+      {
+        "slot": "desc",
+        "match_text": "可通过右键选择只保留文本可通过右键选择只",
+        "shape_name": "矩形 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "核心营销计划",
+        "shape_name": "矩形 28"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "可通过右键选可通过右键选择只保留文本来粘",
+        "shape_name": "矩形 29"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "微信推广计划",
+        "shape_name": "矩形 30"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "可通过右键可通过右键选择只保留文本来粘贴",
+        "shape_name": "矩形 31"
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "互联网计划",
+        "shape_name": "文本框 35"
+      }
+    ],
+    "26": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里或者通过 复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "项目计划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加您的标题",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "8500,000",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "MARKETING PLAN",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里或者通过 复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "客户计划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里或者通过 复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "团队计划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里或者通过 复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "合作计划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "其它计划",
+        "shape_name": "文本框 27"
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "PART FIVE",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "前景与未来",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "28": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "政策支持",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "行业走势",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "市场潜力",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "可持续市场经济",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "市场前景",
+        "shape_name": "文本框 37"
+      }
+    ],
+    "29": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本在",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "行业调研结果",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本在",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "市场专员调配",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "行业前景",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "开拓市场",
+        "shape_name": "椭圆 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "稳健增长",
+        "shape_name": "椭圆 15"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "持续开发",
+        "shape_name": "椭圆 25"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "未来目标计划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "发展目标",
+        "shape_name": "文本框 23"
+      }
+    ],
+    "31": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 26"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 28"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 29"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "MH_Other_2"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "MH_Other_2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "椭圆 17"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "05",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title",
+        "match_text": "销售目标",
+        "shape_name": "文本框 43"
+      }
+    ],
+    "32": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本在",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "重点项目规划",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "圆角矩形 13"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里或者通过复制您的文本后在",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "1280,000",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里或者通过复制您的文本后在",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "5180,000",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "重点规划项目",
+        "shape_name": "文本框 27"
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "高瞻远瞩",
+        "shape_name": "TextBox 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "制胜未来",
+        "shape_name": "TextBox 4"
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 5"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 6"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 7"
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "战略目标",
+        "shape_name": "文本框 18"
+      }
+    ],
+    "34": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title",
+        "match_text": "科技创新",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "TECHNOLOGY",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "NETWORK",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "+",
+        "shape_name": "文本框 33"
+      },
+      {
+        "slot": "period",
+        "match_text": "202X.0X.0X",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "共赢未来",
+        "shape_name": "文本框 41"
+      }
+    ],
+    "35": [
+      {
+        "slot": "title",
+        "match_text": "THANKS",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "感谢您的耐心观看",
+        "shape_name": "文本框 2"
+      }
+    ]
+  }
+}

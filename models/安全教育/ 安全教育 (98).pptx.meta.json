@@ -1,0 +1,618 @@
+{
+  "template_id": "安全教育__安全教育_(98)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 32,
+  "removable_pages": [
+    31,
+    32
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 8,
+      "end_page": 25,
+      "name": "打电话报火警"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 26,
+      "end_page": 32,
+      "name": "生命安全为第一"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "幼儿园消防教育PPT",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "什么是火灾？",
+        "shape_name": "Text Box 33"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "认识日常生活中的消防器材",
+        "shape_name": "Text Box 32"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "教育小朋友如何逃生",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "报火警",
+        "shape_name": "Text Box 31"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "火灾要注意的事项",
+        "shape_name": "Text Box 31",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "一些常见的消防标识",
+        "shape_name": "Text Box 31"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "需要注意的易燃品",
+        "shape_name": "Text Box 29"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "小儿歌",
+        "shape_name": "Text Box 32",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "什么是火灾？",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "概念",
+        "shape_name": "文本框 9"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "怎么报火警？",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "火警电话是",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "认识日常生活中的消防器材",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "水枪和水带",
+        "shape_name": "文本框 11"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "一些常见的消防标识",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "禁止锁闭",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "禁止烟火",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "禁止吸烟",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "需要注意的易燃品",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "教育小朋友如何逃生",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "毛巾捂鼻法",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "空间避难法",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "匍匐前进法",
+        "shape_name": "文本框 6"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "Q：那为什么要弯着腰走呢？",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 1,
+          "total_chars": 31
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Q：为什么要靠着墙走？",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "烟还有毒呢。",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "火灾要注意的事项",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "小儿歌",
+        "shape_name": "Text Box 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "提问：火警电话是多少？",
+        "shape_name": "TextBox 35",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "希望我们的宝宝快乐成长",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "THANK  YOU",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 16
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

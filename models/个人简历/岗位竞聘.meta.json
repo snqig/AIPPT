@@ -1,0 +1,1147 @@
+{
+  "template_id": "个人简历_岗位竞聘",
+  "category": "个人简历",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 21,
+  "removable_pages": [
+    20
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 8,
+      "name": "个人信息"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 9,
+      "end_page": 12,
+      "name": "胜任能力"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 13,
+      "end_page": 16,
+      "name": "岗位认知"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 17,
+      "end_page": 20,
+      "name": "职业规划"
+    },
+    {
+      "key": "end",
+      "page": 21,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "个人简历",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "竞",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "聘",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "述",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "职",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "period",
+        "match_text": "汇报时间：202X",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "period",
+        "match_text": "RESUME 202X",
+        "shape_name": "文本框 50"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "LOGO",
+        "shape_name": "文本框 51"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录 / CONTENTS",
+        "shape_name": "文本框 3"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 4"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 5"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "椭圆 6"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "椭圆 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "个人信息",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "胜任能力",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "岗位认知",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "职业规划",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "INFORMATION",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "COMPETENCY",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "JOB AWARENESS",
+        "shape_name": "文本框 16"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "INFORMATION",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "个人信息",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 24"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "基本情况",
+        "shape_name": "文本框 33"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "学习经历",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工作经历",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "荣誉证书",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "项目经历",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "desc_6",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "其他技能",
+        "shape_name": "文本框 43"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加描述",
+        "shape_name": "文本框 48"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅。",
+        "shape_name": "文本框 49"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 50"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字言简意赅。",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 52"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字言简意赅。",
+        "shape_name": "文本框 53"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 59"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字言简意赅。",
+        "shape_name": "文本框 60"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加描述",
+        "shape_name": "文本框 61"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅。",
+        "shape_name": "文本框 62"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2012.",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2015.",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "2018.",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "2021.",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "添加标题",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "desc_6",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "desc_7",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 25"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "添加标题",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "desc_8",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 27"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "20xx-20xx",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "大学期间获国家一等奖学金",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "20xx-20xx",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "大学期间获校级辩论赛三等奖",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "20xx-20xx",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "参与xx马拉松比赛获得第三名",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "20xx-20xx",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "工作期间获评区域最佳销售经理",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "20xx-20xx",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "20xx-20xx",
+        "shape_name": "TextBox 38"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "20xx.xx",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "20xx.xx",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "20xx.xx",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "特许金融分析师证",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "普通话二级甲等证书",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "全国计算机二级证书",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "英语专业六级证书",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "机动车C1驾驶证",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "… …",
+        "shape_name": "文本框 13"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "COMPETENCY",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "胜任能力",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "文本框 24"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "拓展",
+        "shape_name": "任意多边形: 形状 35"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "协调",
+        "shape_name": "任意多边形: 形状 38"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "评估",
+        "shape_name": "任意多边形: 形状 39"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 44"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 45"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "文本框 46"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 47"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "添加标题",
+        "shape_name": "文本框 48"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "熟练度：80%",
+        "shape_name": "TextBox 9"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "熟练度： 57%",
+        "shape_name": "TextBox 16"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "熟练度： 75%",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加技能名称",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加技能名称",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加技能名称",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "熟练度： 75%",
+        "shape_name": "TextBox 21"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "添加技能名称",
+        "shape_name": "TextBox 38"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "percent",
+        "match_text": "42%",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "14%",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "67%",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "percent_4",
+        "match_text": "33%",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "技能掌握情况",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "技能掌握情况",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "技能掌握情况",
+        "shape_name": "文本框 25"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "技能掌握情况",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 30"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "JOB AWARENESS",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "岗位认知",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 24"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 56"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 57"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 58"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 59"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 60"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 61"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 25"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 33"
+      },
+      {
+        "slot": "desc_6",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "文本框 35"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 38"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 38"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "职业规划",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "文本框 24"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "year",
+        "match_text": "2026",
+        "shape_name": "TextBox 33"
+      },
+      {
+        "slot": "year_2",
+        "match_text": "2025",
+        "shape_name": "TextBox 34"
+      },
+      {
+        "slot": "year_3",
+        "match_text": "2024",
+        "shape_name": "TextBox 35"
+      },
+      {
+        "slot": "year_4",
+        "match_text": "2023",
+        "shape_name": "TextBox 36"
+      },
+      {
+        "slot": "year_5",
+        "match_text": "2022",
+        "shape_name": "TextBox 37"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，注意板面美观度。",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，注意板面美观度。",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，注意板面美观度。",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，注意板面美观度。",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "请在此处添加具体内容，注意板面美观度。",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 64"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 70"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 73"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 76"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 6"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅，",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 37"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 37"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 37"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 37"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "点击添加您的标题",
+        "shape_name": "文本框 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "目标一",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "目标二",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "目标三",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "目标四",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "目标五",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅。",
+        "shape_name": "íṣļide"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "标题添加",
+        "shape_name": "iṥḷïdê"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅。",
+        "shape_name": "íṣļide"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "标题添加",
+        "shape_name": "iṥḷïdê"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅。",
+        "shape_name": "íṣļide"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "标题添加",
+        "shape_name": "iṥḷïdê"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅。",
+        "shape_name": "íṣļide"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "标题添加",
+        "shape_name": "iṥḷïdê"
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "请在此处添加具体内容，文字尽量言简意赅。",
+        "shape_name": "íṣļide"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "标题添加",
+        "shape_name": "iṥḷïdê"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "感谢观看",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "竞",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "聘",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "述",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "职",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "period",
+        "match_text": "汇报时间：202X",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "period",
+        "match_text": "RESUME 202X",
+        "shape_name": "文本框 50"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "LOGO",
+        "shape_name": "文本框 51"
+      }
+    ]
+  }
+}

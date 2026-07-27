@@ -1,0 +1,2566 @@
+{
+  "template_id": "工作汇报_商务风_024",
+  "category": "工作汇报",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 27,
+  "removable_pages": [
+    25,
+    26,
+    27
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "某",
+        "shape_name": "Rectangle 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "某",
+        "shape_name": "Rectangle 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "某",
+        "shape_name": "Rectangle 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工",
+        "shape_name": "Rectangle 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "商",
+        "shape_name": "Rectangle 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "学",
+        "shape_name": "Rectangle 12",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "院",
+        "shape_name": "Rectangle 13",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "C",
+        "shape_name": "Rectangle 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "O",
+        "shape_name": "Rectangle 15",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "L",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "L",
+        "shape_name": "Rectangle 17"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "E",
+        "shape_name": "Rectangle 18"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "G",
+        "shape_name": "Rectangle 19",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "E",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "某某商学院",
+        "shape_name": "文本框 169",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "商",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "惟",
+        "shape_name": "文本框 122"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "诚",
+        "shape_name": "文本框 123"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "道",
+        "shape_name": "文本框 124"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "知",
+        "shape_name": "文本框 127"
+      },
+      {
+        "slot": "title_21",
+        "match_text": "致",
+        "shape_name": "文本框 128"
+      },
+      {
+        "slot": "title_22",
+        "match_text": "远",
+        "shape_name": "文本框 129"
+      },
+      {
+        "slot": "title_23",
+        "match_text": "行",
+        "shape_name": "文本框 130"
+      },
+      {
+        "slot": "title_24",
+        "match_text": "—论文开题报告通用模板—",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 1,
+          "total_chars": 33
+        }
+      },
+      {
+        "slot": "reporter",
+        "match_text": "姓名：某某某",
+        "shape_name": "MH_SubTitle_1",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_25",
+        "match_text": "导师： 某某某",
+        "shape_name": "MH_SubTitle_1",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "CONTENTS",
+        "shape_name": "内容占位符 84"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "目录",
+        "shape_name": "内容占位符 84"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "选题说明",
+        "shape_name": "内容占位符 84"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PART 01",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "研究动态",
+        "shape_name": "内容占位符 84"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "PART 02",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "研究内容",
+        "shape_name": "内容占位符 84"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "PART 03",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "进度安排",
+        "shape_name": "内容占位符 84"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "PART 04",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "参考文献",
+        "shape_name": "内容占位符 84"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "PART 05",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "内容占位符 84",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "某",
+        "shape_name": "Rectangle 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "某",
+        "shape_name": "Rectangle 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "某",
+        "shape_name": "Rectangle 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工",
+        "shape_name": "Rectangle 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "商",
+        "shape_name": "Rectangle 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "学",
+        "shape_name": "Rectangle 12",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "院",
+        "shape_name": "Rectangle 13",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "C",
+        "shape_name": "Rectangle 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "O",
+        "shape_name": "Rectangle 15",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "L",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "L",
+        "shape_name": "Rectangle 17"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "E",
+        "shape_name": "Rectangle 18"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "G",
+        "shape_name": "Rectangle 19",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "E",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "某某商学院",
+        "shape_name": "文本框 169",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "选题说明",
+        "shape_name": "内容占位符 1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "内容占位符 84"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "此处添加详细文本描述，",
+        "shape_name": "文本框 50"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 51",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "此处添加详细文本描述，",
+        "shape_name": "文本框 48"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 49",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "此处添加详细文本描述，",
+        "shape_name": "文本框 46"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 47",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "此处添加详细文本描述，",
+        "shape_name": "文本框 44"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "添加标题",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 37",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 39"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "选题说明",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "选题说明",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "îš1ïdé",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 1,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文本",
+        "shape_name": "任意多边形: 形状 16"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "选题说明",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 26",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 29",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "选题说明",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 19",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "某",
+        "shape_name": "Rectangle 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "某",
+        "shape_name": "Rectangle 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "某",
+        "shape_name": "Rectangle 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工",
+        "shape_name": "Rectangle 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "商",
+        "shape_name": "Rectangle 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "学",
+        "shape_name": "Rectangle 12",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "院",
+        "shape_name": "Rectangle 13",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "C",
+        "shape_name": "Rectangle 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "O",
+        "shape_name": "Rectangle 15",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "L",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "L",
+        "shape_name": "Rectangle 17"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "E",
+        "shape_name": "Rectangle 18"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "G",
+        "shape_name": "Rectangle 19",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "E",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "某某商学院",
+        "shape_name": "文本框 169",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "研究动态",
+        "shape_name": "内容占位符 1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "内容占位符 84"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "研究动态",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击添加标题",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击添加标题",
+        "shape_name": "图形"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "研究动态",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 128",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 59",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入你的正文文字是您思想",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 3,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 133",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入你的正文文字是您思想",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 3,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 136",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入你的正文文字是您思想",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 3,
+          "total_chars": 54
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "研究动态",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "某",
+        "shape_name": "Rectangle 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "某",
+        "shape_name": "Rectangle 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "某",
+        "shape_name": "Rectangle 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工",
+        "shape_name": "Rectangle 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "商",
+        "shape_name": "Rectangle 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "学",
+        "shape_name": "Rectangle 12",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "院",
+        "shape_name": "Rectangle 13",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "C",
+        "shape_name": "Rectangle 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "O",
+        "shape_name": "Rectangle 15",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "L",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "L",
+        "shape_name": "Rectangle 17"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "E",
+        "shape_name": "Rectangle 18"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "G",
+        "shape_name": "Rectangle 19",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "E",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "某某商学院",
+        "shape_name": "文本框 169",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "研究内容",
+        "shape_name": "内容占位符 1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "内容占位符 84"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "研究内容",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "iŝlíďe",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "íṡlíḑê",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击添加标题",
+        "shape_name": "íṧlïḓê",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击添加标题",
+        "shape_name": "íṡlîďê",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "研究内容",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "研究内容",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 3",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 4",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "椭圆 5",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "PA-矩形 4",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "PA-矩形 4",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "PA-矩形 4",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "研究内容",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "iŝlíďe",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "íṡlíḑê",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击添加标题",
+        "shape_name": "íṧlïḓê",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击添加标题",
+        "shape_name": "íṡlîďê",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "某",
+        "shape_name": "Rectangle 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "某",
+        "shape_name": "Rectangle 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "某",
+        "shape_name": "Rectangle 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工",
+        "shape_name": "Rectangle 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "商",
+        "shape_name": "Rectangle 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "学",
+        "shape_name": "Rectangle 12",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "院",
+        "shape_name": "Rectangle 13",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "C",
+        "shape_name": "Rectangle 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "O",
+        "shape_name": "Rectangle 15",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "L",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "L",
+        "shape_name": "Rectangle 17"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "E",
+        "shape_name": "Rectangle 18"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "G",
+        "shape_name": "Rectangle 19",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "E",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "某某商学院",
+        "shape_name": "文本框 169",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "进度安排",
+        "shape_name": "内容占位符 1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "内容占位符 84"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "进度安排",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形: 圆角 66",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形: 圆角 71",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形: 圆角 76",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击添加标题",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "0.00%",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "8.12%",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "+378,6000",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "单击输入标题",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "21",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "%",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "11",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "%",
+        "shape_name": "文本框 33"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "37",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "%",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "单击输入标题",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "单击输入标题",
+        "shape_name": "文本框 37",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_15",
+        "match_text": "单击输入标题",
+        "shape_name": "文本框 38",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "进度安排",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "PA-矩形 4",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "PA-矩形 4",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "PA-矩形 4",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "进度安排",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "某",
+        "shape_name": "Rectangle 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "某",
+        "shape_name": "Rectangle 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "某",
+        "shape_name": "Rectangle 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工",
+        "shape_name": "Rectangle 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "商",
+        "shape_name": "Rectangle 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "学",
+        "shape_name": "Rectangle 12",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "院",
+        "shape_name": "Rectangle 13",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "C",
+        "shape_name": "Rectangle 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "O",
+        "shape_name": "Rectangle 15",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "L",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "L",
+        "shape_name": "Rectangle 17"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "E",
+        "shape_name": "Rectangle 18"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "G",
+        "shape_name": "Rectangle 19",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "E",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "某某商学院",
+        "shape_name": "文本框 169",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "参考文献",
+        "shape_name": "内容占位符 1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "内容占位符 84"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "参考文献",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击添加标题",
+        "shape_name": "Rectangle 36",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击添加标题",
+        "shape_name": "Rectangle 36",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "单击添加标题",
+        "shape_name": "Rectangle 36",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "单击添加标题",
+        "shape_name": "Rectangle 36",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "参考文献",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "Number2",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "03",
+        "shape_name": "Number3",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "04",
+        "shape_name": "Number4",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "05",
+        "shape_name": "Number5",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "06",
+        "shape_name": "Number6",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_6",
+        "match_text": "01",
+        "shape_name": "Number1",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入你的正文文字是您思想的提炼单",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 4,
+          "total_chars": 72
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "Bullet2",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入你的正文文字是您思想的提炼单",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 4,
+          "total_chars": 72
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "Bullet2",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入你的正文文字是您思想的提炼单",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 4,
+          "total_chars": 72
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "Bullet2",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "单击此处输入你的正文文字是您思想的提炼单",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 4,
+          "total_chars": 72
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "Bullet2",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "单击此处输入你的正文文字是您思想的提炼单",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 4,
+          "total_chars": 72
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "Bullet2",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc_6",
+        "match_text": "单击此处输入你的正文文字是您思想的提炼单",
+        "shape_name": "Text2",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 4,
+          "total_chars": 72
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "Bullet2",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "参考文献",
+        "shape_name": "标题 3",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 41",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "某",
+        "shape_name": "Rectangle 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "某",
+        "shape_name": "Rectangle 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "某",
+        "shape_name": "Rectangle 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工",
+        "shape_name": "Rectangle 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "商",
+        "shape_name": "Rectangle 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "学",
+        "shape_name": "Rectangle 12",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "院",
+        "shape_name": "Rectangle 13",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "C",
+        "shape_name": "Rectangle 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "O",
+        "shape_name": "Rectangle 15",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "L",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "L",
+        "shape_name": "Rectangle 17"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "E",
+        "shape_name": "Rectangle 18"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "G",
+        "shape_name": "Rectangle 19",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "E",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "某某商学院",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "商",
+        "shape_name": "文本框 63"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "惟",
+        "shape_name": "文本框 64"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "诚",
+        "shape_name": "文本框 65"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "道",
+        "shape_name": "文本框 66"
+      },
+      {
+        "slot": "title_20",
+        "match_text": "知",
+        "shape_name": "文本框 59"
+      },
+      {
+        "slot": "title_21",
+        "match_text": "致",
+        "shape_name": "文本框 60"
+      },
+      {
+        "slot": "title_22",
+        "match_text": "远",
+        "shape_name": "文本框 61"
+      },
+      {
+        "slot": "title_23",
+        "match_text": "行",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_24",
+        "match_text": "—论文开题报告通用模板—",
+        "shape_name": "文本框 76",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 1,
+          "total_chars": 33
+        }
+      },
+      {
+        "slot": "reporter",
+        "match_text": "姓名：某某某",
+        "shape_name": "MH_SubTitle_1",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_25",
+        "match_text": "导师： 某某某",
+        "shape_name": "MH_SubTitle_1",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": false,
+      "chart_type": "COLUMN_CLUSTERED (51)",
+      "picture_count": 0
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": false,
+      "chart_type": "COLUMN_CLUSTERED (51)",
+      "picture_count": 0
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "13": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": false,
+      "chart_type": "RADAR (-4151)",
+      "picture_count": 0
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

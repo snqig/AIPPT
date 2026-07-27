@@ -1,0 +1,722 @@
+{
+  "template_id": "安全教育__安全教育_(100)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 28,
+  "removable_pages": [
+    26,
+    27,
+    28
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 5,
+      "name": "学校火灾案例"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 10,
+      "name": "害性"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 11,
+      "end_page": 16,
+      "name": "灭火常识"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 17,
+      "end_page": 24,
+      "name": "十种火场逃生技巧"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 25,
+      "end_page": 28,
+      "name": "日起施行"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "小学生消防安全知识",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "period",
+        "match_text": "202X",
+        "shape_name": "文本框 7"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录DIRECTORY",
+        "shape_name": "矩形 58",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "TextBox 60"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "学生了解校园火灾的危害性",
+        "shape_name": "TextBox 91",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "TextBox 60"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "学生知道校园防火、灭火常识",
+        "shape_name": "TextBox 91",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "TextBox 60"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "学校火灾案例",
+        "shape_name": "TextBox 91",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 91"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "学生了解校园火灾的危害性 PLEASE",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "学生了解校园火灾的危害性 PLEASE",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "学生了解校园火灾的危害性 PLEASE",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "学生了解校园火灾的危害性 PLEASE",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "学生了解校园火灾的危害性 PLEASE",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "学生了解校园火灾的危害性 PLEASE",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "学生了解校园火灾的危害性 PLEASE",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "伤亡巨大,造成的影响大。",
+        "shape_name": "矩形 45"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "学校火灾事故特点",
+        "shape_name": "六边形 46",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 3,
+          "total_chars": 27
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "校园防火、灭火常识",
+        "shape_name": "TextBox 91",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 91"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "当你第一个发现起火后怎么办？？？PLEA",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "大声呼喊",
+        "shape_name": "Text Box 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "打电话报警",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "小火灭火",
+        "shape_name": "Text Box 5",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "共同灭火",
+        "shape_name": "Text Box 6",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "迅速撤离",
+        "shape_name": "Text Box 7",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "搬走贵重物件",
+        "shape_name": "Text Box 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "下面我们来认识一些安全提示标志 PLEA",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "报火警的方法 PLEASE ADD YO",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "起火物",
+        "shape_name": "Content Placeholder 2",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "火势情况",
+        "shape_name": "Content Placeholder 2",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "reporter",
+        "match_text": "报警人的姓名及所用的电话号码",
+        "shape_name": "Content Placeholder 2",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "《报警歌谣》 PLEASE ADD YO",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "干粉灭火器的使用方法 PLEASE AD",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "十种火场逃生技巧",
+        "shape_name": "TextBox 91",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "TextBox 91"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "十种火场逃生技巧 PLEASE ADD",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "十种火场逃生技巧 PLEASE ADD",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "十种火场逃生技巧 PLEASE ADD",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "十种火场逃生技巧 PLEASE ADD",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "十种火场逃生技巧 PLEASE ADD",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "火场逃生口诀  PLEASE ADD Y",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 2,
+          "total_chars": 64
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "学校消防安全常识小结  PLEASE A",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 2,
+          "total_chars": 64
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "知识拓展：消防法  PLEASE ADD",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 2,
+          "total_chars": 64
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "谢谢您的观看",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "201X",
+        "shape_name": "文本框 7"
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

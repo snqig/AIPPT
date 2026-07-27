@@ -1,0 +1,701 @@
+{
+  "template_id": "安全教育__安全教育_(42)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 24,
+  "removable_pages": [
+    23,
+    24
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 6,
+      "name": "第一部分"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 7,
+      "end_page": 9,
+      "name": "第二部分"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 10,
+      "end_page": 12,
+      "name": "第三部分"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 13,
+      "end_page": 14,
+      "name": "第四部分"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 15,
+      "end_page": 15,
+      "name": "文明行车"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 16,
+      "end_page": 17,
+      "name": "第五部分"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 18,
+      "end_page": 21,
+      "name": "第六部分"
+    },
+    {
+      "key": "end",
+      "page": 22,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "中小学生寒假安全教育家长会",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 35,
+          "max_lines": 1,
+          "total_chars": 35
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "寒假安全教育",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "快乐寒假安全不放假",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "矩形 24"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "疫情防控",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "消防安全",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "户外安全",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "交通安全",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "娱乐安全",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number_6",
+        "match_text": "06",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "人身安全",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "疫情防控",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第一部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "疫情防控不松懈",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "戴口罩，少出门",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "勤洗手，讲卫生",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "消防安全",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第二部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "烟花爆竹安全",
+        "shape_name": "文本框 3"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "户外安全",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第三部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第四部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 2"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 4"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 6"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "椭圆 8"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "娱乐安全",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第五部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "人身安全",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第六部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "序号1"
+      },
+      {
+        "slot": "title",
+        "match_text": "居家安全",
+        "shape_name": "Rectangle 29"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "序号1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "外出安全",
+        "shape_name": "Rectangle 29"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "风雨送春归，飞雪迎春到。",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "点击进入",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "演示完毕感谢您的观看",
+        "shape_name": "矩形 28",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 1,
+          "total_chars": 31
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "中小学生寒假安全教育家长会",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 35,
+          "max_lines": 1,
+          "total_chars": 35
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "寒假安全教育",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "快乐寒假安全不放假",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

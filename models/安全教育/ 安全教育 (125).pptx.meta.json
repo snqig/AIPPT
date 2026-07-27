@@ -1,0 +1,883 @@
+{
+  "template_id": "安全教育__安全教育_(125)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 47,
+  "removable_pages": [
+    46,
+    47
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 3,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 6,
+      "end_page": 20,
+      "name": "远离野外危险水域"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 21,
+      "end_page": 25,
+      "name": "游泳注意事项"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 26,
+      "end_page": 29,
+      "name": "不要错误施救"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 30,
+      "end_page": 30,
+      "name": "甚至可能引发更大的悲"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 31,
+      "end_page": 31,
+      "name": "如何正确施救"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 32,
+      "end_page": 36,
+      "name": "有人落水啦"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 37,
+      "end_page": 44,
+      "name": "如何正确自救"
+    },
+    {
+      "key": "end",
+      "page": 45,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "小学生防溺水PPT",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "安 全 教 育",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "目 录",
+        "shape_name": "矩形 30",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "远离野外危险水域",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 34"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "游泳的注意事项",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 45"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "同伴落水不要错误施救",
+        "shape_name": "文本框 48",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 50"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "同伴落水，如何正确施救",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 55"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "不慎落水，如何自救",
+        "shape_name": "文本框 59",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "矩形 61"
+      }
+    ],
+    "6": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title",
+        "match_text": "远离野外危险水域",
+        "shape_name": "Rectangle 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "水库",
+        "shape_name": "矩形 4"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "水库",
+        "shape_name": "矩形 11"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "水坑",
+        "shape_name": "矩形 8"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "河流",
+        "shape_name": "矩形 6"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "溪边",
+        "shape_name": "矩形 7"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "溪边",
+        "shape_name": "矩形 7"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "为什么游泳池也会发生溺水呢",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "你知道吗",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title",
+        "match_text": "游泳注意事项",
+        "shape_name": "Rectangle 1",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "选择正规、安全的游泳场所",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "必须在成人的陪同下游泳",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "做好准备活动",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "不要贸然跳水和潜泳",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title",
+        "match_text": "不要错误施救",
+        "shape_name": "Rectangle 1",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "1.不能手拉手施救",
+        "shape_name": "矩形 9",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "2.不能入水施救",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "3.要保证自身安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "31": [
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title",
+        "match_text": "如何正确施救",
+        "shape_name": "Rectangle 1",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "32": [
+      {
+        "slot": "title",
+        "match_text": "1.第一时间大声呼叫",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "有人落水啦",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "2.高年级同学还可以",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "35": [
+      {
+        "slot": "title",
+        "match_text": "在周边寻找漂浮物给落水者",
+        "shape_name": "Text Box 5",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 3,
+          "total_chars": 42
+        }
+      }
+    ],
+    "37": [
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title",
+        "match_text": "如何正确自救",
+        "shape_name": "Rectangle 1",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "38": [
+      {
+        "slot": "title",
+        "match_text": "千万不要惊慌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "44": [
+      {
+        "slot": "title",
+        "match_text": "遇到危险怎么办",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "45": [
+      {
+        "slot": "title",
+        "match_text": "汇报完毕 谢谢大家",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "46": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "33": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "34": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "35": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "36": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "37": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "38": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "39": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "40": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "41": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "42": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "43": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "44": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "45": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "46": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "47": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

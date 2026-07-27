@@ -1,0 +1,2141 @@
+{
+  "template_id": "工作汇报_商务风_058",
+  "category": "工作汇报",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 36,
+  "removable_pages": [
+    35,
+    36
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "创",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "新",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "超",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "越",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "逐",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "梦",
+        "shape_name": "文本框 20"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "新",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "章",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "XX有限责任公司",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "汇报:唐峰设计",
+        "shape_name": "文本框 27"
+      }
+    ],
+    "2": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 46"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 47"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 48"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "6",
+        "shape_name": "椭圆 49"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "椭圆 50"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "4",
+        "shape_name": "椭圆 51"
+      },
+      {
+        "slot": "title",
+        "match_text": "融资计划",
+        "shape_name": "文本框 62",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "投资预测",
+        "shape_name": "文本框 63",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "市场分析",
+        "shape_name": "文本框 64",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关于我们",
+        "shape_name": "文本框 66",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 67",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "产品运营",
+        "shape_name": "文本框 68",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框 73",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "目录",
+        "shape_name": "文本框 74"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "关于我们",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "0",
+        "shape_name": "文本框 28"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "关于我们",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "About us",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 1,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "公司介绍",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "创新驱动",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "引领未来",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "No.01",
+        "shape_name": "矩形: 圆角 28",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "No.02",
+        "shape_name": "矩形: 圆角 29",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "关于我们",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "About us",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 1,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "发展历程",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "No.01",
+        "shape_name": "矩形: 圆角 28",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "No.02",
+        "shape_name": "矩形: 圆角 29",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "No.03",
+        "shape_name": "矩形: 圆角 37",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "No.04",
+        "shape_name": "矩形: 圆角 40",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "关于我们",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "About us",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 1,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "组织架构",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 5",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 21"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "郝经理",
+        "shape_name": "矩形: 圆角 31",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "赖总监",
+        "shape_name": "矩形: 圆角 33",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "吴经理",
+        "shape_name": "矩形: 圆角 42",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "孙部长",
+        "shape_name": "矩形: 圆角 43",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "张主管",
+        "shape_name": "矩形: 圆角 44",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "输入正文",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_12",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 60",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_13",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 61",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 62",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_15",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 63",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_16",
+        "match_text": "添加标题",
+        "shape_name": "文本框 64"
+      },
+      {
+        "slot": "title_17",
+        "match_text": "添加标题",
+        "shape_name": "文本框 65"
+      },
+      {
+        "slot": "title_18",
+        "match_text": "添加标题",
+        "shape_name": "文本框 66"
+      },
+      {
+        "slot": "title_19",
+        "match_text": "输入正文",
+        "shape_name": "文本框 67",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_20",
+        "match_text": "输入正文",
+        "shape_name": "文本框 68",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_21",
+        "match_text": "输入正文",
+        "shape_name": "文本框 69",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_22",
+        "match_text": "输入正文",
+        "shape_name": "文本框 70",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_23",
+        "match_text": "输入正文",
+        "shape_name": "文本框 71",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_24",
+        "match_text": "输入正文",
+        "shape_name": "文本框 72",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_25",
+        "match_text": "输入正文",
+        "shape_name": "文本框 73",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_26",
+        "match_text": "输入正文",
+        "shape_name": "文本框 74",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_27",
+        "match_text": "输入正文",
+        "shape_name": "文本框 75",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_28",
+        "match_text": "输入正文",
+        "shape_name": "文本框 76",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_29",
+        "match_text": "输入正文",
+        "shape_name": "文本框 77",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_30",
+        "match_text": "输入正文",
+        "shape_name": "文本框 78",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_31",
+        "match_text": "输入正文",
+        "shape_name": "文本框 79",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_32",
+        "match_text": "输入正文",
+        "shape_name": "文本框 80",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_33",
+        "match_text": "输入正文",
+        "shape_name": "文本框 81",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_34",
+        "match_text": "输入正文",
+        "shape_name": "文本框 82",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_35",
+        "match_text": "输入正文",
+        "shape_name": "文本框 83",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_36",
+        "match_text": "输入正文",
+        "shape_name": "文本框 84",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_37",
+        "match_text": "输入正文",
+        "shape_name": "文本框 85",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_38",
+        "match_text": "输入正文",
+        "shape_name": "文本框 86",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_39",
+        "match_text": "输入正文",
+        "shape_name": "文本框 87",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_40",
+        "match_text": "输入正文",
+        "shape_name": "文本框 88",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_41",
+        "match_text": "输入正文",
+        "shape_name": "文本框 89",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "关于我们",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "About us",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 1,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "模队介绍",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "人名",
+        "shape_name": "矩形: 圆角 38",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "人名",
+        "shape_name": "矩形: 圆角 98",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "人名",
+        "shape_name": "矩形: 圆角 103",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "人名",
+        "shape_name": "矩形: 圆角 108",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "关于我们",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "About us",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 1,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "荣誉资质",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形: 圆角 23",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形: 圆角 24",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形: 圆角 25",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形: 圆角 26",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "0",
+        "shape_name": "文本框 28"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "项目概述",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "No.01",
+        "shape_name": "矩形: 圆角 29",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "No.02",
+        "shape_name": "矩形: 圆角 32",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "需求分析",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "No.01",
+        "shape_name": "矩形: 圆角 29",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "No.02",
+        "shape_name": "矩形: 圆角 32",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "No.01",
+        "shape_name": "矩形: 圆角 7",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "No.02",
+        "shape_name": "矩形: 圆角 13",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "项目亮点",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "亮点.02",
+        "shape_name": "矩形: 圆角 33",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "亮点.04",
+        "shape_name": "矩形: 圆角 36",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "亮点.01",
+        "shape_name": "矩形: 圆角 39",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "亮点.03",
+        "shape_name": "矩形: 圆角 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "项目发展规划",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "发展规划",
+        "shape_name": "矩形: 圆角 39",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "发展规划",
+        "shape_name": "矩形: 圆角 13",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "发展规划",
+        "shape_name": "矩形: 圆角 16",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "行业前景",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "前景.01",
+        "shape_name": "矩形: 圆角 22",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "前景.02",
+        "shape_name": "矩形: 圆角 24",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "竞品分析",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "竞品分析",
+        "shape_name": "矩形: 圆角 19",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "竞品分析",
+        "shape_name": "矩形: 圆角 26",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "竞品分析",
+        "shape_name": "矩形: 圆角 27",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "竞品分析",
+        "shape_name": "矩形: 圆角 28",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "竞品分析",
+        "shape_name": "矩形: 圆角 31",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "竞品分析",
+        "shape_name": "矩形: 圆角 32",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "竞品分析",
+        "shape_name": "矩形: 圆角 33",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "竞品分析",
+        "shape_name": "矩形: 圆角 34",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "项目介绍",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "可行性分析",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "可行性分析",
+        "shape_name": "矩形: 圆角 41",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "可行性分析",
+        "shape_name": "矩形: 圆角 44",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "可行性分析",
+        "shape_name": "矩形: 圆角 45",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "可行性分析",
+        "shape_name": "矩形: 圆角 46",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "产品运营",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "0",
+        "shape_name": "文本框 28"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "产品运营",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "产品概述",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "概述",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "概述",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "概述",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "产品运营",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "网络营销方案",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "营销方案",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "营销方案",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "营销方案",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "营销方案",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "文本框 39"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "产品运营",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地面推广方案",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "营销方案",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "percent",
+        "match_text": "77%",
+        "shape_name": "文本框 36"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "市场分析",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "4",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "0",
+        "shape_name": "文本框 28"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "市场分析",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "市场规模",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "市场规模",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "市场规模",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "市场规模",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "市场规模",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "市场分析",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "市场前景分析",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "市场规模",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "市场规模",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "市场规模",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "市场规模",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "市场分析",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "市场调研",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "市场调研",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "市场分析",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "市场运营状况",
+        "shape_name": "文本框 12"
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "市场分析",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "SWOT分析",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "S",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "W",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "O",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "T",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "分析",
+        "shape_name": "文本框 46",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "分析",
+        "shape_name": "文本框 47",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "分析",
+        "shape_name": "文本框 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "分析",
+        "shape_name": "文本框 49",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "投资预测",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "5",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "0",
+        "shape_name": "文本框 28"
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "投资预测",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "投资亮点",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "number",
+        "match_text": "150000000",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "投资亮点",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "15+",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "55+",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "25+",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "投资预测",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "投资方案",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "投资A",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "投资b",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "投资c",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "融资计划",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "6",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "0",
+        "shape_name": "文本框 28"
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "融资计划",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "财务预测",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "财务预测",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "财务预测",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "32": [
+      {
+        "slot": "title",
+        "match_text": "融资计划",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "资金缺口",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "财务预测",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "23W",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "45W",
+        "shape_name": "文本框 13"
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "融资计划",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "融资需求",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "财务预测",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "4800W",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "34": [
+      {
+        "slot": "title",
+        "match_text": "融资计划",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "资金用途",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "03用途",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "02用途",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "01用途",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "35": [
+      {
+        "slot": "title",
+        "match_text": "创",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "新",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "超",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "越",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "逐",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "梦",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "新",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "章",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "XX有限责任公司",
+        "shape_name": "文本框 45"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "汇报:唐峰设计",
+        "shape_name": "文本框 46"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "35": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "36": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

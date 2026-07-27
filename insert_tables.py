@@ -1,250 +1,374 @@
+"""图表 / 表格动态替换测试工具
+
+提供独立 CLI，传入 PPTX + 测试数据 JSON，快速验证图表数据源替换与表格动态行扩展效果，
+输出渲染前后对比报告（结构化 JSON），便于调试与回归验证。
+
+设计原则：
+  - 不依赖完整 meta.json，直接扫描 PPTX 内首个图表/表格形状并替换
+  - 100% 复用 PptRenderer._replace_chart_data / _fill_dynamic_table，保证与生产逻辑一致
+  - 输出结构化 JSON，适配 opencode 模型调用
+  - 支持单图表、单表格、批量三种模式
+
+子命令：
+  test-chart   : 替换首个图表的数据源
+  test-table   : 替换首个表格的数据（含动态行扩展）
+  test-all     : 同时测试图表与表格
+  list         : 列出 PPTX 内所有图表/表格位置与类型
+
+用法示例：
+  python insert_tables.py test-chart --input template.pptx --data chart_data.json --output out.pptx
+  python insert_tables.py test-table --input template.pptx --data table_data.json --output out.pptx
+  python insert_tables.py list --input template.pptx
 """
-PPT 表格自动插入工具
-功能：在指定位置新增 slide 并插入原生表格
-用法：python insert_tables.py <input.pptx> <output.pptx>
-"""
+import argparse
+import json
 import sys
+import time
+from pathlib import Path
+from typing import Any, Optional
+
 from pptx import Presentation
-from pptx.util import Inches, Pt, Emu
-from pptx.dml.color import RGBColor
-from pptx.enum.text import PP_ALIGN
+from pptx.shapes.base import BaseShape
+
+from aippt.logger import logger
+from ppt_renderer import PptRenderer
 
 
-# 深蓝青色科技配色（与 vnerp 品牌一致）
-COLOR_HEADER_BG = RGBColor(0x1A, 0x23, 0x32)  # 深蓝 #1a2332
-COLOR_HEADER_FG = RGBColor(0xFF, 0xFF, 0xFF)  # 白
-COLOR_ROW_ALT = RGBColor(0xF0, 0xF4, 0xF8)    # 浅灰蓝
-COLOR_ROW_FG = RGBColor(0x1A, 0x23, 0x32)
-COLOR_ACCENT = RGBColor(0x00, 0xB4, 0xD8)     # 青色 #00b4d8
+# ==================== 扫描工具 ====================
+
+def _iter_graphic_frames(prs: Presentation):
+    """遍历所有幻灯片中的 GraphicFrame（图表/表格载体）
+
+    python-pptx 1.0.2 中 MSO_SHAPE_TYPE 无 GRAPHIC_FRAME 枚举，
+    直接通过 has_chart / has_table 属性识别图表与表格形状。
+    """
+    for slide_idx, slide in enumerate(prs.slides, start=1):
+        for shape in slide.shapes:
+            is_chart = hasattr(shape, "has_chart") and shape.has_chart
+            is_table = hasattr(shape, "has_table") and shape.has_table
+            if is_chart or is_table:
+                yield slide_idx, shape
 
 
-def _style_table(table, header_bg=COLOR_HEADER_BG, header_fg=COLOR_HEADER_FG):
-    """统一表格样式：深蓝表头 + 斑马纹行"""
-    # 表头行
-    for cell in table.rows[0].cells:
-        cell.fill.solid()
-        cell.fill.fore_color.rgb = header_bg
-        for para in cell.text_frame.paragraphs:
-            para.alignment = PP_ALIGN.CENTER
-            for run in para.runs:
-                run.font.bold = True
-                run.font.color.rgb = header_fg
-                run.font.size = Pt(12)
-                run.font.name = "微软雅黑"
-    # 数据行（斑马纹）
-    for row_idx in range(1, len(table.rows)):
-        row = table.rows[row_idx]
-        for cell in row.cells:
-            if row_idx % 2 == 0:
-                cell.fill.solid()
-                cell.fill.fore_color.rgb = COLOR_ROW_ALT
-            else:
-                cell.fill.solid()
-                cell.fill.fore_color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
-            for para in cell.text_frame.paragraphs:
-                for run in para.runs:
-                    run.font.color.rgb = COLOR_ROW_FG
-                    run.font.size = Pt(11)
-                    run.font.name = "微软雅黑"
+def list_charts_and_tables(pptx_path: Path) -> dict[str, Any]:
+    """列出 PPTX 内所有图表与表格的位置、类型、当前数据规模
+
+    :param pptx_path: PPTX 文件路径
+    :return: {"charts": [...], "tables": [...], "total": int}
+    """
+    prs = Presentation(str(pptx_path))
+    charts: list[dict[str, Any]] = []
+    tables: list[dict[str, Any]] = []
+
+    for slide_idx, shape in _iter_graphic_frames(prs):
+        if hasattr(shape, "has_chart") and shape.has_chart:
+            try:
+                chart = shape.chart
+                ct_str = str(chart.chart_type).upper()
+                if "BAR" in ct_str or "COLUMN" in ct_str:
+                    category = "bar"
+                elif "LINE" in ct_str:
+                    category = "line"
+                elif "PIE" in ct_str:
+                    category = "pie"
+                elif "RADAR" in ct_str:
+                    category = "radar"
+                else:
+                    category = "unknown"
+
+                try:
+                    plot = chart.plots[0]
+                    series_count = len(list(plot.series))
+                    cat_count = len(list(plot.categories))
+                except Exception:
+                    series_count = 0
+                    cat_count = 0
+
+                charts.append({
+                    "slide": slide_idx,
+                    "chart_type": category,
+                    "raw_type": str(chart.chart_type),
+                    "series_count": series_count,
+                    "category_count": cat_count,
+                })
+            except Exception as e:
+                charts.append({"slide": slide_idx, "error": str(e)})
+        elif hasattr(shape, "has_table") and shape.has_table:
+            try:
+                table = shape.table
+                tables.append({
+                    "slide": slide_idx,
+                    "rows": len(table.rows),
+                    "cols": len(table.columns),
+                })
+            except Exception as e:
+                tables.append({"slide": slide_idx, "error": str(e)})
+
+    return {
+        "charts": charts,
+        "tables": tables,
+        "total": len(charts) + len(tables),
+    }
 
 
-def _set_cell_text(cell, text, bold=False, color=None, align=PP_ALIGN.LEFT):
-    """设置单元格文本"""
-    cell.text = str(text)
-    for para in cell.text_frame.paragraphs:
-        para.alignment = align
-        for run in para.runs:
-            run.font.bold = bold
-            run.font.size = Pt(11)
-            run.font.name = "微软雅黑"
-            if color:
-                run.font.color.rgb = color
+# ==================== 测试执行 ====================
+
+def _build_temp_meta(template_path: Path, page_slots: dict[str, list[dict]]) -> Path:
+    """为 PptRenderer 构造最小化临时 meta.json（仅含 page_slots）
+
+    PptRenderer 初始化需要 meta.json，这里生成仅包含必要字段的临时文件。
+    """
+    import tempfile
+    meta = {
+        "template_id": f"insert_tables_test__{template_path.stem}",
+        "category": "测试",
+        "total_pages": 0,
+        "chapters": [],
+        "page_slots": page_slots,
+        "removable_pages": [],
+    }
+    tmp = Path(tempfile.mkdtemp()) / "insert_tables_test.meta.json"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(meta, f, ensure_ascii=False, indent=2)
+    return tmp
 
 
-def _add_title(slide, text, left, top, width):
-    """在 slide 顶部添加标题文本框"""
-    txBox = slide.shapes.add_textbox(left, top, width, Inches(0.6))
-    tf = txBox.text_frame
-    tf.text = text
-    para = tf.paragraphs[0]
-    para.alignment = PP_ALIGN.LEFT
-    for run in para.runs:
-        run.font.size = Pt(24)
-        run.font.bold = True
-        run.font.color.rgb = COLOR_HEADER_BG
-        run.font.name = "微软雅黑"
+def run_chart_replacement(
+    input_pptx: Path,
+    chart_data: dict[str, Any],
+    output_pptx: Path,
+) -> dict[str, Any]:
+    """测试图表数据源替换
+
+    :param input_pptx: 输入 PPTX
+    :param chart_data: {"categories": [...], "series": [{"name": "...", "data": [...]}]}
+    :param output_pptx: 输出 PPTX
+    :return: 对比报告
+    """
+    # 渲染前：扫描首个图表
+    before = list_charts_and_tables(input_pptx)
+    if not before["charts"]:
+        return {
+            "test_pass": False,
+            "error": "输入 PPTX 中未找到图表形状",
+            "before": before,
+        }
+
+    first_chart = before["charts"][0]
+    target_slide = str(first_chart["slide"])
+
+    # 构造临时 meta，让 PptRenderer 在目标页执行 chart_data 替换
+    page_slots = {
+        target_slide: [{"slot": "chart_data", "type": "chart"}]
+    }
+    tmp_meta = _build_temp_meta(input_pptx, page_slots)
+    slot_data = {target_slide: {"chart_data": chart_data}}
+
+    try:
+        renderer = PptRenderer(str(input_pptx), str(tmp_meta))
+        t0 = time.perf_counter()
+        renderer.render(
+            slot_data,
+            str(output_pptx),
+            remove_copyright=False,
+            auto_fit=False,
+            transitions=None,
+            animations=None,
+        )
+        elapsed = round(time.perf_counter() - t0, 3)
+
+        # 渲染后：重新扫描验证
+        after = list_charts_and_tables(output_pptx)
+        after_chart = after["charts"][0] if after["charts"] else {}
+
+        return {
+            "test_pass": True,
+            "target": first_chart,
+            "before": {
+                "chart_type": first_chart.get("chart_type"),
+                "series_count": first_chart.get("series_count"),
+                "category_count": first_chart.get("category_count"),
+            },
+            "after": {
+                "chart_type": after_chart.get("chart_type"),
+                "series_count": after_chart.get("series_count"),
+                "category_count": after_chart.get("category_count"),
+            },
+            "input_data": {
+                "categories_count": len(chart_data.get("categories", [])),
+                "series_count": len(chart_data.get("series", [])),
+            },
+            "elapsed_seconds": elapsed,
+            "output": str(output_pptx),
+        }
+    except Exception as e:
+        logger.exception("图表测试失败")
+        return {
+            "test_pass": False,
+            "error": str(e),
+            "before": before,
+        }
 
 
-def _get_blank_layout(prs):
-    """获取空白版式，索引 6 不存在时回退到第一个"""
-    for i in [6, 5, 4, 3, 2, 1, 0]:
-        try:
-            return prs.slide_layouts[i]
-        except IndexError:
-            continue
-    return prs.slide_layouts[0]
+def run_table_replacement(
+    input_pptx: Path,
+    table_data: dict[str, Any],
+    output_pptx: Path,
+) -> dict[str, Any]:
+    """测试表格动态行扩展
+
+    :param input_pptx: 输入 PPTX
+    :param table_data: {"headers": [...], "rows": [[...], ...]}
+    :param output_pptx: 输出 PPTX
+    :return: 对比报告
+    """
+    before = list_charts_and_tables(input_pptx)
+    if not before["tables"]:
+        return {
+            "test_pass": False,
+            "error": "输入 PPTX 中未找到表格形状",
+            "before": before,
+        }
+
+    first_table = before["tables"][0]
+    target_slide = str(first_table["slide"])
+
+    page_slots = {
+        target_slide: [{"slot": "table_data", "type": "table"}]
+    }
+    tmp_meta = _build_temp_meta(input_pptx, page_slots)
+    slot_data = {target_slide: {"table_data": table_data}}
+
+    try:
+        renderer = PptRenderer(str(input_pptx), str(tmp_meta))
+        t0 = time.perf_counter()
+        renderer.render(
+            slot_data,
+            str(output_pptx),
+            remove_copyright=False,
+            auto_fit=False,
+            transitions=None,
+            animations=None,
+        )
+        elapsed = round(time.perf_counter() - t0, 3)
+
+        after = list_charts_and_tables(output_pptx)
+        after_table = after["tables"][0] if after["tables"] else {}
+
+        return {
+            "test_pass": True,
+            "target": first_table,
+            "before": {
+                "rows": first_table.get("rows"),
+                "cols": first_table.get("cols"),
+            },
+            "after": {
+                "rows": after_table.get("rows"),
+                "cols": after_table.get("cols"),
+            },
+            "input_data": {
+                "headers_count": len(table_data.get("headers", [])),
+                "data_rows": len(table_data.get("rows", [])),
+            },
+            "rows_delta": (after_table.get("rows", 0) - first_table.get("rows", 0)),
+            "elapsed_seconds": elapsed,
+            "output": str(output_pptx),
+        }
+    except Exception as e:
+        logger.exception("表格测试失败")
+        return {
+            "test_pass": False,
+            "error": str(e),
+            "before": before,
+        }
 
 
-def insert_comparison_table(prs, title_text, headers, rows):
-    """新增一页插入对比表格"""
-    blank_layout = _get_blank_layout(prs)
-    slide = prs.slides.add_slide(blank_layout)
+# ==================== CLI ====================
 
-    # 标题
-    _add_title(slide, title_text, Inches(0.6), Inches(0.4), Inches(12))
-
-    # 表格（3 列 N 行）
-    rows_count = len(rows) + 1
-    cols_count = len(headers)
-    table_left = Inches(0.6)
-    table_top = Inches(1.4)
-    table_width = Inches(12.1)
-    table_height = Inches(0.5) * rows_count
-
-    table_shape = slide.shapes.add_table(rows_count, cols_count,
-                                          table_left, table_top,
-                                          table_width, table_height)
-    table = table_shape.table
-
-    # 设置列宽
-    if cols_count == 3:
-        table.columns[0].width = Inches(3.5)
-        table.columns[1].width = Inches(4.3)
-        table.columns[2].width = Inches(4.3)
-
-    # 表头
-    for i, h in enumerate(headers):
-        _set_cell_text(table.cell(0, i), h, bold=True,
-                       color=COLOR_HEADER_FG, align=PP_ALIGN.CENTER)
-    # 数据行
-    for r_idx, row_data in enumerate(rows, start=1):
-        for c_idx, val in enumerate(row_data):
-            align = PP_ALIGN.CENTER if c_idx == 0 else PP_ALIGN.LEFT
-            _set_cell_text(table.cell(r_idx, c_idx), val, align=align)
-
-    _style_table(table)
-    return slide
+def _load_data_json(path: Path) -> dict[str, Any]:
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-def insert_pricing_table(prs, title_text, headers, rows, note=None):
-    """新增一页插入报价表格"""
-    blank_layout = _get_blank_layout(prs)
-    slide = prs.slides.add_slide(blank_layout)
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="图表/表格动态替换测试工具",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    sub = parser.add_subparsers(dest="cmd", required=True)
 
-    _add_title(slide, title_text, Inches(0.6), Inches(0.4), Inches(12))
+    p_list = sub.add_parser("list", help="列出 PPTX 内所有图表/表格")
+    p_list.add_argument("--input", required=True, help="PPTX 文件路径")
 
-    rows_count = len(rows) + 1
-    cols_count = len(headers)
-    table_left = Inches(0.6)
-    table_top = Inches(1.4)
-    table_width = Inches(12.1)
-    table_height = Inches(0.55) * rows_count
+    p_chart = sub.add_parser("test-chart", help="测试图表数据源替换")
+    p_chart.add_argument("--input", required=True, help="输入 PPTX")
+    p_chart.add_argument("--data", required=True, help="图表数据 JSON 文件")
+    p_chart.add_argument("--output", required=True, help="输出 PPTX")
 
-    table_shape = slide.shapes.add_table(rows_count, cols_count,
-                                          table_left, table_top,
-                                          table_width, table_height)
-    table = table_shape.table
+    p_table = sub.add_parser("test-table", help="测试表格动态行扩展")
+    p_table.add_argument("--input", required=True, help="输入 PPTX")
+    p_table.add_argument("--data", required=True, help="表格数据 JSON 文件")
+    p_table.add_argument("--output", required=True, help="输出 PPTX")
 
-    # 列宽
-    if cols_count == 3:
-        table.columns[0].width = Inches(3.0)
-        table.columns[1].width = Inches(7.1)
-        table.columns[2].width = Inches(2.0)
+    p_all = sub.add_parser("test-all", help="同时测试图表与表格")
+    p_all.add_argument("--input", required=True, help="输入 PPTX")
+    p_all.add_argument("--chart-data", help="图表数据 JSON")
+    p_all.add_argument("--table-data", help="表格数据 JSON")
+    p_all.add_argument("--output", required=True, help="输出 PPTX")
 
-    # 表头
-    for i, h in enumerate(headers):
-        _set_cell_text(table.cell(0, i), h, bold=True,
-                       color=COLOR_HEADER_FG, align=PP_ALIGN.CENTER)
-    # 数据行
-    for r_idx, row_data in enumerate(rows, start=1):
-        for c_idx, val in enumerate(row_data):
-            align = PP_ALIGN.CENTER if c_idx == 0 else PP_ALIGN.LEFT
-            if c_idx == 2:
-                align = PP_ALIGN.CENTER
-            _set_cell_text(table.cell(r_idx, c_idx), val, align=align)
+    args = parser.parse_args()
 
-    _style_table(table)
+    if args.cmd == "list":
+        result = list_charts_and_tables(Path(args.input))
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 0
 
-    # 备注框
-    if note:
-        txBox = slide.shapes.add_textbox(Inches(0.6), Inches(5.5), Inches(12), Inches(1.2))
-        tf = txBox.text_frame
-        tf.text = note
-        tf.word_wrap = True
-        for para in tf.paragraphs:
-            for run in para.runs:
-                run.font.size = Pt(12)
-                run.font.italic = True
-                run.font.color.rgb = COLOR_ACCENT
-                run.font.name = "微软雅黑"
+    if args.cmd == "test-chart":
+        data = _load_data_json(Path(args.data))
+        result = run_chart_replacement(Path(args.input), data, Path(args.output))
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 0 if result.get("test_pass") else 1
 
-    return slide
+    if args.cmd == "test-table":
+        data = _load_data_json(Path(args.data))
+        result = run_table_replacement(Path(args.input), data, Path(args.output))
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return 0 if result.get("test_pass") else 1
 
+    if args.cmd == "test-all":
+        report: dict[str, Any] = {"test_pass": True, "items": []}
+        # 图表测试（中间产物，最终输出合并到最后）
+        if args.chart_data:
+            chart_data = _load_data_json(Path(args.chart_data))
+            tmp_out = Path(args.output).with_suffix(".chart.tmp.pptx")
+            r = run_chart_replacement(Path(args.input), chart_data, tmp_out)
+            report["items"].append({"type": "chart", "result": r})
+            if not r.get("test_pass"):
+                report["test_pass"] = False
+            next_input = tmp_out
+        else:
+            next_input = Path(args.input)
 
-def move_slide(prs, old_index, new_index):
-    """移动 slide 顺序（0-based）"""
-    xml_slides = prs.slides._sldIdLst
-    slides_list = list(xml_slides)
-    slide_to_move = slides_list[old_index]
-    xml_slides.remove(slide_to_move)
-    xml_slides.insert(new_index, slide_to_move)
+        if args.table_data:
+            table_data = _load_data_json(Path(args.table_data))
+            r = test_table_replacement(next_input, table_data, Path(args.output))
+            report["items"].append({"type": "table", "result": r})
+            if not r.get("test_pass"):
+                report["test_pass"] = False
 
+        # 清理临时文件
+        tmp_chart = Path(args.output).with_suffix(".chart.tmp.pptx")
+        if tmp_chart.exists():
+            try:
+                tmp_chart.unlink()
+            except Exception:
+                pass
 
-def main():
-    if len(sys.argv) < 3:
-        print("用法: python insert_tables.py <input.pptx> <output.pptx>")
-        sys.exit(1)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0 if report.get("test_pass") else 1
 
-    input_path = sys.argv[1]
-    output_path = sys.argv[2]
-
-    prs = Presentation(input_path)
-    total_before = len(prs.slides)
-    print(f"原始页数: {total_before}")
-
-    # 表格1：传统ERP vs vnerp 对比表
-    comp_headers = ["对比维度", "传统商业印刷ERP", "vnerp 解决方案"]
-    comp_rows = [
-        ["软件授权费", "几十万 ~ 上百万", "0 元（开源）"],
-        ["实施服务费", "10万 ~ 50万", "5.6万 ~ 15.5万"],
-        ["年维保费",   "5万 ~ 20万",   "0.8万 ~ 1.5万"],
-        ["定制灵活性", "受限，需原厂支持", "完全可控"],
-        ["技术先进性", "老旧技术栈",   "Next.js + React 19 + TS"],
-        ["行业适配",   "通用ERP改版",   "专为丝网印刷设计"],
-    ]
-    insert_comparison_table(prs, "对比传统方案，优势明显", comp_headers, comp_rows)
-    print("✅ 已插入对比表（P10 之后）")
-
-    # 表格2：报价方案表
-    price_headers = ["服务项目", "内容", "参考报价"]
-    price_rows = [
-        ["基础部署", "服务器环境搭建、系统部署、数据库初始化、基础数据配置", "1.5万~3万元"],
-        ["业务定制", "根据客户流程调整功能模块、报表定制、字段调整",       "2万~8万元"],
-        ["数据迁移", "从旧系统/Excel导入历史数据",                         "0.5万~1.5万元"],
-        ["员工培训", "现场/远程操作培训（2-3天）",                          "0.8万~1.5万元"],
-        ["年度运维", "技术支持、bug修复、安全更新",                         "0.8万~1.5万元/年"],
-    ]
-    price_note = "💡 合计：5.6万~15.5万元\n💡 SaaS订阅制可按 200~500元/人/月 或 1万~15万/年 报价，根据企业规模灵活调整。"
-    insert_pricing_table(prs, "透明报价，按需选择", price_headers, price_rows, price_note)
-    print("✅ 已插入报价表（P13 之后）")
-
-    # 把新增的 2 页（当前在末尾）移动到结束页之前
-    # 新增页索引为 total_before 和 total_before+1（0-based）
-    # 结束页索引为 total_before - 1（0-based，原最后一页）
-    # 目标：新增 2 页插到结束页之前
-    end_idx = total_before - 1  # 结束页原索引
-    # 新增的第1页（对比表）当前在 total_before，移到 end_idx 位置
-    move_slide(prs, total_before, end_idx)
-    # 新增的第2页（报价表）现在也在末尾（total_before+1 的位置，但移除一个后索引变化）
-    # 移动后，报价表在 total_before 位置（末尾），结束页在 total_before+1
-    # 需要把报价表移到 end_idx+1 位置
-    move_slide(prs, total_before, end_idx + 1)
-
-    prs.save(output_path)
-    total_after = len(prs.slides)
-    print(f"最终页数: {total_after}")
-    print(f"✅ 已保存: {output_path}")
+    return 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

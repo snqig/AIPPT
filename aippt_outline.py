@@ -149,7 +149,8 @@ def validate_outline(outline):
 
 
 def generate_ppt(business_data, scene, template_id=None, output_path="final.pptx",
-                 transitions="auto", animations="auto", templates_root="models"):
+                 transitions="auto", animations="auto", templates_root="models",
+                 animation_theme=None):
     """
     从 business_data 直接生成 PPT
 
@@ -159,6 +160,7 @@ def generate_ppt(business_data, scene, template_id=None, output_path="final.pptx
     :param output_path: 输出路径
     :param transitions: 转场配置
     :param animations: 动画配置
+    :param animation_theme: 动画预设主题名（business/tech/formal），None 表示不启用
     :return: 输出文件路径
     """
     from ppt_renderer import PptRenderer
@@ -197,8 +199,54 @@ def generate_ppt(business_data, scene, template_id=None, output_path="final.pptx
     renderer = PptRenderer(pptx_path, meta_path)
     renderer.render(slot_data, output_path,
                     remove_copyright=True, auto_fit=True,
-                    transitions=transitions, animations=animations)
+                    transitions=transitions, animations=animations,
+                    animation_theme=animation_theme)
     return output_path
+
+
+def _extract_outline_page_effects(outline):
+    """从 outline.pages 数组提取每页显式 transition/animation 配置
+
+    仅提取 outline 中显式设置了 transition/animations 字段的页面，
+    转换为渲染引擎所需的 per-page dict 格式。
+    用于 --animation-theme 启用时，让单页显式配置优先于主题默认值。
+
+    :param outline: outline dict
+    :return: (transitions_dict, animations_dict) 两个 {page_num: spec} dict，
+             仅包含显式设置的页
+    """
+    from aippt.animation_themes import build_page_transition_spec, build_page_animations_spec
+
+    transitions_dict: dict[str, dict] = {}
+    animations_dict: dict[str, list] = {}
+
+    pages = outline.get("pages")
+    if not pages or not isinstance(pages, list):
+        return transitions_dict, animations_dict
+
+    for page in pages:
+        if not isinstance(page, dict):
+            continue
+        page_id = page.get("page_id")
+        if page_id is None:
+            continue
+        page_type = page.get("page_type", "numbered_list")
+
+        # transition：仅提取显式设置（None 表示未设置，不提取）
+        explicit_t = page.get("transition")
+        if explicit_t is not None and explicit_t != "none":
+            t_spec = build_page_transition_spec(explicit_t)
+            if t_spec:
+                transitions_dict[str(page_id)] = t_spec
+
+        # animations：仅提取显式设置
+        explicit_a = page.get("animations")
+        if explicit_a is not None:
+            a_spec = build_page_animations_spec(page_type, explicit_a)
+            if a_spec:
+                animations_dict[str(page_id)] = a_spec
+
+    return transitions_dict, animations_dict
 
 
 def main():
@@ -209,6 +257,36 @@ def main():
 
     # 子命令：list-scenes
     sub.add_parser("list-scenes", help="列出所有支持的场景")
+
+    # 子命令：list-templates（查询模板列表）
+    p_lt = sub.add_parser("list-templates", help="查询可用模板列表")
+    p_lt.add_argument("--scene", default=None, help="按场景筛选（如 工作汇报）")
+    p_lt.add_argument("--style", default=None, help="按风格标签筛选")
+    p_lt.add_argument("--min-pages", type=int, default=None, help="最小页数")
+    p_lt.add_argument("--max-pages", type=int, default=None, help="最大页数")
+    p_lt.add_argument("--color-scheme", default=None,
+                      help="按色系筛选（如 蓝色系/灰色系/红色系/绿色系/多彩/黑白）")
+    p_lt.add_argument("--industry", default=None,
+                      help="按适用行业筛选（如 通用/金融/教育/科技/制造/医疗/政府）")
+
+    # 子命令：auto-generate（全链路一键生成）
+    p_auto = sub.add_parser("auto-generate",
+                            help="全链路一键生成：需求理解→大纲→模板匹配→渲染")
+    p_auto.add_argument("--prompt", required=True, help="用户原始需求文本")
+    p_auto.add_argument("--output", default="final.pptx", help="输出 PPT 路径")
+    p_auto.add_argument("--template-id", default=None, help="指定模板 ID（不指定则自动匹配）")
+    p_auto.add_argument("--transitions", default="auto", help="转场配置（auto/none）")
+    p_auto.add_argument("--animations", default="auto", help="动画配置（auto/none）")
+    p_auto.add_argument("--animation-theme", default=None,
+                        help="动画预设主题（business/tech/formal），优先级低于单页配置，高于 --transitions/--animations")
+
+    # 子命令：validate（格式校验）
+    p_val = sub.add_parser("validate",
+                           help="校验大纲格式合规性（六层防御体系）")
+    p_val.add_argument("--outline", required=True, help="outline.json 路径")
+    p_val.add_argument("--template-id", default=None, help="模板 ID（启用模板槽位匹配校验）")
+    p_val.add_argument("--auto-fix", action="store_true", help="自动修复非原则性问题并回写文件")
+    p_val.add_argument("--output", default=None, help="校验结果输出 JSON 路径（默认打印到 stdout）")
 
     # 子命令：convert（大纲 → business_data）
     p_conv = sub.add_parser("convert", help="将 outline.json 转换为 business_data.json")
@@ -261,6 +339,8 @@ def main():
     p_s4.add_argument("--output", default="final.pptx", help="PPT 输出路径")
     p_s4.add_argument("--transitions", default="auto", help="转场配置（auto/none）")
     p_s4.add_argument("--animations", default="auto", help="动画配置（auto/none）")
+    p_s4.add_argument("--animation-theme", default=None,
+                      help="动画预设主题（business/tech/formal），优先级低于单页配置，高于 --transitions/--animations")
     p_s4.add_argument("--trim-pages", default="", help="可选，要删除的页码（逗号分隔，如 6,10,11）")
     p_s4.add_argument("--insert-tables", action="store_true",
                       help="可选，自动插入表格页（对比表+报价表）")
@@ -319,6 +399,148 @@ def main():
         else:
             print("未匹配到场景，请明确指定")
             print("支持的场景:", list(SCENE_SCHEMAS.keys()))
+        return 0
+
+    elif args.cmd == "list-templates":
+        adapter = SceneAdapter("models")
+        templates = adapter.list_templates(
+            category=args.scene, style_tag=args.style,
+            min_pages=args.min_pages, max_pages=args.max_pages,
+            color_scheme=args.color_scheme, industry=args.industry,
+        )
+        print(json.dumps(templates, ensure_ascii=False, indent=2))
+        return 0
+
+    elif args.cmd == "validate":
+        # 六层防御体系 · 格式校验入口
+        from aippt.validators import validate_all
+        outline_path = Path(args.outline)
+        try:
+            outline = json.loads(outline_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            result_dict = {
+                "validate_pass": False,
+                "error_count": 1,
+                "warning_count": 0,
+                "fixed_count": 0,
+                "errors": [{
+                    "code": "F005", "level": "error",
+                    "path": "(root)", "message": f"JSON 解析失败: {e}",
+                    "suggestion": "请检查 JSON 语法（括号配对、逗号、引号）",
+                }],
+                "warnings": [], "fixes": [],
+            }
+            print(json.dumps(result_dict, ensure_ascii=False, indent=2))
+            return 1
+
+        meta = None
+        if args.template_id:
+            adapter = SceneAdapter("models")
+            meta, _ = adapter.get_template_meta(template_id=args.template_id)
+
+        fixed_outline, result = validate_all(outline, meta=meta, auto_fix=args.auto_fix)
+        result_dict = result.to_dict()
+
+        if args.auto_fix and (result.fixed or not result.is_valid):
+            outline_path.write_text(
+                json.dumps(fixed_outline, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            if result.fixed:
+                logger.info("已自动修复 %d 项并回写: %s", len(result.fixed), outline_path)
+
+        if args.output:
+            Path(args.output).write_text(
+                json.dumps(result_dict, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            print(f"校验结果已保存: {args.output}")
+        else:
+            print(json.dumps(result_dict, ensure_ascii=False, indent=2))
+
+        return 0 if result.is_valid else 1
+
+    elif args.cmd == "auto-generate":
+        # 全链路一键生成：需求理解 → 大纲 → 模板匹配 → 渲染
+        import time as _time
+        start_ts = _time.time()
+
+        # Step 1: 场景识别
+        scene = detect_scene(args.prompt)
+        if not scene:
+            scene = "工作汇报"
+            logger.warning("未识别到场景，使用默认: %s", scene)
+        logger.info("[1/4] 识别场景: %s", scene)
+
+        # Step 2: 自动生成大纲（基于 prompt 生成结构化 outline）
+        # 注意：真正的大纲内容需由宿主大模型生成，这里提供骨架并填入 prompt 作为标题来源
+        schema = SCENE_SCHEMAS[scene]
+        first_line = args.prompt.strip().split("\n")[0][:40]
+        outline = {
+            "scene": scene,
+            "cover": {
+                "title": first_line,
+                "reporter": "",
+                "period": "",
+            },
+            "sections": [
+                {"key": sec["key"], "name": sec["name"], "items": []}
+                for sec in schema["chapter_sections"]
+            ],
+            "end": {"thanks": "感谢聆听"},
+        }
+        # 保存中间大纲文件
+        outline_path = Path(args.output).with_suffix(".outline.json")
+        outline_path.write_text(
+            json.dumps(outline, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        logger.info("[2/4] 大纲骨架已生成: %s（请宿主大模型填充 sections 内容后重跑 step4-generate）",
+                    outline_path)
+
+        # Step 3: 模板匹配
+        template_id = args.template_id
+        if not template_id:
+            templates = SceneAdapter("models").list_templates(category=scene)
+            if templates:
+                template_id = templates[0]["template_id"]
+                logger.info("[3/4] 自动选择模板: %s（共 %d 个可选）",
+                            template_id, len(templates))
+            else:
+                logger.error("场景 %s 无可用模板，无法生成", scene)
+                return 1
+        else:
+            logger.info("[3/4] 使用指定模板: %s", template_id)
+
+        # Step 4: 渲染
+        business_data = outline_to_business_data(outline)
+        biz_path = Path(args.output).with_suffix(".business.json")
+        biz_path.write_text(
+            json.dumps(business_data, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        # 动画主题：提取 outline 单页显式配置（优先级高于主题），主题默认由渲染引擎注入
+        anim_theme = args.animation_theme
+        t_cfg = args.transitions
+        a_cfg = args.animations
+        if anim_theme:
+            from aippt.animation_themes import get_theme, list_themes
+            if anim_theme not in list_themes():
+                logger.error("未知动画主题: %s（可用: %s）", anim_theme, list_themes())
+                return 1
+            logger.info("启用动画主题: %s", anim_theme)
+            t_dict, a_dict = _extract_outline_page_effects(outline)
+            # 单页显式配置以 dict 形式传入，覆盖主题默认值
+            if t_dict:
+                t_cfg = t_dict
+            if a_dict:
+                a_cfg = a_dict
+        generate_ppt(business_data, scene, template_id=template_id,
+                     output_path=args.output,
+                     transitions=t_cfg, animations=a_cfg,
+                     animation_theme=anim_theme)
+        elapsed = _time.time() - start_ts
+        logger.info("[4/4] 生成完成，耗时 %.1fs", elapsed)
+        logger.info("成品 PPT: %s", args.output)
+        logger.info("⚠️  auto-generate 生成的是骨架 PPT，建议用 step2-outline 填充真实内容后用 step4-generate 重渲染")
         return 0
 
     # ============ 四步工作流处理 ============
@@ -500,6 +722,41 @@ def main():
     elif args.cmd == "step4-generate":
         # Step 4: 生成 PPT
         outline = json.loads(Path(args.outline).read_text(encoding="utf-8"))
+
+        # === 渲染前终检（六层防御体系 Layer 3-5）===
+        from aippt.validators import validate_all
+        meta = None
+        if args.template_id:
+            try:
+                adapter = SceneAdapter("models")
+                meta, _ = adapter.get_template_meta(template_id=args.template_id)
+            except Exception:
+                pass
+
+        fixed_outline, pre_check = validate_all(outline, meta=meta, auto_fix=True)
+        if pre_check.fixed:
+            logger.info("渲染前自动修复 %d 项", len(pre_check.fixed))
+            for fix in pre_check.fixed:
+                logger.info("  ✓ %s", fix)
+            Path(args.outline).write_text(
+                json.dumps(fixed_outline, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+
+        if pre_check.errors:
+            logger.error("渲染前终检发现 %d 项错误，已拦截:", len(pre_check.errors))
+            for err in pre_check.errors:
+                logger.error("  [%s] %s: %s", err.code, err.path, err.message)
+                if err.suggestion:
+                    logger.error("    → %s", err.suggestion)
+            print(json.dumps(pre_check.to_dict(), ensure_ascii=False, indent=2))
+            return 1
+
+        if pre_check.warnings:
+            logger.warning("渲染前终检 %d 项警告（可继续渲染）:", len(pre_check.warnings))
+            for warn in pre_check.warnings:
+                logger.warning("  [%s] %s: %s", warn.code, warn.path, warn.message)
+
+        outline = fixed_outline  # 使用修复后的大纲
         business_data = outline_to_business_data(outline)
 
         # 保存 business_data 中间产物
@@ -509,9 +766,26 @@ def main():
         )
         logger.info("business_data 已保存: %s", biz_path)
 
+        # 动画主题：提取 outline 单页显式配置（优先级高于主题），主题默认由渲染引擎注入
+        anim_theme = args.animation_theme
+        t_cfg = args.transitions
+        a_cfg = args.animations
+        if anim_theme:
+            from aippt.animation_themes import list_themes
+            if anim_theme not in list_themes():
+                logger.error("未知动画主题: %s（可用: %s）", anim_theme, list_themes())
+                return 1
+            logger.info("启用动画主题: %s", anim_theme)
+            t_dict, a_dict = _extract_outline_page_effects(outline)
+            # 单页显式配置以 dict 形式传入，覆盖主题默认值
+            if t_dict:
+                t_cfg = t_dict
+            if a_dict:
+                a_cfg = a_dict
         generate_ppt(business_data, outline["scene"],
                      template_id=args.template_id, output_path=args.output,
-                     transitions=args.transitions, animations=args.animations)
+                     transitions=t_cfg, animations=a_cfg,
+                     animation_theme=anim_theme)
         if args.trim_pages:
             pages = [int(x.strip()) for x in args.trim_pages.split(",") if x.strip()]
             from trim_ppt import trim_slides

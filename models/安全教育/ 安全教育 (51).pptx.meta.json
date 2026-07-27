@@ -1,0 +1,794 @@
+{
+  "template_id": "安全教育__安全教育_(51)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 22,
+  "removable_pages": [
+    21,
+    22
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 6,
+      "name": "造成用电事故的原因"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 7,
+      "end_page": 10,
+      "name": "电流的相关知识"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 11,
+      "end_page": 14,
+      "name": "发生用电事故怎么办"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 15,
+      "end_page": 19,
+      "name": "防范措施"
+    },
+    {
+      "key": "end",
+      "page": 20,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "用电安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：某某某",
+        "shape_name": "矩形: 圆角 21",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "主",
+        "shape_name": "椭圆 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "题",
+        "shape_name": "椭圆 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "会",
+        "shape_name": "椭圆 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "班",
+        "shape_name": "椭圆 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目 录",
+        "shape_name": "矩形 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Contents",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "造成用电事故的原因",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "电流的相关知识",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "发生用电事故怎么办",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "防范措施",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 26"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 27"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "椭圆 28"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "椭圆 29"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "造成用电事故的原因",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "造成用电事故的原因",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "全世界",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "造成用电事故的原因",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "造成用电事故的原因",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "电击",
+        "shape_name": "矩形 1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "症状",
+        "shape_name": "矩形 3"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "电流的相关知识",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "电流的相关知识",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "电流的相关知识",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "电压的高低：越高越危险",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "电流的相关知识",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "电流的种类",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "发生用电事故怎么办",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "发生用电事故怎么办",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "触电急救",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "有资料表明",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "发生用电事故怎么办",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "任务",
+        "shape_name": "矩形 1"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "发生用电事故怎么办",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "严禁使用强心针",
+        "shape_name": "矩形 11"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 13"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 14"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "防范措施",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "防范措施",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 22"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 24"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 26"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "防范措施",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "防范措施",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "防范措施",
+        "shape_name": "文本框",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "接地和接零和避雷",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "对高层建筑采用避雷",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "谢谢大家",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：某某某",
+        "shape_name": "矩形: 圆角 21",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "主",
+        "shape_name": "椭圆 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "题",
+        "shape_name": "椭圆 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "会",
+        "shape_name": "椭圆 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "班",
+        "shape_name": "椭圆 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": true,
+      "has_picture": false,
+      "chart_type": null,
+      "picture_count": 0
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": true,
+      "has_picture": false,
+      "chart_type": null,
+      "picture_count": 0
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

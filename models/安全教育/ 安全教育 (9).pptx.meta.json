@@ -1,0 +1,1041 @@
+{
+  "template_id": "安全教育__安全教育_(9)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 27,
+  "removable_pages": [
+    26,
+    27
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 4,
+      "name": "说课公开课"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 5,
+      "end_page": 5,
+      "name": "们干活"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 6,
+      "end_page": 10,
+      "name": "说课公开课"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 11,
+      "end_page": 17,
+      "name": "说课公开课"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 18,
+      "end_page": 21,
+      "name": "说课公开课"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 22,
+      "end_page": 27,
+      "name": "说课公开课"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "安全教育",
+        "shape_name": "文本框 46",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "用",
+        "shape_name": "椭圆 51"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "电",
+        "shape_name": "椭圆 52"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：小唐峰",
+        "shape_name": "矩形: 圆角 59",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "period",
+        "match_text": "时间：202X.X.X",
+        "shape_name": "矩形: 圆角 60",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 3",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 3,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "电的简单认识",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 12",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 3,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "电的危害",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "椭圆 16",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 3,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "生活中安全用电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "椭圆 20",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 3,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "雷电防范于危害",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "椭圆 24",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 3,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "安全用电顺口溜",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "电的简单认识",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第一部分",
+        "shape_name": "矩形: 圆角 54",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "生活中看到的电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "什么是电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "电的危害",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第二部分",
+        "shape_name": "矩形: 圆角 1",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "电的危害",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "一、电气火灾",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "二、人身触电",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "电的危害",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "电器火灾安全扑救方式:",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "1、电器老化停止使用",
+        "shape_name": "TextBox 43",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 3,
+          "total_chars": 63
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "2、电器附件不可堆放可燃物",
+        "shape_name": "TextBox 44",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 3,
+          "total_chars": 60
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "电的危害",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "电器火灾安全扑救方式:",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 1,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 44"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "首先切断着火点电源；",
+        "shape_name": "Subtitle 2",
+        "capacity": {
+          "max_chars_per_line": 36,
+          "max_lines": 1,
+          "total_chars": 36
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "TextBox 42"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "TextBox 43"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "触电是什么概念",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "生活中安全用电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第三部分",
+        "shape_name": "矩形: 圆角 5",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "生活中安全用电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "破损插排不可使用",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "湿手、湿布有导电作用",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "生活中安全用电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "远离高压设备",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "生活中安全用电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "注意插座使用安全",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "生活中安全用电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "雷电天气注意安全",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "生活中安全用电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "生活中安全用电",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "雷电危害与防范",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第四部分",
+        "shape_name": "矩形: 圆角 1",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "雷电危害与防范",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关于雷电常识",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 17"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "雷电不能为人们所用",
+        "shape_name": "Rectangle 19",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 18"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 19"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "如何防范雷电对人伤害",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "椭圆 11",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "1",
+        "shape_name": "椭圆 15",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "如何防范雷电对人伤害",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "打雷时不打电话",
+        "shape_name": "Rectangle 24",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 1,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "椭圆 7",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "4",
+        "shape_name": "椭圆 12",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "安全用电顺口溜",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第五部分",
+        "shape_name": "矩形: 圆角 5",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "安全用电顺口溜",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "家庭安全用电常识",
+        "shape_name": "Text Box 8"
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "安全用电顺口溜",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "家庭安全用电常识",
+        "shape_name": "Text Box 8"
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "安全教育",
+        "shape_name": "文本框 46",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "用",
+        "shape_name": "椭圆 51"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "电",
+        "shape_name": "椭圆 52"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：小唐峰",
+        "shape_name": "矩形: 圆角 59",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "period",
+        "match_text": "时间：202X.X.X",
+        "shape_name": "矩形: 圆角 60",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 14
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 14
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 10
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 10
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 10
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 10
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 10
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 13
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

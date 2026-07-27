@@ -1,0 +1,1632 @@
+{
+  "template_id": "工作汇报_商务风_034",
+  "category": "工作汇报",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 25,
+  "removable_pages": [
+    24,
+    25
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 7,
+      "name": "第一部分"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 8,
+      "end_page": 13,
+      "name": "第二部分"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 14,
+      "end_page": 18,
+      "name": "第三部分"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 19,
+      "end_page": 25,
+      "name": "第四部分"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "乘风破浪，一马当先",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2026马年开门红启动会",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "唐峰商务办公系列PPT模板",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 1,
+          "total_chars": 39
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "01.开篇介绍",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "03.未来憧憬",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "02.业绩展示",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "04.希望未来",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "开篇介绍",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第一部分",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "开篇介绍",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "开篇",
+        "shape_name": "文本框 25"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 64",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题文本",
+        "shape_name": "文本框 65",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "标题文本",
+        "shape_name": "文本框 66",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "标题文本",
+        "shape_name": "文本框 67",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "标题文本",
+        "shape_name": "文本框 68",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "开篇介绍",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "开篇介绍",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题文本",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "标题文本",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "开篇介绍",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "开篇",
+        "shape_name": "文本框 17"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "业绩展示",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第二部分",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "业绩展示",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本",
+        "shape_name": "文本框 56",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 57",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题文本",
+        "shape_name": "文本框 58",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "标题文本",
+        "shape_name": "文本框 59",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "标题文本",
+        "shape_name": "文本框 60",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "业绩展示",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 11",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 24",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 29",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "椭圆 32",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "还可以设置合适的文字格式",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 1,
+          "total_chars": 29
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文字的颜色或者大小属性。",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 1,
+          "total_chars": 29
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "颜色还可以设置合适的文字格式",
+        "shape_name": "文本框 37",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 1,
+          "total_chars": 29
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "业绩展示",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "4",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "2",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题文本",
+        "shape_name": "文本框 44",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "3",
+        "shape_name": "文本框 47"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "标题文本",
+        "shape_name": "文本框 49",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "业绩展示",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 29",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 36",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "业绩展示",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题文本",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "业绩展示",
+        "shape_name": "矩形: 圆角 8",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 7,
+          "total_chars": 28
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "未来憧憬",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第三部分",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "未来憧憬",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "还可以设置合适的文字格式",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 3,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "标题文本",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "标题文本",
+        "shape_name": "文本框 33",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "还可以设置合适的文字格式",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 3,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "202x",
+        "shape_name": "矩形: 圆角 35",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "202x",
+        "shape_name": "矩形: 圆角 36",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_12",
+        "match_text": "202x",
+        "shape_name": "矩形: 圆角 37",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_13",
+        "match_text": "202x",
+        "shape_name": "矩形: 圆角 38",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "未来憧憬",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "未来",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "还可以设置合适的文字格式",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 3,
+          "total_chars": 54
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "标题文本",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "还可以设置合适的文字格式",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 3,
+          "total_chars": 54
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "未来憧憬",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "12+",
+        "shape_name": "椭圆 14",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 3,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "32+",
+        "shape_name": "椭圆 19",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 3,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "+64",
+        "shape_name": "椭圆 20",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 3,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "+44",
+        "shape_name": "椭圆 22",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 3,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "标题文本",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "标题文本",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "标题文本",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "标题文本",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "未来憧憬",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "标题文本",
+        "shape_name": "文本框 33",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "标题文本",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "希望未来",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第四部分",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "希望未来",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "点击这里，输入您的文本",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "调整文字文本的行间距。",
+        "shape_name": "文本框 46",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "还可以设置合适的文字",
+        "shape_name": "文本框 47",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "点击这里，输入您的文本",
+        "shape_name": "文本框 48",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "调整文字文本的行间距。",
+        "shape_name": "文本框 49",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "还可以设置合适的文字",
+        "shape_name": "文本框 50",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "希望未来",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "希望未来",
+        "shape_name": "矩形: 圆角 24",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "希望未来",
+        "shape_name": "矩形: 圆角 25",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "希望未来",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文本",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "标题文本",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "希望未来",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CATALOG",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 40,
+          "max_lines": 1,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 10"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 18"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 19"
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "乘风破浪，一马当先",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2026马年开门红启动会",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "唐峰商务办公系列PPT模板",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 1,
+          "total_chars": 39
+        }
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

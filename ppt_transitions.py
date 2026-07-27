@@ -1,9 +1,10 @@
 """
 PPT 转场效果注入模块
-功能：在 slide 的 XML 上写入 <p:transition> 子元素，支持 38 种转场效果
+功能：在 slide 的 XML 上写入 <p:transition> 子元素，支持 39 种转场效果
 依赖：lxml（python-pptx 自带依赖）
 
 参考：ECMA-376 第 4 版 + PowerPoint 2010+ 扩展（p14 命名空间）
+      PowerPoint 2015+ 扩展（p159 命名空间，Morph 平滑切换）
 """
 from lxml import etree
 
@@ -11,12 +12,14 @@ from lxml import etree
 # ==================== 命名空间常量 ====================
 NS_P = "http://schemas.openxmlformats.org/presentationml/2006/main"
 NS_P14 = "http://schemas.microsoft.com/office/powerpoint/2010/main"
+NS_P159 = "http://schemas.microsoft.com/office/powerpoint/2015/09/main"
 NS_MC = "http://schemas.openxmlformats.org/markup-compatibility/2006"
 NS_R = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 
 NSMAP_COMMON = {
     "p": NS_P,
     "p14": NS_P14,
+    "p159": NS_P159,
     "mc": NS_MC,
     "r": NS_R,
 }
@@ -313,6 +316,17 @@ TRANSITION_CATALOG = {
         "dir_values": [],
         "description": "反向轮辐（反向辐射展开）",
     },
+
+    # ---------- PowerPoint 2015+ 扩展（p159 命名空间）----------
+    "morph": {
+        "ns": "p159",
+        "xml_tag": "morph",
+        "attrs": {"option": "byObject"},
+        "dir_values": [],
+        # morph 选项：byObject（按对象）/ byWord（按文字）/ byChar（按字符）
+        "options": ["byObject", "byWord", "byChar"],
+        "description": "平滑（Morph 变形切换，按对象/文字/字符平滑过渡）",
+    },
 }
 
 
@@ -425,6 +439,31 @@ def _build_alternate_content(transition_elem, spec, speed_enum, duration_ms):
     return mc_ac
 
 
+def _build_morph_xml(slide_id, option="byObject"):
+    """
+    构建 Morph 平滑切换的 AlternateContent XML 字符串
+
+    Morph 属于 p159 命名空间（PowerPoint 2015+），需用 mc:AlternateContent 包裹：
+      - Choice：p159:morph（ Requires="p159" ）
+      - Fallback：p:fade 作为降级
+
+    :param slide_id: slide ID（保留参数，当前 XML 结构未直接使用，便于扩展）
+    :param option: morph 选项（byObject / byWord / byChar）
+    :return: AlternateContent XML 字符串
+    """
+    xml = (
+        f'<mc:AlternateContent xmlns:mc="{NS_MC}" xmlns:p="{NS_P}">'
+        f'<mc:Choice xmlns:p159="{NS_P159}" Requires="p159">'
+        f'<p159:morph option="{option}"/>'
+        f'</mc:Choice>'
+        f'<mc:Fallback>'
+        f'<p:fade/>'
+        f'</mc:Fallback>'
+        f'</mc:AlternateContent>'
+    )
+    return xml
+
+
 def inject_transition(slide, transition_spec):
     """
     为 slide 注入转场效果（直接修改 slide XML）
@@ -490,6 +529,26 @@ def inject_transition(slide, transition_spec):
             else:
                 sld_elem.remove(child)
 
+    # Morph 平滑切换：p159 命名空间，采用特殊的 AlternateContent 结构
+    # 不走通用 _build_transition_element 流程（该流程仅处理 p / p14）
+    if trans_type == "morph":
+        option = transition_spec.get(
+            "option", spec.get("attrs", {}).get("option", "byObject")
+        )
+        # 校验 option 合法性
+        valid_options = spec.get("options", ["byObject", "byWord", "byChar"])
+        if option not in valid_options:
+            print(f"⚠️  morph 不支持选项 {option}（支持: {valid_options}），使用 byObject")
+            option = "byObject"
+        morph_ac_xml = _build_morph_xml(getattr(slide, "slide_id", None), option)
+        morph_ac = etree.fromstring(morph_ac_xml)
+        # 包裹在 p:transition 中，spd 控制速度
+        p_transition = etree.Element(f"{{{NS_P}}}transition", nsmap={"p": NS_P})
+        p_transition.set("spd", speed_enum)
+        p_transition.append(morph_ac)
+        _insert_at_schema_position(sld_elem, p_transition, "transition")
+        return True
+
     # 构建新的 transition 元素
     transition_elem = _build_transition_element(spec_copy, speed_enum, duration_ms)
 
@@ -504,6 +563,10 @@ def inject_transition(slide, transition_spec):
         _insert_at_schema_position(sld_elem, transition_elem, "transition")
 
     return True
+
+
+# apply_transition 作为 inject_transition 的别名，保持调用接口兼容
+apply_transition = inject_transition
 
 
 def _insert_at_schema_position(sld_elem, new_elem, elem_local_name):

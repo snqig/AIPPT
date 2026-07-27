@@ -1,0 +1,1787 @@
+{
+  "template_id": "工作总结_商务风_037",
+  "category": "工作总结",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 25,
+  "removable_pages": [
+    24,
+    25
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 8,
+      "name": "述职报告"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 9,
+      "end_page": 13,
+      "name": "述职报告"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 14,
+      "end_page": 18,
+      "name": "述职报告"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 19,
+      "end_page": 23,
+      "name": "述职报告"
+    },
+    {
+      "key": "end",
+      "page": 24,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "period",
+        "match_text": "日期：202X",
+        "shape_name": "文本框 38",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：小唐峰",
+        "shape_name": "文本框 39",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "YOUR LOGO",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "新年工作计划",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "6",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "WORK SUMMARY",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "工作内容概述",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "重点工作进度",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "问题不足改进",
+        "shape_name": "文本框 33",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 38",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "工作内容概述",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "YOUR LOGO",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "部·门·工·作·总·结",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "在此添加标题",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "在此添加标题",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "在此添加标题",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "工作内容概述",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "标题文字",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "文字尽量言简意赅请在此处添加具体内容，文",
+        "shape_name": "文本框 50"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "标题文字",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "文字尽量言简意赅请在此处添加具体内容，文",
+        "shape_name": "文本框 54"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "标题文字",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "文字尽量言简意赅请在此处添加具体内容，文",
+        "shape_name": "文本框 57"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "标题文字",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "文字尽量言简意赅请在此处添加具体内容，文",
+        "shape_name": "文本框 60"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "工作内容概述",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "TextBox 59",
+        "capacity": {
+          "max_chars_per_line": 98,
+          "max_lines": 3,
+          "total_chars": 294
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "工作内容概述",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "percent",
+        "match_text": "80%",
+        "shape_name": "圆角矩形 13",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "关键词一",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键词四",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键词五",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键词二",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "关键词六",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "关键词三",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入你的正文，文字是您思想的提炼",
+        "shape_name": "文本框 103",
+        "capacity": {
+          "max_chars_per_line": 63,
+          "max_lines": 3,
+          "total_chars": 189
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "工作内容概述",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "Text Placeholder 3"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "Text Placeholder 3"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "Text Placeholder 3"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "Text Placeholder 3"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题 请在此处添加具体内容，文字尽量",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 5,
+          "total_chars": 75
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请在此处添加具体内容，文字尽量",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 5,
+          "total_chars": 75
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请在此处添加具体内容，文字尽量",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 5,
+          "total_chars": 75
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请在此处添加具体内容，文字尽量",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 5,
+          "total_chars": 75
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "工作内容概述",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "重点工作进度",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "YOUR LOGO",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "部·门·工·作·总·结",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "点击输入内容",
+        "shape_name": "TextBox 59",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入上述图表的综合描述说明，在此录入",
+        "shape_name": "矩形 32",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 2,
+          "total_chars": 62
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "点击输入内容",
+        "shape_name": "TextBox 59",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此录入上述图表的综合描述说明，在此录入",
+        "shape_name": "矩形 35",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 6,
+          "total_chars": 186
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "点击输入内容",
+        "shape_name": "TextBox 59",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此录入上述图表的综合描述说明，在此录入",
+        "shape_name": "矩形 38",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 4,
+          "total_chars": 192
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "点击输入内容",
+        "shape_name": "TextBox 59",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "在此录入上述图表的综合描述说明，在此录入",
+        "shape_name": "矩形 41",
+        "capacity": {
+          "max_chars_per_line": 35,
+          "max_lines": 5,
+          "total_chars": 175
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "点击输入内容",
+        "shape_name": "TextBox 59",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "在此录入上述图表的综合描述说明，在此录入",
+        "shape_name": "矩形 44",
+        "capacity": {
+          "max_chars_per_line": 42,
+          "max_lines": 5,
+          "total_chars": 210
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "重点工作进度",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "输入文本",
+        "shape_name": "îš1ïdé",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 1,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请输入您的文本内容，或者复制粘贴文字内容",
+        "shape_name": "ïSlíďê_1",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 4,
+          "total_chars": 192
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "文本",
+        "shape_name": "任意多边形: 形状 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "重点工作进度",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入你的正文，文字是您思想的提炼",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加小标题",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入你的正文，文字是您思想的提炼",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加小标题",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入你的正文，文字是您思想的提炼",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加小标题",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "单击此处输入你的正文，文字是您思想的提炼",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 42,
+          "max_lines": 6,
+          "total_chars": 252
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "重点工作进度",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "number",
+        "match_text": "20",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "59",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title",
+        "match_text": "$",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "$",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "43",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "96",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "$",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "$",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "输入标题",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "重点工作进度",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "问题不足改进",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "YOUR LOGO",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "部·门·工·作·总·结",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "此处输入标题 ADD THE TITLE",
+        "shape_name": "文本框 84",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "问题不足改进",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "关键词",
+        "shape_name": "文本框 64"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "关键词",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关键词",
+        "shape_name": "文本框 70"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "关键词",
+        "shape_name": "文本框 73"
+      },
+      {
+        "slot": "percent",
+        "match_text": "70%",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "percent_2",
+        "match_text": "45%",
+        "shape_name": "文本框 75"
+      },
+      {
+        "slot": "percent_3",
+        "match_text": "95%",
+        "shape_name": "文本框 76"
+      },
+      {
+        "slot": "percent_4",
+        "match_text": "60%",
+        "shape_name": "文本框 77"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "矩形 22",
+        "capacity": {
+          "max_chars_per_line": 45,
+          "max_lines": 11,
+          "total_chars": 495
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "请您在此处输入相关小标题",
+        "shape_name": "文本框 58",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 1,
+          "total_chars": 31
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "矩形 25",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "输入小标题",
+        "shape_name": "矩形 26",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "矩形 28",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "输入小标题",
+        "shape_name": "矩形 29",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "矩形 31",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_12",
+        "match_text": "输入小标题",
+        "shape_name": "矩形 32",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_13",
+        "match_text": "点击输入标题点击输入相关标题。点击输入标",
+        "shape_name": "矩形 34",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "输入小标题",
+        "shape_name": "矩形 35",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_15",
+        "match_text": "问题不足改进",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "若字数太多酌情删减文案",
+        "shape_name": "文本框 41",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 44"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "若字数太多酌情删减文案",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 48"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "若字数太多酌情删减文案",
+        "shape_name": "文本框 49",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "添加标题",
+        "shape_name": "文本框 52"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "若字数太多酌情删减文案",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "添加标题",
+        "shape_name": "文本框 56"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "若字数太多酌情删减文案",
+        "shape_name": "文本框 57",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "添加标题",
+        "shape_name": "文本框 60"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "若字数太多酌情删减文案",
+        "shape_name": "文本框 61",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_13",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "文本框 64"
+      },
+      {
+        "slot": "title_14",
+        "match_text": "添加标题",
+        "shape_name": "文本框 65"
+      },
+      {
+        "slot": "title_15",
+        "match_text": "问题不足改进",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "输入标题",
+        "shape_name": "TextBox 65"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入图表的描述说明，录入上述图表的描",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 4,
+          "total_chars": 76
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "输入标题",
+        "shape_name": "TextBox 65"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此录入图表的描述说明，录入上述图表的描",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 4,
+          "total_chars": 76
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "输入标题",
+        "shape_name": "TextBox 65"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此录入图表的描述说明，录入上述图表的描",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 4,
+          "total_chars": 76
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "输入标题",
+        "shape_name": "TextBox 65"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "在此录入图表的描述说明，录入上述图表的描",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 4,
+          "total_chars": 76
+        }
+      },
+      {
+        "slot": "desc_5",
+        "match_text": "在此录入上述图表的综合描述说明，在此录入",
+        "shape_name": "TextBox 107"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "请在此输入标题",
+        "shape_name": "矩形 22",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "问题不足改进",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "YOUR LOGO",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "部·门·工·作·总·结",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 2,
+          "total_chars": 58
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "MH_Text_1",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "矩形 40",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 2,
+          "total_chars": 58
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "MH_Text_1",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "矩形 60",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 2,
+          "total_chars": 58
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "MH_Text_1",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "矩形 75",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 2,
+          "total_chars": 58
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "添加标题",
+        "shape_name": "MH_Text_1",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "矩形 84",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 2,
+          "total_chars": 58
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "添加标题",
+        "shape_name": "MH_Text_1",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 12,
+          "total_chars": 324
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 6,
+          "total_chars": 96
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 6,
+          "total_chars": 96
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 6,
+          "total_chars": 96
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "此处添加标题",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加您的标题",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加您的标题",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "文本占位符 3"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "在这里输入你的正文阐述与关键词标题相关的",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加您的标题",
+        "shape_name": "文本框 31"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "下步工作计划",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "period",
+        "match_text": "日期：202X",
+        "shape_name": "文本框 38",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：小唐峰",
+        "shape_name": "文本框 39",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "YOUR LOGO",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "感谢观看倾听",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "6",
+        "shape_name": "PA-文本框 14"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "WORK SUMMARY",
+        "shape_name": "PA-文本框 14",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": false,
+      "chart_type": "LINE (4)",
+      "picture_count": 0
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": false,
+      "chart_type": "BAR_STACKED (58)",
+      "picture_count": 0
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "22": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": false,
+      "chart_type": "DOUGHNUT (-4120)",
+      "picture_count": 0
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

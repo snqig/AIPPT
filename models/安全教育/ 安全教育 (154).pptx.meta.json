@@ -1,0 +1,901 @@
+{
+  "template_id": "安全教育__安全教育_(154)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 32,
+  "removable_pages": [
+    31,
+    32
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 3,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 20,
+      "end_page": 22,
+      "name": "伤害多人的"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 23,
+      "end_page": 32,
+      "name": "者其他的人求救"
+    }
+  ],
+  "page_slots": {
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "前言",
+        "shape_name": "矩形 4"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "什么是校园欺凌（暴力）",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "校园欺凌（暴力）的原因",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "欺凌同学所付出的“代价”",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "学生应对校园欺凌（暴力）",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "预防和制止校园暴力事件的对策",
+        "shape_name": "MH_Entry_1",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 1,
+          "total_chars": 28
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "什么是校园欺凌（暴力）",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 4,
+          "total_chars": 120
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 20"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "校园欺凌的主要行为",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "1.身体伤痕",
+        "shape_name": "TextBox 10",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "3.性格改变",
+        "shape_name": "TextBox 22",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2.如厕习惯改变",
+        "shape_name": "TextBox 13",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "4.不愿上学",
+        "shape_name": "TextBox 19",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "老师和家长应注意",
+        "shape_name": "椭圆 43",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 5,
+          "total_chars": 55
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "矩形 20"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "校园暴力的诱因",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "二、为早恋引发纠纷;",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "三、为讲哥们义气，拉帮结派;",
+        "shape_name": "文本框 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "校园暴力调差",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "心理学家说",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "1.",
+        "shape_name": "TextBox 54"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2.",
+        "shape_name": "TextBox 56"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "3.",
+        "shape_name": "TextBox 58"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "从学生自身的角度来看",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "心理学家说",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "从学校的角度来看：",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 7"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "心理学家说",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "从家长的角度来看：",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "心理学家说",
+        "shape_name": "矩形 19",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "从社会的角度来看：",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "欺凌同学所付出的“代价”",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 2,
+          "total_chars": 42
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "矩形 20"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "欺凌同学所付出的“代价”",
+        "shape_name": "矩形 16"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "校园暴力学龄段分布",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 2,
+          "total_chars": 68
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "校园暴力年龄分布",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "欺凌同学所付出的“代价”",
+        "shape_name": "矩形 15"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "“",
+        "shape_name": "Subtitle 2",
+        "capacity": {
+          "max_chars_per_line": 2,
+          "max_lines": 3,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "”",
+        "shape_name": "Subtitle 2"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "6.25%",
+        "shape_name": "Subtitle 2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 2,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "2.86%",
+        "shape_name": "Subtitle 2",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 2,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "2.86%",
+        "shape_name": "Subtitle 2",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "6.25%",
+        "shape_name": "Subtitle 2",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "判刑情况",
+        "shape_name": "矩形 19",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "欺凌同学后的1个账单",
+        "shape_name": "矩形 19",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 3,
+          "total_chars": 33
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "法律代价",
+        "shape_name": "矩形 16"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "如何应对校园欺凌（暴力）",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 2,
+          "total_chars": 46
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "矩形 20"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "学生应对原则",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 2,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "依靠法律",
+        "shape_name": "TextBox 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "依靠老师",
+        "shape_name": "TextBox 9"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "依靠群众",
+        "shape_name": "TextBox 11"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "依靠智慧",
+        "shape_name": "TextBox 13"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "面对欺凌怎么办？",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "学生如何防范校园暴力",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2.振作精神，自强不息",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 3,
+          "total_chars": 63
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "暴力=家长",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "孩子遭遇暴力，家长如何做？",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 35,
+          "max_lines": 1,
+          "total_chars": 35
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "矩形 20"
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "建议和对策",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "谢 谢 观 看",
+        "shape_name": "Rectangle 13",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "10": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

@@ -1,0 +1,891 @@
+{
+  "template_id": "安全教育__安全教育_(85)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 26,
+  "removable_pages": [
+    25,
+    26
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "end",
+      "page": 24,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "汇报院校：XXXXXX",
+        "shape_name": "TextBox 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "宣讲人：XXX",
+        "shape_name": "TextBox 3"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关于儿童地震安全知识教育",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "1.   地震的危害",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2.   地震征兆",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "3.   如何预防地震",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "4.   如何自救",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "点击添加标题内容",
+        "shape_name": "TextBox 32",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "点击添加标题内容",
+        "shape_name": "TextBox 33",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "点击添加标题内容",
+        "shape_name": "TextBox 34",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "点击添加标题内容",
+        "shape_name": "TextBox 35",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "Contents",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "目   录",
+        "shape_name": "矩形 37",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "Part  1",
+        "shape_name": "TextBox 3",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震的危害",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "地震的成因 请输入简要描述",
+        "shape_name": "文本框 41",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 2,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "地震的危害 请输入简要描述",
+        "shape_name": "文本框 41",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "地震的成因",
+        "shape_name": "TextBox 24"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震成因",
+        "shape_name": "TextBox 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "地震的危害：关于城市",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "点击添加标题",
+        "shape_name": "矩形 21",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入图表的描述说明，在此录入图表的描",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 2,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "点击添加标题",
+        "shape_name": "矩形 23",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此录入图表的描述说明，在此录入图表的描",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 2,
+          "total_chars": 48
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "点击添加标题",
+        "shape_name": "矩形 25"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此录入图表的描述说明，在此录入图表的描",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 2,
+          "total_chars": 48
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "地震的危害2：关于山区",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入上述图表的综合描述说明，在此录入",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 101,
+          "max_lines": 4,
+          "total_chars": 404
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "地震的危害3：关于海上",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "在此录入上述图表的描述说明，在此录入上述",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 4,
+          "total_chars": 132
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在此录入上述图表的描述说明，在此录入上述",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 3,
+          "total_chars": 99
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此录入上述图表的描述说明，在此录入上述",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 4,
+          "total_chars": 136
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "地震的危害4：关于个人",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "253,120",
+        "shape_name": "Rectangle 4"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "253,120",
+        "shape_name": "Rectangle 8"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "60/90%",
+        "shape_name": "Rectangle 29",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "在这里输入您的文本内容，让听众更好的了解",
+        "shape_name": "Rectangle 30",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 5,
+          "total_chars": 85
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "Rectangle 34"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "45/70%",
+        "shape_name": "Rectangle 51",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "在这里输入您的文本内容，让听众更好的了解",
+        "shape_name": "Rectangle 52",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 5,
+          "total_chars": 85
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "Rectangle 56"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "在此录入上述图表的综合描述说明，在此录入",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 101,
+          "max_lines": 3,
+          "total_chars": 303
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "Part  2",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震征兆",
+        "shape_name": "矩形 9",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "通过物理现象 请输入简要描述",
+        "shape_name": "文本框 41",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 4,
+          "total_chars": 112
+        }
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "通过观察水位 请输入简要描述",
+        "shape_name": "文本框 41",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 4,
+          "total_chars": 116
+        }
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "通过观察动物异常 请输入简要描述",
+        "shape_name": "文本框 41",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 3,
+          "total_chars": 87
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "通过观察动物异常",
+        "shape_name": "TextBox 1"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "通过物理现象",
+        "shape_name": "TextBox 1"
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "TextBox 1"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "通过观察水位",
+        "shape_name": "TextBox 1"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "Part  3",
+        "shape_name": "TextBox 14",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何预防地震",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "请输入简要描述请输入简要描述请输入简要描",
+        "shape_name": "文本框 41",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 4,
+          "total_chars": 132
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "如何预防地震",
+        "shape_name": "TextBox 2"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "Part  4",
+        "shape_name": "TextBox 2",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何自救",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "地震自救 请输入简要描述请输入简要描述",
+        "shape_name": "文本框 41"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "地震逃生 请输入简要描述请输入简要描述",
+        "shape_name": "文本框 41"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "地震自救：室内外",
+        "shape_name": "TextBox 1"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "地震自救：山区",
+        "shape_name": "TextBox 1"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "地震逃生",
+        "shape_name": "TextBox 2"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "地震逃生",
+        "shape_name": "TextBox 3"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "地震逃生",
+        "shape_name": "TextBox 4"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "地震逃生",
+        "shape_name": "TextBox 3"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "地震逃生",
+        "shape_name": "TextBox 3"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "地震逃生",
+        "shape_name": "TextBox 2"
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "汇报院校：XXXXXX",
+        "shape_name": "TextBox 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "宣讲人：XXX",
+        "shape_name": "TextBox 3"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "感谢聆听，望对您有所帮助",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 26
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

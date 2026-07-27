@@ -1,0 +1,1553 @@
+{
+  "template_id": "安全教育__安全教育_(31)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 38,
+  "removable_pages": [
+    36,
+    37,
+    38
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 4,
+      "name": "中小学安全教育日"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 5,
+      "end_page": 6,
+      "name": "要点提示"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 7,
+      "end_page": 9,
+      "name": "校内及课间的安全"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 10,
+      "end_page": 17,
+      "name": "日常生活安全知识"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 18,
+      "end_page": 24,
+      "name": "如何应对自然灾害"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 25,
+      "end_page": 31,
+      "name": "社会治安教育知识"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 32,
+      "end_page": 38,
+      "name": "意外事故处理方法"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "-中小学安全教育日",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "安全童行",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "伴我成长",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "我们一起来狂欢",
+        "shape_name": "矩形: 圆角 33",
+        "capacity": {
+          "max_chars_per_line": 62,
+          "max_lines": 15,
+          "total_chars": 930
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "目录",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CONTNENTS",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 74,
+          "max_lines": 1,
+          "total_chars": 74
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形: 圆角 38"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "中小学安全教育日",
+        "shape_name": "文本框 39",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形: 圆角 41"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "校内及课间的安全",
+        "shape_name": "文本框 42",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形: 圆角 44"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形: 圆角 49"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "如何应对自然灾害",
+        "shape_name": "文本框 50",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "矩形: 圆角 52"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "社会治安教育知识",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_6",
+        "match_text": "06",
+        "shape_name": "矩形: 圆角 55"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "常见意外事故处理",
+        "shape_name": "文本框 56",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "PART 01",
+        "shape_name": "矩形: 圆角 17",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "中小学安全教育日",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "中小学安全教育日",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "节日简介",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 3,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "节日意义",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 3,
+          "total_chars": 9
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "中小学安全教育日",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "要点提示",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 2,
+          "total_chars": 48
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "食品安全",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "运动损伤",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "拐骗安全",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "交通事故",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "火灾火险",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "溺水",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "毒品危害",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "性侵犯",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "校园欺凌",
+        "shape_name": "TextBox 8",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "中小学安全教育日",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "PART 02",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "校内及课间的安全",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "校内及课间的安全",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "上下楼梯安全",
+        "shape_name": "矩形: 圆角 2",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "室内玩耍安全",
+        "shape_name": "矩形: 圆角 10",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "防滑倒防坠楼",
+        "shape_name": "矩形: 圆角 12",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "校内及课间的安全",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "在校上体育课时",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "PART 03",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "骑自行车摩托车",
+        "shape_name": "圆角矩形 51",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "乘车安全",
+        "shape_name": "圆角矩形 51",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "119",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "1",
+        "shape_name": "矩形 39"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "2",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "3",
+        "shape_name": "矩形 16"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "4",
+        "shape_name": "矩形 18"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防火安全",
+        "shape_name": "圆角矩形 51",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防触电安全",
+        "shape_name": "圆角矩形 51",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "饮食卫生安全",
+        "shape_name": "圆角矩形 51",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "养成良好的饮食习惯。",
+        "shape_name": "圆角矩形 5",
+        "capacity": {
+          "max_chars_per_line": 49,
+          "max_lines": 1,
+          "total_chars": 49
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "养成饭前便后洗手的好习惯。",
+        "shape_name": "圆角矩形 6",
+        "capacity": {
+          "max_chars_per_line": 49,
+          "max_lines": 1,
+          "total_chars": 49
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "生吃瓜果一定要洗净。",
+        "shape_name": "圆角矩形 19",
+        "capacity": {
+          "max_chars_per_line": 49,
+          "max_lines": 1,
+          "total_chars": 49
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "不要吃腐烂变质的食物。",
+        "shape_name": "圆角矩形 20",
+        "capacity": {
+          "max_chars_per_line": 49,
+          "max_lines": 1,
+          "total_chars": 49
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "不喝生水，生腌食品。",
+        "shape_name": "圆角矩形 31",
+        "capacity": {
+          "max_chars_per_line": 49,
+          "max_lines": 1,
+          "total_chars": 49
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "日常生活安全知识",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防溺水安全",
+        "shape_name": "圆角矩形 51",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "防溺水措施六不准",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 2,
+          "total_chars": 58
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "四不要",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 29,
+          "max_lines": 2,
+          "total_chars": 58
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "PART 04",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何应对自然灾害",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "如何应对自然灾害",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "突遇水灾时",
+        "shape_name": "矩形: 圆角 2",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 3,
+          "total_chars": 63
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "如何应对自然灾害",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "自备好粮食",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "心态很重要",
+        "shape_name": "矩形: 圆角 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "不与亲人分散",
+        "shape_name": "矩形: 圆角 5",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "如何应对自然灾害",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "突遇火灾时",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "如何应对自然灾害",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "暴风雨防范",
+        "shape_name": "矩形: 圆角 4",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "如何应对自然灾害",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 18"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "TextBox 28"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "TextBox 39"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "预防雷电袭击",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 6,
+          "total_chars": 36
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "如何应对自然灾害",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "保持冷静，切莫慌张",
+        "shape_name": "Rectangle 114"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "关闭电闸",
+        "shape_name": "Rectangle 114"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "躲在床下，桌子下",
+        "shape_name": "Rectangle 114"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "远离桥梁和大树",
+        "shape_name": "Rectangle 114"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "突发地震时",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "PART 05",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "社会治安教育知识",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "防炸骗防拐骗",
+        "shape_name": "矩形: 圆角 23",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 8,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 13"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 36"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 39"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "椭圆 46"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "社会治安教育知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "number",
+        "match_text": "5",
+        "shape_name": "椭圆 37"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "6",
+        "shape_name": "椭圆 39"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "7",
+        "shape_name": "椭圆 43"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "8",
+        "shape_name": "椭圆 46"
+      },
+      {
+        "slot": "title",
+        "match_text": "社会治安教育知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "社会治安教育知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "外出或在公共场所自我防范",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 41,
+          "max_lines": 1,
+          "total_chars": 41
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "社会治安教育知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "被歹徒盯上怎么办？",
+        "shape_name": "矩形: 圆角 4",
+        "capacity": {
+          "max_chars_per_line": 41,
+          "max_lines": 1,
+          "total_chars": 41
+        }
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "社会治安教育知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "学生宿舍的安全防范措施",
+        "shape_name": "矩形: 圆角 4",
+        "capacity": {
+          "max_chars_per_line": 41,
+          "max_lines": 1,
+          "total_chars": 41
+        }
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "校园欺凌",
+        "shape_name": "TextBox 18",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "网络诈骗",
+        "shape_name": "TextBox 18",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "社会治安教育知识",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "32": [
+      {
+        "slot": "title",
+        "match_text": "PART 06",
+        "shape_name": "矩形: 圆角 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "意外事故处理方法",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "意外事故处理方法",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "34": [
+      {
+        "slot": "title",
+        "match_text": "意外事故处理方法",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "溺水时的自救",
+        "shape_name": "TextBox 18",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "当发现有人溺水时",
+        "shape_name": "TextBox 18",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "发生溺水时怎么办？",
+        "shape_name": "矩形 17",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 2,
+          "total_chars": 20
+        }
+      }
+    ],
+    "35": [
+      {
+        "slot": "title",
+        "match_text": "意外事故处理方法",
+        "shape_name": "文本框 1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "停止进食：",
+        "shape_name": "TextBox 22",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "催吐",
+        "shape_name": "TextBox 22",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "大量饮水",
+        "shape_name": "TextBox 22",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "保留证据",
+        "shape_name": "TextBox 22",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "寻求帮助",
+        "shape_name": "TextBox 22",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "36": [
+      {
+        "slot": "title",
+        "match_text": "-中小学安全教育日",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "安全童行",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "伴我成长",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "37": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "33": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "34": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "35": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "36": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "37": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "38": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

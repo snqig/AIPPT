@@ -1,0 +1,1200 @@
+{
+  "template_id": "安全教育__安全教育_(147)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 35,
+  "removable_pages": [
+    34,
+    35
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 5,
+      "name": "什么是校园欺凌"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 9,
+      "name": "主要表现行为"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 10,
+      "end_page": 11,
+      "name": "校园欺凌的特点"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 12,
+      "end_page": 14,
+      "name": "危害及后果"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 15,
+      "end_page": 15,
+      "name": "需要承担的后果"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 16,
+      "end_page": 16,
+      "name": "校园欺凌需要承担的后"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 17,
+      "end_page": 17,
+      "name": "校园欺凌需要承担的后"
+    },
+    {
+      "key": "chapter_8",
+      "start_page": 18,
+      "end_page": 18,
+      "name": "校园欺凌需要承担的后"
+    },
+    {
+      "key": "chapter_9",
+      "start_page": 19,
+      "end_page": 20,
+      "name": "校园欺凌需要承担的后"
+    },
+    {
+      "key": "chapter_10",
+      "start_page": 21,
+      "end_page": 24,
+      "name": "如何正确应对校园欺凌"
+    },
+    {
+      "key": "chapter_11",
+      "start_page": 25,
+      "end_page": 25,
+      "name": "该校学生"
+    },
+    {
+      "key": "chapter_12",
+      "start_page": 26,
+      "end_page": 27,
+      "name": "中得到"
+    },
+    {
+      "key": "chapter_13",
+      "start_page": 28,
+      "end_page": 28,
+      "name": "采取最有效的救助措施"
+    },
+    {
+      "key": "chapter_14",
+      "start_page": 29,
+      "end_page": 29,
+      "name": "以便在需要的时候出示"
+    },
+    {
+      "key": "chapter_15",
+      "start_page": 30,
+      "end_page": 35,
+      "name": "如何正确远离校园欺凌"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "主题班会",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "杜绝校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "杜绝校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "共建和谐校园",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "共建和谐校园",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "七、如何让欺凌远离校园？",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "一、什么是校园欺凌",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "二、校园欺凌的主要表现行为",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "三、校园欺凌的特点",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "四、校园欺凌的危害及后果",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "五、校园欺凌需要承担的后果",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "六、如何正确应对校园欺凌？",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "PART",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "什么是校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "什么是校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "一、什么是校园欺凌？",
+        "shape_name": "Text Box 5"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "一、什么是校园欺凌？",
+        "shape_name": "Text Box 5"
+      }
+    ],
+    "6": [
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "PART",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "主要表现行为",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "主要表现行为",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "二、校园欺凌的主要表现行为",
+        "shape_name": "矩形 10"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "二、校园欺凌的主要表现行为",
+        "shape_name": "矩形 10"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "二、校园欺凌的主要表现行为",
+        "shape_name": "矩形 10"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "传",
+        "shape_name": "五边形 6"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "骂",
+        "shape_name": "五边形 7"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "打",
+        "shape_name": "五边形 8"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "毁",
+        "shape_name": "五边形 9"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "吓",
+        "shape_name": "五边形 10"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "辱骂，讽刺，贬低，中伤受害者",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "打架，斗殴",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "网上散播谣言，人身攻击",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "PART",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "校园欺凌的特点",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "校园欺凌的特点",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "32.5%的人偶尔被人欺负",
+        "shape_name": "矩形 44",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "三、校园欺凌的特点",
+        "shape_name": "矩形 10"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "低龄化",
+        "shape_name": "矩形: 圆角 22"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "群体性",
+        "shape_name": "矩形: 圆角 32"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "反复性",
+        "shape_name": "矩形: 圆角 33"
+      }
+    ],
+    "12": [
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "PART",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "危害及后果",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "危害及后果",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "四、校园欺凌的危害及后果",
+        "shape_name": "矩形 4"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "四、校园欺凌的危害及后果",
+        "shape_name": "矩形 4"
+      }
+    ],
+    "15": [
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "PART",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "需要承担的后果",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "需要承担的后果",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "五、校园欺凌需要承担的后果",
+        "shape_name": "矩形 3"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "五、校园欺凌需要承担的后果",
+        "shape_name": "矩形 2"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "五、校园欺凌需要承担的后果",
+        "shape_name": "矩形 2"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "五、校园欺凌需要承担的后果",
+        "shape_name": "矩形 2"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "五、校园欺凌需要承担的后果",
+        "shape_name": "矩形 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "已满14周岁不满18周岁",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "已满16周岁",
+        "shape_name": "矩形 14",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "已满14周岁不满16周岁",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "14周岁以下",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "应当从轻或是减轻处罚",
+        "shape_name": "矩形 17",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "应当负刑事责任",
+        "shape_name": "矩形 18",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "完全无刑事责任",
+        "shape_name": "矩形 20",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "number",
+        "match_text": "06",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "PART",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何正确应对校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "如何正确应对校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "六、如何正确应对校园欺凌",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "警钟长鸣",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "六、如何正确应对校园欺凌",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "警钟长鸣",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "六、如何正确应对校园欺凌",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "警钟长鸣",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "六、如何正确应对校园欺凌",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "警钟长鸣",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "六、如何正确应对校园欺凌",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "(1)安全第一，预防为主",
+        "shape_name": "Rectangle 4",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "六、如何正确应对校园欺凌",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "(2)应对暴力，临危不乱",
+        "shape_name": "Rectangle 4",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "六、如何正确应对校园欺凌",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "(3)及时报告，以法维权",
+        "shape_name": "Rectangle 4",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "六、如何正确应对校园欺凌",
+        "shape_name": "矩形 4"
+      }
+    ],
+    "30": [
+      {
+        "slot": "number",
+        "match_text": "07",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title",
+        "match_text": "PART",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何正确远离校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 2,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "如何正确远离校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 2,
+          "total_chars": 38
+        }
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "七、如何远离校园欺凌",
+        "shape_name": "矩形 4"
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "小苑实验小学主题班会",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "杜绝校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "杜绝校园欺凌",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "共建和谐校园",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "共建和谐校园",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "34": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 11
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "11": {
+      "has_chart": true,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": "DOUGHNUT (-4120)",
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "33": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "34": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "35": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

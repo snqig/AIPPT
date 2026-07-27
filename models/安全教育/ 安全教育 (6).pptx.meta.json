@@ -1,0 +1,622 @@
+{
+  "template_id": "安全教育__安全教育_(6)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 20,
+  "removable_pages": [
+    19,
+    20
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "end",
+      "page": 19,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "安全教育班会",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "演讲人：XXX",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "演讲时间：20XX.X.X",
+        "shape_name": "文本框 10"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "一、校园安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "二、交通安全",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "三、食品安全",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "四、用电消防安全",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "目录",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "校园安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "0 1",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "校园安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "中小学安全教育",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "校园安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "中小学安全教育",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "校园安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "0 2",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Traffic safety",
+        "shape_name": "矩形 7"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Traffic safety",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "交通安全",
+        "shape_name": "îŝļîďe",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "交通安全",
+        "shape_name": "íṡliḓe",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "交通安全",
+        "shape_name": "îŝļîďe",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "交通安全",
+        "shape_name": "íṡliḓe",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Traffic safety",
+        "shape_name": "矩形 7"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Traffic safety",
+        "shape_name": "矩形 7"
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Traffic safety",
+        "shape_name": "矩形 7"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "食品安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "0 3",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "食品安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Food safety",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "食物卫生安全要求",
+        "shape_name": "Text Box 3",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "食品安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Food safety",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "食物卫生安全要求",
+        "shape_name": "Text Box 3",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "用电消防安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "0 4",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "用电消防安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "拔电器插头的正确姿势",
+        "shape_name": "iṣlíďè"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "一手按住插座",
+        "shape_name": "iṡľíḋè"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "一手抓住电器插头拔出",
+        "shape_name": "iṩḻíḓè"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "避免干烧。",
+        "shape_name": "iṧlïḋe"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "饮水机及时换水",
+        "shape_name": "iş1íḍé"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "不要用手直接用力拉拽",
+        "shape_name": "işļîḋe"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "用电消防安全",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "感谢观看",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "演讲人：XXX",
+        "shape_name": "文本框 9"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "演讲时间：20XX.X.X",
+        "shape_name": "文本框 10"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 26
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 15
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 15
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 15
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 14
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 15
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 26
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

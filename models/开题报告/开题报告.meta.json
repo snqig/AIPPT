@@ -1,0 +1,886 @@
+{
+  "template_id": "开题报告_开题报告",
+  "category": "开题报告",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 24,
+  "removable_pages": [],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 7,
+      "name": "选题背景与意义"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 8,
+      "end_page": 12,
+      "name": "国内外研究现状"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 13,
+      "end_page": 18,
+      "name": "研究方法与思路"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 19,
+      "end_page": 24,
+      "name": "论文结论与总结"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "Opening Report",
+        "shape_name": "TextBox 36"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "简约风开题报告",
+        "shape_name": "_3"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "指导老师：第一PPT",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "专 业：XXX",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "姓 名：第一PPT",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "LOGO",
+        "shape_name": "图形"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "LOGO",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "六边形 25"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "目 录 /CONTENTS",
+        "shape_name": "文本框 58"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "六边形 25"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "六边形 25"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "六边形 25"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "PART 01",
+        "shape_name": "矩形: 圆角 31"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "选题背景与意义",
+        "shape_name": "文本框 84"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "LOGO",
+        "shape_name": "图形"
+      }
+    ],
+    "4": [
+      {
+        "slot": "desc",
+        "match_text": "单击此处添加合适的文字加以说明，可根据自",
+        "shape_name": "矩形 31"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "矩形 32"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处添加合适的文字加以说明，可根据自",
+        "shape_name": "矩形 34"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "矩形 35"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处添加合适的文字加以说明，可根据自",
+        "shape_name": "矩形 37"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "矩形 38"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "单击此处添加合适的文字加以说明，可根据自",
+        "shape_name": "矩形 40"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "矩形 41"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "选题背景与意义",
+        "shape_name": "文本框 1"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "01.",
+        "shape_name": "Rectangle 14"
+      },
+      {
+        "slot": "item_1",
+        "match_text": "请您单击此处添加合适文字加以说明",
+        "shape_name": "Rectangle 15"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "Rectangle 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "02.",
+        "shape_name": "Rectangle 23"
+      },
+      {
+        "slot": "item_2",
+        "match_text": "请您单击此处添加合适文字加以说明",
+        "shape_name": "Rectangle 24"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "Rectangle 25"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处输入文本内容加以解释说明，可",
+        "shape_name": "TextBox 22"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请您单击此处输入文本内容加以解释说明，可",
+        "shape_name": "TextBox 22"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "选题背景与意义",
+        "shape_name": "文本框 1"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处输入文本内容，可调",
+        "shape_name": "矩形 57"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处输入文本内容，可调",
+        "shape_name": "矩形 58"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处输入文本内容，可调",
+        "shape_name": "矩形 59"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请您单击此处输入文本内容，可调",
+        "shape_name": "矩形 60"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题 请您单击此处输入文本内容，可调",
+        "shape_name": "矩形 61"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题 请您单击此处输入文本内容，可调",
+        "shape_name": "矩形 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "选题背景与意义",
+        "shape_name": "文本框 1"
+      }
+    ],
+    "7": [
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处添加合适文字加以解释说明，可",
+        "shape_name": "矩形 47"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 76"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入文字内容加以解释说明，可根据",
+        "shape_name": "文本框 63"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 76"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入文字内容加以解释说明，可根据",
+        "shape_name": "文本框 59"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "选题背景与意义",
+        "shape_name": "文本框 30"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "PART 02",
+        "shape_name": "矩形: 圆角 31"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "国内外研究现状",
+        "shape_name": "文本框 84"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "LOGO",
+        "shape_name": "图形"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处添加合适文字加以说",
+        "shape_name": "文本框 22"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处添加合适文字加以说",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处添加合适文字加以说",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请您单击此处添加合适文字加以说",
+        "shape_name": "文本框 25"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "研究方法与思路",
+        "shape_name": "文本框 29"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "请在此处添加文本内容，与标题相关并符合整",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "请在此处添加文本内容，与标题相关并符合整",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加文本",
+        "shape_name": "文本框 19"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "请在此处添加文本内容，与标题相关并符合整",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "添加标题",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "请在此处添加文本内容，与标题相关并符合整",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "添加标题",
+        "shape_name": "文本框 42"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "请在此处添加文本内容，与标题相关并符合整",
+        "shape_name": "文本框 43"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "国内外研究现状",
+        "shape_name": "文本框 47"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "国内外研究现状",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "国内",
+        "shape_name": "椭圆 3"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处输入文字内容加以解",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "国外",
+        "shape_name": "椭圆 41"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题 请您单击此处输入文字内容加以解",
+        "shape_name": "Rectangle 33"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "VS",
+        "shape_name": "椭圆 53"
+      }
+    ],
+    "12": [
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "TextBox 70"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 71"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "TextBox 70"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 71"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "国内外研究现状",
+        "shape_name": "文本框 33"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "PART 03",
+        "shape_name": "矩形: 圆角 31"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "研究方法与思路",
+        "shape_name": "文本框 84"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "LOGO",
+        "shape_name": "图形"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处输入文字内容加以解",
+        "shape_name": "Rectangle 20"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处输入文字内容加以解",
+        "shape_name": "Rectangle 27"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处输入文字内容加以解",
+        "shape_name": "Rectangle 33"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "研究方法与思路",
+        "shape_name": "文本框 25"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "PA_库_UniqueSlides "
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处输入您的文本说明，可根据需要适当",
+        "shape_name": "PA_库_Create awesome and Unique presentation slides with these creative layouts It’s easy to change colors"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "PA_库_UniqueSlides "
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处输入您的文本说明，可根据需要适当",
+        "shape_name": "PA_库_Create awesome and Unique presentation slides with these creative layouts It’s easy to change colors"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "PA_库_UniqueSlides "
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处输入您的文本说明，可根据需要适当",
+        "shape_name": "PA_库_Create awesome and Unique presentation slides with these creative layouts It’s easy to change colors"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "PA_库_UniqueSlides "
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "单击此处输入您的文本说明，可根据需要适当",
+        "shape_name": "PA_库_Create awesome and Unique presentation slides with these creative layouts It’s easy to change colors"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "研究方法与思路",
+        "shape_name": "文本框 43"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 45"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 46"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处添加合适文字加以解释说明，可",
+        "shape_name": "PA-矩形 4"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请您单击此处添加合适文字加以解释说明，可",
+        "shape_name": "PA-矩形 4"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "PA-矩形 4"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "研究方法与思路",
+        "shape_name": "文本框 13"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 单击此处输入文本内容，可适当地",
+        "shape_name": "文本框 28"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 单击此处输入文本内容，可适当地",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 单击此处输入文本内容，可适当地",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "研究方法与思路",
+        "shape_name": "文本框 34"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "0 2",
+        "shape_name": "íśḷïďe"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "0 3",
+        "shape_name": "íṧ1îďè"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "0 1",
+        "shape_name": "ï$ḷiḓé"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处添加合适的文字，或复制粘贴您",
+        "shape_name": "文本框 23"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "文本框 24"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请您单击此处添加合适的文字，或复制粘贴您",
+        "shape_name": "文本框 26"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "文本框 27"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请您单击此处添加合适的文字，或复制粘贴您",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "添加标题",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "研究方法与思路",
+        "shape_name": "文本框 34"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "PART 04",
+        "shape_name": "矩形: 圆角 31"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "论文结论与总结",
+        "shape_name": "文本框 84"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "LOGO",
+        "shape_name": "图形"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 47"
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处添加合适的文字，可调整文字大小或",
+        "shape_name": "矩形 48"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 50"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处添加合适的文字，可调整文字大小或",
+        "shape_name": "矩形 51"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 53"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "单击此处添加合适的文字，可调整文字大小或",
+        "shape_name": "矩形 54"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "矩形: 圆角 56"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "单击此处添加合适的文字，可调整文字大小或",
+        "shape_name": "矩形 57"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "论文结论与总结",
+        "shape_name": "文本框 13"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "矩形 13"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处输入文本内容，可根",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "论文结论与总结",
+        "shape_name": "文本框 24"
+      }
+    ],
+    "22": [
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "Freeform 5"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "Freeform 6"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "04",
+        "shape_name": "Freeform 7"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "03",
+        "shape_name": "Freeform 8"
+      },
+      {
+        "slot": "title",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "文本框 15"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题 请您单击此处添加合适文字加以解",
+        "shape_name": "文本框 18"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "论文结论与总结",
+        "shape_name": "文本框 22"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "论文结论与总结",
+        "shape_name": "文本框 39"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "添加标题 请您单击此处添加合适文字加以说",
+        "shape_name": "矩形 35"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "TextBox 23"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 24"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 25"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "TextBox 28"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 29"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "TextBox 30"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请您单击此处输入文本内容，可根据需要适当",
+        "shape_name": "TextBox 32"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "添加标题",
+        "shape_name": "TextBox 33"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "TextBox 34"
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "LOGO",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "Opening Report",
+        "shape_name": "TextBox 36"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "简约风开题报告",
+        "shape_name": "_3"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "指导老师：第一PPT",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "专 业：XXX",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "姓 名：第一PPT",
+        "shape_name": "图形"
+      }
+    ]
+  }
+}

@@ -1,0 +1,614 @@
+{
+  "template_id": "安全教育__安全教育_(102)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 29,
+  "removable_pages": [
+    28,
+    29
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "end",
+      "page": 27,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "卡通",
+        "shape_name": "矩形 24"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "消防",
+        "shape_name": "矩形 26"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "知识",
+        "shape_name": "矩形 27"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "火",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "灾",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "故",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "事",
+        "shape_name": "文本框 13"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "案",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "例",
+        "shape_name": "文本框 16"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "火灾后的惨状",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "校",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "园",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "防",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "火",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "常",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "识",
+        "shape_name": "文本框 20"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "疏散指示标志",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "教室的火灾隐患和消防须知",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "教室失火的逃生和自救",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "校",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "园",
+        "shape_name": "文本框 8"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "防",
+        "shape_name": "文本框 11"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "火",
+        "shape_name": "文本框 14"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "常",
+        "shape_name": "文本框 17"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "识",
+        "shape_name": "文本框 20"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "毛巾妙用  过滤烟素",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "保持冷静  寻路逃生",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "明辨方向  逃离火场",
+        "shape_name": "矩形 9",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "烟雾场所  匍匐前进",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "结绳自救  脱离险境",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "堵塞门户  固守救生",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "身居高楼  沿梯下跑",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "借助器材 火“口”脱险",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "走投无路  厕所避难",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "休斯跳楼  软物救命",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "既已逃生  勿念财物",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "敲盆晃物  寻求救援",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "通道畅通   速离险境",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "谢谢",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "你的",
+        "shape_name": "矩形 5"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "观看",
+        "shape_name": "矩形 6"
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

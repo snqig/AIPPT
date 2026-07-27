@@ -1,0 +1,2079 @@
+{
+  "template_id": "安全教育__安全教育_(58)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 62,
+  "removable_pages": [
+    61,
+    62
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 2,
+      "end_page": 2,
+      "name": "抗震救灾"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 3,
+      "end_page": 11,
+      "name": "地震相关知识"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 12,
+      "end_page": 18,
+      "name": "介绍著名地震"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 19,
+      "end_page": 26,
+      "name": "爱心与灾区重建"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 27,
+      "end_page": 34,
+      "name": "逃生法则及自救常识"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 35,
+      "end_page": 47,
+      "name": "地震正确逃生方法"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 48,
+      "end_page": 48,
+      "name": "地震时应急防震工作"
+    },
+    {
+      "key": "chapter_8",
+      "start_page": 49,
+      "end_page": 53,
+      "name": "中占第三位"
+    },
+    {
+      "key": "chapter_9",
+      "start_page": 54,
+      "end_page": 62,
+      "name": "家庭防震准备"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "抗 震 救 灾",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "抗 震 救 灾",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "主题班会",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "主题班会",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "主要内容",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城  抗震救灾",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第一部分",
+        "shape_name": "Rectangle 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "地震相关知识",
+        "shape_name": "WordArt 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "什么是地震？",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "地震成因",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "地震类型",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "地震前兆",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "众志成城  抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 62,
+          "max_lines": 3,
+          "total_chars": 186
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震震级及烈度",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "众志成城  抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 62,
+          "max_lines": 3,
+          "total_chars": 186
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震现象",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "地震震波",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "众志成城  抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 62,
+          "max_lines": 3,
+          "total_chars": 186
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震感人事迹",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "无私的超市老板娘：胡国香",
+        "shape_name": "矩形 23",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第二部分",
+        "shape_name": "Rectangle 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "介绍著名地震",
+        "shape_name": "WordArt 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "5.12汶川大地震",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "伤亡人数",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "震后灾区惨状",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 5,
+          "total_chars": 15
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "感人瞬间",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "420雅安大地震",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "伤亡人数",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "震后灾区惨状",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 5,
+          "total_chars": 15
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "震后雅安",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第三部分",
+        "shape_name": "Rectangle 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "爱心与灾区重建",
+        "shape_name": "WordArt 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "温总理在灾区",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "我们在一起",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "我们在一起",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "灾区工作指导",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "爱心传递",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "我们在一起",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "爱心传递",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "我们在一起",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "灾区重建",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "我们在一起",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "资源捐助",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "我们在一起",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "灾区祈福",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "我们在一起",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第四部分",
+        "shape_name": "Rectangle 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "逃生法则及自救常识",
+        "shape_name": "WordArt 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "逃生十大法则",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "逃生十大法则",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "逃生十大法则",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "逃生十大法则",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "32": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "逃生十大法则",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "自救四大常识",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "1.大地震时不要急",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2.人多先找藏身处",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 1,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "34": [
+      {
+        "slot": "title",
+        "match_text": "3.远离危险区",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "4.被埋要保存体力",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 1,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "自救四大常识",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "35": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第五部分",
+        "shape_name": "Rectangle 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "地震正确逃生方法",
+        "shape_name": "WordArt 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "36": [
+      {
+        "slot": "title",
+        "match_text": "在学校",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "1、在教室",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "37": [
+      {
+        "slot": "title",
+        "match_text": "在学校",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2、在操场、室外",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "38": [
+      {
+        "slot": "title",
+        "match_text": "在学校",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "39": [
+      {
+        "slot": "title",
+        "match_text": "在家中",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "40": [
+      {
+        "slot": "title",
+        "match_text": "在街上",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "41": [
+      {
+        "slot": "title",
+        "match_text": "在公共场所",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "42": [
+      {
+        "slot": "title",
+        "match_text": "在电梯中",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "43": [
+      {
+        "slot": "title",
+        "match_text": "在车内",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "44": [
+      {
+        "slot": "title",
+        "match_text": "在车库、停车场",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "45": [
+      {
+        "slot": "title",
+        "match_text": "在开阔地",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "46": [
+      {
+        "slot": "title",
+        "match_text": "在野外",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "47": [
+      {
+        "slot": "title",
+        "match_text": "特殊危险",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "48": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第六部分",
+        "shape_name": "Rectangle 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "地震时应急防震工作",
+        "shape_name": "WordArt 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "49": [
+      {
+        "slot": "title",
+        "match_text": "室内应急防震行动",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "50": [
+      {
+        "slot": "title",
+        "match_text": "室外人员的应急防震行动",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "51": [
+      {
+        "slot": "title",
+        "match_text": "学校的应急防震行动",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "52": [
+      {
+        "slot": "title",
+        "match_text": "自救常识",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "53": [
+      {
+        "slot": "title",
+        "match_text": "互救常识",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "54": [
+      {
+        "slot": "title",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第七部分",
+        "shape_name": "Rectangle 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "家庭防震准备",
+        "shape_name": "WordArt 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "55": [
+      {
+        "slot": "title",
+        "match_text": "合理放置家具、物品",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "56": [
+      {
+        "slot": "title",
+        "match_text": "合理放置家具、物品",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "57": [
+      {
+        "slot": "title",
+        "match_text": "合理放置家具、物品",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "58": [
+      {
+        "slot": "title",
+        "match_text": "准备好必要的防震物品",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "59": [
+      {
+        "slot": "title",
+        "match_text": "地震时关火的三次机会",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "众志成城 抗震救灾",
+        "shape_name": "Rectangle 2",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      }
+    ],
+    "60": [
+      {
+        "slot": "title",
+        "match_text": "谢 谢 观 看",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "谢 谢 观 看",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "主题班会",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "主题班会",
+        "shape_name": "矩形 15",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "61": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "33": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "34": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "35": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "36": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "37": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "38": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "39": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "40": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "41": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "42": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "43": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "44": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "45": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "46": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "47": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "48": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "49": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "50": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "51": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "52": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "53": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "54": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "55": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "56": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "57": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "58": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "59": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "60": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "61": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "62": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}
