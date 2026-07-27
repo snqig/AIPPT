@@ -202,6 +202,25 @@ SCENE_SCHEMAS = {
         "end_fields": {
             "thanks": "结束致谢语"
         }
+    },
+    "安全教育": {
+        "name": "安全教育场景",
+        "cover_fields": {
+            "title": "安全教育标题",
+            "subtitle": "副标题",
+            "reporter": "主讲人",
+            "period": "培训日期"
+        },
+        "chapter_sections": [
+            {"key": "overview", "name": "安全概述", "desc": "安全意义与目标"},
+            {"key": "hazards", "name": "危险源识别", "desc": "风险辨识与分类"},
+            {"key": "measures", "name": "安全措施", "desc": "防护与管控措施"},
+            {"key": "training", "name": "安全培训", "desc": "培训内容与要求"},
+            {"key": "emergency", "name": "应急预案", "desc": "应急响应与处置"}
+        ],
+        "end_fields": {
+            "thanks": "结束致谢语"
+        }
     }
 }
 
@@ -496,15 +515,19 @@ class SceneAdapter:
                 slot_data.setdefault(catalog_page, {})[slot_name] = chapter_sections[title_idx]["name"]
                 title_idx += 1
 
-    def _detect_page_pattern(self, page_slot_list, page_meta=None):
+    def _detect_page_pattern(self, page_slot_list, page_meta=None, page_idx=0):
         """
         识别页面槽位模式
-        返回: 'divider' | 'numbered_list' | 'timeline' | 'preset_titles' | 'skill_percent'
-              | 'kpi' | 'two_column' | 'chart' | 'table' | 'content'
+        返回: 'cover' | 'divider' | 'numbered_list' | 'timeline' | 'preset_titles'
+              | 'skill_percent' | 'kpi' | 'two_column' | 'chart' | 'table' | 'content'
 
         :param page_slot_list: 该页槽位列表
         :param page_meta: 可选，meta 中的 page_meta[page_num]，含 has_chart/has_table 等标志
+        :param page_idx: 该页 0 基页码，默认 0；首页强制识别为 cover（向后兼容）
         """
+        # 首页强制识别为封面
+        if page_idx == 0:
+            return "cover"
         # 优先识别复合页面：含 chart/table 形状的页面
         if page_meta:
             if page_meta.get("has_chart"):
@@ -626,7 +649,7 @@ class SceneAdapter:
             if page_str in slot_data:
                 continue
 
-            pattern = self._detect_page_pattern(page_slot_list, page_meta.get(page_str))
+            pattern = self._detect_page_pattern(page_slot_list, page_meta.get(page_str), page_idx=page_num - 1)
             page_input = {}
 
             if pattern == "divider":
@@ -674,7 +697,7 @@ class SceneAdapter:
                 if not page_slot_list:
                     continue
 
-                pattern = self._detect_page_pattern(page_slot_list, page_meta.get(page_str))
+                pattern = self._detect_page_pattern(page_slot_list, page_meta.get(page_str), page_idx=page_num - 1)
                 page_input = {}
 
                 if pattern == "divider":

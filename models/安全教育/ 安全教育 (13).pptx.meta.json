@@ -1,0 +1,1719 @@
+{
+  "template_id": "安全教育__安全教育_(13)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 25,
+  "removable_pages": [
+    24,
+    25
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 3,
+      "name": "文明"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 4,
+      "end_page": 4,
+      "name": "消防安全"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 5,
+      "end_page": 5,
+      "name": "消防安全"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 6,
+      "end_page": 6,
+      "name": "消防安全"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 7,
+      "end_page": 7,
+      "name": "消防安全"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 8,
+      "end_page": 8,
+      "name": "文明"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 9,
+      "end_page": 9,
+      "name": "交通安全"
+    },
+    {
+      "key": "chapter_8",
+      "start_page": 10,
+      "end_page": 10,
+      "name": "互相追逐或曲折竞驶"
+    },
+    {
+      "key": "chapter_9",
+      "start_page": 11,
+      "end_page": 11,
+      "name": "交通安全"
+    },
+    {
+      "key": "chapter_10",
+      "start_page": 12,
+      "end_page": 12,
+      "name": "文本标题"
+    },
+    {
+      "key": "chapter_11",
+      "start_page": 13,
+      "end_page": 13,
+      "name": "文明"
+    },
+    {
+      "key": "chapter_12",
+      "start_page": 14,
+      "end_page": 14,
+      "name": "爆物品及杂物"
+    },
+    {
+      "key": "chapter_13",
+      "start_page": 15,
+      "end_page": 15,
+      "name": "触电急救"
+    },
+    {
+      "key": "chapter_14",
+      "start_page": 16,
+      "end_page": 16,
+      "name": "用电安全"
+    },
+    {
+      "key": "chapter_15",
+      "start_page": 17,
+      "end_page": 17,
+      "name": "采用口对口人工呼吸抢"
+    },
+    {
+      "key": "chapter_16",
+      "start_page": 18,
+      "end_page": 18,
+      "name": "文明"
+    },
+    {
+      "key": "chapter_17",
+      "start_page": 19,
+      "end_page": 19,
+      "name": "是否有暗礁"
+    },
+    {
+      "key": "chapter_18",
+      "start_page": 20,
+      "end_page": 20,
+      "name": "防御溺水"
+    },
+    {
+      "key": "chapter_19",
+      "start_page": 21,
+      "end_page": 21,
+      "name": "池塘"
+    },
+    {
+      "key": "chapter_20",
+      "start_page": 22,
+      "end_page": 22,
+      "name": "救者"
+    },
+    {
+      "key": "end",
+      "page": 23,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "安全教育日",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "全国中小学生",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "做自己的的首席安全官",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "授课人：",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "period",
+        "match_text": "授课日期：202X",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "安全",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "和谐",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "文明",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "Education",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "CONTENTS",
+        "shape_name": "TextBox 29",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "0 1",
+        "shape_name": "išľîḍê"
+      },
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入具体内容，文字尽量言简意赅，",
+        "shape_name": "iṧliḑe",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 4,
+          "total_chars": 84
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "消防安全",
+        "shape_name": "ïšľíḍé",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "0 2",
+        "shape_name": "ïśļîḋé"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "请在此处输入具体内容，文字尽量言简意赅，",
+        "shape_name": "iśļîďè",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 6,
+          "total_chars": 126
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "交通安全",
+        "shape_name": "iṧḷîḍe",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "0 3",
+        "shape_name": "ïśľiḑè"
+      },
+      {
+        "slot": "desc_3",
+        "match_text": "请在此处输入具体内容，文字尽量言简意赅，",
+        "shape_name": "íšḷíḓe",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 8,
+          "total_chars": 168
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "用电安全",
+        "shape_name": "iṡľíďè",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "0 4",
+        "shape_name": "ïšḻîḑê"
+      },
+      {
+        "slot": "desc_4",
+        "match_text": "请在此处输入具体内容，文字尽量言简意赅，",
+        "shape_name": "íṧḷiďe",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 11,
+          "total_chars": 231
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "预防溺水",
+        "shape_name": "íSḷiḋê",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "目 录",
+        "shape_name": "TextBox 29",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "消防安全",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 01",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "安全",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "和谐",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文明",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "不乱动、不损坏公共消防器材。",
+        "shape_name": "Textfeld 50",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 2,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "消防安全",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "PART 01",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "0 1",
+        "shape_name": "í$liḓè"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "0 2",
+        "shape_name": "íṡļîḍé"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "0 3",
+        "shape_name": "îSḻîḋè"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "0 4",
+        "shape_name": "íṥḷidé"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "消防安全",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 01",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "火灾逃生",
+        "shape_name": "文本框 8",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "火灾逃生",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "火灾逃生",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "火灾逃生",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "消防安全",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "PART 01",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 9"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 18"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形 22"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "火灾逃生",
+        "shape_name": "Textfeld 65",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "火灾逃生",
+        "shape_name": "Textfeld 65",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "消防安全",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PART 01",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 02",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "安全",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "和谐",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文明",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 02",
+        "shape_name": "文本框 14",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "文本框 35",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 02",
+        "shape_name": "文本框 33",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "SAFETY",
+        "shape_name": "îšlíḍé"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "SAFETY",
+        "shape_name": "isļíďe"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文本标题",
+        "shape_name": "íṧļîḓê"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "文本标题",
+        "shape_name": "iṣḻiḑé"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "SAFETY",
+        "shape_name": "iṩļïḓê"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "SAFETY",
+        "shape_name": "ïsľíḋè"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "文本标题",
+        "shape_name": "iṩļîḋe"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "文本标题",
+        "shape_name": "îS1îde"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 02",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 02",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "不准撑伞骑车，不准骑车带人。",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "文本标题",
+        "shape_name": "ïṥḻíḍè"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文本标题",
+        "shape_name": "ïṥḻíḍè"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "文本标题",
+        "shape_name": "ïṥḻíḍè"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "不准在道路上学骑车。",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "文本标题",
+        "shape_name": "ïṥḻíḍè"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "用电安全",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 03",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "安全",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "和谐",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文明",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "用电安全",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 03",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "用电安全",
+        "shape_name": "íšľïḋe",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "安全防御",
+        "shape_name": "íŝḻíḍè"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "安全防御",
+        "shape_name": "iŝḻïḓé"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "安全防御",
+        "shape_name": "ïṥḻíḍè"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "安全防御",
+        "shape_name": "ïsḷiḍe"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "用电安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 03",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "触电急救",
+        "shape_name": "ïšļïḓé",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "触电急救",
+        "shape_name": "í$ļîḑê",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "触电急救",
+        "shape_name": "îṩlíḋê",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "打电话 120 呼叫救护车",
+        "shape_name": "îS1íďe",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 2,
+          "total_chars": 38
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "触电急救",
+        "shape_name": "ïslíḍe",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "切勿用手触及带电者",
+        "shape_name": "ïşliḑè",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 2,
+          "total_chars": 38
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "触电急救",
+        "shape_name": "iṥľiďe",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "title",
+        "match_text": "坚持“安全第一，预防为主”",
+        "shape_name": "矩形 24",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 1,
+          "total_chars": 37
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形 9"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "保持绝缘，部位干燥",
+        "shape_name": "矩形 25",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 1,
+          "total_chars": 37
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形 8"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "用电安全",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "PART 03",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "用电安全",
+        "shape_name": "文本框 44",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 03",
+        "shape_name": "文本框 42",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "现场抢救",
+        "shape_name": "íṣliďé"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "现场抢救",
+        "shape_name": "islïḑé"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "现场抢救",
+        "shape_name": "ïṧlïḍê"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "现场抢救",
+        "shape_name": "î$ľíḍê"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "防御溺水",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 04",
+        "shape_name": "文本框 4",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "安全",
+        "shape_name": "文本框 9",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "和谐",
+        "shape_name": "文本框 10",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文明",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "防御溺水",
+        "shape_name": "文本框 29",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 04",
+        "shape_name": "文本框 27",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "预防溺水",
+        "shape_name": "îšľíďê"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "选择安全正规的游泳池。",
+        "shape_name": "iṩlîḋe",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 2,
+          "total_chars": 74
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "预防溺水",
+        "shape_name": "işļîďe"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "成人陪同，以防溺水。",
+        "shape_name": "íṩlíḋè",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 2,
+          "total_chars": 74
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "预防溺水",
+        "shape_name": "îšḻîḓe"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "预防溺水",
+        "shape_name": "iṡļïďè"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "iṩlîḋe"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "iṩlîḋe"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "iṩlîḋe"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "iṩlîḋe"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "防御溺水",
+        "shape_name": "文本框 80",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 04",
+        "shape_name": "文本框 78",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "防御溺水",
+        "shape_name": "文本框 25",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 04",
+        "shape_name": "文本框 23",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "SAFETY",
+        "shape_name": "ïṡḷîďé",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "远离野外危险水域",
+        "shape_name": "iṩ1ïḓê",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "水库",
+        "shape_name": "îślíḍê",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "SAFETY",
+        "shape_name": "ïṡḷîďé",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "容易发生冲走",
+        "shape_name": "iṩ1ïḓê",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "小溪",
+        "shape_name": "îślíḍê",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "SAFETY",
+        "shape_name": "ïṡḷîďé",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "水流深浅缓急不稳定",
+        "shape_name": "iṩ1ïḓê",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "河流",
+        "shape_name": "îślíḍê",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_12",
+        "match_text": "SAFETY",
+        "shape_name": "ïṡḷîďé",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_13",
+        "match_text": "发生滑倒等溺水事件",
+        "shape_name": "iṩ1ïḓê",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_14",
+        "match_text": "池塘",
+        "shape_name": "îślíḍê",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "防御溺水",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 04",
+        "shape_name": "文本框 17",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文本标题",
+        "shape_name": "iśľiďê"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "文本标题",
+        "shape_name": "íṣľiďe"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文本标题",
+        "shape_name": "ïšḻïde"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "文本标题",
+        "shape_name": "íṣlíḑe"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "不能挣扎或牢牢抱着施救者。",
+        "shape_name": "ïṧľídè",
+        "capacity": {
+          "max_chars_per_line": 33,
+          "max_lines": 2,
+          "total_chars": 66
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "安全教育日",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "感谢您的观看",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "做自己的的首席安全官",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "授课人：小",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "period",
+        "match_text": "授课日期：202X",
+        "shape_name": "文本框 18",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "安全",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "和谐",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "文明",
+        "shape_name": "文本框 22",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "Education",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "单击此处编辑母版标题样式",
+        "shape_name": "标题 1"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "单击此处编辑母版文本样式",
+        "shape_name": "文本占位符 2"
+      },
+      {
+        "slot": "desc",
+        "match_text": "单击此处编辑母版文本样式 二级 三级 四",
+        "shape_name": "内容占位符 3"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "单击此处编辑母版文本样式",
+        "shape_name": "文本占位符 4"
+      },
+      {
+        "slot": "desc_2",
+        "match_text": "单击此处编辑母版文本样式 二级 三级 四",
+        "shape_name": "内容占位符 5"
+      },
+      {
+        "slot": "number",
+        "match_text": "24",
+        "shape_name": "灯片编号占位符 8"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

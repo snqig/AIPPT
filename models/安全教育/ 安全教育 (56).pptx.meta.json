@@ -1,0 +1,1250 @@
+{
+  "template_id": "安全教育__安全教育_(56)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 38,
+  "removable_pages": [
+    37,
+    38
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 5,
+      "name": "第一章"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 12,
+      "name": "第二章"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 13,
+      "end_page": 20,
+      "name": "第三章"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 21,
+      "end_page": 25,
+      "name": "第四章"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 26,
+      "end_page": 29,
+      "name": "第五章"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 30,
+      "end_page": 35,
+      "name": "第六章"
+    },
+    {
+      "key": "end",
+      "page": 36,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "行动起来，减轻身边的灾害风险",
+        "shape_name": "TextBox 32",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防灾减灾日",
+        "shape_name": "TextBox 32",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "主讲人：XXX",
+        "shape_name": "圆角矩形 11",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "什么是防灾减灾日",
+        "shape_name": "Rectangle 6",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第一章",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "地震篇",
+        "shape_name": "Rectangle 6",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "第二章",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "消防篇",
+        "shape_name": "Rectangle 6",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "第三章",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "防雷篇",
+        "shape_name": "Rectangle 6",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "第四章",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "防台风、洪水篇",
+        "shape_name": "Rectangle 6",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "第五章",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_11",
+        "match_text": "第六章",
+        "shape_name": "文本框 45",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_12",
+        "match_text": "防沙尘暴、泥石流篇",
+        "shape_name": "Rectangle 6",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "什么是防灾减灾日",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第一章",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "什么是防灾减灾日",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "什么是防灾减灾日",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 25"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 26"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防灾减灾日设立的意义",
+        "shape_name": "TextBox 25",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 2,
+          "total_chars": 18
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "地  震  篇",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第二章",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "地震知识",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "地震篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "什么是地震活命三角区",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "地震篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震时该怎么做",
+        "shape_name": "矩形 24",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "地震篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "地震篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "地震篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "消  防  篇",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第三章",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "消防篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "发生火灾时该怎么做",
+        "shape_name": "矩形 27",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "消防篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "消防篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "消防篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "干粉式灭火器",
+        "shape_name": "TextBox 11",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "泡沫式灭火器",
+        "shape_name": "TextBox 11",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "二氧化碳灭火器",
+        "shape_name": "TextBox 11",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "灭火器的种  类",
+        "shape_name": "文本框 5"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "灭火器的使用方法",
+        "shape_name": "矩形 40",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "消防篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "4.灭火后防止复燃",
+        "shape_name": "文本框 16",
+        "capacity": {
+          "max_chars_per_line": 59,
+          "max_lines": 1,
+          "total_chars": 59
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "消防篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "2.右手提着灭火器到现场",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 59,
+          "max_lines": 1,
+          "total_chars": 59
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "消防篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "3.拔掉铅封和保险栓",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 59,
+          "max_lines": 1,
+          "total_chars": 59
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "防  雷  篇",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第四章",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "防雷篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "雷电发生时您在室内",
+        "shape_name": "TextBox 11",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "雷电发生时您在户外",
+        "shape_name": "TextBox 11",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "防雷知识种  类",
+        "shape_name": "文本框 5"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "防雷篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "雷电发生您在室内",
+        "shape_name": "矩形 6"
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "防雷篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "雷电发生您在户外",
+        "shape_name": "矩形 6"
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "防雷篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "雷电发生您在户外",
+        "shape_name": "矩形 6"
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "防台风、洪水篇",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第五章",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "防台风、洪水篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "台风来临时应该怎么做",
+        "shape_name": "矩形 42",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "防台风、洪水篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何应对洪水",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "防台风、洪水篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "防沙尘暴、泥石流篇",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第六章",
+        "shape_name": "文本框 21",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "防沙尘暴、泥石流篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "沙 尘 暴",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "32": [
+      {
+        "slot": "title",
+        "match_text": "防沙尘暴、泥石流篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "发生沙尘暴时该怎么做",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2.及时关闭门窗。",
+        "shape_name": "TextBox 34",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "防沙尘暴、泥石流篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "3.勤洗手脸，减少外出机会。",
+        "shape_name": "TextBox 34",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "4.多饮水。",
+        "shape_name": "TextBox 34",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "34": [
+      {
+        "slot": "title",
+        "match_text": "泥 石 流",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防沙尘暴、泥石流篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      }
+    ],
+    "35": [
+      {
+        "slot": "title",
+        "match_text": "防沙尘暴、泥石流篇",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 43,
+          "max_lines": 1,
+          "total_chars": 43
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "发生泥石流时该怎么做",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "一",
+        "shape_name": "矩形 5"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "二",
+        "shape_name": "矩形 8"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "三",
+        "shape_name": "矩形 11"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "四",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "五",
+        "shape_name": "矩形 17"
+      }
+    ],
+    "36": [
+      {
+        "slot": "title",
+        "match_text": "学习完毕 感谢聆听",
+        "shape_name": "TextBox 32",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "行动起来，减轻身边的灾害风险",
+        "shape_name": "TextBox 32",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "主讲人：小11",
+        "shape_name": "圆角矩形 28",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "37": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "33": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "34": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "36": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "37": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "38": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

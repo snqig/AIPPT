@@ -1,0 +1,681 @@
+{
+  "template_id": "安全教育__安全教育_(24)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 24,
+  "removable_pages": [
+    23,
+    24
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 5,
+      "name": "第一章节"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 8,
+      "name": "第二章节"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 9,
+      "end_page": 11,
+      "name": "第三章节"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 12,
+      "end_page": 13,
+      "name": "第四章节"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 14,
+      "end_page": 15,
+      "name": "第五章节"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 16,
+      "end_page": 17,
+      "name": "第六章节"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 18,
+      "end_page": 21,
+      "name": "第七章节"
+    },
+    {
+      "key": "end",
+      "page": 22,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "中小学生安全教育日",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "上下楼梯安全",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "课间活动安全",
+        "shape_name": "文本框 40",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "饮食卫生安全",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "体育活动安全",
+        "shape_name": "文本框 46",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "交通安全",
+        "shape_name": "文本框 52",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "其它安全注意事项",
+        "shape_name": "文本框 61",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "实验课安全",
+        "shape_name": "文本框 68",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "5",
+        "shape_name": "Freeform 206"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "7",
+        "shape_name": "Freeform 206"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "6",
+        "shape_name": "Freeform 206"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "Freeform 206"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "1",
+        "shape_name": "Freeform 206"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "3",
+        "shape_name": "Freeform 206"
+      },
+      {
+        "slot": "number_7",
+        "match_text": "2",
+        "shape_name": "Freeform 206"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "上下楼梯安全",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第一章节",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "在人多的地方一定要扶好栏杆。",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 1,
+          "total_chars": 39
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "不要因为赶时间而奔跑。",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 39,
+          "max_lines": 1,
+          "total_chars": 39
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "课间活动安全",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第二章节",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "室内活动时不要在教室追逐玩耍",
+        "shape_name": "Text Box 3",
+        "capacity": {
+          "max_chars_per_line": 38,
+          "max_lines": 1,
+          "total_chars": 38
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "室内活动空间狭小、安全隐患多",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 38,
+          "max_lines": 1,
+          "total_chars": 38
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "体育活动安全",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第三章节",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "TextBox 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "TextBox 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "实验课安全",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第四章节",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "饮食卫生安全",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第五章节",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "什么食物我们不能吃？",
+        "shape_name": "矩形 1"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第六章节",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "其它安全注意事项",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第七章节",
+        "shape_name": "文本框 20",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "点击进入",
+        "shape_name": "文本框 13",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "感谢您的观看再见",
+        "shape_name": "文本框 19",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

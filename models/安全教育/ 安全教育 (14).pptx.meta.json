@@ -1,0 +1,1298 @@
+{
+  "template_id": "安全教育__安全教育_(14)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 34,
+  "removable_pages": [
+    33,
+    34
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 5,
+      "name": "安全教育"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 6,
+      "name": "育日"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 7,
+      "end_page": 19,
+      "name": "安全教育"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 20,
+      "end_page": 26,
+      "name": "安全教育"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 27,
+      "end_page": 34,
+      "name": "安全教育"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "文本框 66",
+        "capacity": {
+          "max_chars_per_line": 51,
+          "max_lines": 2,
+          "total_chars": 102
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "主持人：",
+        "shape_name": "文本框 69"
+      },
+      {
+        "slot": "period",
+        "match_text": "时间：202X.x.x",
+        "shape_name": "文本框 72"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "全国中小学安全教育日",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "一",
+        "shape_name": "1"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "学生安全常识",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "二",
+        "shape_name": "1"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "疫情防控安全",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "三",
+        "shape_name": "1"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "一盔一带安全常在",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "四",
+        "shape_name": "1"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "CONTENTS",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 9,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "目录",
+        "shape_name": "矩形 14",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 3,
+          "total_chars": 9
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "PART 01",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "安全教育",
+        "shape_name": "对话气泡: 椭圆形 16",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "安全教育日来历",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "每年3月份最后一周的星期一",
+        "shape_name": "文本框 2",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "PART 02",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "学生安全常识",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "安全教育",
+        "shape_name": "对话气泡: 椭圆形 16",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "防溺水安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "1",
+        "shape_name": "椭圆 6"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "椭圆 8"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "2",
+        "shape_name": "椭圆 7"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "4",
+        "shape_name": "椭圆 16"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "03",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "04",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "乘坐电动车需要戴好头盔",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "05",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "06",
+        "shape_name": "1",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "校内安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "（一）课间活动时",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "校内安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "（二）课堂安全",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "校内安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "（三）校园生活中",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "居家安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "4",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "防拐防骗",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "5",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "向校园欺凌说不",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "6",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "防性侵",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "7",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "食品卫生安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "8",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "网络安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "9",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "PART 03",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "疫情防控安全",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "安全教育",
+        "shape_name": "对话气泡: 椭圆形 16",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "奥密克戎",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "传播力和隐匿性更强",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "发热",
+        "shape_name": "椭圆 8",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 3,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "喉咙痛",
+        "shape_name": "椭圆 9",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 3,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "干咳",
+        "shape_name": "椭圆 10",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 3,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "头痛",
+        "shape_name": "椭圆 11",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 3,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "乏力",
+        "shape_name": "椭圆 15",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 3,
+          "total_chars": 24
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "防疫三件套",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "配戴口罩",
+        "shape_name": "椭圆 12",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 3,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "保持社交距离",
+        "shape_name": "椭圆 14",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 3,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "注意个人卫生",
+        "shape_name": "椭圆 16",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 3,
+          "total_chars": 27
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "这些好习惯，千万别忘记",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "配戴口罩",
+        "shape_name": "矩形: 圆角 14",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 2,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "勤洗手",
+        "shape_name": "矩形: 圆角 16",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 2,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "少聚集",
+        "shape_name": "矩形: 圆角 17",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 2,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "注意咳嗽礼仪",
+        "shape_name": "矩形: 圆角 19",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 2,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "多锻炼",
+        "shape_name": "矩形: 圆角 18",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 2,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "常通风",
+        "shape_name": "矩形: 圆角 20",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 2,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "用公筷",
+        "shape_name": "矩形: 圆角 21",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 2,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "保持社交距离",
+        "shape_name": "矩形: 圆角 22",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 2,
+          "total_chars": 22
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "消毒安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "4",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "正确洗手",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "5",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "1、内",
+        "shape_name": "矩形 10"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2、外",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "3、夹",
+        "shape_name": "矩形 19"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "4、弓",
+        "shape_name": "矩形 22"
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "正确洗手",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "5",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "5、大",
+        "shape_name": "矩形 10"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "6、立",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "7、腕",
+        "shape_name": "矩形 19"
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "PART 04",
+        "shape_name": "文本框 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "安全教育",
+        "shape_name": "对话气泡: 椭圆形 16",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 2,
+          "total_chars": 12
+        }
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "一盔一带安全常在",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "矩形: 圆角 5"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "一盔一带安全常在",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "\"一带\"是指安全带。",
+        "shape_name": "矩形 14",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "戴好头盔保安全",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "主动系牢安全带",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "以身作则树榜样",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "4",
+        "shape_name": "矩形: 圆角 5"
+      }
+    ],
+    "32": [
+      {
+        "slot": "desc",
+        "match_text": "请在此处输入您的文字内容，请在此处输入您",
+        "shape_name": "文本框 66",
+        "capacity": {
+          "max_chars_per_line": 51,
+          "max_lines": 2,
+          "total_chars": 102
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "主持人：小唐峰",
+        "shape_name": "文本框 69"
+      },
+      {
+        "slot": "period",
+        "match_text": "时间：202X.x.x",
+        "shape_name": "文本框 72"
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 13
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 12
+    },
+    "33": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "34": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

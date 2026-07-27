@@ -210,6 +210,30 @@ def main():
     # 子命令：list-scenes
     sub.add_parser("list-scenes", help="列出所有支持的场景")
 
+    # 子命令：list-templates（查询模板列表）
+    p_lt = sub.add_parser("list-templates", help="查询可用模板列表")
+    p_lt.add_argument("--scene", default=None, help="按场景筛选（如 工作汇报）")
+    p_lt.add_argument("--style", default=None, help="按风格标签筛选")
+    p_lt.add_argument("--min-pages", type=int, default=None, help="最小页数")
+    p_lt.add_argument("--max-pages", type=int, default=None, help="最大页数")
+
+    # 子命令：auto-generate（全链路一键生成）
+    p_auto = sub.add_parser("auto-generate",
+                            help="全链路一键生成：需求理解→大纲→模板匹配→渲染")
+    p_auto.add_argument("--prompt", required=True, help="用户原始需求文本")
+    p_auto.add_argument("--output", default="final.pptx", help="输出 PPT 路径")
+    p_auto.add_argument("--template-id", default=None, help="指定模板 ID（不指定则自动匹配）")
+    p_auto.add_argument("--transitions", default="auto", help="转场配置（auto/none）")
+    p_auto.add_argument("--animations", default="auto", help="动画配置（auto/none）")
+
+    # 子命令：validate（格式校验）
+    p_val = sub.add_parser("validate",
+                           help="校验大纲格式合规性（六层防御体系）")
+    p_val.add_argument("--outline", required=True, help="outline.json 路径")
+    p_val.add_argument("--template-id", default=None, help="模板 ID（启用模板槽位匹配校验）")
+    p_val.add_argument("--auto-fix", action="store_true", help="自动修复非原则性问题并回写文件")
+    p_val.add_argument("--output", default=None, help="校验结果输出 JSON 路径（默认打印到 stdout）")
+
     # 子命令：convert（大纲 → business_data）
     p_conv = sub.add_parser("convert", help="将 outline.json 转换为 business_data.json")
     p_conv.add_argument("--outline", required=True, help="outline.json 路径")
@@ -319,6 +343,130 @@ def main():
         else:
             print("未匹配到场景，请明确指定")
             print("支持的场景:", list(SCENE_SCHEMAS.keys()))
+        return 0
+
+    elif args.cmd == "list-templates":
+        adapter = SceneAdapter("models")
+        templates = adapter.list_templates(
+            category=args.scene, style_tag=args.style,
+            min_pages=args.min_pages, max_pages=args.max_pages,
+        )
+        print(json.dumps(templates, ensure_ascii=False, indent=2))
+        return 0
+
+    elif args.cmd == "validate":
+        # 六层防御体系 · 格式校验入口
+        from aippt.validators import validate_all
+        outline_path = Path(args.outline)
+        try:
+            outline = json.loads(outline_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as e:
+            result_dict = {
+                "validate_pass": False,
+                "error_count": 1,
+                "warning_count": 0,
+                "fixed_count": 0,
+                "errors": [{
+                    "code": "F005", "level": "error",
+                    "path": "(root)", "message": f"JSON 解析失败: {e}",
+                    "suggestion": "请检查 JSON 语法（括号配对、逗号、引号）",
+                }],
+                "warnings": [], "fixes": [],
+            }
+            print(json.dumps(result_dict, ensure_ascii=False, indent=2))
+            return 1
+
+        meta = None
+        if args.template_id:
+            adapter = SceneAdapter("models")
+            meta, _ = adapter.get_template_meta(template_id=args.template_id)
+
+        fixed_outline, result = validate_all(outline, meta=meta, auto_fix=args.auto_fix)
+        result_dict = result.to_dict()
+
+        if args.auto_fix and (result.fixed or not result.is_valid):
+            outline_path.write_text(
+                json.dumps(fixed_outline, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            if result.fixed:
+                logger.info("已自动修复 %d 项并回写: %s", len(result.fixed), outline_path)
+
+        if args.output:
+            Path(args.output).write_text(
+                json.dumps(result_dict, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            print(f"校验结果已保存: {args.output}")
+        else:
+            print(json.dumps(result_dict, ensure_ascii=False, indent=2))
+
+        return 0 if result.is_valid else 1
+
+    elif args.cmd == "auto-generate":
+        # 全链路一键生成：需求理解 → 大纲 → 模板匹配 → 渲染
+        import time as _time
+        start_ts = _time.time()
+
+        # Step 1: 场景识别
+        scene = detect_scene(args.prompt)
+        if not scene:
+            scene = "工作汇报"
+            logger.warning("未识别到场景，使用默认: %s", scene)
+        logger.info("[1/4] 识别场景: %s", scene)
+
+        # Step 2: 自动生成大纲（基于 prompt 生成结构化 outline）
+        # 注意：真正的大纲内容需由宿主大模型生成，这里提供骨架并填入 prompt 作为标题来源
+        schema = SCENE_SCHEMAS[scene]
+        first_line = args.prompt.strip().split("\n")[0][:40]
+        outline = {
+            "scene": scene,
+            "cover": {
+                "title": first_line,
+                "reporter": "",
+                "period": "",
+            },
+            "sections": [
+                {"key": sec["key"], "name": sec["name"], "items": []}
+                for sec in schema["chapter_sections"]
+            ],
+            "end": {"thanks": "感谢聆听"},
+        }
+        # 保存中间大纲文件
+        outline_path = Path(args.output).with_suffix(".outline.json")
+        outline_path.write_text(
+            json.dumps(outline, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        logger.info("[2/4] 大纲骨架已生成: %s（请宿主大模型填充 sections 内容后重跑 step4-generate）",
+                    outline_path)
+
+        # Step 3: 模板匹配
+        template_id = args.template_id
+        if not template_id:
+            templates = SceneAdapter("models").list_templates(category=scene)
+            if templates:
+                template_id = templates[0]["template_id"]
+                logger.info("[3/4] 自动选择模板: %s（共 %d 个可选）",
+                            template_id, len(templates))
+            else:
+                logger.error("场景 %s 无可用模板，无法生成", scene)
+                return 1
+        else:
+            logger.info("[3/4] 使用指定模板: %s", template_id)
+
+        # Step 4: 渲染
+        business_data = outline_to_business_data(outline)
+        biz_path = Path(args.output).with_suffix(".business.json")
+        biz_path.write_text(
+            json.dumps(business_data, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        generate_ppt(business_data, scene, template_id=template_id,
+                     output_path=args.output,
+                     transitions=args.transitions, animations=args.animations)
+        elapsed = _time.time() - start_ts
+        logger.info("[4/4] 生成完成，耗时 %.1fs", elapsed)
+        logger.info("成品 PPT: %s", args.output)
+        logger.info("⚠️  auto-generate 生成的是骨架 PPT，建议用 step2-outline 填充真实内容后用 step4-generate 重渲染")
         return 0
 
     # ============ 四步工作流处理 ============
@@ -500,6 +648,41 @@ def main():
     elif args.cmd == "step4-generate":
         # Step 4: 生成 PPT
         outline = json.loads(Path(args.outline).read_text(encoding="utf-8"))
+
+        # === 渲染前终检（六层防御体系 Layer 3-5）===
+        from aippt.validators import validate_all
+        meta = None
+        if args.template_id:
+            try:
+                adapter = SceneAdapter("models")
+                meta, _ = adapter.get_template_meta(template_id=args.template_id)
+            except Exception:
+                pass
+
+        fixed_outline, pre_check = validate_all(outline, meta=meta, auto_fix=True)
+        if pre_check.fixed:
+            logger.info("渲染前自动修复 %d 项", len(pre_check.fixed))
+            for fix in pre_check.fixed:
+                logger.info("  ✓ %s", fix)
+            Path(args.outline).write_text(
+                json.dumps(fixed_outline, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+
+        if pre_check.errors:
+            logger.error("渲染前终检发现 %d 项错误，已拦截:", len(pre_check.errors))
+            for err in pre_check.errors:
+                logger.error("  [%s] %s: %s", err.code, err.path, err.message)
+                if err.suggestion:
+                    logger.error("    → %s", err.suggestion)
+            print(json.dumps(pre_check.to_dict(), ensure_ascii=False, indent=2))
+            return 1
+
+        if pre_check.warnings:
+            logger.warning("渲染前终检 %d 项警告（可继续渲染）:", len(pre_check.warnings))
+            for warn in pre_check.warnings:
+                logger.warning("  [%s] %s: %s", warn.code, warn.path, warn.message)
+
+        outline = fixed_outline  # 使用修复后的大纲
         business_data = outline_to_business_data(outline)
 
         # 保存 business_data 中间产物

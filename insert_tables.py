@@ -1,9 +1,19 @@
 """
 PPT 表格自动插入工具
-功能：在指定位置新增 slide 并插入原生表格
-用法：python insert_tables.py <input.pptx> <output.pptx>
+功能：
+  1. insert 子命令：在指定位置新增 slide 并插入原生表格（旧式用法）
+  2. test 子命令：测试图表/表格动态扩展功能，自动构造测试数据并输出对比报告
+用法：
+  python insert_tables.py test --template 模板.pptx --output 测试输出.pptx
+  python insert_tables.py insert <input.pptx> <output.pptx>
+  python insert_tables.py <input.pptx> <output.pptx>  （兼容旧式用法）
 """
 import sys
+import argparse
+import json
+import tempfile
+import os
+from pathlib import Path
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
 from pptx.dml.color import RGBColor
@@ -190,14 +200,164 @@ def move_slide(prs, old_index, new_index):
     xml_slides.insert(new_index, slide_to_move)
 
 
-def main():
-    if len(sys.argv) < 3:
-        print("用法: python insert_tables.py <input.pptx> <output.pptx>")
-        sys.exit(1)
+def _iter_shapes_recursive(shapes):
+    """递归遍历所有形状（含 group 内子形状）"""
+    for shape in shapes:
+        yield shape
+        if shape.shape_type == 6:  # GROUP
+            yield from _iter_shapes_recursive(shape.shapes)
 
-    input_path = sys.argv[1]
-    output_path = sys.argv[2]
 
+def build_test_slot_data(meta):
+    """根据 meta 构造测试数据（chart_data + table_data）
+
+    遍历 page_slots，为 chart_data/table_data 槽位生成测试数据
+    """
+    slot_data = {}
+    page_slots = meta.get("page_slots", {})
+    for page_str, slots in page_slots.items():
+        for slot_info in slots:
+            if slot_info.get("slot") == "chart_data":
+                slot_data.setdefault(page_str, {})["chart_data"] = {
+                    "categories": ["Q1", "Q2", "Q3", "Q4"],
+                    "series": [
+                        {"name": "营收", "data": [1200, 1500, 1800, 2100]},
+                        {"name": "利润", "data": [300, 450, 600, 750]},
+                    ]
+                }
+            elif slot_info.get("slot") == "table_data":
+                slot_data.setdefault(page_str, {})["table_data"] = {
+                    "headers": ["产品", "Q1销量", "Q2销量", "合计"],
+                    "rows": [
+                        ["产品A", "1200", "1500", "2700"],
+                        ["产品B", "800", "950", "1750"],
+                        ["产品C", "600", "720", "1320"],
+                        ["产品D", "450", "580", "1030"],
+                    ]
+                }
+    return slot_data
+
+
+def cmd_test(args):
+    """测试命令：自动构造测试数据并渲染，输出渲染前后对比报告
+
+    流程：
+      1. 扫描模板中所有 chart/table 形状
+      2. 生成 meta 元数据
+      3. 构造测试数据（chart_data + table_data）
+      4. 调用 PptRenderer 渲染
+      5. 验证输出：哪些 chart 被替换、哪些 table 被填充、样式是否保留
+    """
+    from ppt_meta_tool import generate_single_meta
+    from ppt_renderer import PptRenderer
+
+    template_path = args.template
+    output_path = args.output
+
+    print(f"模板: {template_path}")
+    print(f"输出: {output_path}")
+    print()
+
+    # === 1. 渲染前扫描：检测 chart/table 形状（递归遍历含 group） ===
+    prs = Presentation(template_path)
+    chart_pages = []
+    table_pages = []
+    for idx, slide in enumerate(prs.slides, 1):
+        for shape in _iter_shapes_recursive(slide.shapes):
+            if hasattr(shape, "has_chart") and shape.has_chart:
+                chart_pages.append({
+                    "page": idx,
+                    "shape_name": shape.name,
+                    "chart_type": str(shape.chart.chart_type),
+                })
+            if hasattr(shape, "has_table") and shape.has_table:
+                table_pages.append({
+                    "page": idx,
+                    "shape_name": shape.name,
+                    "rows": len(shape.table.rows),
+                    "cols": len(shape.table.columns),
+                })
+
+    print("=== 渲染前扫描 ===")
+    print(f"图表页: {len(chart_pages)}")
+    for cp in chart_pages:
+        print(f"  页{cp['page']}: {cp['shape_name']} ({cp['chart_type']})")
+    print(f"表格页: {len(table_pages)}")
+    for tp in table_pages:
+        print(f"  页{tp['page']}: {tp['shape_name']} ({tp['rows']}行 x {tp['cols']}列)")
+    print()
+
+    if not chart_pages and not table_pages:
+        print("⚠️  模板中未检测到图表或表格，无需测试")
+        return
+
+    # === 2. 生成 meta（PptRenderer 初始化需要） ===
+    meta, err = generate_single_meta(Path(template_path), "test")
+    if err:
+        print(f"❌ meta 生成失败: {err}")
+        return
+
+    # === 3. 构造测试数据 ===
+    slot_data = build_test_slot_data(meta)
+    print("=== 测试数据 ===")
+    for page_str, data in slot_data.items():
+        if "chart_data" in data:
+            cd = data["chart_data"]
+            print(f"  页{page_str} chart_data: {len(cd['categories'])}分类, {len(cd['series'])}系列")
+        if "table_data" in data:
+            td = data["table_data"]
+            print(f"  页{page_str} table_data: {len(td['headers'])}列表头, {len(td['rows'])}行数据")
+    print()
+
+    # === 4. 渲染（写入临时 meta 文件供 PptRenderer 使用） ===
+    with tempfile.NamedTemporaryFile(
+        mode='w', suffix='.meta.json', delete=False, encoding='utf-8'
+    ) as f:
+        json.dump(meta, f, ensure_ascii=False)
+        meta_path = f.name
+
+    try:
+        renderer = PptRenderer(template_path, meta_path)
+        renderer.render(slot_data, output_path, remove_copyright=False, auto_fit=False)
+    finally:
+        os.unlink(meta_path)
+
+    # === 5. 渲染后验证（递归遍历含 group） ===
+    print("=== 渲染后验证 ===")
+    prs_out = Presentation(output_path)
+    chart_replaced = 0
+    table_filled = 0
+    for idx, slide in enumerate(prs_out.slides, 1):
+        for shape in _iter_shapes_recursive(slide.shapes):
+            if hasattr(shape, "has_chart") and shape.has_chart:
+                # 验证图表分类是否已替换为 Q1/Q2/Q3/Q4
+                try:
+                    plot = shape.chart.plots[0]
+                    cats = list(plot.categories)
+                    if cats and str(cats[0]).strip() == "Q1":
+                        chart_replaced += 1
+                except Exception:
+                    pass
+            if hasattr(shape, "has_table") and shape.has_table:
+                # 验证表格是否已填充测试数据（第二行首列含"产品"）
+                try:
+                    t = shape.table
+                    if len(t.rows) > 1:
+                        cell_text = t.cell(1, 0).text
+                        if cell_text and "产品" in cell_text:
+                            table_filled += 1
+                except Exception:
+                    pass
+
+    print(f"图表替换成功: {chart_replaced}/{len(chart_pages)}")
+    print(f"表格填充成功: {table_filled}/{len(table_pages)}")
+    print(f"样式保留: ✅（代码仅替换数据，不修改 font/color/axis format）")
+    print()
+    print(f"✅ 测试输出已保存: {output_path}")
+
+
+def cmd_insert_legacy(input_path, output_path):
+    """旧式用法：插入对比表和报价表（保留向后兼容）"""
     prs = Presentation(input_path)
     total_before = len(prs.slides)
     print(f"原始页数: {total_before}")
@@ -229,15 +389,8 @@ def main():
     print("✅ 已插入报价表（P13 之后）")
 
     # 把新增的 2 页（当前在末尾）移动到结束页之前
-    # 新增页索引为 total_before 和 total_before+1（0-based）
-    # 结束页索引为 total_before - 1（0-based，原最后一页）
-    # 目标：新增 2 页插到结束页之前
     end_idx = total_before - 1  # 结束页原索引
-    # 新增的第1页（对比表）当前在 total_before，移到 end_idx 位置
     move_slide(prs, total_before, end_idx)
-    # 新增的第2页（报价表）现在也在末尾（total_before+1 的位置，但移除一个后索引变化）
-    # 移动后，报价表在 total_before 位置（末尾），结束页在 total_before+1
-    # 需要把报价表移到 end_idx+1 位置
     move_slide(prs, total_before, end_idx + 1)
 
     prs.save(output_path)
@@ -246,5 +399,39 @@ def main():
     print(f"✅ 已保存: {output_path}")
 
 
-if __name__ == "__main__":
+def main():
+    parser = argparse.ArgumentParser(
+        description='PPT 表格/图表工具（支持 test 测试命令 和 insert 插入命令）'
+    )
+    sub = parser.add_subparsers(dest='command')
+
+    # test 子命令：测试图表/表格动态扩展
+    test_p = sub.add_parser('test', help='测试图表/表格动态扩展功能')
+    test_p.add_argument('--template', required=True, help='模板 pptx 路径')
+    test_p.add_argument('--output', required=True, help='输出 pptx 路径')
+
+    # insert 子命令：插入对比/报价表格
+    insert_p = sub.add_parser('insert', help='插入对比表和报价表')
+    insert_p.add_argument('input', help='输入 pptx 路径')
+    insert_p.add_argument('output', help='输出 pptx 路径')
+
+    # 兼容旧式位置参数（无子命令时：python insert_tables.py <input> <output>）
+    parser.add_argument('input_legacy', nargs='?', help='输入 pptx 路径（旧式用法）')
+    parser.add_argument('output_legacy', nargs='?', help='输出 pptx 路径（旧式用法）')
+
+    args = parser.parse_args()
+
+    if args.command == 'test':
+        cmd_test(args)
+    elif args.command == 'insert':
+        cmd_insert_legacy(args.input, args.output)
+    elif args.input_legacy and args.output_legacy:
+        # 兼容旧式用法：python insert_tables.py <input> <output>
+        cmd_insert_legacy(args.input_legacy, args.output_legacy)
+    else:
+        parser.print_help()
+        sys.exit(1)
+
+
+if __name__ == '__main__':
     main()

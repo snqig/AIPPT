@@ -1,0 +1,1155 @@
+{
+  "template_id": "安全教育__安全教育_(39)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 35,
+  "removable_pages": [
+    34,
+    35
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 5,
+      "name": "多一份安心"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 6,
+      "name": "育日"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 7,
+      "end_page": 7,
+      "name": "多一份安心"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 8,
+      "end_page": 19,
+      "name": "要智慧救援"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 20,
+      "end_page": 26,
+      "name": "多一份安心"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 27,
+      "end_page": 32,
+      "name": "多一份安心"
+    },
+    {
+      "key": "end",
+      "page": 33,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "中小学安全教育日",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "Add your text conten",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 71,
+          "max_lines": 4,
+          "total_chars": 284
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "宣讲：小唐峰",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "安全教育",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "安全管理",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "强化",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "和谐校园",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "共建",
+        "shape_name": "图形"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "Contents",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "目录",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "全国中小学安全教育日",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "学生掌握常见安全常识",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "普及疫情防控安全须知",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "日常一盔一带安全常在",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "图形"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "全国中小学安全教育日",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART ONE",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "图形"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "安全教育日来历",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "全国中小学安全教育日设置目的",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 31,
+          "max_lines": 1,
+          "total_chars": 31
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "安全教育日",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "每年3月份最后一周的星期一",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 2,
+          "total_chars": 28
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "学生掌握常见安全常识",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART TWO",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "图形"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "防溺水安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "乘坐电动车需要戴好头盔",
+        "shape_name": "图形"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "校内安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "课间活动期间安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "校内安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "体育课堂安全注意",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "实验课堂安全注意",
+        "shape_name": "图形"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "校内安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "校园生活中安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "居家安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "图形"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "防拐防骗",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "长得好看的不一定就是好人；",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "不要独自去偏僻处玩耍；",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 32,
+          "max_lines": 1,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "6",
+        "shape_name": "图形"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "向校园欺凌说不",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "不给同学取外号不孤立欺负同学",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 27,
+          "max_lines": 1,
+          "total_chars": 27
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "在网络上也要讲素质有礼貌",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "见欺凌要举报不做沉默旁观者",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "图形"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "防性侵",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "图形"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "食品卫生安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "网络安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "健康上网，上网时间要有节制。",
+        "shape_name": "图形"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "普及疫情防控安全须知",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART THREE",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "图形"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "奥密克戎",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "传播力和隐匿性更强",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "发热",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "喉咙痛",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "干咳",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "乏力",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "头痛",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "气虚",
+        "shape_name": "图形"
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "防疫三件套",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "日常配戴口罩",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "保持社交距离",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "注意个人卫生",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "防疫须知01",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "防疫须知02",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "防疫须知03",
+        "shape_name": "图形"
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "这些好习惯，千万别忘记",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "消毒安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "正确洗手",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "正确洗手",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "日常一盔一带安全常在",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART FOUR",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "图形"
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "一盔一带安全常在",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "戴好头盔保安全",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "主动系牢安全带",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "以身作则树榜样",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "32": [
+      {
+        "slot": "title",
+        "match_text": "点击进入",
+        "shape_name": "图形"
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "安全管理",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "强化",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "和谐校园",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "共建",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "谢谢您的观赏！",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "Add your text conten",
+        "shape_name": "图形",
+        "capacity": {
+          "max_chars_per_line": 71,
+          "max_lines": 4,
+          "total_chars": 284
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "宣讲：小唐峰",
+        "shape_name": "图形"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "安全教育",
+        "shape_name": "图形"
+      }
+    ],
+    "34": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "31": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "33": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "34": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "35": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

@@ -1,0 +1,737 @@
+{
+  "template_id": "安全教育__安全教育_(122)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 20,
+  "removable_pages": [
+    19,
+    20
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 4,
+      "end_page": 5,
+      "name": "小猫落水"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 7,
+      "name": "回答问题"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 8,
+      "end_page": 9,
+      "name": "预防溺水安全知识"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 10,
+      "end_page": 11,
+      "name": "决不"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 12,
+      "end_page": 13,
+      "name": "溺水自救"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 14,
+      "end_page": 14,
+      "name": "正确施救"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 15,
+      "end_page": 20,
+      "name": "确保自身安全"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "幼儿园安全教育-预防溺水",
+        "shape_name": "矩形 54",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "珍爱生命",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "预防溺水",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "我们的学习目标",
+        "shape_name": "TextBox 177",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "幼儿园安全教育",
+        "shape_name": "TextBox 31",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "珍爱生命    预防溺水",
+        "shape_name": "文本框 5",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "0 1",
+        "shape_name": "圆角矩形 176"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "故事：小猫落水",
+        "shape_name": "TextBox 177",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "0 2",
+        "shape_name": "圆角矩形 181"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "想一想：回答问题",
+        "shape_name": "TextBox 182",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "0 3",
+        "shape_name": "圆角矩形 186"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "预防溺水安全知识",
+        "shape_name": "TextBox 187",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "目  录",
+        "shape_name": "圆角矩形 193",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "0 4",
+        "shape_name": "圆角矩形 8"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "六个“决不”",
+        "shape_name": "TextBox 182",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "0 5",
+        "shape_name": "圆角矩形 10"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "溺水自救",
+        "shape_name": "TextBox 187",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_12",
+        "match_text": "0 6",
+        "shape_name": "圆角矩形 15"
+      },
+      {
+        "slot": "title_13",
+        "match_text": "正确施救",
+        "shape_name": "TextBox 182",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "title",
+        "match_text": "故事：小猫落水",
+        "shape_name": "TextBox 177",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "小猫落水",
+        "shape_name": "TextBox 177",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "幼儿园安全教育",
+        "shape_name": "TextBox 31",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "title",
+        "match_text": "想一想：回答问题",
+        "shape_name": "TextBox 12",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "幼儿园安全教育",
+        "shape_name": "TextBox 31",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "想一想：回答问题",
+        "shape_name": "TextBox 12",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "title",
+        "match_text": "预防溺水安全知识",
+        "shape_name": "TextBox 12",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "幼儿园安全教育",
+        "shape_name": "TextBox 31",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "预防溺水安全知识",
+        "shape_name": "TextBox 12",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "title",
+        "match_text": "六个“决不”",
+        "shape_name": "TextBox 177",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "幼儿园安全教育",
+        "shape_name": "TextBox 31",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "六个“决不”",
+        "shape_name": "TextBox 12",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "title",
+        "match_text": "溺水自救",
+        "shape_name": "TextBox 177",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "溺水自救",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 2,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "幼儿园安全教育",
+        "shape_name": "TextBox 31",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "number",
+        "match_text": "06",
+        "shape_name": "TextBox 12"
+      },
+      {
+        "slot": "title",
+        "match_text": "正确施救",
+        "shape_name": "TextBox 177",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "正确施救",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "幼儿园安全教育",
+        "shape_name": "TextBox 31",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "错误方法",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "幼儿园安全教育",
+        "shape_name": "TextBox 31",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "预防溺水，珍爱生命",
+        "shape_name": "矩形 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "珍爱生命  预防溺水",
+        "shape_name": "文本框 3",
+        "capacity": {
+          "max_chars_per_line": 2,
+          "max_lines": 8,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "儿歌",
+        "shape_name": "TextBox 177"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "幼儿园安全教育-预防溺水",
+        "shape_name": "矩形 54",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "珍爱生命",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "预防溺水",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "小朋友们下次再见吧！",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

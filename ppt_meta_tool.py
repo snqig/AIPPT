@@ -10,6 +10,7 @@ from typing import Any, Optional
 from aippt.config import PAGE_TYPE_KEYWORDS, MODELS_ROOT
 from aippt.constants import SLOT_MATCH_KEYWORDS
 from aippt.logger import logger
+from aippt.ppt_element_classifier import classify_page
 
 # meta必填字段校验
 META_REQUIRED_FIELDS = ['template_id', 'category', 'total_pages', 'chapters', 'page_slots']
@@ -59,12 +60,16 @@ def extract_page_texts(slide) -> list[dict[str, Any]]:
 
 def detect_page_shapes(slide) -> dict[str, Any]:
     flags: dict[str, Any] = {"has_chart": False, "has_table": False, "has_picture": False,
-                              "chart_type": None, "picture_count": 0}
+                              "chart_type": None, "picture_count": 0,
+                              "chart_shape_name": None, "table_shape_name": None}
 
     def _scan(shape) -> None:
         # GRAPH_CHART = 3
         if shape.shape_type == 3 or (hasattr(shape, "has_chart") and shape.has_chart):
             flags["has_chart"] = True
+            # 记录第一个图表形状名（用于 chart_slot 标识）
+            if not flags["chart_shape_name"]:
+                flags["chart_shape_name"] = shape.name
             try:
                 if hasattr(shape, "chart") and shape.chart is not None:
                     flags["chart_type"] = str(shape.chart.chart_type)
@@ -73,6 +78,9 @@ def detect_page_shapes(slide) -> dict[str, Any]:
         # TABLE = 19 / has_table
         elif (hasattr(shape, "has_table") and shape.has_table) or shape.shape_type == 19:
             flags["has_table"] = True
+            # 记录第一个表格形状名（用于 table_slot 标识）
+            if not flags["table_shape_name"]:
+                flags["table_shape_name"] = shape.name
         # PICTURE = 13
         elif shape.shape_type == 13:
             flags["has_picture"] = True
@@ -300,19 +308,54 @@ def generate_single_meta(pptx_path: Path, category: str) -> tuple[Optional[dict[
         ptype = detect_page_type(page_texts, idx, total_pages)
         page_types.append(ptype)
         slots = extract_slots(page_texts, idx)
-        if slots:
-            all_page_slots[str(idx + 1)] = slots
 
         # 收集页面非文本形状信息（chart/table/picture）
         shape_flags = detect_page_shapes(slide)
+
+        # 追加图表/表格专用槽位（标识 chart/table 位置，供渲染器识别）
+        if shape_flags["has_chart"]:
+            slots.append({
+                "slot": "chart_data",
+                "shape_name": shape_flags.get("chart_shape_name", ""),
+                "chart_type": shape_flags.get("chart_type"),
+                "match_text": "",  # 图表形状无文本，不参与文本匹配
+            })
+        if shape_flags["has_table"]:
+            slots.append({
+                "slot": "table_data",
+                "shape_name": shape_flags.get("table_shape_name", ""),
+                "match_text": "",  # 表格形状无文本，不参与文本匹配
+            })
+
+        if slots:
+            all_page_slots[str(idx + 1)] = slots
+
+        page_key = str(idx + 1)
+        page_entry: Optional[dict[str, Any]] = None
         if shape_flags["has_chart"] or shape_flags["has_table"] or shape_flags["has_picture"]:
-            page_meta[str(idx + 1)] = {
+            page_entry = {
                 "has_chart": shape_flags["has_chart"],
                 "has_table": shape_flags["has_table"],
                 "has_picture": shape_flags["has_picture"],
                 "chart_type": shape_flags["chart_type"],
-                "picture_count": shape_flags["picture_count"]
+                "picture_count": shape_flags["picture_count"],
+                "chart_shape_name": shape_flags.get("chart_shape_name"),
+                "table_shape_name": shape_flags.get("table_shape_name"),
             }
+
+        # 元素分类告警（低置信度标注，来自 classify_page）
+        try:
+            classification = classify_page(slide)
+            cls_warnings = classification.get("low_confidence_warnings", [])
+            if cls_warnings:
+                if page_entry is None:
+                    page_entry = {}
+                page_entry["classification_warnings"] = cls_warnings
+        except Exception as e:
+            logger.debug("页面分类失败 page %d: %s", idx + 1, e)
+
+        if page_entry is not None:
+            page_meta[page_key] = page_entry
     
     # 可删除版权页
     removable_pages = [i+1 for i, t in enumerate(page_types) if t == 'copyright']
@@ -496,29 +539,113 @@ def cmd_index(args):
         logger.info("  %s: %d 套", cat, cnt)
 
 # ==================== 主入口 ====================
+def _find_meta_by_template_id(template_id: str, models_root: Path = None) -> Optional[Path]:
+    """根据 template_id 在 models 目录下查找对应的 meta.json 文件"""
+    root = models_root or MODELS_ROOT
+    for meta_path in root.rglob("*.meta.json"):
+        try:
+            with open(meta_path, 'r', encoding='utf-8') as f:
+                meta = json.load(f)
+            if meta.get('template_id') == template_id:
+                return meta_path
+        except Exception:
+            continue
+    return None
+
+
+def cmd_info(args):
+    """查看单个模板的元数据详情"""
+    meta_path = _find_meta_by_template_id(args.template_id)
+    if not meta_path:
+        logger.error("未找到 template_id: %s", args.template_id)
+        return
+
+    with open(meta_path, 'r', encoding='utf-8') as f:
+        meta = json.load(f)
+
+    info = {
+        "template_id": meta.get("template_id"),
+        "category": meta.get("category"),
+        "total_pages": meta.get("total_pages"),
+        "removable_pages": meta.get("removable_pages", []),
+        "chapters": meta.get("chapters", []),
+        "page_slot_count": len(meta.get("page_slots", {})),
+        "total_slots": sum(len(v) for v in meta.get("page_slots", {}).values()),
+        "page_meta": meta.get("page_meta", {}),
+        "meta_path": str(meta_path),
+    }
+    print(json.dumps(info, ensure_ascii=False, indent=2))
+
+
+def cmd_check_one(args):
+    """单个模板质量校验"""
+    meta_path = _find_meta_by_template_id(args.template_id)
+    if not meta_path:
+        logger.error("未找到 template_id: %s", args.template_id)
+        return
+
+    with open(meta_path, 'r', encoding='utf-8') as f:
+        meta = json.load(f)
+
+    issues = []
+    for field in META_REQUIRED_FIELDS:
+        if field not in meta:
+            issues.append(f"缺少必填字段 {field}")
+
+    chapters = meta.get('chapters', [])
+    if len(chapters) < 2:
+        issues.append(f"章节数量过少({len(chapters)}个)")
+
+    slots_count = sum(len(v) for v in meta.get('page_slots', {}).values())
+    if slots_count < 5:
+        issues.append(f"可替换槽位过少({slots_count}个)")
+
+    result = {
+        "template_id": meta.get("template_id"),
+        "total_pages": meta.get("total_pages"),
+        "chapter_count": len(chapters),
+        "slots_count": slots_count,
+        "issues": issues,
+        "is_valid": len(issues) == 0,
+    }
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
 def main():
     parser = argparse.ArgumentParser(description='PPT模板元数据批量处理工具')
     subparsers = parser.add_subparsers(dest='command', required=True, help='支持的命令')
-    
+
     # generate 子命令
     gen_parser = subparsers.add_parser('generate', help='批量生成meta.json元数据')
     gen_parser.add_argument('--dir', required=True, help='模板根目录路径')
     gen_parser.add_argument('--force', action='store_true', help='强制覆盖已存在的meta文件')
-    
-    # check 子命令
+
+    # check 子命令（批量）
     check_parser = subparsers.add_parser('check', help='批量校验meta质量')
-    check_parser.add_argument('--dir', required=True, help='模板根目录路径')
-    
+    check_parser.add_argument('--dir', help='模板根目录路径（批量校验）')
+    check_parser.add_argument('--template-id', help='单个模板 ID（单模板校验）')
+
+    # info 子命令（单模板详情）
+    info_parser = subparsers.add_parser('info', help='查看单个模板元数据详情')
+    info_parser.add_argument('--template-id', required=True, help='模板 ID')
+
     # index 子命令
     index_parser = subparsers.add_parser('index', help='生成模板总索引文件')
     index_parser.add_argument('--dir', required=True, help='模板根目录路径')
-    
+
     args = parser.parse_args()
-    
+
     if args.command == 'generate':
         cmd_generate(args)
     elif args.command == 'check':
-        cmd_check(args)
+        if args.template_id:
+            cmd_check_one(args)
+        elif args.dir:
+            cmd_check(args)
+        else:
+            parser.error("check 命令需要 --dir 或 --template-id 参数")
+    elif args.command == 'info':
+        cmd_info(args)
     elif args.command == 'index':
         cmd_index(args)
 

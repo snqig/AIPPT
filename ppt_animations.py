@@ -8,6 +8,8 @@ ECMA-376 约束：p:childTnLst 必须是 p:cTn 的子元素（不能颠倒顺序
 """
 from lxml import etree
 
+from aippt.logger import logger
+
 
 # ==================== 命名空间常量 ====================
 NS_P = "http://schemas.openxmlformats.org/presentationml/2006/main"
@@ -478,7 +480,8 @@ def _build_paragraph_tgt(parent_cBhvr, shape_id, paragraph_idx):
 
 
 def _build_by_bullet_nodes(spec, shape_id, paragraph_count, duration_ms, delay_ms,
-                            trigger, cTn_id_start):
+                            trigger, cTn_id_start, bullet_delay_ms: int = 500,
+                            bullet_order: list[int] = None):
     """
     构建按段落（bullet）逐步显示的动画节点列表
 
@@ -492,14 +495,30 @@ def _build_by_bullet_nodes(spec, shape_id, paragraph_count, duration_ms, delay_m
     :param delay_ms: 段间延迟（毫秒）
     :param trigger: 第一个段落的触发类型
     :param cTn_id_start: cTn ID 起始值
+    :param bullet_delay_ms: 段间延迟（毫秒），默认 500ms；用于在每段 cTn 上设置 delay
+    :param bullet_order: 段落播放顺序，默认 [0,1,2,...] 顺序播放；
+                         传入 [2,0,1] 表示先播第3段再第1段再第2段；
+                         长度必须等于 paragraph_count，否则忽略并警告
     :return: list of <p:par> Element
     """
+    # 校验 bullet_order：长度必须等于 paragraph_count，否则忽略并警告
+    if bullet_order is not None:
+        if len(bullet_order) != paragraph_count:
+            logger.warning(
+                "bullet_order 长度 %d 与段落数 %d 不符，忽略 bullet_order 按顺序播放",
+                len(bullet_order), paragraph_count,
+            )
+            bullet_order = None
+
+    # 确定播放序列：bullet_order 指定顺序，否则 0..paragraph_count-1
+    play_sequence = bullet_order if bullet_order is not None else list(range(paragraph_count))
+
     nodes = []
     cTn_id = cTn_id_start
 
-    for para_idx in range(paragraph_count):
+    for seq_idx, para_idx in enumerate(play_sequence):
         # 第一个段落按用户指定 trigger，后续段落用 after_prev 自动衔接
-        para_trigger = trigger if para_idx == 0 else "after_prev"
+        para_trigger = trigger if seq_idx == 0 else "after_prev"
         node_type, delay_value = TRIGGER_MAP.get(para_trigger, TRIGGER_MAP["on_load"])
 
         outer_par = etree.Element(_p("par"))
@@ -533,7 +552,12 @@ def _build_by_bullet_nodes(spec, shape_id, paragraph_count, duration_ms, delay_m
         inner_cTn.set("nodeType", node_type)
         inner_stCondLst = etree.SubElement(inner_cTn, _p("stCondLst"))
         inner_cond = etree.SubElement(inner_stCondLst, _p("cond"))
-        inner_cond.set("delay", str(delay_ms if para_idx == 0 else 0))
+        # 段间延迟：第一段 delay=0，后续段落 delay=bullet_delay_ms * (seq_idx+1)
+        if seq_idx == 0:
+            para_delay = 0
+        else:
+            para_delay = bullet_delay_ms * (seq_idx + 1)
+        inner_cond.set("delay", str(para_delay))
         inner_childTnLst = etree.SubElement(inner_cTn, _p("childTnLst"))
 
         # 入场：先 set visible 再 animEffect，按段落引用

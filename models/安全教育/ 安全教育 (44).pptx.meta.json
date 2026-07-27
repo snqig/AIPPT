@@ -1,0 +1,791 @@
+{
+  "template_id": "安全教育__安全教育_(44)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 22,
+  "removable_pages": [
+    21,
+    22
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 5,
+      "name": "第一部分"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 6,
+      "end_page": 9,
+      "name": "第二部分"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 10,
+      "end_page": 13,
+      "name": "第三部分"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 14,
+      "end_page": 19,
+      "name": "第四部分"
+    },
+    {
+      "key": "end",
+      "page": 20,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "中",
+        "shape_name": "椭圆 21"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "小",
+        "shape_name": "椭圆 22"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "学",
+        "shape_name": "椭圆 23"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "生",
+        "shape_name": "椭圆 24"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "文明礼仪",
+        "shape_name": "矩形 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "主题教育",
+        "shape_name": "矩形 29",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "目录",
+        "shape_name": "矩形 25"
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "礼仪常识简介",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 1,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "礼仪常识分类",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 1,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "不文明的礼仪",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 1,
+          "total_chars": 34
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "学校集体宣誓",
+        "shape_name": "文本框 15",
+        "capacity": {
+          "max_chars_per_line": 34,
+          "max_lines": 1,
+          "total_chars": 34
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "礼仪常识简介",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第一部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "具体体现",
+        "shape_name": "矩形 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "礼貌",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "礼节",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "仪表",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "仪式",
+        "shape_name": "矩形 8"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "礼仪常识分类",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第二部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "对个体",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 3,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "对社会",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 3,
+          "total_chars": 9
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "卫生",
+        "shape_name": "矩形 3"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "服饰",
+        "shape_name": "矩形 6"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "礼貌",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 38,
+          "max_lines": 1,
+          "total_chars": 38
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "用语",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 38,
+          "max_lines": 1,
+          "total_chars": 38
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "不文明的礼仪",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第三部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "1、考试作弊；",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 1,
+          "total_chars": 37
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "5、给老师、同学起绰号；",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 1,
+          "total_chars": 37
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "6、随意吐痰，乱扔果皮纸屑；",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 1,
+          "total_chars": 37
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "7、课堂不文明，不尊重老师；",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 1,
+          "total_chars": 37
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "8、破坏校内公共设施、设备；",
+        "shape_name": "矩形 14",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 1,
+          "total_chars": 37
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "10、买饭菜时随意插队",
+        "shape_name": "矩形 16",
+        "capacity": {
+          "max_chars_per_line": 37,
+          "max_lines": 1,
+          "total_chars": 37
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "语言肮脏",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "大声喧哗",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "破坏公物",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "乱刻乱画",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "男女亲昵",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "偷偷摸摸",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "学校集体宣誓",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第四部分",
+        "shape_name": "TextBox 48",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "做文明的学生",
+        "shape_name": "矩形 2"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "我做到：",
+        "shape_name": "矩形 2"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "严守纪律，明理诚信；",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "全面发展，健全人格；",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "敏学睿思，刻苦勤奋；",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "艰苦朴素，自强不息。",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "身在校园，胸怀天下；",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "不负父母的期盼，",
+        "shape_name": "矩形 9",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "不负恩师的教诲，",
+        "shape_name": "矩形 10",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "不负母校的厚望。",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_10",
+        "match_text": "我承诺：",
+        "shape_name": "矩形 12"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "点击进入",
+        "shape_name": "文本框 7",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "演示完毕感谢您的观看",
+        "shape_name": "矩形 28",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 1,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "中",
+        "shape_name": "椭圆 21"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "小",
+        "shape_name": "椭圆 22"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "学",
+        "shape_name": "椭圆 23"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "生",
+        "shape_name": "椭圆 24"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "文明礼仪",
+        "shape_name": "矩形 26",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "主题教育",
+        "shape_name": "矩形 29",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 7
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

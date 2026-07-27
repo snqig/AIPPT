@@ -46,6 +46,7 @@ CATEGORY_KEYWORDS = [
     ("开题报告", ["开题", "答辩", "thesis proposal", "opening report"]),
     ("公司简介", ["公司介绍", "企业介绍", "公司简介", "company profile", "company intro"]),
     ("职业规划", ["职业规划", "生涯规划", "career plan", "career planning"]),
+    ("安全教育", ["安全教育", "安全培训", "安全生产", "安全知识", "消防", "emergency", "safety"]),
 ]
 
 # 默认分类（无法识别时归入）
@@ -313,28 +314,122 @@ def update_templates_index(models_dir: str) -> bool:
     return True
 
 
+def auto_annotate(pptx_path: Path, scene: str, output_dir: Path) -> dict[str, Any]:
+    """
+    自定义模板自动标注：解析模板结构、识别槽位、分类页面类型，生成标准 .meta.json
+
+    :param pptx_path: 模板 pptx 路径
+    :param scene: 所属场景
+    :param output_dir: 元数据输出目录
+    :return: 标注结果字典（含 warnings / layout_profile 新增字段，向后兼容原有字段）
+    """
+    from ppt_meta_tool import generate_single_meta
+    from aippt.profile_layouts import profile_layouts
+    from aippt.ppt_element_classifier import classify_page
+
+    if not pptx_path.exists():
+        return {"ok": False, "error": f"文件不存在: {pptx_path}"}
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    meta_result = generate_single_meta(pptx_path, scene)
+    if isinstance(meta_result, tuple):
+        meta, err = meta_result
+    else:
+        meta, err = meta_result, None
+
+    if meta is None:
+        return {"ok": False, "error": f"解析失败: {err}"}
+
+    meta_path = output_dir / f"{pptx_path.name}.meta.json"
+    with open(meta_path, 'w', encoding='utf-8') as f:
+        json.dump(meta, f, ensure_ascii=False, indent=2)
+
+    slots_count = sum(len(v) for v in meta.get('page_slots', {}).values())
+
+    # 采集 layout_profile（母版布局画像）与逐页低置信度告警
+    layout_profile: dict[str, Any] = {}
+    all_warnings: list[dict[str, Any]] = []
+    try:
+        prs = Presentation(str(pptx_path))
+        layout_profile = profile_layouts(prs)
+        for idx, slide in enumerate(prs.slides):
+            try:
+                classification = classify_page(slide)
+                for w in classification.get("low_confidence_warnings", []):
+                    all_warnings.append({"page": idx + 1, **w})
+            except Exception as e:
+                logger.debug("页面分类失败 page %d: %s", idx + 1, e)
+    except Exception as e:
+        logger.warning("layout_profile/分类告警采集失败: %s", e)
+
+    # 更新全局索引（参考主流程 update_templates_index(models_path)）
+    try:
+        update_templates_index(output_dir.parent)
+    except Exception as e:
+        logger.warning("更新全局索引失败: %s", e)
+
+    return {
+        "ok": True,
+        "template_id": meta.get("template_id"),
+        "category": scene,
+        "total_pages": meta.get("total_pages"),
+        "chapter_count": len(meta.get("chapters", [])),
+        "slots_count": slots_count,
+        "removable_pages": meta.get("removable_pages", []),
+        "meta_path": str(meta_path),
+        "warnings": all_warnings,
+        "layout_profile": layout_profile,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description='PPT 模板批量导入工具')
-    parser.add_argument('--src', required=True, help='源模板目录路径')
-    parser.add_argument('--models-dir', default='models', help='models 根目录（默认: models）')
-    parser.add_argument('--prefix', default='模板', help='模板重命名前缀（如"商务风"）')
-    parser.add_argument('--start', type=int, default=1, help='起始编号（默认: 1）')
-    parser.add_argument('--force', action='store_true', help='覆盖已存在的模板')
-    parser.add_argument('--no-screenshot', action='store_true', help='跳过截图生成（无 PowerPoint 时）')
-    parser.add_argument('--removable-tail', type=int, default=0,
-                        help='标记每个模板末尾 N 页为可删除（版权页/致谢页），渲染时自动删除')
+    sub = parser.add_subparsers(dest="cmd")
+
+    # 默认子命令：import（保持向后兼容）
+    p_import = sub.add_parser("import", help="批量导入模板（自动分类+复制+meta+截图）")
+    p_import.add_argument('--src', required=True, help='源模板目录路径')
+    p_import.add_argument('--models-dir', default='models', help='models 根目录（默认: models）')
+    p_import.add_argument('--prefix', default='模板', help='模板重命名前缀（如"商务风"）')
+    p_import.add_argument('--start', type=int, default=1, help='起始编号（默认: 1）')
+    p_import.add_argument('--force', action='store_true', help='覆盖已存在的模板')
+    p_import.add_argument('--no-screenshot', action='store_true', help='跳过截图生成（无 PowerPoint 时）')
+    p_import.add_argument('--removable-tail', type=int, default=0,
+                          help='标记每个模板末尾 N 页为可删除（版权页/致谢页），渲染时自动删除')
+
+    # auto-annotate 子命令：自定义模板自动标注
+    p_anno = sub.add_parser("auto-annotate", help="自定义模板自动标注，生成 .meta.json 元数据")
+    p_anno.add_argument("--input", required=True, help="模板文件路径 .pptx")
+    p_anno.add_argument("--scene", required=True, help="所属场景（如 工作汇报）")
+    p_anno.add_argument("--output", default="models/_annotated", help="元数据输出目录")
+
+    # rebuild-index 子命令：全量模板索引更新
+    p_idx = sub.add_parser("rebuild-index", help="重新生成 templates_index.json 全局模板索引")
+    p_idx.add_argument("--models-dir", default="models", help="models 根目录")
 
     args = parser.parse_args()
 
-    import_templates(
-        src_dir=args.src,
-        models_dir=args.models_dir,
-        prefix=args.prefix,
-        force=args.force,
-        use_screenshot=not args.no_screenshot,
-        start_index=args.start,
-        removable_tail=args.removable_tail,
-    )
+    # 向后兼容：无子命令时按旧方式处理（将所有参数视为 import）
+    if args.cmd is None:
+        # 旧模式兼容：重新解析为 import
+        parser.parse_args(["import"] + sys.argv[1:])
+        return
+
+    if args.cmd == "import":
+        import_templates(
+            src_dir=args.src,
+            models_dir=args.models_dir,
+            prefix=args.prefix,
+            force=args.force,
+            use_screenshot=not args.no_screenshot,
+            start_index=args.start,
+            removable_tail=args.removable_tail,
+        )
+    elif args.cmd == "auto-annotate":
+        result = auto_annotate(Path(args.input), args.scene, Path(args.output))
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+    elif args.cmd == "rebuild-index":
+        update_templates_index(args.models_dir)
 
 
 if __name__ == "__main__":

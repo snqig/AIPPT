@@ -1,0 +1,227 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "outline.schema.json",
+  "title": "AIPPT 大纲 Schema（第二层/第三层）",
+  "description": "Step 2 产出的完整大纲，支持两种格式：cover/sections/end（项目标准格式）或 pages 数组格式（扩展格式）",
+  "type": "object",
+  "required": ["scene"],
+  "properties": {
+    "scene": {
+      "type": "string",
+      "enum": ["工作总结", "年终总结", "工作汇报", "工作计划", "述职报告", "个人简历", "自我介绍", "开题报告", "公司简介", "职业规划", "安全教育"]
+    },
+    "purpose": {"type": "string"},
+    "audience": {"type": "string"},
+    "total_pages": {"type": "integer", "minimum": 4, "maximum": 60},
+    "cover": {
+      "type": "object",
+      "required": ["title"],
+      "properties": {
+        "title": {"type": "string", "maxLength": 100},
+        "subtitle": {"type": "string", "maxLength": 100},
+        "reporter": {"type": "string", "maxLength": 50},
+        "period": {"type": "string", "maxLength": 50}
+      },
+      "additionalProperties": false
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "name", "items"],
+        "properties": {
+          "key": {"type": "string"},
+          "name": {"type": "string", "maxLength": 30},
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title", "desc"],
+              "properties": {
+                "title": {"type": "string", "maxLength": 50},
+                "desc": {"type": "string", "maxLength": 200}
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "end": {
+      "type": "object",
+      "properties": {
+        "thanks": {"type": "string", "maxLength": 100}
+      },
+      "additionalProperties": false
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 60,
+      "items": {"$ref": "#/$defs/page"}
+    }
+  },
+  "$defs": {
+    "page": {
+      "type": "object",
+      "required": ["page_id", "page_type", "title"],
+      "properties": {
+        "page_id": {"type": "integer", "minimum": 1},
+        "page_type": {
+          "type": "string",
+          "enum": ["cover", "catalog", "divider", "numbered_list", "kpi", "timeline", "two_column", "skill_percent", "preset_titles", "chart", "table", "ending"]
+        },
+        "title": {"type": "string", "maxLength": 80},
+        "subtitle": {"type": "string", "maxLength": 80},
+        "section_no": {"type": "string"},
+        "items": {
+          "type": "array",
+          "items": {"type": "string", "maxLength": 50},
+          "minItems": 2,
+          "maxItems": 8
+        },
+        "kpi_items": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "required": ["label", "value"],
+            "properties": {
+              "label": {"type": "string", "maxLength": 20},
+              "value": {"type": "string", "maxLength": 20},
+              "trend": {"type": "string", "maxLength": 30}
+            },
+            "additionalProperties": false
+          }
+        },
+        "timeline_items": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": ["time", "event"],
+            "properties": {
+              "time": {"type": "string", "maxLength": 30},
+              "event": {"type": "string", "maxLength": 100}
+            },
+            "additionalProperties": false
+          }
+        },
+        "left_title": {"type": "string", "maxLength": 30},
+        "left_items": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {"type": "string", "maxLength": 50}
+        },
+        "right_title": {"type": "string", "maxLength": 30},
+        "right_items": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {"type": "string", "maxLength": 50}
+        },
+        "skills": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {
+            "type": "object",
+            "required": ["name", "percent"],
+            "properties": {
+              "name": {"type": "string", "maxLength": 20},
+              "percent": {"type": "integer", "minimum": 0, "maximum": 100}
+            },
+            "additionalProperties": false
+          }
+        },
+        "chart_type": {
+          "type": "string",
+          "enum": ["bar", "line", "pie", "radar"]
+        },
+        "chart_data": {
+          "type": "object",
+          "required": ["categories", "series"],
+          "properties": {
+            "categories": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 12,
+              "items": {"type": "string", "maxLength": 20}
+            },
+            "series": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "required": ["name", "data"],
+                "properties": {
+                  "name": {"type": "string", "maxLength": 30},
+                  "data": {
+                    "type": "array",
+                    "items": {"type": "number"},
+                    "minItems": 2,
+                    "maxItems": 12
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "headers": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 6,
+          "items": {"type": "string", "maxLength": 20}
+        },
+        "rows": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "type": "array",
+            "items": {"type": "string", "maxLength": 30}
+          }
+        },
+        "transition": {
+          "type": ["string", "null"],
+          "enum": [
+            null, "none",
+            "fade", "cut", "push", "cover", "pull", "wipe", "dissolve", "split",
+            "zoom", "wheel", "blinds", "checker", "circle", "diamond", "plus",
+            "wedge", "comb", "randomBar", "strips",
+            "conveyor", "doors", "ferris", "flip", "flythrough", "gallery", "glitter",
+            "honeycomb", "pan", "prism", "reveal", "ripple", "shred", "switch",
+            "vortex", "warp", "window", "flash", "wheelReverse"
+          ]
+        },
+        "animations": {
+          "type": ["object", "null"],
+          "properties": {
+            "entry": {
+              "type": ["string", "null"],
+              "enum": [null, "fade", "fly_in", "zoom", "wipe", "slide_in", "bounce", "spin"]
+            },
+            "exit": {
+              "type": ["string", "null"],
+              "enum": [null, "fade_out", "fly_out", "zoom_out", "slide_out"]
+            },
+            "emphasis": {
+              "type": ["string", "null"],
+              "enum": [null, "pulse", "spin", "shake", "grow_shrink", "color_blast"]
+            },
+            "by_bullet": {"type": "boolean"}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

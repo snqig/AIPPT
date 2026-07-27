@@ -1,0 +1,815 @@
+{
+  "template_id": "安全教育__安全教育_(7)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 20,
+  "removable_pages": [
+    19,
+    20
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 3,
+      "name": "育日"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 4,
+      "end_page": 7,
+      "name": "周年良好氛围"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 8,
+      "end_page": 10,
+      "name": "危害国家安全的行为"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 11,
+      "end_page": 12,
+      "name": "什么"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 13,
+      "end_page": 17,
+      "name": "照的地点拍照"
+    },
+    {
+      "key": "end",
+      "page": 18,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：",
+        "shape_name": "矩形: 圆角 55",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "小",
+        "shape_name": "椭圆 49"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "学",
+        "shape_name": "椭圆 50"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "生",
+        "shape_name": "椭圆 51"
+      }
+    ],
+    "2": [
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 49",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "什么是全民国家安全教育日",
+        "shape_name": "文本框 83",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 2,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "什么是全民国家安全教育日",
+        "shape_name": "文本框 84",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 2,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 86",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "危害国家安全的行为",
+        "shape_name": "文本框 88",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "危害国家安全的行为",
+        "shape_name": "文本框 89",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "椭圆 91",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 93",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 2,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 94",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 2,
+          "total_chars": 30
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "PART-01",
+        "shape_name": "矩形: 圆角 55"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "什么是全民国家安全教育日",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 2,
+          "total_chars": 36
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "什么是全民国家安全教育日",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 2,
+          "total_chars": 36
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "国/家/安/全/教/育",
+        "shape_name": "文本框 37",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 18,
+          "total_chars": 90
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "什么是全民国家安全教育日",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 36"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 63"
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "什么是全民国家安全教育日",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "国家安全",
+        "shape_name": "矩形: 圆角 31",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "国家安全具有以下五大亮点：",
+        "shape_name": "矩形: 圆角 34",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 1,
+          "total_chars": 28
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "什么是全民国家安全教育日",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "国家安全意识",
+        "shape_name": "椭圆 8",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 5,
+          "total_chars": 55
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "法纪观念",
+        "shape_name": "矩形: 圆角 31",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "敌情观念",
+        "shape_name": "矩形: 圆角 27",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "保密观念",
+        "shape_name": "矩形: 圆角 28",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "安全防范观念",
+        "shape_name": "矩形: 圆角 29",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "什么是全民国家安全教育日",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "PART-02",
+        "shape_name": "矩形: 圆角 55"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "危害国家安全的行为",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 2,
+          "total_chars": 36
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "危害国家安全的行为",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 2,
+          "total_chars": 36
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "国/家/安/全/教/育",
+        "shape_name": "文本框 37",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 18,
+          "total_chars": 90
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "危害国家安全的行为",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "危害国家安全",
+        "shape_name": "矩形: 圆角 31",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "危害国家安全的行为",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "矩形: 圆角 31",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "矩形: 圆角 41",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "矩形: 圆角 47",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "矩形: 圆角 51",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "矩形: 圆角 57",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 4,
+          "total_chars": 12
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "PART-03",
+        "shape_name": "矩形: 圆角 55"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 34",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 2,
+          "total_chars": 36
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 36",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 2,
+          "total_chars": 36
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "国/家/安/全/教/育",
+        "shape_name": "文本框 37",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 18,
+          "total_chars": 90
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "一、法律红线不触碰",
+        "shape_name": "矩形: 圆角 47",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "二、日常细节要牢记",
+        "shape_name": "矩形: 圆角 47",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "椭圆 8",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "椭圆 23",
+        "capacity": {
+          "max_chars_per_line": 4,
+          "max_lines": 2,
+          "total_chars": 8
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "具体表现在什么地方呢？",
+        "shape_name": "矩形: 圆角 47",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "维护国家安全我们能做什么",
+        "shape_name": "文本框 43",
+        "capacity": {
+          "max_chars_per_line": 23,
+          "max_lines": 1,
+          "total_chars": 23
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "椭圆 9",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "椭圆 30",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "/感谢观看/",
+        "shape_name": "矩形: 圆角 55",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "小",
+        "shape_name": "椭圆 49"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "学",
+        "shape_name": "椭圆 50"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "生",
+        "shape_name": "椭圆 51"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 10
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 8
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 9
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

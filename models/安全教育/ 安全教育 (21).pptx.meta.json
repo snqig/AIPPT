@@ -1,0 +1,1406 @@
+{
+  "template_id": "安全教育__安全教育_(21)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 34,
+  "removable_pages": [
+    32,
+    33,
+    34
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 3,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 4,
+      "end_page": 6,
+      "name": "加强对孩子的教育和管"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 7,
+      "end_page": 7,
+      "name": "出车窗等惨剧屡见报端"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 8,
+      "end_page": 11,
+      "name": "交通安全自护自救知识"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 12,
+      "end_page": 12,
+      "name": "点击此处输入文本内容"
+    },
+    {
+      "key": "chapter_5",
+      "start_page": 13,
+      "end_page": 14,
+      "name": "防骗防拐知识"
+    },
+    {
+      "key": "chapter_6",
+      "start_page": 15,
+      "end_page": 17,
+      "name": "点击此处输入文本内容"
+    },
+    {
+      "key": "chapter_7",
+      "start_page": 18,
+      "end_page": 18,
+      "name": "点击此处输入文本内容"
+    },
+    {
+      "key": "chapter_8",
+      "start_page": 19,
+      "end_page": 20,
+      "name": "灭火常识"
+    },
+    {
+      "key": "chapter_9",
+      "start_page": 21,
+      "end_page": 21,
+      "name": "点击此处输入文本内容"
+    },
+    {
+      "key": "chapter_10",
+      "start_page": 22,
+      "end_page": 22,
+      "name": "暑假安全上网提示"
+    },
+    {
+      "key": "chapter_11",
+      "start_page": 23,
+      "end_page": 23,
+      "name": "点击此处输入文本内容"
+    },
+    {
+      "key": "chapter_12",
+      "start_page": 24,
+      "end_page": 24,
+      "name": "暑假气象安全知识"
+    },
+    {
+      "key": "chapter_13",
+      "start_page": 25,
+      "end_page": 25,
+      "name": "点击此处输入文本内容"
+    },
+    {
+      "key": "chapter_14",
+      "start_page": 26,
+      "end_page": 26,
+      "name": "居家安全"
+    },
+    {
+      "key": "chapter_15",
+      "start_page": 27,
+      "end_page": 27,
+      "name": "居家安全"
+    },
+    {
+      "key": "chapter_16",
+      "start_page": 28,
+      "end_page": 28,
+      "name": "点击此处输入文本内容"
+    },
+    {
+      "key": "chapter_17",
+      "start_page": 29,
+      "end_page": 34,
+      "name": "冷饮"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：设计",
+        "shape_name": "PA_文本框 18",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "汇报日期：20XX",
+        "shape_name": "PA_文本框 18",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "安全不",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "学生暑假安全教育PPT",
+        "shape_name": "原创设计师QQ5858324           _16",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "快乐过暑假",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "放",
+        "shape_name": "PA-文本框 42"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "假",
+        "shape_name": "PA-文本框 42"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "HAPPY",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 5,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "HAPPY",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 5,
+          "total_chars": 15
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "前 言",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "目 录",
+        "shape_name": "矩形 7"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防止溺水",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "CONTENTS",
+        "shape_name": "矩形 56",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "自然灾害",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "04",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "气象安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "07",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "交通安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "02",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "消防安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_5",
+        "match_text": "05",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "居家安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_6",
+        "match_text": "08",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "防骗防拐",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_7",
+        "match_text": "03",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "上网安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_8",
+        "match_text": "06",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "饮食安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "number_9",
+        "match_text": "09",
+        "shape_name": "文本框 29"
+      }
+    ],
+    "4": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "防止溺水",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 01",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "不准私自下水游泳",
+        "shape_name": "原创设计师QQ5858324           _16"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "不擅自与同学结伴游泳",
+        "shape_name": "原创设计师QQ5858324           _16"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "不到不熟悉的水域游泳",
+        "shape_name": "原创设计师QQ5858324           _16"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "防溺水六不",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 29"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "溺水救治知识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 29"
+      }
+    ],
+    "7": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "交通安全",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 02",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "交通安全自护自救知识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "文本框 29"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "交通安全自护自救知识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "文本框 29"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "乘坐出租车、网约车须知",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "文本框 29"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "乘坐出租车、网约车须知",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "文本框 29"
+      }
+    ],
+    "12": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "防拐防骗",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 03",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "首先，不能跟任何“陌生人”走",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防拐防骗知识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "防骗防拐知识",
+        "shape_name": "TextBox 13",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "二是要带你去玩的人。",
+        "shape_name": "TextBox 13",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 2,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "三是叫你名字的人。",
+        "shape_name": "TextBox 13",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 2,
+          "total_chars": 40
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "防拐防骗知识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 12"
+      }
+    ],
+    "15": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "自然灾害",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 04",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "遭遇洪灾如何自救？",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "文本框 27"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "海  啸",
+        "shape_name": "TextBox 41",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "崩  塌",
+        "shape_name": "TextBox 42",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "泥石流",
+        "shape_name": "TextBox 43",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "自然灾害避险知识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "文本框 37"
+      }
+    ],
+    "18": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "消防安全",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 05",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "灭火常识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "文本框 61"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "火灾逃生知识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "05",
+        "shape_name": "文本框 61"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "1",
+        "shape_name": "椭圆 62"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "2",
+        "shape_name": "椭圆 63"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "3",
+        "shape_name": "椭圆 64"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "4",
+        "shape_name": "椭圆 65"
+      }
+    ],
+    "21": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "上网安全",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 06",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "暑假安全上网提示",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "06",
+        "shape_name": "文本框 12"
+      }
+    ],
+    "23": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "气象安全",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 07",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "暑假气象安全知识",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "07",
+        "shape_name": "文本框 34"
+      }
+    ],
+    "25": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "居家安全",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 08",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "有人敲门",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "夜间返家",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "居家安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "08",
+        "shape_name": "文本框 15"
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "用电安全",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "电梯受困小策略",
+        "shape_name": "TextBox 13"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "居家安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "08",
+        "shape_name": "文本框 15"
+      }
+    ],
+    "28": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "title",
+        "match_text": "饮食安全",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "PART 09",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "饮食安全",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "09",
+        "shape_name": "文本框 36"
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "避 暑",
+        "shape_name": "TextBox 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "10种避暑方法",
+        "shape_name": "文本框 31",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 1,
+          "total_chars": 13
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "09",
+        "shape_name": "文本框 43"
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "点击进入",
+        "shape_name": "矩形 5"
+      }
+    ],
+    "32": [
+      {
+        "slot": "number",
+        "match_text": "85",
+        "shape_name": "iṡḷïḑe"
+      },
+      {
+        "slot": "reporter",
+        "match_text": "汇报人：设计",
+        "shape_name": "PA_文本框 18",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title",
+        "match_text": "汇报日期：20XX",
+        "shape_name": "PA_文本框 18",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "安全不",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "感谢您的观看与分享",
+        "shape_name": "感谢您的观看与分享",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "快乐过暑假",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "放",
+        "shape_name": "PA-文本框 42"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "假",
+        "shape_name": "PA-文本框 42"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "HAPPY",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 5,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "HAPPY",
+        "shape_name": "PA-文本框 42",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 5,
+          "total_chars": 15
+        }
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 6
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "26": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "28": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "32": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 5
+    },
+    "33": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "34": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

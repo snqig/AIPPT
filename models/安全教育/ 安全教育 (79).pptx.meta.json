@@ -1,0 +1,1168 @@
+{
+  "template_id": "安全教育__安全教育_(79)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 45,
+  "removable_pages": [
+    44,
+    45
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 34,
+      "end_page": 42,
+      "name": "中占第三位"
+    },
+    {
+      "key": "end",
+      "page": 43,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "抗震救灾主题班会",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 1,
+          "total_chars": 28
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "抗震救灾主题班会",
+        "shape_name": "矩形 8",
+        "capacity": {
+          "max_chars_per_line": 28,
+          "max_lines": 1,
+          "total_chars": 28
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "介绍地震相关知识",
+        "shape_name": "矩形 21",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "介绍著名地震",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 26,
+          "max_lines": 1,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "家庭防震准备",
+        "shape_name": "矩形 23",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "爱心与灾区重建",
+        "shape_name": "矩形 25",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "逃生法则及自救常识",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "地震正确逃生方法",
+        "shape_name": "矩形 27",
+        "capacity": {
+          "max_chars_per_line": 22,
+          "max_lines": 1,
+          "total_chars": 22
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "地震时应急防震工作",
+        "shape_name": "矩形 47",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "矩形 71"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "2",
+        "shape_name": "矩形 71"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "矩形 71"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "4",
+        "shape_name": "矩形 71"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "目",
+        "shape_name": "矩形 71"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "录",
+        "shape_name": "矩形 71"
+      },
+      {
+        "slot": "number_5",
+        "match_text": "5",
+        "shape_name": "矩形 71"
+      },
+      {
+        "slot": "number_6",
+        "match_text": "6",
+        "shape_name": "矩形 71"
+      },
+      {
+        "slot": "number_7",
+        "match_text": "7",
+        "shape_name": "矩形 71"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "地震相关知识",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震相关知识",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "什么是地震？",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "地震成因",
+        "shape_name": "Text Box 4",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "断层说",
+        "shape_name": "文本框 10"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "相变说",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "核爆炸说",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "地下雷暴说",
+        "shape_name": "文本框 53"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "弹性回跳说",
+        "shape_name": "文本框 55"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "岩浆说",
+        "shape_name": "文本框 57"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "气爆说",
+        "shape_name": "文本框 59"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "地震类型",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "地震前兆",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地下水异常",
+        "shape_name": "圆角矩形 3",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "动物异常",
+        "shape_name": "圆角矩形 5",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "电磁异常",
+        "shape_name": "圆角矩形 14",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "定义",
+        "shape_name": "矩形 15"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "地震震级及烈度",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "地震现象",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "地震震波",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "著名地震介绍",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "著名地震介绍",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "著名地震",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "爱心与灾区重建",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "爱心与灾区重建",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "3",
+        "shape_name": "TextBox 27"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "资源捐助",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "资源捐助",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "逃生法则与自救常识",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "逃生法则与自救常识",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "4",
+        "shape_name": "TextBox 27"
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "逃生十大法则",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "逃生十大法则",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "自救四大常识",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "1.大地震时不要急",
+        "shape_name": "矩形 2"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "2.人多先找藏身处",
+        "shape_name": "矩形 4"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "3.远离危险区",
+        "shape_name": "矩形 14"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "4.被埋要保存体力",
+        "shape_name": "矩形 19"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "自",
+        "shape_name": "文本框 7"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "救",
+        "shape_name": "文本框 34"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "常",
+        "shape_name": "文本框 65"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "识",
+        "shape_name": "文本框 66"
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "地震正确逃生方法",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "5",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震正确逃生方法",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "在学校",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "在教室",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 2,
+          "total_chars": 6
+        }
+      }
+    ],
+    "22": [
+      {
+        "slot": "title",
+        "match_text": "在学校",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "原地蹲下",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 1,
+          "total_chars": 8
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "远离在建建筑",
+        "shape_name": "矩形 12",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "避开危险物",
+        "shape_name": "矩形 13",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "警惕次生灾害",
+        "shape_name": "矩形 14",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "23": [
+      {
+        "slot": "title",
+        "match_text": "在学校",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "若在多媒体、多功能教室等地方",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 9,
+          "total_chars": 63
+        }
+      }
+    ],
+    "24": [
+      {
+        "slot": "title",
+        "match_text": "在家中",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "25": [
+      {
+        "slot": "title",
+        "match_text": "在街上",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "上风向躲避",
+        "shape_name": "圆角矩形 3"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "抓紧桥栏杆",
+        "shape_name": "圆角矩形 3"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "远离危险地方",
+        "shape_name": "圆角矩形 3"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "路旁大楼暂避",
+        "shape_name": "圆角矩形 3"
+      }
+    ],
+    "26": [
+      {
+        "slot": "title",
+        "match_text": "在公共场所",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "在公共场所",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "27": [
+      {
+        "slot": "title",
+        "match_text": "在电梯中",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "28": [
+      {
+        "slot": "title",
+        "match_text": "在车内",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "在",
+        "shape_name": "矩形 5"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "车",
+        "shape_name": "矩形 6"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "内",
+        "shape_name": "矩形 7"
+      }
+    ],
+    "29": [
+      {
+        "slot": "title",
+        "match_text": "在车库、停车场",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "30": [
+      {
+        "slot": "title",
+        "match_text": "在开阔地",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "31": [
+      {
+        "slot": "title",
+        "match_text": "在野外",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "在山区",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "在河边",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "在平原",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "在海边",
+        "shape_name": "矩形 33",
+        "capacity": {
+          "max_chars_per_line": 6,
+          "max_lines": 1,
+          "total_chars": 6
+        }
+      }
+    ],
+    "32": [
+      {
+        "slot": "title",
+        "match_text": "特殊危险",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "33": [
+      {
+        "slot": "title",
+        "match_text": "地震时应急防震工作",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "6",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "地震时应急防震工作",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      }
+    ],
+    "34": [
+      {
+        "slot": "title",
+        "match_text": "室内应急防震行动",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "35": [
+      {
+        "slot": "title",
+        "match_text": "室外人员的应急防震行动",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "震",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "防",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "36": [
+      {
+        "slot": "title",
+        "match_text": "学校的应急防震行动",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "37": [
+      {
+        "slot": "title",
+        "match_text": "自救常识",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "38": [
+      {
+        "slot": "title",
+        "match_text": "互救常识",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "39": [
+      {
+        "slot": "title",
+        "match_text": "家庭震准备",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "7",
+        "shape_name": "TextBox 27"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "家庭震准备",
+        "shape_name": "TextBox 4",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      }
+    ],
+    "40": [
+      {
+        "slot": "title",
+        "match_text": "合理放置家具、物品",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "合理放置物品",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 3,
+          "max_lines": 6,
+          "total_chars": 18
+        }
+      }
+    ],
+    "41": [
+      {
+        "slot": "title",
+        "match_text": "准备好必要的防震物品",
+        "shape_name": "Text Box 4"
+      }
+    ],
+    "42": [
+      {
+        "slot": "title",
+        "match_text": "地震时关火的三次机会",
+        "shape_name": "Text Box 4"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "一",
+        "shape_name": "椭圆 8",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "二",
+        "shape_name": "椭圆 10",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "三",
+        "shape_name": "椭圆 12",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 2,
+          "total_chars": 10
+        }
+      }
+    ],
+    "43": [
+      {
+        "slot": "title",
+        "match_text": "谢谢大家观看",
+        "shape_name": "矩形 11",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "谢谢大家观看",
+        "shape_name": "矩形 7",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      }
+    ],
+    "44": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "6": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "23": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "24": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "25": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "27": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "29": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "30": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "37": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "40": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "41": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "44": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "45": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

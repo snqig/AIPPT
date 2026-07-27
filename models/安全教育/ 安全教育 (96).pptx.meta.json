@@ -1,0 +1,1052 @@
+{
+  "template_id": "安全教育__安全教育_(96)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 22,
+  "removable_pages": [
+    21,
+    22
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 6,
+      "name": "国家对儿童拐骗的重视"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 7,
+      "end_page": 9,
+      "name": "场所"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 10,
+      "end_page": 12,
+      "name": "拐骗犯常用的伎俩"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 13,
+      "end_page": 22,
+      "name": "家长必学的防拐知识"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "幼儿防拐骗安全知识",
+        "shape_name": "矩形 31",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 1,
+          "total_chars": 16
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "幼儿防拐骗安全知识",
+        "shape_name": "矩形 32",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "幼",
+        "shape_name": "椭圆 26"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "儿",
+        "shape_name": "椭圆 27"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "园",
+        "shape_name": "椭圆 28"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "安",
+        "shape_name": "椭圆 29"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "全",
+        "shape_name": "椭圆 30"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "教",
+        "shape_name": "椭圆 34"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "育",
+        "shape_name": "椭圆 35"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "课",
+        "shape_name": "椭圆 36"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "件",
+        "shape_name": "椭圆 37"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "讲师：",
+        "shape_name": "矩形: 圆角 44"
+      },
+      {
+        "slot": "period",
+        "match_text": "时间：202X.X.X",
+        "shape_name": "矩形: 圆角 45"
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "国家对儿童拐骗的重视",
+        "shape_name": "文本框 50",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 2,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "文本框 51"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "孩子易走失的几大高危场所",
+        "shape_name": "文本框 53",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 2,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "number_2",
+        "match_text": "02",
+        "shape_name": "文本框 54"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "拐骗犯常用的伎俩",
+        "shape_name": "文本框 56",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "03",
+        "shape_name": "文本框 57"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "家长必学的防拐知识",
+        "shape_name": "文本框 59",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 2,
+          "total_chars": 26
+        }
+      },
+      {
+        "slot": "number_4",
+        "match_text": "04",
+        "shape_name": "文本框 60"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "目 录",
+        "shape_name": "文本框 63",
+        "capacity": {
+          "max_chars_per_line": 5,
+          "max_lines": 1,
+          "total_chars": 5
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "CONTENTS",
+        "shape_name": "文本框 64",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "国家对儿童拐骗的重视",
+        "shape_name": "文本框 28",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第",
+        "shape_name": "文本框 36"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "一",
+        "shape_name": "文本框 37"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "章",
+        "shape_name": "文本框 38"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "节",
+        "shape_name": "文本框 39"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "一：是高层会议中提到",
+        "shape_name": "矩形: 圆角 2",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "国家对儿童拐骗的重视",
+        "shape_name": "矩形: 圆角 1",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "破获2216起",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "国家对儿童拐骗的重视",
+        "shape_name": "矩形: 圆角 6",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "二、是法律修改中体现",
+        "shape_name": "矩形: 圆角 9",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "国家对儿童拐骗的重视",
+        "shape_name": "矩形: 圆角 6",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "三、是关键看行动",
+        "shape_name": "矩形: 圆角 9",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "防拐防骗",
+        "shape_name": "文本框 11",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "孩子易走失的几大高危场所",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "二",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "章",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "节",
+        "shape_name": "文本框 41"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "孩子易走失的几大高危场所",
+        "shape_name": "矩形: 圆角 9",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "商场",
+        "shape_name": "矩形: 圆角 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "公园",
+        "shape_name": "矩形: 圆角 13",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "车站",
+        "shape_name": "矩形: 圆角 14",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "title",
+        "match_text": "人流密集，灯光昏暗易发生走失",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 3,
+          "total_chars": 57
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "孩子易走失的几大高危场所",
+        "shape_name": "矩形: 圆角 8",
+        "capacity": {
+          "max_chars_per_line": 24,
+          "max_lines": 1,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "游乐场",
+        "shape_name": "矩形: 圆角 11",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "超市",
+        "shape_name": "矩形: 圆角 12",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "晚会",
+        "shape_name": "矩形: 圆角 13",
+        "capacity": {
+          "max_chars_per_line": 7,
+          "max_lines": 1,
+          "total_chars": 7
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "拐骗犯常用的伎俩",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "三",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "章",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "节",
+        "shape_name": "文本框 41"
+      }
+    ],
+    "11": [
+      {
+        "slot": "title",
+        "match_text": "拐骗犯常用的伎俩",
+        "shape_name": "矩形: 圆角 12",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "假冒熟人",
+        "shape_name": "矩形: 圆角 15",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "物质利诱",
+        "shape_name": "矩形: 圆角 16",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "title",
+        "match_text": "拐骗犯常用的伎俩",
+        "shape_name": "矩形: 圆角 6",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "盗窃抢劫",
+        "shape_name": "矩形: 圆角 9",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "利用善心",
+        "shape_name": "矩形: 圆角 10",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "家长必学的防拐知识",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "第",
+        "shape_name": "文本框 32"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "四",
+        "shape_name": "文本框 35"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "章",
+        "shape_name": "文本框 40"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "节",
+        "shape_name": "文本框 41"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "家长必学的防拐知识",
+        "shape_name": "矩形: 圆角 6",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "家长必学的防拐知识",
+        "shape_name": "矩形: 圆角 4",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "防拐骗小常识",
+        "shape_name": "矩形: 圆角 7",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "记住城市、小区、门牌号",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 3,
+          "total_chars": 39
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "教孩子拨打紧急求助电话",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 3,
+          "total_chars": 45
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "记住父母的名字、电话",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 13,
+          "max_lines": 3,
+          "total_chars": 39
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "家长必学的防拐知识",
+        "shape_name": "矩形: 圆角 5",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "孕妇或有孩子的父母",
+        "shape_name": "矩形 1",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "穿军警制服的群体",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "一群学生",
+        "shape_name": "矩形 3",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "超市商场统一着装的人",
+        "shape_name": "矩形 4",
+        "capacity": {
+          "max_chars_per_line": 30,
+          "max_lines": 1,
+          "total_chars": 30
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "家长必学的防拐知识",
+        "shape_name": "矩形: 圆角 7",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      }
+    ],
+    "18": [
+      {
+        "slot": "title",
+        "match_text": "家长必学的防拐知识",
+        "shape_name": "矩形: 圆角 5",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "用这些问题考考孩子",
+        "shape_name": "矩形: 圆角 8",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "有陌生人敲门怎么办?",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 3,
+          "total_chars": 33
+        }
+      }
+    ],
+    "19": [
+      {
+        "slot": "title",
+        "match_text": "家长必学的防拐知识",
+        "shape_name": "矩形: 圆角 5",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "用这些问题考考孩子",
+        "shape_name": "矩形: 圆角 8",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "拨打110该怎样说？",
+        "shape_name": "矩形 2",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 3,
+          "total_chars": 27
+        }
+      }
+    ],
+    "20": [
+      {
+        "slot": "title",
+        "match_text": "幼儿防拐骗安全知识",
+        "shape_name": "矩形 51",
+        "capacity": {
+          "max_chars_per_line": 16,
+          "max_lines": 2,
+          "total_chars": 32
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "幼儿防拐骗安全知识",
+        "shape_name": "矩形 52",
+        "capacity": {
+          "max_chars_per_line": 18,
+          "max_lines": 1,
+          "total_chars": 18
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "幼",
+        "shape_name": "椭圆 57"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "儿",
+        "shape_name": "椭圆 58"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "园",
+        "shape_name": "椭圆 59"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "安",
+        "shape_name": "椭圆 60"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "全",
+        "shape_name": "椭圆 61"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "教",
+        "shape_name": "椭圆 62"
+      },
+      {
+        "slot": "title_9",
+        "match_text": "育",
+        "shape_name": "椭圆 63"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "课",
+        "shape_name": "椭圆 64"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "件",
+        "shape_name": "椭圆 65"
+      },
+      {
+        "slot": "title_12",
+        "match_text": "讲师：唐峰",
+        "shape_name": "矩形: 圆角 68"
+      },
+      {
+        "slot": "period",
+        "match_text": "时间：202X.X.X",
+        "shape_name": "矩形: 圆角 69"
+      }
+    ],
+    "21": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "8": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "10": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "11": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "12": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "14": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "19": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "20": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "21": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "22": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}

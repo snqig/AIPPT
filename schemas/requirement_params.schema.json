@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "requirement_params.schema.json",
+  "title": "AIPPT 需求参数 Schema（第一层）",
+  "description": "Step 1 产出的需求参数字典，校验场景枚举、页数范围、核心参数合法性",
+  "type": "object",
+  "required": ["scene", "purpose"],
+  "properties": {
+    "scene": {
+      "type": "string",
+      "enum": ["工作总结", "年终总结", "工作汇报", "工作计划", "述职报告", "个人简历", "自我介绍", "开题报告", "公司简介", "职业规划", "安全教育"]
+    },
+    "audience": {"type": "string", "maxLength": 100},
+    "purpose": {"type": "string", "minLength": 2, "maxLength": 500},
+    "page_count": {"type": "integer", "minimum": 4, "maximum": 60},
+    "tone": {"type": "string", "enum": ["正式专业", "正式商务", "简约科技", "清新活力", "严肃", "轻松", "说服", "信息型"]},
+    "focus_points": {
+      "type": "array",
+      "items": {"type": "string", "maxLength": 50},
+      "maxItems": 10
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,826 @@
+{
+  "template_id": "安全教育__安全教育_(76)",
+  "category": "安全教育",
+  "style_tags": [
+    "商务",
+    "16:9"
+  ],
+  "total_pages": 18,
+  "removable_pages": [
+    17,
+    18
+  ],
+  "chapters": [
+    {
+      "key": "cover",
+      "page": 1,
+      "name": "封面"
+    },
+    {
+      "key": "catalog",
+      "page": 2,
+      "name": "目录"
+    },
+    {
+      "key": "chapter_1",
+      "start_page": 3,
+      "end_page": 4,
+      "name": "保留文字"
+    },
+    {
+      "key": "chapter_2",
+      "start_page": 5,
+      "end_page": 6,
+      "name": "保留文字"
+    },
+    {
+      "key": "chapter_3",
+      "start_page": 7,
+      "end_page": 12,
+      "name": "保留文字"
+    },
+    {
+      "key": "chapter_4",
+      "start_page": 13,
+      "end_page": 15,
+      "name": "保留文字"
+    },
+    {
+      "key": "end",
+      "page": 16,
+      "name": "结束页"
+    }
+  ],
+  "page_slots": {
+    "1": [
+      {
+        "slot": "title",
+        "match_text": "地震防护指南",
+        "shape_name": "PA-文本框 37",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "发生地震该如何正确避险？",
+        "shape_name": "PA-FooterText ",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "2": [
+      {
+        "slot": "title",
+        "match_text": "PART ONE",
+        "shape_name": "矩形 5",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "重点灾情回顾",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "PART TWO",
+        "shape_name": "矩形 24",
+        "capacity": {
+          "max_chars_per_line": 10,
+          "max_lines": 1,
+          "total_chars": 10
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "地震前的预兆",
+        "shape_name": "文本框 26",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "PART THREE",
+        "shape_name": "矩形 30",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "title_6",
+        "match_text": "总结避险要点",
+        "shape_name": "文本框 32",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PART FOUR",
+        "shape_name": "矩形 36",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_8",
+        "match_text": "如何预防地震",
+        "shape_name": "文本框 38",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "目录",
+        "shape_name": "文本框 41"
+      }
+    ],
+    "3": [
+      {
+        "slot": "title",
+        "match_text": "重点灾情回顾",
+        "shape_name": "PA-文本框 37",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "PA-矩形 38",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 5,
+          "total_chars": 240
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "01",
+        "shape_name": "1"
+      }
+    ],
+    "4": [
+      {
+        "slot": "title",
+        "match_text": "重点灾情回顾",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "5": [
+      {
+        "slot": "title",
+        "match_text": "地震前的预兆",
+        "shape_name": "PA-文本框 37",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "PA-矩形 38",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 5,
+          "total_chars": 240
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "02",
+        "shape_name": "1"
+      }
+    ],
+    "6": [
+      {
+        "slot": "title",
+        "match_text": "+",
+        "shape_name": "PA-矩形 42"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "+",
+        "shape_name": "PA-矩形 42"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "地下水异常",
+        "shape_name": "PA-文本框 27",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "自然",
+        "shape_name": "文本框 29"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "预警",
+        "shape_name": "文本框 30"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "+",
+        "shape_name": "PA-矩形 42"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "+",
+        "shape_name": "PA-矩形 42"
+      },
+      {
+        "slot": "title_8",
+        "match_text": "动物异常",
+        "shape_name": "PA-文本框 27",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_9",
+        "match_text": "+",
+        "shape_name": "PA-矩形 42"
+      },
+      {
+        "slot": "title_10",
+        "match_text": "+",
+        "shape_name": "PA-矩形 42"
+      },
+      {
+        "slot": "title_11",
+        "match_text": "地下水异常",
+        "shape_name": "PA-文本框 27",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "title_12",
+        "match_text": "地震前的预兆",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "7": [
+      {
+        "slot": "title",
+        "match_text": "总结避险要点",
+        "shape_name": "PA-文本框 37",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "PA-矩形 38",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 5,
+          "total_chars": 240
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "1"
+      }
+    ],
+    "8": [
+      {
+        "slot": "title",
+        "match_text": "平房避险",
+        "shape_name": "椭圆 64",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 3,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "楼房避险",
+        "shape_name": "椭圆 64",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 3,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "室外避险",
+        "shape_name": "椭圆 64",
+        "capacity": {
+          "max_chars_per_line": 8,
+          "max_lines": 3,
+          "total_chars": 24
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "总结避险要点",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "9": [
+      {
+        "slot": "number",
+        "match_text": "2",
+        "shape_name": "PA-文本框 56"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "1",
+        "shape_name": "PA-文本框 54"
+      },
+      {
+        "slot": "title",
+        "match_text": "减少自身伤害",
+        "shape_name": "PA-文本框 7",
+        "capacity": {
+          "max_chars_per_line": 12,
+          "max_lines": 1,
+          "total_chars": 12
+        }
+      },
+      {
+        "slot": "number_3",
+        "match_text": "3",
+        "shape_name": "PA-文本框 58"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "总结避险要点",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "10": [
+      {
+        "slot": "title",
+        "match_text": "什么是地震活命三角区",
+        "shape_name": "标题 1",
+        "capacity": {
+          "max_chars_per_line": 42,
+          "max_lines": 2,
+          "total_chars": 84
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "活命三角区",
+        "shape_name": "矩形 12"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "活命三角区",
+        "shape_name": "矩形 308"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "这是倒下的墙和梁",
+        "shape_name": "矩形 602"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "这是倒下的墙和梁",
+        "shape_name": "矩形 603"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "总结避险要点",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "11": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "íṩ1ïḋê"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "4",
+        "shape_name": "î$ļïḑe"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "2",
+        "shape_name": "îśļîḋé"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "3",
+        "shape_name": "isḷîďe"
+      },
+      {
+        "slot": "title",
+        "match_text": "摇晃时立即关火",
+        "shape_name": "文本框 30",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "不要慌张地向户外跑",
+        "shape_name": "文本框 33",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 1,
+          "total_chars": 19
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "将门打开，确保出口",
+        "shape_name": "文本框 54",
+        "capacity": {
+          "max_chars_per_line": 21,
+          "max_lines": 1,
+          "total_chars": 21
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "躲在桌子等坚固家具下",
+        "shape_name": "文本框 75",
+        "capacity": {
+          "max_chars_per_line": 20,
+          "max_lines": 1,
+          "total_chars": 20
+        }
+      },
+      {
+        "slot": "title_5",
+        "match_text": "总结避险要点",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "12": [
+      {
+        "slot": "number",
+        "match_text": "1",
+        "shape_name": "íṩ1ïḋê"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "4",
+        "shape_name": "î$ļïḑe"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "2",
+        "shape_name": "îśļîḋé"
+      },
+      {
+        "slot": "number_4",
+        "match_text": "3",
+        "shape_name": "isḷîďe"
+      },
+      {
+        "slot": "title",
+        "match_text": "务必注意山崩、断崖落石或海啸",
+        "shape_name": "文本框 33",
+        "capacity": {
+          "max_chars_per_line": 19,
+          "max_lines": 2,
+          "total_chars": 38
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "总结避险要点",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "13": [
+      {
+        "slot": "title",
+        "match_text": "如何预防地震",
+        "shape_name": "PA-文本框 37",
+        "capacity": {
+          "max_chars_per_line": 11,
+          "max_lines": 1,
+          "total_chars": 11
+        }
+      },
+      {
+        "slot": "desc",
+        "match_text": "您的内容打在这里，或者通过复制您的文本后",
+        "shape_name": "PA-矩形 38",
+        "capacity": {
+          "max_chars_per_line": 48,
+          "max_lines": 5,
+          "total_chars": 240
+        }
+      },
+      {
+        "slot": "number",
+        "match_text": "04",
+        "shape_name": "1"
+      }
+    ],
+    "14": [
+      {
+        "slot": "title",
+        "match_text": "选择好逃生通道和会聚地点。",
+        "shape_name": "文本框 12",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "如何预防地震",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "15": [
+      {
+        "slot": "title",
+        "match_text": "谣言特点",
+        "shape_name": "矩形 9",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "注意地震谣言",
+        "shape_name": "Content Placeholder 2",
+        "capacity": {
+          "max_chars_per_line": 15,
+          "max_lines": 1,
+          "total_chars": 15
+        }
+      },
+      {
+        "slot": "title_3",
+        "match_text": "对待谣言的态度",
+        "shape_name": "矩形 6",
+        "capacity": {
+          "max_chars_per_line": 14,
+          "max_lines": 1,
+          "total_chars": 14
+        }
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何预防地震",
+        "shape_name": "TextBox 76",
+        "capacity": {
+          "max_chars_per_line": 17,
+          "max_lines": 1,
+          "total_chars": 17
+        }
+      }
+    ],
+    "16": [
+      {
+        "slot": "title",
+        "match_text": "Thank you.",
+        "shape_name": "PA-文本框 37",
+        "capacity": {
+          "max_chars_per_line": 9,
+          "max_lines": 1,
+          "total_chars": 9
+        }
+      },
+      {
+        "slot": "title_2",
+        "match_text": "发生地震该如何正确避险？",
+        "shape_name": "PA-FooterText ",
+        "capacity": {
+          "max_chars_per_line": 25,
+          "max_lines": 1,
+          "total_chars": 25
+        }
+      }
+    ],
+    "17": [
+      {
+        "slot": "title",
+        "match_text": "唐峰PPT模板使用说明",
+        "shape_name": "文本框 12"
+      },
+      {
+        "slot": "title_2",
+        "match_text": "怎么下载PPT？",
+        "shape_name": "文本框 67"
+      },
+      {
+        "slot": "title_3",
+        "match_text": "文件保存不了？",
+        "shape_name": "文本框 74"
+      },
+      {
+        "slot": "title_4",
+        "match_text": "如何找文件？",
+        "shape_name": "文本框 82"
+      },
+      {
+        "slot": "number",
+        "match_text": "03",
+        "shape_name": "文本框 90"
+      },
+      {
+        "slot": "title_5",
+        "match_text": "母版说明",
+        "shape_name": "文本框 91"
+      },
+      {
+        "slot": "number_2",
+        "match_text": "01",
+        "shape_name": "文本框 16"
+      },
+      {
+        "slot": "title_6",
+        "match_text": "字体说明",
+        "shape_name": "文本框 2"
+      },
+      {
+        "slot": "number_3",
+        "match_text": "02",
+        "shape_name": "文本框 62"
+      },
+      {
+        "slot": "title_7",
+        "match_text": "PPT下载",
+        "shape_name": "文本框 3"
+      }
+    ]
+  },
+  "page_meta": {
+    "1": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 4
+    },
+    "2": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "3": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "4": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "5": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "7": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "9": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "13": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "15": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 1
+    },
+    "16": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 3
+    },
+    "17": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    },
+    "18": {
+      "has_chart": false,
+      "has_table": false,
+      "has_picture": true,
+      "chart_type": null,
+      "picture_count": 2
+    }
+  }
+}
